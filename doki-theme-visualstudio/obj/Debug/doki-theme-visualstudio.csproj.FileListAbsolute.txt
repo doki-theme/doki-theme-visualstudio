@@ -1,0 +1,16 @@
+C:\Users\birdm.DESKTOP-FO92PV5\workspace\doki-theme-visualstudio\doki-theme-visualstudio\bin\Debug\doki-theme-visualstudio.dll
+C:\Users\birdm.DESKTOP-FO92PV5\workspace\doki-theme-visualstudio\doki-theme-visualstudio\bin\Debug\doki-theme-visualstudio.pdb
+C:\Users\birdm.DESKTOP-FO92PV5\workspace\doki-theme-visualstudio\doki-theme-visualstudio\bin\Debug\doki-theme-visualstudio.pkgdef
+C:\Users\birdm.DESKTOP-FO92PV5\workspace\doki-theme-visualstudio\doki-theme-visualstudio\bin\Debug\doki-theme-visualstudio.vsix
+C:\Users\birdm.DESKTOP-FO92PV5\workspace\doki-theme-visualstudio\doki-theme-visualstudio\bin\Debug\extension.vsixmanifest
+C:\Users\birdm.DESKTOP-FO92PV5\workspace\doki-theme-visualstudio\doki-theme-visualstudio\obj\Debug\doki-theme-visualstudio.csproj.AssemblyReference.cache
+C:\Users\birdm.DESKTOP-FO92PV5\workspace\doki-theme-visualstudio\doki-theme-visualstudio\obj\Debug\_EmptyResource.resources
+C:\Users\birdm.DESKTOP-FO92PV5\workspace\doki-theme-visualstudio\doki-theme-visualstudio\obj\Debug\doki-theme-visualstudio.csproj.GenerateResource.cache
+C:\Users\birdm.DESKTOP-FO92PV5\workspace\doki-theme-visualstudio\doki-theme-visualstudio\obj\Debug\doki-theme-visualstudio.csproj.CoreCompileInputs.cache
+C:\Users\birdm.DESKTOP-FO92PV5\workspace\doki-theme-visualstudio\doki-theme-visualstudio\obj\Debug\doki-theme-visualstudio.dll
+C:\Users\birdm.DESKTOP-FO92PV5\workspace\doki-theme-visualstudio\doki-theme-visualstudio\obj\Debug\doki-theme-visualstudio.pdb
+C:\Users\birdm.DESKTOP-FO92PV5\workspace\doki-theme-visualstudio\doki-theme-visualstudio\obj\Debug\doki-theme-visualstudio.pkgdef
+C:\Users\birdm.DESKTOP-FO92PV5\workspace\doki-theme-visualstudio\doki-theme-visualstudio\obj\Debug\doki-theme-visualstudio.latest.pkgdef
+C:\Users\birdm.DESKTOP-FO92PV5\workspace\doki-theme-visualstudio\doki-theme-visualstudio\obj\Debug\extension.vsixmanifest
+C:\Users\birdm.DESKTOP-FO92PV5\workspace\doki-theme-visualstudio\doki-theme-visualstudio\obj\Debug\files.json
+C:\Users\birdm.DESKTOP-FO92PV5\workspace\doki-theme-visualstudio\doki-theme-visualstudio\obj\Debug\createTemplateManifests.cache

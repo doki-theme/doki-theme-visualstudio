@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\birdm.DESKTOP-FO92PV5\\workspace\\doki-theme-visualstudio\\doki-theme-visualstudio\\doki-theme-visualstudio.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\birdm.DESKTOP-FO92PV5\\workspace\\doki-theme-visualstudio\\doki-theme-visualstudio\\doki-theme-visualstudio.csproj": {
+      "version": "4.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\birdm.DESKTOP-FO92PV5\\workspace\\doki-theme-visualstudio\\doki-theme-visualstudio\\doki-theme-visualstudio.csproj",
+        "projectName": "doki-theme-visualstudio",
+        "projectPath": "C:\\Users\\birdm.DESKTOP-FO92PV5\\workspace\\doki-theme-visualstudio\\doki-theme-visualstudio\\doki-theme-visualstudio.csproj",
+        "packagesPath": "C:\\Users\\birdm.DESKTOP-FO92PV5\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\birdm.DESKTOP-FO92PV5\\workspace\\doki-theme-visualstudio\\doki-theme-visualstudio\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\birdm.DESKTOP-FO92PV5\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.VSSDK.BuildTools": {
+              "target": "Package",
+              "version": "[16.10.1055, )"
+            },
+            "Microsoft.VisualStudio.SDK": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[16.0.206, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
