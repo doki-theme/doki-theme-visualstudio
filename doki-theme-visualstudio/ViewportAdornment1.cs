@@ -60,7 +60,7 @@ namespace doki_theme_visualstudio
 
       this.view = view;
 
-      var brush = new SolidColorBrush(Colors.BlueViolet);
+      var brush = new SolidColorBrush(Colors.Lime);
       brush.Freeze();
       var penBrush = new SolidColorBrush(Colors.Red);
       penBrush.Freeze();
