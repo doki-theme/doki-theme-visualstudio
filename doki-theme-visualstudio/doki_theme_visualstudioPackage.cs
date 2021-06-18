@@ -31,6 +31,7 @@ namespace doki_theme_visualstudio {
   [ProvideAutoLoad(UIContextGuids.NoSolution, PackageAutoLoadFlags.BackgroundLoad)]
   [ProvideAutoLoad(UIContextGuids.SolutionExists, PackageAutoLoadFlags.BackgroundLoad)]
   [Guid(PackageGuidString)]
+  [ProvideMenuResource("Menus.ctmenu", 1)]
   public sealed class doki_theme_visualstudioPackage : AsyncPackage {
     /// <summary>
     ///   doki_theme_visualstudioPackage GUID string.
@@ -40,32 +41,24 @@ namespace doki_theme_visualstudio {
     #region Package Members
 
     /// <summary>
-    ///   Initialization of the package; this method is called right after the package is sited, so this is the place
-    ///   where you can put all the initialization code that rely on services provided by VisualStudio.
+    /// Initialization of the package; this method is called right after the package is sited, so this is the place
+    /// where you can put all the initialization code that rely on services provided by VisualStudio.
     /// </summary>
-    /// <param name="cancellationToken">
-    ///   A cancellation token to monitor for initialization cancellation, which can occur when
-    ///   VS is shutting down.
-    /// </param>
+    /// <param name="cancellationToken">A cancellation token to monitor for initialization cancellation, which can occur when VS is shutting down.</param>
     /// <param name="progress">A provider for progress updates.</param>
-    /// <returns>
-    ///   A task representing the async work of package initialization, or an already completed task if there is none.
-    ///   Do not return null from this method.
-    /// </returns>
-    protected override async Task InitializeAsync(
-      CancellationToken cancellationToken,
-      IProgress<ServiceProgressData> progress
-      ) {
-      await TaskScheduler.Default;
-      
-      // in background thread, can do things
+    /// <returns>A task representing the async work of package initialization, or an already completed task if there is none. Do not return null from this method.</returns>
+    protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
+    {
+        await base.InitializeAsync(cancellationToken, progress);
+       // in background thread, can do things
 
       ActivityLog.LogWarning("finna bust a nut", "ayy lmao");
 
-
-      // When initialized asynchronously, the current thread may be a background thread at this point.
-      // Do any initialization that requires the UI thread after switching to the UI thread.
-      await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
+   
+        // When initialized asynchronously, the current thread may be a background thread at this point.
+        // Do any initialization that requires the UI thread after switching to the UI thread.
+        await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
+        await Command1.InitializeAsync(this);
     }
 
     #endregion
