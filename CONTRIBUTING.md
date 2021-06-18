@@ -26,6 +26,8 @@ be `doki-theme-hyper`.
 
 https://docs.microsoft.com/en-us/visualstudio/xaml-tools/inspect-xaml-properties-while-debugging?view=vs-2019
 https://docs.microsoft.com/en-us/visualstudio/extensibility/extensibility-hello-world?view=vs-2019
+https://devblogs.microsoft.com/premier-developer/asynchronous-and-multithreaded-programming-within-vs-using-the-joinabletaskfactory/
+
 
 # Editing Themes
 

@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Threading;
+using System.Threading.Tasks;
 using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.Shell.Interop;
+using Microsoft.VisualStudio.Threading;
 using Task = System.Threading.Tasks.Task;
 
 namespace doki_theme_visualstudio {
@@ -24,6 +27,9 @@ namespace doki_theme_visualstudio {
   ///   </para>
   /// </remarks>
   [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
+  [ProvideAutoLoad(UIContextGuids.EmptySolution, PackageAutoLoadFlags.BackgroundLoad)]
+  [ProvideAutoLoad(UIContextGuids.NoSolution, PackageAutoLoadFlags.BackgroundLoad)]
+  [ProvideAutoLoad(UIContextGuids.SolutionExists, PackageAutoLoadFlags.BackgroundLoad)]
   [Guid(PackageGuidString)]
   public sealed class doki_theme_visualstudioPackage : AsyncPackage {
     /// <summary>
@@ -46,8 +52,17 @@ namespace doki_theme_visualstudio {
     ///   A task representing the async work of package initialization, or an already completed task if there is none.
     ///   Do not return null from this method.
     /// </returns>
-    protected override async Task InitializeAsync(CancellationToken cancellationToken,
-      IProgress<ServiceProgressData> progress) {
+    protected override async Task InitializeAsync(
+      CancellationToken cancellationToken,
+      IProgress<ServiceProgressData> progress
+      ) {
+      await TaskScheduler.Default;
+      
+      // in background thread, can do things
+
+      ActivityLog.LogWarning("finna bust a nut", "ayy lmao");
+
+
       // When initialized asynchronously, the current thread may be a background thread at this point.
       // Do any initialization that requires the UI thread after switching to the UI thread.
       await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
