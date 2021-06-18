@@ -24,6 +24,7 @@ the [hyper plugin development setup](https://github.com/vercel/hyper/blob/canary
 should give you a good introduction as what to expect, when developing for this plugin. The `localPlugins` is going to
 be `doki-theme-hyper`.
 
+https://docs.microsoft.com/en-us/visualstudio/xaml-tools/inspect-xaml-properties-while-debugging?view=vs-2019
 https://docs.microsoft.com/en-us/visualstudio/extensibility/extensibility-hello-world?view=vs-2019
 
 # Editing Themes
