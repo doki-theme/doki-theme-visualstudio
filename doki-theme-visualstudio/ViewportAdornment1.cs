@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using Microsoft.VisualStudio.PlatformUI;
 using Microsoft.VisualStudio.Text.Editor;
 
 namespace doki_theme_visualstudio {
@@ -79,7 +80,14 @@ namespace doki_theme_visualstudio {
       adornmentLayer = view.GetAdornmentLayer("ViewportAdornment1");
 
       this.view.LayoutChanged += OnSizeChanged;
+
+      VSColorTheme.ThemeChanged += themeArguments => {
+        var defaultBackground = VSColorTheme.GetThemedColor(EnvironmentColors.ToolWindowBackgroundColorKey);
+        var defaultForeground = VSColorTheme.GetThemedColor(EnvironmentColors.ToolWindowTextColorKey);
+        Console.WriteLine("Finna bust a nut"); 
+      };
     }
+
 
     /// <summary>
     ///   Event handler for viewport layout changed event. Adds adornment at the top right corner of the viewport.
@@ -95,7 +103,13 @@ namespace doki_theme_visualstudio {
       Canvas.SetTop(image, view.ViewportTop + TopMargin);
 
       // Add the image to the adornment layer and make it relative to the viewport
-      adornmentLayer.AddAdornment(AdornmentPositioningBehavior.ViewportRelative, null, null, image, null);
+      adornmentLayer.AddAdornment(
+        AdornmentPositioningBehavior.ViewportRelative,
+        null,
+        null,
+        image,
+        null
+      );
     }
   }
 }
