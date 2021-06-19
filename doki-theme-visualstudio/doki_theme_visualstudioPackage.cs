@@ -31,6 +31,7 @@ namespace doki_theme_visualstudio {
   [ProvideAutoLoad(UIContextGuids.NoSolution, PackageAutoLoadFlags.BackgroundLoad)]
   [ProvideAutoLoad(UIContextGuids.SolutionExists, PackageAutoLoadFlags.BackgroundLoad)]
   [Guid(PackageGuidString)]
+  [ProvideOptionPage(typeof(DokiThemeSettings), "Doki Theme Settings", "General",  1000, 1001, false)]
   [ProvideMenuResource("Menus.ctmenu", 1)]
   public sealed class doki_theme_visualstudioPackage : AsyncPackage {
     /// <summary>
