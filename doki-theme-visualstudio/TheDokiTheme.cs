@@ -3,7 +3,7 @@ using Task = System.Threading.Tasks.Task;
 
 namespace doki_theme_visualstudio {
   public static class TheDokiTheme {
-    public static async Task InitializePluginAsync(Package package) {
+    public static async Task InitializePluginAsync(AsyncPackage package) {
       ThreadHelper.ThrowIfOnUIThread();
 
       ThemeManager.Init(package);

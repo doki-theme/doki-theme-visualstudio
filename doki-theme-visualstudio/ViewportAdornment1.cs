@@ -80,12 +80,6 @@ namespace doki_theme_visualstudio {
       adornmentLayer = view.GetAdornmentLayer("ViewportAdornment1");
 
       this.view.LayoutChanged += OnSizeChanged;
-
-      VSColorTheme.ThemeChanged += themeArguments => {
-        var defaultBackground = VSColorTheme.GetThemedColor(EnvironmentColors.ToolWindowBackgroundColorKey);
-        var defaultForeground = VSColorTheme.GetThemedColor(EnvironmentColors.ToolWindowTextColorKey);
-        Console.WriteLine("Finna bust a nut"); 
-      };
     }
 
 
