@@ -29,20 +29,29 @@ namespace doki_theme_visualstudio {
     ) {
       return await ResolveAssetAsync(
         assetCategory, assetPath, assetSource,
-        async (localAssetPath, remoteAssetUrl) =>
-          await ToolBox.RunSafelyWithResultAsync(async () => {
-            LocalStorageService.CreateDirectories(localAssetPath);
-            
-            using var client = new HttpClient();
-            var stream = await client.GetStreamAsync(remoteAssetUrl);
-            using var destinationFile = File.OpenWrite(localAssetPath);
-            await stream.CopyToAsync(destinationFile);
-            
-            return localAssetPath;
-          }, exception => {
-            ActivityLog.LogError("Oh shit cannot download asset!", exception.Message);
-            return null;
-          }));
+        async (localAssetPath, remoteAssetUrl) => {
+          if (await LocalAssetService.HasAssetChangedAsync(localAssetPath, remoteAssetUrl)) {
+            return await DownloadAndGetAssetUrlAsync(localAssetPath, remoteAssetUrl);
+          }
+
+          return File.Exists(localAssetPath) ? localAssetPath : null;
+        });
+    }
+
+    private static async Task<string> DownloadAndGetAssetUrlAsync(string localAssetPath, string remoteAssetUrl) {
+      return await ToolBox.RunSafelyWithResultAsync(async () => {
+        LocalStorageService.CreateDirectories(localAssetPath);
+
+        using var client = new HttpClient();
+        var stream = await client.GetStreamAsync(remoteAssetUrl);
+        using var destinationFile = File.OpenWrite(localAssetPath);
+        await stream.CopyToAsync(destinationFile);
+
+        return localAssetPath;
+      }, exception => {
+        Console.Out.WriteLine("Oh shit cannot download asset! " + exception.Message);
+        return null;
+      });
     }
 
     private static async Task<string?> ResolveAssetAsync(
@@ -61,8 +70,9 @@ namespace doki_theme_visualstudio {
 
     private static string CleanAssetPath(string assetPath) {
       var cleanAssetPath = assetPath.Replace('/', Path.DirectorySeparatorChar);
-      return cleanAssetPath.StartsWith(Path.DirectorySeparatorChar.ToString()) ?
-          cleanAssetPath.Substring(1) : cleanAssetPath;
+      return cleanAssetPath.StartsWith(Path.DirectorySeparatorChar.ToString())
+        ? cleanAssetPath.Substring(1)
+        : cleanAssetPath;
     }
 
     private static string AssetCategoryName(AssetCategory assetCategory) {

@@ -27,7 +27,7 @@ namespace doki_theme_visualstudio {
       ToolBox.RunSafely(
         () => {
           Directory.CreateDirectory(fullAssetPath.Substring(0, fullAssetPath.LastIndexOf(Path.DirectorySeparatorChar)));
-        }, exception => { ActivityLog.LogWarning("Unable to create directories", exception.Message); });
+        }, exception => { Console.Out.WriteLine("Unable to create directories " + exception.Message); });
     }
 
     public string GetAssetDirectory() {
