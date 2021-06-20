@@ -28,6 +28,7 @@ https://docs.microsoft.com/en-us/visualstudio/xaml-tools/inspect-xaml-properties
 https://docs.microsoft.com/en-us/visualstudio/extensibility/extensibility-hello-world?view=vs-2019
 https://devblogs.microsoft.com/premier-developer/asynchronous-and-multithreaded-programming-within-vs-using-the-joinabletaskfactory/
 https://docs.microsoft.com/en-us/visualstudio/extensibility/internals/creating-options-pages?view=vs-2019
+https://bideveloperextensions.github.io/features/VSIXextensionmodel/
 
 
 
