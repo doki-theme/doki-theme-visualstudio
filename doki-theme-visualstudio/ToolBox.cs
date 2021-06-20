@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using Task = System.Threading.Tasks.Task;
 
 
@@ -12,12 +13,22 @@ namespace doki_theme_visualstudio {
         errorHandler.Invoke(e);
       }
     }
+
     public static async Task RunSafelyAsync(Func<Task> runnable, Action<Exception> errorHandler) {
       try {
         await runnable();
       }
       catch (Exception e) {
         errorHandler.Invoke(e);
+      }
+    }
+
+    public static async Task<T> RunSafelyWithResultAsync<T>(Func<Task<T>> runnable, Func<Exception, T> errorHandler) {
+      try {
+        return await runnable();
+      }
+      catch (Exception e) {
+        return errorHandler.Invoke(e);
       }
     }
   }

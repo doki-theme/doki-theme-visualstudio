@@ -53,7 +53,7 @@ namespace doki_theme_visualstudio {
         await base.InitializeAsync(cancellationToken, progress);
        // in background thread, can do things
 
-       await ThemeManager.InitializePluginAsync(this);
+       await TheDokiTheme.InitializePluginAsync(this);
 
    
         // When initialized asynchronously, the current thread may be a background thread at this point.
