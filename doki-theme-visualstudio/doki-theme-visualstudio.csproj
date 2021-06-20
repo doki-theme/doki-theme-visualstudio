@@ -52,6 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="doki_theme_visualstudioPackage.cs" />
     <Compile Include="ThemeManager.cs" />
+    <Compile Include="ToolBox.cs" />
     <Compile Include="ViewportAdornment1.cs" />
     <Compile Include="ViewportAdornment1TextViewCreationListener.cs" />
   </ItemGroup>
