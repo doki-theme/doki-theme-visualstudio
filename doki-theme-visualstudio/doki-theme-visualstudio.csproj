@@ -97,6 +97,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <EmbeddedResource Include="Resources\DokiThemeDefinitions.json" />
     <Content Include="Resources\Command1.png" />
     <VSCTCompile Include="doki_theme_visualstudioPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>

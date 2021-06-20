@@ -6,6 +6,7 @@ namespace doki_theme_visualstudio {
     public static async Task InitializePluginAsync(Package package) {
       ThreadHelper.ThrowIfOnUIThread();
 
+      ThemeManager.Init(package);
       LocalStorageService.Init(package);
       
       // depends on local storage service

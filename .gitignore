@@ -9,6 +9,7 @@ testAssets/
 out/
 .idea/
 *.iml
+DokiThemeDefinitions.json
 
 # Gradle
 .gradle/

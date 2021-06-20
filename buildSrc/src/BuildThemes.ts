@@ -19,7 +19,7 @@ const {
 } = resolvePaths(__dirname);
 
 // todo: dis
-type DokiThemeJupyter = {
+type DokiThemeVisualStudio = {
   [k: string]: any;
 };
 
@@ -28,7 +28,7 @@ function buildTemplateVariables(
   dokiThemeDefinition: MasterDokiThemeDefinition,
   masterTemplateDefinitions: DokiThemeDefinitions,
   dokiThemeAppDefinition: AppDokiThemeDefinition,
-): DokiThemeJupyter {
+): DokiThemeVisualStudio {
   const namedColors: StringDictionary<string> = constructNamedColorTemplate(
     dokiThemeDefinition,
     masterTemplateDefinitions
@@ -80,7 +80,7 @@ function resolveStickerPath(themeDefinitionPath: string, sticker: string) {
   );
   return stickerPath.substr(
     masterThemeDefinitionDirectoryPath.length + "/definitions".length
-  );
+  ).replace(/\\/g, '/');
 }
 
 const getStickers = (
@@ -90,7 +90,7 @@ const getStickers = (
   const secondary =
     dokiDefinition.stickers.secondary || dokiDefinition.stickers.normal;
   return {
-    default: {
+    defaultSticker: {
       path: resolveStickerPath(themePath, dokiDefinition.stickers.default),
       name: dokiDefinition.stickers.default,
     },
@@ -106,11 +106,11 @@ const getStickers = (
 };
 
 console.log("Preparing to generate themes.");
-const themesDirectory = path.resolve(repoDirectory, "src", "dokithemejupyter");
+const themesDirectory = path.resolve(repoDirectory, "doki-theme-visualstudio");
 
 evaluateTemplates(
   {
-    appName: 'jupyter',
+    appName: 'visualstudio',
     currentWorkingDirectory: __dirname,
   },
   createDokiTheme
@@ -133,13 +133,13 @@ evaluateTemplates(
         };
       })
       .reduce((accum: StringDictionary<any>, definition) => {
-        accum[definition.information.id] = definition;
+        accum[definition.information.id || ''] = definition;
         return accum;
       }, {});
     const finalDokiDefinitions = JSON.stringify(dokiThemeDefinitions);
     fs.writeFileSync(
-      path.resolve(repoDirectory, "src", "DokiThemeDefinitions.ts"),
-      `export default ${finalDokiDefinitions};`
+      path.resolve(themesDirectory, "Resources", "DokiThemeDefinitions.json"),
+      finalDokiDefinitions
     );
 
   })
