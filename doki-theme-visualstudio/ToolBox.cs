@@ -31,5 +31,14 @@ namespace doki_theme_visualstudio {
         return errorHandler.Invoke(e);
       }
     }
+
+    public static T RunSafelyWithResult<T>(Func<T> runnable, Func<Exception, T> errorHandler) {
+      try {
+        return runnable();
+      }
+      catch (Exception e) {
+        return errorHandler.Invoke(e);
+      }
+    }
   }
 }

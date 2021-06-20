@@ -2,8 +2,6 @@ using System;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Microsoft.VisualStudio.Shell;
-using Task = System.Threading.Tasks.Task;
 
 namespace doki_theme_visualstudio {
   public enum AssetCategory {
@@ -13,7 +11,7 @@ namespace doki_theme_visualstudio {
     Misc
   }
 
-  public class AssetManager {
+  public static class AssetManager {
     public const string AssetSource = "https://doki.assets.unthrottled.io";
     public const string FallbackAssetSource = "https://raw.githubusercontent.com/doki-theme/doki-theme-assets/master";
 
@@ -30,7 +28,7 @@ namespace doki_theme_visualstudio {
       return await ResolveAssetAsync(
         assetCategory, assetPath, assetSource,
         async (localAssetPath, remoteAssetUrl) => {
-          if (await LocalAssetService.HasAssetChangedAsync(localAssetPath, remoteAssetUrl)) {
+          if (await LocalAssetService.Instance.HasAssetChangedAsync(localAssetPath, remoteAssetUrl)) {
             return await DownloadAndGetAssetUrlAsync(localAssetPath, remoteAssetUrl);
           }
 
