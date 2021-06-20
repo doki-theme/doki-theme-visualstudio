@@ -11,6 +11,10 @@ namespace doki_theme_visualstudio {
 
     public static void Init(Package package) {
       _instance ??= new LocalStorageService(package);
+      var assetsDirectory = _instance.GetAssetDirectory();
+      if (!Directory.Exists(assetsDirectory)) {
+        Directory.CreateDirectory(assetsDirectory);
+      }
     }
 
     private readonly Package _package;
@@ -33,11 +37,6 @@ namespace doki_theme_visualstudio {
           0,
           userLocalDataPath.LastIndexOf(Path.DirectorySeparatorChar)
         ), "dokiThemeAssets");
-
-      if (!Directory.Exists(assetsDirectory)) {
-        Directory.CreateDirectory(assetsDirectory);
-      }
-
       return assetsDirectory;
     }
   }

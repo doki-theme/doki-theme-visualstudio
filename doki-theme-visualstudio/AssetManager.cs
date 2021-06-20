@@ -53,10 +53,16 @@ namespace doki_theme_visualstudio {
       var localAssetPath = Path.Combine(
         LocalStorageService.Instance.GetAssetDirectory(),
         AssetCategoryName(assetCategory),
-        assetPath
+        CleanAssetPath(assetPath)
       );
       var remoteAssetPath = ConstructRemoteAssetUrl(assetCategory, assetPath, assetSource);
       return await resolveAsset(localAssetPath, remoteAssetPath);
+    }
+
+    private static string CleanAssetPath(string assetPath) {
+      var cleanAssetPath = assetPath.Replace('/', Path.DirectorySeparatorChar);
+      return cleanAssetPath.StartsWith(Path.DirectorySeparatorChar.ToString()) ?
+          cleanAssetPath.Substring(1) : cleanAssetPath;
     }
 
     private static string AssetCategoryName(AssetCategory assetCategory) {
@@ -70,8 +76,8 @@ namespace doki_theme_visualstudio {
       string assetSource
     ) {
       return assetCategory == AssetCategory.Stickers
-        ? $"{assetSource}/${AssetCategoryName(assetCategory)}/jetbrains/v2${assetPath}"
-        : $"{assetSource}/${AssetCategoryName(assetCategory)}/${assetPath}";
+        ? $"{assetSource}/{AssetCategoryName(assetCategory)}/jetbrains/v2{assetPath}"
+        : $"{assetSource}/{AssetCategoryName(assetCategory)}/{assetPath}";
     }
   }
 }
