@@ -66,7 +66,7 @@
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
-    <None Include="VSThemeFile1.vstheme">
+    <None Include="Themes\VSThemeFile1.vstheme">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

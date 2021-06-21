@@ -1,9 +1,13 @@
 ﻿using System;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 using Microsoft.VisualStudio.PlatformUI;
+using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Text.Editor;
+using Task = System.Threading.Tasks.Task;
 
 namespace doki_theme_visualstudio {
   /// <summary>
@@ -33,17 +37,17 @@ namespace doki_theme_visualstudio {
     /// <summary>
     ///   The layer for the adornment.
     /// </summary>
-    private readonly IAdornmentLayer adornmentLayer;
+    private readonly IAdornmentLayer _adornmentLayer;
 
     /// <summary>
     ///   Adornment image
     /// </summary>
-    private readonly Image image;
+    private Image? _image;
 
     /// <summary>
     ///   Text view to add the adornment on.
     /// </summary>
-    private readonly IWpfTextView view;
+    private readonly IWpfTextView _view;
 
     /// <summary>
     ///   Initializes a new instance of the <see cref="ViewportAdornment1" /> class.
@@ -54,32 +58,37 @@ namespace doki_theme_visualstudio {
     public ViewportAdornment1(IWpfTextView view) {
       if (view == null) throw new ArgumentNullException("view");
 
-      this.view = view;
+      this._view = view;
 
-      var brush = new SolidColorBrush(Colors.Lime);
-      brush.Freeze();
-      var penBrush = new SolidColorBrush(Colors.Red);
-      penBrush.Freeze();
-      var pen = new Pen(penBrush, 0.5);
-      pen.Freeze();
+      _adornmentLayer = view.GetAdornmentLayer("ViewportAdornment1");
 
-      // Draw a square with the created brush and pen
-      var r = new Rect(0, 0, AdornmentWidth, AdornmentHeight);
-      var geometry = new RectangleGeometry(r);
+      GetImageSource(source => {
+        _image = new Image {
+          Source = source,
+          Stretch = Stretch.None,
+          
+        };
+        this._view.LayoutChanged += OnSizeChanged;
+      });
+    }
 
-      var drawing = new GeometryDrawing(brush, pen, geometry);
-      drawing.Freeze();
+    private static void GetImageSource(Action<BitmapSource> bitmapConsumer) {
+      Task.Run(async () => {
+        var imagePath = await AssetManager.ResolveAssetUrlAsync(
+          AssetCategory.Stickers,
+          ThemeManager.Instance.ThemeById("5fb9c0a4-e613-457c-97a5-6204f9076cef")!.StickerPath
+        );
+        if (string.IsNullOrEmpty(imagePath)) return;
 
-      var drawingImage = new DrawingImage(drawing);
-      drawingImage.Freeze();
-
-      image = new Image {
-        Source = drawingImage
-      };
-
-      adornmentLayer = view.GetAdornmentLayer("ViewportAdornment1");
-
-      this.view.LayoutChanged += OnSizeChanged;
+        var bitmap = new BitmapImage();
+        bitmap.BeginInit();
+        bitmap.CacheOption = BitmapCacheOption.OnLoad;
+        bitmap.CreateOptions = BitmapCreateOptions.None;
+        bitmap.UriSource = new Uri(imagePath!, UriKind.RelativeOrAbsolute);
+        bitmap.EndInit();
+        bitmap.Freeze();
+        bitmapConsumer(bitmap);
+      });
     }
 
 
@@ -89,19 +98,21 @@ namespace doki_theme_visualstudio {
     /// <param name="sender">Event sender</param>
     /// <param name="e">Event arguments</param>
     private void OnSizeChanged(object sender, EventArgs e) {
+      if(_image == null) return;
+
       // Clear the adornment layer of previous adornments
-      adornmentLayer.RemoveAllAdornments();
+      _adornmentLayer.RemoveAllAdornments();
 
       // Place the image in the top right hand corner of the Viewport
-      Canvas.SetLeft(image, view.ViewportRight - RightMargin - AdornmentWidth);
-      Canvas.SetTop(image, view.ViewportTop + TopMargin);
+      Canvas.SetLeft(_image, _view.ViewportRight - RightMargin - AdornmentWidth);
+      Canvas.SetTop(_image, _view.ViewportTop + TopMargin);
 
       // Add the image to the adornment layer and make it relative to the viewport
-      adornmentLayer.AddAdornment(
+      _adornmentLayer.AddAdornment(
         AdornmentPositioningBehavior.ViewportRelative,
         null,
         null,
-        image,
+        _image,
         null
       );
     }
