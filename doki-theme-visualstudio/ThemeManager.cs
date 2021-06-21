@@ -43,6 +43,7 @@ namespace doki_theme_visualstudio {
     }
 
     public string StickerPath => _definition.stickers.defaultSticker.path;
+    public string StickerName => _definition.stickers.defaultSticker.name;
   }
 
 

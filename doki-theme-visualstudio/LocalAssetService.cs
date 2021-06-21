@@ -85,7 +85,7 @@ namespace doki_theme_visualstudio {
 
     private void WriteCheckedDate(string localAssetPath) {
       ToolBox.RunSafely(() => {
-        _assetChecks.Add(localAssetPath, DateTime.Now);
+        _assetChecks[localAssetPath] = DateTime.Now;
         JsonSerializer serializer = new JsonSerializer();
         serializer.NullValueHandling = NullValueHandling.Ignore;
 

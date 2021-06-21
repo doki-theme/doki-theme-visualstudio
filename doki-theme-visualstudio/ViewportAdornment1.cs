@@ -65,7 +65,7 @@ namespace doki_theme_visualstudio {
       GetImageSource(source => {
         _image = new Image {
           Source = source,
-          Stretch = Stretch.None,
+          Stretch = Stretch.Fill,
           
         };
         this._view.LayoutChanged += OnSizeChanged;
@@ -77,6 +77,7 @@ namespace doki_theme_visualstudio {
         var imagePath = await AssetManager.ResolveAssetUrlAsync(
           AssetCategory.Stickers,
           ThemeManager.Instance.ThemeById("5fb9c0a4-e613-457c-97a5-6204f9076cef")!.StickerPath
+          // ThemeManager.Instance.ThemeById("8c99ec4b-fda0-4ab7-95ad-a6bf80c3924b")!.StickerName
         );
         if (string.IsNullOrEmpty(imagePath)) return;
 
@@ -99,14 +100,14 @@ namespace doki_theme_visualstudio {
     /// <param name="sender">Event sender</param>
     /// <param name="e">Event arguments</param>
     private void OnSizeChanged(object sender, EventArgs e) {
-      if(_image == null) return;
+      if (_image == null) return;
 
       // Clear the adornment layer of previous adornments
       _adornmentLayer.RemoveAllAdornments();
 
       // Place the image in the top right hand corner of the Viewport
-      Canvas.SetLeft(_image, _view.ViewportRight - RightMargin - AdornmentWidth);
-      Canvas.SetTop(_image, _view.ViewportTop + TopMargin);
+      // Canvas.SetLeft(_image,-_image.Width / 2);
+      // Canvas.SetTop(_image, _view.ViewportTop + TopMargin);
 
       // Add the image to the adornment layer and make it relative to the viewport
       _adornmentLayer.AddAdornment(
