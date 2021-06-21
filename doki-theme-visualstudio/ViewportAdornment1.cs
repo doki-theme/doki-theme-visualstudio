@@ -87,6 +87,7 @@ namespace doki_theme_visualstudio {
         bitmap.UriSource = new Uri(imagePath!, UriKind.RelativeOrAbsolute);
         bitmap.EndInit();
         bitmap.Freeze();
+        await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
         bitmapConsumer(bitmap);
       });
     }
