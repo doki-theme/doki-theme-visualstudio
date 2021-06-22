@@ -1,35 +1,17 @@
 ﻿using System;
-using System.IO;
-using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using Microsoft.VisualStudio.LanguageServer.Protocol;
-using Microsoft.VisualStudio.PlatformUI;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Text.Editor;
 using Task = System.Threading.Tasks.Task;
 
 namespace doki_theme_visualstudio {
-  /// <summary>
-  ///   Adornment class that draws a square box in the top right hand corner of the viewport
-  /// </summary>
   internal sealed class ViewportAdornment1 {
-    private Canvas _editorCanvas = new Canvas() { IsHitTestVisible = false };
-
-    /// <summary>
-    ///   The layer for the adornment.
-    /// </summary>
     private readonly IAdornmentLayer _adornmentLayer;
 
-    /// <summary>
-    ///   Adornment image
-    /// </summary>
     private Image? _image;
 
-    /// <summary>
-    ///   Text view to add the adornment on.
-    /// </summary>
     private readonly IWpfTextView _view;
 
     /// <summary>
@@ -47,9 +29,17 @@ namespace doki_theme_visualstudio {
       GetImageSource(source => {
         _image = new Image {
           Source = source,
-          Opacity = 1.0,
+          Opacity = 1.0
         };
-        _view.LayoutChanged += OnSizeChanged;
+        
+        DrawImage();
+        // todo: fancy animation
+        // var fadeInAnimation = new DoubleAnimation(0.0, 1.0, TimeSpan.FromMilliseconds(500));
+        // _image.BeginAnimation(UIElement.OpacityProperty, fadeInAnimation);
+        // fadeInAnimation.Completed += (_, __) => {
+          // _image.Opacity = 1.0;
+          _view.LayoutChanged += OnSizeChanged;
+        // };
       });
     }
 
@@ -95,20 +85,26 @@ namespace doki_theme_visualstudio {
 
 
     private void OnSizeChanged(object sender, EventArgs e) {
+      DrawImage();
+    }
+
+    private void DrawImage() {
       if (_image == null) return;
 
       _adornmentLayer.RemoveAdornmentsByTag("DokiTheme");
-      
-      Canvas.SetLeft(_image, _view.ViewportRight - _image.Width);
-      Canvas.SetTop(_image, _view.ViewportBottom + _image.Height);
 
+      // place in lower right hand corner
+      Canvas.SetLeft(_image, _view.ViewportRight - _image.ActualWidth);
+      Canvas.SetTop(_image, _view.ViewportBottom - _image.ActualHeight);
+
+      // add image to editor window
       _adornmentLayer.AddAdornment(
-              AdornmentPositioningBehavior.ViewportRelative,
-              null,
-              "DokiTheme",
-              _image,
-              null
-            );
+        AdornmentPositioningBehavior.ViewportRelative,
+        null,
+        "DokiTheme",
+        _image,
+        null
+      );
     }
   }
 }
