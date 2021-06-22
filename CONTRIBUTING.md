@@ -29,6 +29,7 @@ https://docs.microsoft.com/en-us/visualstudio/extensibility/extensibility-hello-
 https://devblogs.microsoft.com/premier-developer/asynchronous-and-multithreaded-programming-within-vs-using-the-joinabletaskfactory/
 https://docs.microsoft.com/en-us/visualstudio/extensibility/internals/creating-options-pages?view=vs-2019
 https://bideveloperextensions.github.io/features/VSIXextensionmodel/
+https://stackoverflow.com/questions/54958880/resetting-experimental-instance-of-visual-studio
 
 
 

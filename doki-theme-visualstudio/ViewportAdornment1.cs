@@ -14,25 +14,7 @@ namespace doki_theme_visualstudio {
   ///   Adornment class that draws a square box in the top right hand corner of the viewport
   /// </summary>
   internal sealed class ViewportAdornment1 {
-    /// <summary>
-    ///   The width of the square box.
-    /// </summary>
-    private const double AdornmentWidth = 30;
-
-    /// <summary>
-    ///   The height of the square box.
-    /// </summary>
-    private const double AdornmentHeight = 30;
-
-    /// <summary>
-    ///   Distance from the viewport top to the top of the square box.
-    /// </summary>
-    private const double TopMargin = 30;
-
-    /// <summary>
-    ///   Distance from the viewport right to the right end of the square box.
-    /// </summary>
-    private const double RightMargin = 30;
+    private Canvas _editorCanvas = new Canvas() { IsHitTestVisible = false };
 
     /// <summary>
     ///   The layer for the adornment.
@@ -56,19 +38,28 @@ namespace doki_theme_visualstudio {
     /// </summary>
     /// <param name="view">The <see cref="IWpfTextView" /> upon which the adornment will be drawn</param>
     public ViewportAdornment1(IWpfTextView view) {
-      if (view == null) throw new ArgumentNullException("view");
-
-      this._view = view;
+      _view = view ?? throw new ArgumentNullException(nameof(view));
 
       _adornmentLayer = view.GetAdornmentLayer("ViewportAdornment1");
+      _adornmentLayer.RemoveAdornmentsByTag("DokiTheme");
+      _adornmentLayer.AddAdornment(
+        AdornmentPositioningBehavior.ViewportRelative,
+        null,
+        "DokiTheme",
+        _editorCanvas,
+        null
+      );
 
       GetImageSource(source => {
         _image = new Image {
           Source = source,
-          Stretch = Stretch.Fill,
-          
+          Stretch = Stretch.Uniform,
+          HorizontalAlignment = HorizontalAlignment.Right,
+          VerticalAlignment = VerticalAlignment.Bottom,
+          Opacity = 1.0,
+          IsHitTestVisible = false
         };
-        this._view.LayoutChanged += OnSizeChanged;
+        _view.LayoutChanged += OnSizeChanged;
       });
     }
 
@@ -88,35 +79,37 @@ namespace doki_theme_visualstudio {
         bitmap.UriSource = new Uri(imagePath!, UriKind.RelativeOrAbsolute);
         bitmap.EndInit();
         bitmap.Freeze();
+        var finalBitmap = ConvertToDpi96(bitmap);
         await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
-        bitmapConsumer(bitmap);
+        bitmapConsumer(finalBitmap);
       });
+    }
+    
+    private static BitmapSource ConvertToDpi96(BitmapSource source) {
+      const int dpi = 96;
+      var width = source.PixelWidth;
+      var height = source.PixelHeight;
+
+      var stride = width * 4;
+      var pixelData = new byte[stride * height];
+      source.CopyPixels(pixelData, stride, 0);
+
+      return BitmapSource.Create(
+        width, height, 
+        dpi, dpi, 
+        PixelFormats.Bgra32, null, 
+        pixelData, stride
+        );
     }
 
 
-    /// <summary>
-    ///   Event handler for viewport layout changed event. Adds adornment at the top right corner of the viewport.
-    /// </summary>
-    /// <param name="sender">Event sender</param>
-    /// <param name="e">Event arguments</param>
+
     private void OnSizeChanged(object sender, EventArgs e) {
       if (_image == null) return;
+      
+      Grid.SetRowSpan(_image, 4);
+      RenderOptions.SetBitmapScalingMode(_image, BitmapScalingMode.Fant);
 
-      // Clear the adornment layer of previous adornments
-      _adornmentLayer.RemoveAllAdornments();
-
-      // Place the image in the top right hand corner of the Viewport
-      // Canvas.SetLeft(_image,-_image.Width / 2);
-      // Canvas.SetTop(_image, _view.ViewportTop + TopMargin);
-
-      // Add the image to the adornment layer and make it relative to the viewport
-      _adornmentLayer.AddAdornment(
-        AdornmentPositioningBehavior.ViewportRelative,
-        null,
-        null,
-        _image,
-        null
-      );
     }
   }
 }
