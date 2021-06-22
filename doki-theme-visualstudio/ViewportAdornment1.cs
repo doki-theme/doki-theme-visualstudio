@@ -4,6 +4,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using Microsoft.VisualStudio.LanguageServer.Protocol;
 using Microsoft.VisualStudio.PlatformUI;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Text.Editor;
@@ -42,22 +43,11 @@ namespace doki_theme_visualstudio {
 
       _adornmentLayer = view.GetAdornmentLayer("ViewportAdornment1");
       _adornmentLayer.RemoveAdornmentsByTag("DokiTheme");
-      _adornmentLayer.AddAdornment(
-        AdornmentPositioningBehavior.ViewportRelative,
-        null,
-        "DokiTheme",
-        _editorCanvas,
-        null
-      );
 
       GetImageSource(source => {
         _image = new Image {
           Source = source,
-          Stretch = Stretch.Uniform,
-          HorizontalAlignment = HorizontalAlignment.Right,
-          VerticalAlignment = VerticalAlignment.Bottom,
           Opacity = 1.0,
-          IsHitTestVisible = false
         };
         _view.LayoutChanged += OnSizeChanged;
       });
@@ -84,7 +74,7 @@ namespace doki_theme_visualstudio {
         bitmapConsumer(finalBitmap);
       });
     }
-    
+
     private static BitmapSource ConvertToDpi96(BitmapSource source) {
       const int dpi = 96;
       var width = source.PixelWidth;
@@ -93,23 +83,32 @@ namespace doki_theme_visualstudio {
       var stride = width * 4;
       var pixelData = new byte[stride * height];
       source.CopyPixels(pixelData, stride, 0);
-
-      return BitmapSource.Create(
-        width, height, 
-        dpi, dpi, 
-        PixelFormats.Bgra32, null, 
+      var convertedBitmap = BitmapSource.Create(
+        width, height,
+        dpi, dpi,
+        PixelFormats.Bgra32, null,
         pixelData, stride
-        );
+      );
+      convertedBitmap.Freeze();
+      return convertedBitmap;
     }
-
 
 
     private void OnSizeChanged(object sender, EventArgs e) {
       if (_image == null) return;
-      
-      Grid.SetRowSpan(_image, 4);
-      RenderOptions.SetBitmapScalingMode(_image, BitmapScalingMode.Fant);
 
+      _adornmentLayer.RemoveAdornmentsByTag("DokiTheme");
+      
+      Canvas.SetLeft(_image, _view.ViewportRight - _image.Width);
+      Canvas.SetTop(_image, _view.ViewportBottom + _image.Height);
+
+      _adornmentLayer.AddAdornment(
+              AdornmentPositioningBehavior.ViewportRelative,
+              null,
+              "DokiTheme",
+              _image,
+              null
+            );
     }
   }
 }
