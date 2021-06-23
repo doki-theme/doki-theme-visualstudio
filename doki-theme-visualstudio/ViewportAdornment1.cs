@@ -52,17 +52,22 @@ namespace doki_theme_visualstudio {
         );
         if (string.IsNullOrEmpty(imagePath)) return;
 
-        var bitmap = new BitmapImage();
-        bitmap.BeginInit();
-        bitmap.CacheOption = BitmapCacheOption.OnLoad;
-        bitmap.CreateOptions = BitmapCreateOptions.None;
-        bitmap.UriSource = new Uri(imagePath!, UriKind.RelativeOrAbsolute);
-        bitmap.EndInit();
-        bitmap.Freeze();
-        var finalBitmap = ConvertToDpi96(bitmap);
+        var finalBitmap = GetBitmapSourceFromImagePath(imagePath!);
         await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
         bitmapConsumer(finalBitmap);
       });
+    }
+
+    public static BitmapSource GetBitmapSourceFromImagePath(string imagePath) {
+      var bitmap = new BitmapImage();
+      bitmap.BeginInit();
+      bitmap.CacheOption = BitmapCacheOption.OnLoad;
+      bitmap.CreateOptions = BitmapCreateOptions.None;
+      bitmap.UriSource = new Uri(imagePath, UriKind.RelativeOrAbsolute);
+      bitmap.EndInit();
+      bitmap.Freeze();
+      var finalBitmap = ConvertToDpi96(bitmap);
+      return finalBitmap;
     }
 
     private static BitmapSource ConvertToDpi96(BitmapSource source) {

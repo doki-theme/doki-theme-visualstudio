@@ -53,13 +53,16 @@ namespace doki_theme_visualstudio {
         await base.InitializeAsync(cancellationToken, progress);
        // in background thread, can do things
 
-       await TheDokiTheme.InitializePluginAsync(this);
+       await TheDokiTheme.InitializePluginAsync(this, cancellationToken);
 
    
         // When initialized asynchronously, the current thread may be a background thread at this point.
         // Do any initialization that requires the UI thread after switching to the UI thread.
-        await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
+        await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
+        
         await Command1.InitializeAsync(this);
+        
+        WallpaperService.Init(cancellationToken);
     }
 
     #endregion
