@@ -12,11 +12,15 @@ namespace doki_theme_visualstudio {
 
     public static void Init(CancellationToken cancellationToken) {
       ThreadHelper.ThrowIfNotOnUIThread();
+      Application.Current.MainWindow.Loaded += (mainWindow, _) => {
+        _appMainWindow = (Window)mainWindow;
+        InstallWallpaperAsync().FileAndForget("dokiTheme/installWallpaper/loaded");
+      };
       ThreadHelper.JoinableTaskFactory.RunAsync(async () => {
         await ToolBox.RunSafelyAsync(async () => {
           await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
           _appMainWindow = Application.Current.MainWindow;
-          await InstallWallpaperAsync();
+          InstallWallpaperAsync().FileAndForget("dokiTheme/installWallpaper/init");
         }, _ => { });
       });
     }
@@ -24,8 +28,8 @@ namespace doki_theme_visualstudio {
     private static async System.Threading.Tasks.Task InstallWallpaperAsync() {
       var applicationWindow = _appMainWindow ??
                               throw new Exception("Expected wallpaper service to be initialized!");
-      var wallpaperUrl = await ThreadHelper.JoinableTaskFactory.RunAsync(
-        async () => await AssetManager.ResolveAssetUrlAsync(AssetCategory.Backgrounds, "zero_two_dark.png")
+      var wallpaperUrl = await System.Threading.Tasks.Task.Run(
+        async () => await AssetManager.ResolveAssetUrlAsync(AssetCategory.Backgrounds, "wallpapers/ryuko.png")
       );
       var wallpaperImagePath = wallpaperUrl ??
                                throw new NullReferenceException("I don't have a wallpaper, bro.");
@@ -35,9 +39,9 @@ namespace doki_theme_visualstudio {
         // get the top most parent layer to add the wallpaper too
         var appRootGrid = (Grid)applicationWindow.Template.FindName("RootGrid", applicationWindow) ??
                           throw new Exception("Expected to find root grid!");
-        var wallpaperImage = new Image() {
+        var wallpaperImage = new Image {
           Source = wallpaperBitMap,
-          Stretch = Stretch.Uniform,
+          Stretch = Stretch.UniformToFill,
           HorizontalAlignment = HorizontalAlignment.Right,
           VerticalAlignment = VerticalAlignment.Bottom,
           Opacity = 1.0,
@@ -46,32 +50,7 @@ namespace doki_theme_visualstudio {
         RenderOptions.SetBitmapScalingMode(wallpaperImage, BitmapScalingMode.Fant);
 
         appRootGrid.Children.Insert(0, wallpaperImage);
-
-        MakeWallpaperVisible(appRootGrid);
       }, exception => { });
-    }
-
-    private static void MakeWallpaperVisible(Grid appRootGrid) {
-      if (appRootGrid == null) throw new ArgumentNullException(nameof(appRootGrid));
-
-      var dockTargets = appRootGrid.Descendants<DependencyObject>().Where(x =>
-        x.GetType().FullName == "Microsoft.VisualStudio.PlatformUI.Shell.Controls.DockTarget");
-      foreach (var dockTarget in dockTargets) {
-        var grids = dockTarget?.Descendants<Grid>();
-        if (grids == null) continue;
-        foreach (var grid in grids) {
-          if (grid == null) continue;
-          var prop = grid.GetType().GetProperty("Background");
-          var bg = prop?.GetValue(grid) as SolidColorBrush;
-          if (bg == null || bg.Color.A == 0x00) continue;
-          prop?.SetValue(grid, new SolidColorBrush(new Color() {
-            A = 0x00,
-            B = bg.Color.B,
-            G = bg.Color.G,
-            R = bg.Color.R
-          }));
-        }
-      }
     }
   }
 }

@@ -47,8 +47,7 @@ namespace doki_theme_visualstudio {
       Task.Run(async () => {
         var imagePath = await AssetManager.ResolveAssetUrlAsync(
           AssetCategory.Stickers,
-          ThemeManager.Instance.ThemeById("5fb9c0a4-e613-457c-97a5-6204f9076cef")!.StickerPath
-          // ThemeManager.Instance.ThemeById("8c99ec4b-fda0-4ab7-95ad-a6bf80c3924b")!.StickerName
+          ThemeManager.Instance.ThemeById("19b65ec8-133c-4655-a77b-13623d8e97d3")!.StickerPath
         );
         if (string.IsNullOrEmpty(imagePath)) return;
 
