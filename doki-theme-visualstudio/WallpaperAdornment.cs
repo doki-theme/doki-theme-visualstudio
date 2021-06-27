@@ -1,5 +1,7 @@
 ﻿using Microsoft.VisualStudio.Text.Editor;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -15,11 +17,15 @@ namespace doki_theme_visualstudio {
     // the editor window to draw image on
     private readonly Canvas _editorCanvas = new Canvas { IsHitTestVisible = false };
 
+    private Dictionary<int, DependencyObject> _defaultThemeColor = new Dictionary<int, DependencyObject>();
+
     private ImageBrush? _image;
+    private readonly IWpfTextView _view;
 
     private const string TagName = "DokiWallpaper";
 
     public WallpaperAdornment(IWpfTextView view) {
+      _view = view;
       _adornmentLayer = view.GetAdornmentLayer("WallpaperAdornment");
       _adornmentLayer.RemoveAdornmentsByTag(TagName);
 
@@ -65,7 +71,11 @@ namespace doki_theme_visualstudio {
     private void DoStupidShit() {
       var rootTextView = GetEditorView();
       if (rootTextView == null) return;
-      var possiblyBackground = rootTextView.GetValue(Panel.BackgroundProperty);
+
+      MakeThingsAboveWallpaperTransparent();
+
+      var prop = rootTextView.GetType().GetProperty("Background");
+      var possiblyBackground = prop.GetValue(rootTextView);
 
       if (!(possiblyBackground is ImageBrush)) {
         DrawWallpaper();
@@ -82,22 +92,71 @@ namespace doki_theme_visualstudio {
       }
     }
 
+    private void MakeThingsAboveWallpaperTransparent() {
+      UITools.TraverseParentTree(_editorCanvas, parent => {
+        var refd = parent.GetType();
+        var nameprop = refd.GetProperty("Name");
+        var objname = nameprop?.GetValue(parent) as string;
+
+        if (!string.IsNullOrEmpty(objname) && (objname.Equals("RootGrid", StringComparison.OrdinalIgnoreCase) ||
+                                               objname.Equals("MainWindow", StringComparison.OrdinalIgnoreCase))) {
+          return;
+        }
+
+        if (refd.FullName != null && (refd.FullName.Equals(
+          "Microsoft.VisualStudio.Text.Editor.Implementation.WpfTextView",
+          StringComparison.OrdinalIgnoreCase) ||
+                                      refd.FullName.Equals(
+                                        "Microsoft.VisualStudio.Editor.Implementation.WpfMultiViewHost",
+                                        StringComparison.OrdinalIgnoreCase)
+                                      )) {
+          return;
+        }
+
+        if (refd.FullName != null &&
+            refd.FullName.Equals("Microsoft.VisualStudio.Text.Editor.Implementation.WpfTextView",
+              StringComparison.OrdinalIgnoreCase)) {
+        }
+        else {
+          SetBackgroundToTransparent(parent);
+        }
+      });
+    }
+
+    private void SetBackgroundToTransparent(DependencyObject dependecyObject) {
+      var property = dependecyObject.GetType().GetProperty("Background");
+      if (!(property?.GetValue(dependecyObject) is Brush current)) return;
+      
+      ThreadHelper.JoinableTaskFactory.Run(async () => {
+      await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+      ToolBox.RunSafely(() => {
+      if (_defaultThemeColor.All(x => x.Key != dependecyObject.GetHashCode())) {
+      _defaultThemeColor[dependecyObject.GetHashCode()] = current;
+      }
+      
+      property.SetValue(dependecyObject, Brushes.Transparent);
+      }, _ => { });
+      });
+    }
+
+
     private DependencyObject? GetEditorView() {
       return UITools.FindParent(_editorCanvas,
         o => {
           var name = o.GetType().FullName;
           return name.Equals("Microsoft.VisualStudio.Editor.Implementation.WpfMultiViewHost",
-                   StringComparison.OrdinalIgnoreCase) ||
-                 name.Equals("Microsoft.VisualStudio.Text.Editor.Implementation.WpfTextView",
-                   StringComparison.OrdinalIgnoreCase);
+                   StringComparison.OrdinalIgnoreCase) 
+                 ;
         });
     }
 
     private void DrawWallpaper() {
       if (_image == null) return;
-      var textView = GetEditorView();
-
-      textView?.SetValue(Panel.BackgroundProperty, _image);
+      ThreadHelper.JoinableTaskFactory.Run(async () => {
+        await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+        var editorView = GetEditorView();
+        editorView?.SetValue(Panel.BackgroundProperty, _image);
+      });
     }
 
     private void RefreshAdornment() {

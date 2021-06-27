@@ -11,6 +11,7 @@ namespace doki_theme_visualstudio {
   /// </summary>
   [Export(typeof(IWpfTextViewCreationListener))]
   [ContentType("text")]
+  [ContentType("BuildOutput")]
   [TextViewRole(PredefinedTextViewRoles.Document)]
   internal sealed class ViewportAdornment1TextViewCreationListener : IWpfTextViewCreationListener {
     // Disable "Field is never assigned to..." and "Field is never used" compiler's warnings. Justification: the field is used by MEF.

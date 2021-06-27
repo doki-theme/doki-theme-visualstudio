@@ -9,14 +9,25 @@ namespace doki_theme_visualstudio {
       DependencyObject childDependencyObject,
       Func<DependencyObject, bool> predicate
     ) {
-      var parent =
-        childDependencyObject is Visual ||
-        childDependencyObject is Visual3D
+      while (true) {
+        var parent = childDependencyObject is Visual || childDependencyObject is Visual3D
           ? VisualTreeHelper.GetParent(childDependencyObject)
           : LogicalTreeHelper.GetParent(childDependencyObject);
-      if (parent == null) return null;
+        if (parent == null) return null;
 
-      return predicate(parent) ? parent : FindParent(parent, predicate);
+        if (predicate(parent)) return parent;
+        childDependencyObject = parent;
+      }
+    }
+
+    public static void TraverseParentTree(
+      DependencyObject childDependencyObject,
+      Action<DependencyObject> predicate
+    ) {
+      FindParent(childDependencyObject, o => {
+        predicate(o);
+        return false;
+      });
     }
 
     public static DependencyObject? FindChild(DependencyObject applicationWindow, Func<DependencyObject, bool> func) {
