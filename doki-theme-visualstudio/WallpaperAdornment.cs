@@ -10,22 +10,29 @@ using Microsoft.VisualStudio.Shell;
 using Task = System.Threading.Tasks.Task;
 
 namespace doki_theme_visualstudio {
+  
+  // Wallpaper works by attaching a background image to the 
+  // WpfMultiViewHost which is the parent of the text editor view.
+  // This is important, because this allows the background image to be anchored
+  // Appropriately, it is also more gooder for when the user scrolls.
+  // Which is pain in the ass, which require me to do stupid shit,
+  // See <code>DoStupidShit</code> for more details.
   internal sealed class WallpaperAdornment {
     private readonly IAdornmentLayer _adornmentLayer;
 
-    // The adornment that is added to the editor, that allows us to get
-    // the editor window to draw image on
+    // The adornment that is added to the editor as a leaf, that allows us to get
+    // traverse up the tree and make things transparent so that
+    // we can show the background image
     private readonly Canvas _editorCanvas = new Canvas { IsHitTestVisible = false };
+    private const string EditorViewClassName = "Microsoft.VisualStudio.Editor.Implementation.WpfMultiViewHost";
 
     private Dictionary<int, DependencyObject> _defaultThemeColor = new Dictionary<int, DependencyObject>();
 
     private ImageBrush? _image;
-    private readonly IWpfTextView _view;
 
     private const string TagName = "DokiWallpaper";
 
     public WallpaperAdornment(IWpfTextView view) {
-      _view = view;
       _adornmentLayer = view.GetAdornmentLayer("WallpaperAdornment");
       _adornmentLayer.RemoveAdornmentsByTag(TagName);
 
@@ -82,6 +89,11 @@ namespace doki_theme_visualstudio {
       }
       else {
         var background = (ImageBrush)possiblyBackground;
+        
+        // This is the stupidest shit, the 
+        // background will artifact when the user scrolls.
+        // Unless we do this everytime the layout changes,
+        // The background will be big sad.
         ThreadHelper.JoinableTaskFactory.Run(async () => {
           await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
           ToolBox.RunSafely(() => {
@@ -93,61 +105,36 @@ namespace doki_theme_visualstudio {
     }
 
     private void MakeThingsAboveWallpaperTransparent() {
-      UITools.TraverseParentTree(_editorCanvas, parent => {
-        var refd = parent.GetType();
-        var nameprop = refd.GetProperty("Name");
-        var objname = nameprop?.GetValue(parent) as string;
+      UITools.FindParent(_editorCanvas, parent => {
+        if (parent.GetType().FullName
+          .Equals(EditorViewClassName)) return true;
 
-        if (!string.IsNullOrEmpty(objname) && (objname.Equals("RootGrid", StringComparison.OrdinalIgnoreCase) ||
-                                               objname.Equals("MainWindow", StringComparison.OrdinalIgnoreCase))) {
-          return;
-        }
+        SetBackgroundToTransparent(parent);
 
-        if (refd.FullName != null && (refd.FullName.Equals(
-          "Microsoft.VisualStudio.Text.Editor.Implementation.WpfTextView",
-          StringComparison.OrdinalIgnoreCase) ||
-                                      refd.FullName.Equals(
-                                        "Microsoft.VisualStudio.Editor.Implementation.WpfMultiViewHost",
-                                        StringComparison.OrdinalIgnoreCase)
-                                      )) {
-          return;
-        }
-
-        if (refd.FullName != null &&
-            refd.FullName.Equals("Microsoft.VisualStudio.Text.Editor.Implementation.WpfTextView",
-              StringComparison.OrdinalIgnoreCase)) {
-        }
-        else {
-          SetBackgroundToTransparent(parent);
-        }
+        return false;
       });
     }
 
-    private void SetBackgroundToTransparent(DependencyObject dependecyObject) {
-      var property = dependecyObject.GetType().GetProperty("Background");
-      if (!(property?.GetValue(dependecyObject) is Brush current)) return;
-      
+    private void SetBackgroundToTransparent(DependencyObject dependencyObject) {
+      var property = dependencyObject.GetType().GetProperty("Background");
+      if (!(property?.GetValue(dependencyObject) is Brush current)) return;
+
       ThreadHelper.JoinableTaskFactory.Run(async () => {
-      await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
-      ToolBox.RunSafely(() => {
-      if (_defaultThemeColor.All(x => x.Key != dependecyObject.GetHashCode())) {
-      _defaultThemeColor[dependecyObject.GetHashCode()] = current;
-      }
-      
-      property.SetValue(dependecyObject, Brushes.Transparent);
-      }, _ => { });
+        await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+        ToolBox.RunSafely(() => {
+          if (_defaultThemeColor.All(x => x.Key != dependencyObject.GetHashCode())) {
+            _defaultThemeColor[dependencyObject.GetHashCode()] = current;
+          }
+
+          property.SetValue(dependencyObject, Brushes.Transparent);
+        }, _ => { });
       });
     }
-
 
     private DependencyObject? GetEditorView() {
       return UITools.FindParent(_editorCanvas,
-        o => {
-          var name = o.GetType().FullName;
-          return name.Equals("Microsoft.VisualStudio.Editor.Implementation.WpfMultiViewHost",
-                   StringComparison.OrdinalIgnoreCase) 
-                 ;
-        });
+        o => o.GetType().FullName.Equals(EditorViewClassName,
+          StringComparison.OrdinalIgnoreCase));
     }
 
     private void DrawWallpaper() {
