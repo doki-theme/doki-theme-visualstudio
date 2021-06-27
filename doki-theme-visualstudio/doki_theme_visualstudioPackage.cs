@@ -61,8 +61,6 @@ namespace doki_theme_visualstudio {
         await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
         
         await Command1.InitializeAsync(this);
-        
-        WallpaperService.Init(cancellationToken);
     }
 
     #endregion

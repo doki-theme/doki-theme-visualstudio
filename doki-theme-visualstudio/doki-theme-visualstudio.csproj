@@ -60,6 +60,7 @@
     <Compile Include="TheDokiTheme.cs" />
     <Compile Include="ThemeManager.cs" />
     <Compile Include="ToolBox.cs" />
+    <Compile Include="UITools.cs" />
     <Compile Include="ViewportAdornment1.cs" />
     <Compile Include="ViewportAdornment1TextViewCreationListener.cs" />
     <Compile Include="WallpaperService.cs" />
