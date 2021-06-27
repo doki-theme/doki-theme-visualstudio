@@ -12,6 +12,8 @@ namespace doki_theme_visualstudio {
 
     private Image? _image;
 
+    private static readonly string tagName = "DokiSticker";
+
     private readonly IWpfTextView _view;
 
     /// <summary>
@@ -24,7 +26,7 @@ namespace doki_theme_visualstudio {
       _view = view ?? throw new ArgumentNullException(nameof(view));
 
       _adornmentLayer = view.GetAdornmentLayer("ViewportAdornment1");
-      _adornmentLayer.RemoveAdornmentsByTag("DokiTheme");
+      _adornmentLayer.RemoveAdornmentsByTag(tagName);
 
       GetImageSource(source => {
         _image = new Image {
@@ -54,7 +56,7 @@ namespace doki_theme_visualstudio {
         var finalBitmap = GetBitmapSourceFromImagePath(imagePath!);
         await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
         bitmapConsumer(finalBitmap);
-      });
+      }).FileAndForget("dokiTheme/StickerLoad");
     }
 
     public static BitmapSource GetBitmapSourceFromImagePath(string imagePath) {
@@ -95,7 +97,7 @@ namespace doki_theme_visualstudio {
     private void DrawImage() {
       if (_image == null) return;
 
-      _adornmentLayer.RemoveAdornmentsByTag("DokiTheme");
+      _adornmentLayer.RemoveAdornmentsByTag(tagName);
 
       // place in lower right hand corner
       Canvas.SetLeft(_image, _view.ViewportRight - _image.ActualWidth);
@@ -105,7 +107,7 @@ namespace doki_theme_visualstudio {
       _adornmentLayer.AddAdornment(
         AdornmentPositioningBehavior.ViewportRelative,
         null,
-        "DokiTheme",
+        tagName,
         _image,
         null
       );

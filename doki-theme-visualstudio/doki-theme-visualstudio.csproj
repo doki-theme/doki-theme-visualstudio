@@ -63,7 +63,8 @@
     <Compile Include="UITools.cs" />
     <Compile Include="ViewportAdornment1.cs" />
     <Compile Include="ViewportAdornment1TextViewCreationListener.cs" />
-    <Compile Include="WallpaperService.cs" />
+    <Compile Include="WallpaperAdornment.cs" />
+    <Compile Include="WallpaperAdornmentTextViewCreationListener.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="source.extension.vsixmanifest">
