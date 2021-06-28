@@ -53,6 +53,7 @@
     </Compile>
     <Compile Include="Command1.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="ImageTools.cs" />
     <Compile Include="LocalAssetService.cs" />
     <Compile Include="LocalStorageService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,8 +62,8 @@
     <Compile Include="ThemeManager.cs" />
     <Compile Include="ToolBox.cs" />
     <Compile Include="UITools.cs" />
-    <Compile Include="ViewportAdornment1.cs" />
-    <Compile Include="ViewportAdornment1TextViewCreationListener.cs" />
+    <Compile Include="StickerAdornment.cs" />
+    <Compile Include="StickerAdornmentTextViewCreationListener.cs" />
     <Compile Include="WallpaperAdornment.cs" />
     <Compile Include="WallpaperAdornmentTextViewCreationListener.cs" />
   </ItemGroup>

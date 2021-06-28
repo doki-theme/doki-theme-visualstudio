@@ -13,7 +13,7 @@ namespace doki_theme_visualstudio {
   [ContentType("text")]
   [ContentType("BuildOutput")]
   [TextViewRole(PredefinedTextViewRoles.Document)]
-  internal sealed class ViewportAdornment1TextViewCreationListener : IWpfTextViewCreationListener {
+  internal sealed class StickerAdornmentTextViewCreationListener : IWpfTextViewCreationListener {
     // Disable "Field is never assigned to..." and "Field is never used" compiler's warnings. Justification: the field is used by MEF.
 #pragma warning disable 649, 169
 
@@ -22,19 +22,19 @@ namespace doki_theme_visualstudio {
     ///   after the selection layer in the Z-order
     /// </summary>
     [Export(typeof(AdornmentLayerDefinition))]
-    [Name("ViewportAdornment1")]
+    [Name("StickerAdorment")]
     [Order(After = PredefinedAdornmentLayers.Caret)]
     private AdornmentLayerDefinition editorAdornmentLayer;
 
 #pragma warning restore 649, 169
 
     /// <summary>
-    ///   Instantiates a ViewportAdornment1 manager when a textView is created.
+    ///   Instantiates a StickerAnornment manager when a textView is created.
     /// </summary>
     /// <param name="textView">The <see cref="IWpfTextView" /> upon which the adornment should be placed</param>
     public void TextViewCreated(IWpfTextView textView) {
-      // The adorment will get wired to the text view events
-      new ViewportAdornment1(textView);
+      // The adornment will get wired to the text view events
+      new StickerAdornment(textView);
     }
   }
 }

@@ -65,7 +65,7 @@ namespace doki_theme_visualstudio {
         );
         var wallpaperImagePath = wallpaperUrl ??
                                  throw new NullReferenceException("I don't have a wallpaper, bro.");
-        var wallpaperBitMap = ViewportAdornment1.GetBitmapSourceFromImagePath(wallpaperImagePath);
+        var wallpaperBitMap = ImageTools.GetBitmapSourceFromImagePath(wallpaperImagePath);
         await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
         bitmapConsumer(wallpaperBitMap);
       }).FileAndForget("dokiTheme/wallpaperLoad");
