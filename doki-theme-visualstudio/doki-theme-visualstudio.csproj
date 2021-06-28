@@ -70,7 +70,7 @@
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Themes\VSThemeFile1.vstheme">
+    <None Include="Themes\DokiThemeTest.vstheme">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

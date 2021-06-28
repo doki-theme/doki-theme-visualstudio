@@ -1,5 +1,5 @@
 ﻿<Themes>
-  <Theme Name="VSThemeFile1 (1)" GUID="{0ac012a7-b0bb-49c1-b91a-373f08ed73d4}" BaseGUID="{1ded0138-47ce-435e-84ef-9ec1f439b749}">
+  <Theme Name="Doki: Test" GUID="{0ac012a7-b0bb-49c1-b91a-373f08ed73d4}" BaseGUID="{1ded0138-47ce-435e-84ef-9ec1f439b749}">
     <Category Name="ACDCOverview" GUID="{c8887ac6-3c60-4209-9d69-8f4c12a60044}">
       <Color Name="Body">
         <Background Type="CT_RAW" Source="FF222224" />
