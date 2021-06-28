@@ -60,8 +60,12 @@ namespace doki_theme_visualstudio {
 
     private static void GetImageSource(Action<BitmapSource> bitmapConsumer) {
       Task.Run(async () => {
+        var stickerName = ThemeManager.Instance.ThemeById("5fb9c0a4-e613-457c-97a5-6204f9076cef")!.StickerName;
         var wallpaperUrl = await Task.Run(
-          async () => await AssetManager.ResolveAssetUrlAsync(AssetCategory.Backgrounds, "wallpapers/ryuko.png")
+          async () => await AssetManager.ResolveAssetUrlAsync(
+            AssetCategory.Backgrounds, 
+            $"wallpapers/{stickerName}"
+            )
         );
         var wallpaperImagePath = wallpaperUrl ??
                                  throw new NullReferenceException("I don't have a wallpaper, bro.");
