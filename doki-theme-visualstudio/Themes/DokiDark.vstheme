@@ -9354,7 +9354,6 @@
       <Color Name="WindowBorder">
         <Background Type="CT_RAW" Source="FF6688AD"/>
       </Color>
-      >
       <Color Name="WindowButtonDown">
         <Background Type="CT_RAW" Source="FF6688AD"/>
       </Color>
