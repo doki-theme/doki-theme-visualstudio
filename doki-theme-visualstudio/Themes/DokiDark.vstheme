@@ -4058,13 +4058,13 @@
         <Background Type="CT_RAW" Source="FF3d4754"/>
       </Color>
       <Color Name="CommandBarGradientBegin">
-        <Background Type="CT_RAW" Source="FF2b303b"/>
+        <Background Type="CT_RAW" Source="ff323742"/>
       </Color>
       <Color Name="CommandBarGradientEnd">
-        <Background Type="CT_RAW" Source="FF2b303b"/>
+        <Background Type="CT_RAW" Source="ff323742"/>
       </Color>
       <Color Name="CommandBarGradientMiddle">
-        <Background Type="CT_RAW" Source="FF2b303b"/>
+        <Background Type="CT_RAW" Source="ff323742"/>
       </Color>
       <Color Name="CommandBarHover">
         <Background Type="CT_RAW" Source="FF2b303b"/>
