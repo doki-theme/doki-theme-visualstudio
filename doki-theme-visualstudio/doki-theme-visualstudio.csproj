@@ -74,6 +74,9 @@
     <None Include="Themes\DokiDark.vstheme">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Themes\DokiDarkV2.vstheme">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Themes\DokiLight.vstheme">
       <SubType>Designer</SubType>
     </None>

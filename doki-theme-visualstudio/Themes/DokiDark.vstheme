@@ -3409,7 +3409,7 @@
         <Background Type="CT_RAW" Source="FF193D70"/>
       </Color>
       <Color Name="CommandBarOptionsBackground">
-        <Background Type="CT_RAW" Source="FF2b303b"/>
+        <Background Type="CT_RAW" Source="ff323742"/>
       </Color>
       <Color Name="CommandBarOptionsGlyph">
         <Background Type="CT_RAW" Source="FF5D96AC"/>
@@ -3448,22 +3448,22 @@
         <Background Type="CT_RAW" Source="FF000F24"/>
       </Color>
       <Color Name="CommandShelfBackgroundGradientBegin">
-        <Background Type="CT_RAW" Source="FF2b303b"/>
+        <Background Type="CT_RAW" Source="ff323742"/>
       </Color>
       <Color Name="CommandShelfBackgroundGradientMiddle">
-        <Background Type="CT_RAW" Source="FF2b303b"/>
+        <Background Type="CT_RAW" Source="ff323742"/>
       </Color>
       <Color Name="CommandShelfBackgroundGradientEnd">
-        <Background Type="CT_RAW" Source="FF2b303b"/>
+        <Background Type="CT_RAW" Source="ff323742"/>
       </Color>
       <Color Name="CommandShelfHighlightGradientBegin">
-        <Background Type="CT_RAW" Source="FF2b303b"/>
+        <Background Type="CT_RAW" Source="ff323742"/>
       </Color>
       <Color Name="CommandShelfHighlightGradientMiddle">
-        <Background Type="CT_RAW" Source="FF2b303b"/>
+        <Background Type="CT_RAW" Source="ff323742"/>
       </Color>
       <Color Name="CommandShelfHighlightGradientEnd">
-        <Background Type="CT_RAW" Source="FF2b303b"/>
+        <Background Type="CT_RAW" Source="ff323742"/>
       </Color>
       <Color Name="DiagReportBackground">
         <Background Type="CT_RAW" Source="FFE0F6FF"/>
