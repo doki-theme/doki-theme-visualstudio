@@ -7857,15 +7857,15 @@
     </Category>
     <Category Name="Text Editor Text Manager Items" GUID="{58e96763-1d3b-4e05-b6ba-ff7115fd0b7b}">
       <Color Name="Plain Text">
-        <Background Type="CT_RAW" Source="FF323742"/>
+        <Background Type="CT_RAW" Source="FF2b303b"/>
         <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
       </Color>
       <Color Name="Selected Text">
-        <Background Type="CT_RAW" Source="FF4373C2"/>
+        <Background Type="CT_RAW" Source="FF4f3a4e"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Inactive Selected Text">
-        <Background Type="CT_RAW" Source="FFC792EA"/>
+        <Background Type="CT_RAW" Source="FF4f3a4e"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Indicator Margin">
