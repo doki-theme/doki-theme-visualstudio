@@ -3409,7 +3409,7 @@
         <Background Type="CT_RAW" Source="FF193D70"/>
       </Color>
       <Color Name="CommandBarOptionsBackground">
-        <Background Type="CT_RAW" Source="ff323742"/>
+        <Background Type="CT_RAW" Source="FF2b303b"/>
       </Color>
       <Color Name="CommandBarOptionsGlyph">
         <Background Type="CT_RAW" Source="FF5D96AC"/>
@@ -3448,22 +3448,22 @@
         <Background Type="CT_RAW" Source="FF000F24"/>
       </Color>
       <Color Name="CommandShelfBackgroundGradientBegin">
-        <Background Type="CT_RAW" Source="ff323742"/>
+        <Background Type="CT_RAW" Source="FF2b303b"/>
       </Color>
       <Color Name="CommandShelfBackgroundGradientMiddle">
-        <Background Type="CT_RAW" Source="ff323742"/>
+        <Background Type="CT_RAW" Source="FF2b303b"/>
       </Color>
       <Color Name="CommandShelfBackgroundGradientEnd">
-        <Background Type="CT_RAW" Source="ff323742"/>
+        <Background Type="CT_RAW" Source="FF2b303b"/>
       </Color>
       <Color Name="CommandShelfHighlightGradientBegin">
-        <Background Type="CT_RAW" Source="ff323742"/>
+        <Background Type="CT_RAW" Source="FF2b303b"/>
       </Color>
       <Color Name="CommandShelfHighlightGradientMiddle">
-        <Background Type="CT_RAW" Source="ff323742"/>
+        <Background Type="CT_RAW" Source="FF2b303b"/>
       </Color>
       <Color Name="CommandShelfHighlightGradientEnd">
-        <Background Type="CT_RAW" Source="ff323742"/>
+        <Background Type="CT_RAW" Source="FF2b303b"/>
       </Color>
       <Color Name="DiagReportBackground">
         <Background Type="CT_RAW" Source="FFE0F6FF"/>
@@ -4058,13 +4058,13 @@
         <Background Type="CT_RAW" Source="FF3d4754"/>
       </Color>
       <Color Name="CommandBarGradientBegin">
-        <Background Type="CT_RAW" Source="ff323742"/>
+        <Background Type="CT_RAW" Source="FF2b303b"/>
       </Color>
       <Color Name="CommandBarGradientEnd">
-        <Background Type="CT_RAW" Source="ff323742"/>
+        <Background Type="CT_RAW" Source="FF2b303b"/>
       </Color>
       <Color Name="CommandBarGradientMiddle">
-        <Background Type="CT_RAW" Source="ff323742"/>
+        <Background Type="CT_RAW" Source="FF2b303b"/>
       </Color>
       <Color Name="CommandBarHover">
         <Background Type="CT_RAW" Source="FF2b303b"/>
@@ -5012,11 +5012,11 @@
         <Background Type="CT_RAW" Source="FF2b303b"/>
       </Color>
       <Color Name="MainWindowActiveCaption">
-        <Background Type="CT_RAW" Source="FF323742"/>
+        <Background Type="CT_RAW" Source="FF2b303b"/>
         <Foreground Type="CT_RAW" Source="FF5D96AC"/>
       </Color>
       <Color Name="MainWindowInactiveCaption">
-        <Background Type="CT_RAW" Source="FF323742"/>
+        <Background Type="CT_RAW" Source="FF2b303b"/>
         <Foreground Type="CT_RAW" Source="995D96AC"/>
       </Color>
       <Color Name="MainWindowButtonDownGlyph">
