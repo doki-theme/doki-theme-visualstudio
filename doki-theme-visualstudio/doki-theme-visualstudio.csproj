@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
@@ -6,7 +6,6 @@
     <LangVersion>8</LangVersion>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -46,26 +45,29 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''"/>
   <ItemGroup>
-    <Compile Include="AssetManager.cs" />
+    <Compile Include="AssetManager.cs"/>
     <Compile Include="DokiThemeSettings.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Command1.cs" />
-    <Compile Include="Extensions.cs" />
-    <Compile Include="ImageTools.cs" />
-    <Compile Include="LocalAssetService.cs" />
-    <Compile Include="LocalStorageService.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="doki_theme_visualstudioPackage.cs" />
-    <Compile Include="TheDokiTheme.cs" />
-    <Compile Include="ThemeManager.cs" />
-    <Compile Include="ToolBox.cs" />
-    <Compile Include="UITools.cs" />
-    <Compile Include="StickerAdornment.cs" />
-    <Compile Include="StickerAdornmentTextViewCreationListener.cs" />
-    <Compile Include="WallpaperAdornment.cs" />
-    <Compile Include="WallpaperAdornmentTextViewCreationListener.cs" />
+    <Compile Include="Command1.cs"/>
+    <Compile Include="Extensions.cs"/>
+    <Compile Include="ImageTools.cs"/>
+    <Compile Include="LocalAssetService.cs"/>
+    <Compile Include="LocalStorageService.cs"/>
+    <Compile Include="Properties\AssemblyInfo.cs"/>
+    <Compile Include="doki_theme_visualstudioPackage.cs"/>
+    <Compile Include="TheDokiTheme.cs"/>
+    <Compile Include="ThemeManager.cs"/>
+    <Compile Include="ToolBox.cs"/>
+    <Compile Include="UITools.cs"/>
+    <Compile Include="StickerAdornment.cs"/>
+    <Compile Include="StickerAdornmentTextViewCreationListener.cs"/>
+    <Compile Include="WallpaperAdornment.cs"/>
+    <Compile Include="WallpaperAdornmentTextViewCreationListener.cs"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="source.extension.vsixmanifest">
@@ -83,51 +85,204 @@
     <None Include="Themes\DokiThemeTest.vstheme">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Themesgenerated\Maika.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Mai Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Mai Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Mioda Ibuki Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Mioda Ibuki Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Hayase Nagatoro.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Kanna.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Tohru.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Katsuragi Misato.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Rei.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Astolfo.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Ishtar Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Ishtar Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Tohsaka Rin.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Zero Two Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Zero Two Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Gasai Yuno.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Rory Mercury.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Rias Crimson.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Rias Onyx.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Jabami Yumeko.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Ryuko.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Satsuki.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Aqua.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Darkness Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Darkness Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Megumin.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Monika Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Monika Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Natsuki Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Natsuki Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Sayori Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Sayori Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Yuri Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Yuri Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Sonoda Umi.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Konata.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Hatsune Miku.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Hanekawa Tsubasa.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Miia.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Yukinoshita Yukino.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Nakano Miku.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Nakano Nino.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Beatrice.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Echidna.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Emilia Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Emilia Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Ram.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Rem.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Makise Kurisu.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Asuna Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Asuna Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Gray.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Shima Rin.vstheme">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
-    <Reference Include="System" />
-    <Reference Include="System.ComponentModel.Composition" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Design" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xaml" />
-    <Reference Include="System.Xml" />
-    <Reference Include="WindowsBase" />
+    <Reference Include="Microsoft.CSharp"/>
+    <Reference Include="PresentationCore"/>
+    <Reference Include="PresentationFramework"/>
+    <Reference Include="System"/>
+    <Reference Include="System.ComponentModel.Composition"/>
+    <Reference Include="System.Data"/>
+    <Reference Include="System.Data.DataSetExtensions"/>
+    <Reference Include="System.Design"/>
+    <Reference Include="System.Drawing"/>
+    <Reference Include="System.Windows.Forms"/>
+    <Reference Include="System.Xaml"/>
+    <Reference Include="System.Xml"/>
+    <Reference Include="WindowsBase"/>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="16.0.206" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="16.0.206" ExcludeAssets="runtime"/>
     <PackageReference Include="Microsoft.VisualStudio.VsixColorCompiler">
       <Version>16.0.0</Version>
     </PackageReference>
-    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="16.10.1055" />
+    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="16.10.1055"/>
   </ItemGroup>
   <ItemGroup>
     <Content Include="doki_logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <EmbeddedResource Include="Resources\DokiThemeDefinitions.json" />
-    <Content Include="Resources\Command1.png" />
-    <VSCTCompile Include="doki_theme_visualstudioPackage.vsct">
-      <ResourceName>Menus.ctmenu</ResourceName>
-    </VSCTCompile>
+    <Content Include="Resources\Command1.png"/>
     <Content Include="LICENSE.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <EmbeddedResource Include="Resources\DokiThemeDefinitions.json"/>
+    <VSCTCompile Include="doki_theme_visualstudioPackage.vsct">
+      <ResourceName>Menus.ctmenu</ResourceName>
+    </VSCTCompile>
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

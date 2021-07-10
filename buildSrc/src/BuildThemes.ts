@@ -10,6 +10,8 @@ import {
 import omit from 'lodash/omit';
 import fs from "fs";
 import path from "path";
+import xmlParser from "xml2js";
+
 
 type AppDokiThemeDefinition = BaseAppDokiThemeDefinition;
 
@@ -106,6 +108,11 @@ const getStickers = (
   };
 };
 
+const xmlBuilder = new xmlParser.Builder();
+
+const toXml = (xml1: string) =>
+  xmlParser.parseStringPromise(xml1)
+
 console.log("Preparing to generate themes.");
 const solutionsDirectory = path.resolve(repoDirectory, "doki-theme-visualstudio");
 
@@ -115,6 +122,10 @@ if (!fs.existsSync(generatedThemesDirectory)) {
   fs.mkdirSync(generatedThemesDirectory, {recursive: true})
 }
 
+function getVSThemeName(dokiTheme: { path: string; appThemeDefinition: BaseAppDokiThemeDefinition; definition: MasterDokiThemeDefinition; stickers: { defaultSticker: { path: string; name: string } }; theme: {}; templateVariables: DokiThemeVisualStudio }) {
+  return `${getName(dokiTheme.definition)}.vstheme`;
+}
+
 evaluateTemplates(
   {
     appName: 'visualstudio',
@@ -122,24 +133,56 @@ evaluateTemplates(
   },
   createDokiTheme
 )
-  .then((dokiThemes) => {
+  .then(async (dokiThemes) => {
 
     const darkTemplate = fs.readFileSync(
       path.resolve(appTemplatesDirectoryPath, 'DokiDark.vstheme.template'),
       {encoding: 'utf-8'}
     )
-    
+
+    const csProjFilePath = path.resolve(solutionsDirectory, 'doki-theme-visualstudio.csproj');
+    const csProjFile = await toXml(
+      fs.readFileSync(
+        csProjFilePath,
+        {encoding: 'utf-8'}
+      )
+    )
+
+    csProjFile.Project.ItemGroup = csProjFile.Project.ItemGroup.map(
+      (itemGroup: any) => {
+        if (!!itemGroup.None) {
+          return {
+            None: [
+              ...itemGroup.None.filter(
+                (none: any) => !none.$.Include.startsWith('Themes\generated'),
+              ),
+              ...dokiThemes.map(dokiTheme => ({
+                '$': {Include: `Themes\generated\\${getVSThemeName(dokiTheme)}`},
+                SubType: ['Designer']
+              }))
+            ]
+          }
+        }
+
+        return itemGroup
+      }
+    )
+
+
+    const xml = xmlBuilder.buildObject(csProjFile);
+    fs.writeFileSync(csProjFilePath, xml, 'utf8');
+
     const themes = dokiThemes
       .filter(dokiTheme => dokiTheme.definition.dark);
-    
+
     // write things for extension
     themes.forEach(dokiTheme => {
       fs.writeFileSync(
-        path.resolve(generatedThemesDirectory, `${getName(dokiTheme.definition)}.vstheme`),
+        path.resolve(generatedThemesDirectory, getVSThemeName(dokiTheme)),
         darkTemplate
       )
     });
-    
+
     const dokiThemeDefinitions = themes
       .map((dokiTheme) => {
         const dokiDefinition = dokiTheme.definition;
