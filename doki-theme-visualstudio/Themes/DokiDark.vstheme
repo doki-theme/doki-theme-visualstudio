@@ -7869,7 +7869,7 @@
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Indicator Margin">
-        <Background Type="CT_RAW" Source="FF1B2A36"/>
+        <Background Type="CT_RAW" Source="FF2e343e"/>
         <Foreground Type="CT_RAW" Source="00000000"/>
       </Color>
       <Color Name="Visible Whitespace">
