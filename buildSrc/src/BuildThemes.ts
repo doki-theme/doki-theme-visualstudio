@@ -158,10 +158,10 @@ evaluateTemplates(
               ...itemGroup.None.filter(
                 (none: any) => !none.$.Include.startsWith('Themes\generated'),
               ),
-              ...dokiThemes.map(dokiTheme => ({
-                '$': {Include: `Themes\generated\\${getVSThemeName(dokiTheme)}`},
-                SubType: ['Designer']
-              }))
+              // ...dokiThemes.map(dokiTheme => ({
+              //   '$': {Include: `Themes\generated\\${getVSThemeName(dokiTheme)}`},
+              //   SubType: ['Designer']
+              // }))
             ]
           }
         }
@@ -178,15 +178,16 @@ evaluateTemplates(
       .filter(dokiTheme => dokiTheme.definition.dark);
 
     // write things for extension
-    await themes.reduce((accum, dokiTheme) => {
-      return accum.then(async () => {
-        const template = await resolveVisualStudioThemeTemplate(darkTemplate, dokiTheme);
-        fs.writeFileSync(
-          path.resolve(generatedThemesDirectory, getVSThemeName(dokiTheme)),
-          template
-        )
-      })
-    }, Promise.resolve());
+    
+    // await themes.reduce((accum, dokiTheme) => {
+    //   return accum.then(async () => {
+    //     const template = await resolveVisualStudioThemeTemplate(darkTemplate, dokiTheme);
+    //     fs.writeFileSync(
+    //       path.resolve(generatedThemesDirectory, getVSThemeName(dokiTheme)),
+    //       template
+    //     )
+    //   })
+    // }, Promise.resolve());
 
     const dokiThemeDefinitions = themes
       .map((dokiTheme) => {
