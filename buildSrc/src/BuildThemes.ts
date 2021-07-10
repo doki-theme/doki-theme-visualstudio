@@ -16,6 +16,7 @@ type AppDokiThemeDefinition = BaseAppDokiThemeDefinition;
 const {
   repoDirectory,
   masterThemeDefinitionDirectoryPath,
+  appTemplatesDirectoryPath,
 } = resolvePaths(__dirname);
 
 // todo: dis
@@ -106,7 +107,13 @@ const getStickers = (
 };
 
 console.log("Preparing to generate themes.");
-const themesDirectory = path.resolve(repoDirectory, "doki-theme-visualstudio");
+const solutionsDirectory = path.resolve(repoDirectory, "doki-theme-visualstudio");
+
+const generatedThemesDirectory = path.resolve(solutionsDirectory, 'Themes', 'generated')
+
+if (!fs.existsSync(generatedThemesDirectory)) {
+  fs.mkdirSync(generatedThemesDirectory, {recursive: true})
+}
 
 evaluateTemplates(
   {
@@ -117,8 +124,23 @@ evaluateTemplates(
 )
   .then((dokiThemes) => {
 
+    const darkTemplate = fs.readFileSync(
+      path.resolve(appTemplatesDirectoryPath, 'DokiDark.vstheme.template'),
+      {encoding: 'utf-8'}
+    )
+    
+    const themes = dokiThemes
+      .filter(dokiTheme => dokiTheme.definition.dark);
+    
     // write things for extension
-    const dokiThemeDefinitions = dokiThemes
+    themes.forEach(dokiTheme => {
+      fs.writeFileSync(
+        path.resolve(generatedThemesDirectory, `${getName(dokiTheme.definition)}.vstheme`),
+        darkTemplate
+      )
+    });
+    
+    const dokiThemeDefinitions = themes
       .map((dokiTheme) => {
         const dokiDefinition = dokiTheme.definition;
         return {
@@ -138,7 +160,7 @@ evaluateTemplates(
       }, {});
     const finalDokiDefinitions = JSON.stringify(dokiThemeDefinitions);
     fs.writeFileSync(
-      path.resolve(themesDirectory, "Resources", "DokiThemeDefinitions.json"),
+      path.resolve(solutionsDirectory, "Resources", "DokiThemeDefinitions.json"),
       finalDokiDefinitions
     );
 
@@ -146,3 +168,7 @@ evaluateTemplates(
   .then(() => {
     console.log("Theme Generation Complete!");
   });
+
+function getName(dokiDefinition: MasterDokiThemeDefinition) {
+  return dokiDefinition.name.replace(':', '');
+}

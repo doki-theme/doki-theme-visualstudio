@@ -416,3 +416,5 @@ FodyWeavers.xsd
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+doki-theme-visualstudio/Themes/generated
