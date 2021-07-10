@@ -122,6 +122,10 @@ const generatedThemesDirectory = path.resolve(solutionsDirectory, 'Themes', 'gen
 
 if (!fs.existsSync(generatedThemesDirectory)) {
   fs.mkdirSync(generatedThemesDirectory, {recursive: true})
+} else {
+  fs.readdirSync(generatedThemesDirectory).forEach(
+    generatedThemePath => fs.rmSync(path.resolve(generatedThemesDirectory, generatedThemePath))
+  )
 }
 
 function getVSThemeName(dokiTheme: { path: string; appThemeDefinition: BaseAppDokiThemeDefinition; definition: MasterDokiThemeDefinition; stickers: { defaultSticker: { path: string; name: string } }; theme: {}; templateVariables: DokiThemeVisualStudio }) {
@@ -136,6 +140,13 @@ evaluateTemplates(
   createDokiTheme
 )
   .then(async (dokiThemes) => {
+    const specificTheme = process.argv[2];
+    const themes = dokiThemes
+      .filter(dokiTheme => dokiTheme.definition.dark)
+      .filter(
+        dokiTheme => !specificTheme ||
+          specificTheme == dokiTheme.definition.id
+      );
 
     const darkTemplate = fs.readFileSync(
       path.resolve(appTemplatesDirectoryPath, 'DokiDark.vstheme.template'),
@@ -158,10 +169,10 @@ evaluateTemplates(
               ...itemGroup.None.filter(
                 (none: any) => !none.$.Include.startsWith('Themes\generated'),
               ),
-              // ...dokiThemes.map(dokiTheme => ({
-              //   '$': {Include: `Themes\generated\\${getVSThemeName(dokiTheme)}`},
-              //   SubType: ['Designer']
-              // }))
+              ...themes.map(dokiTheme => ({
+                '$': {Include: `Themes\generated\\${getVSThemeName(dokiTheme)}`},
+                SubType: ['Designer']
+              }))
             ]
           }
         }
@@ -174,20 +185,17 @@ evaluateTemplates(
     const xml = xmlBuilder.buildObject(csProjFile);
     fs.writeFileSync(csProjFilePath, xml, 'utf8');
 
-    const themes = dokiThemes
-      .filter(dokiTheme => dokiTheme.definition.dark);
-
     // write things for extension
-    
-    // await themes.reduce((accum, dokiTheme) => {
-    //   return accum.then(async () => {
-    //     const template = await resolveVisualStudioThemeTemplate(darkTemplate, dokiTheme);
-    //     fs.writeFileSync(
-    //       path.resolve(generatedThemesDirectory, getVSThemeName(dokiTheme)),
-    //       template
-    //     )
-    //   })
-    // }, Promise.resolve());
+
+    await themes.reduce((accum, dokiTheme) => {
+      return accum.then(async () => {
+        const template = await resolveVisualStudioThemeTemplate(darkTemplate, dokiTheme);
+        fs.writeFileSync(
+          path.resolve(generatedThemesDirectory, getVSThemeName(dokiTheme)),
+          template
+        )
+      })
+    }, Promise.resolve());
 
     const dokiThemeDefinitions = themes
       .map((dokiTheme) => {
