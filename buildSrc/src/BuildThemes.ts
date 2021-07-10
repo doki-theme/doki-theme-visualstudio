@@ -3,8 +3,10 @@ import {
   constructNamedColorTemplate,
   DokiThemeDefinitions,
   evaluateTemplates,
+  fillInTemplateScript,
   MasterDokiThemeDefinition,
   resolvePaths,
+  resolveTemplate,
   StringDictionary,
 } from "doki-build-source";
 import omit from 'lodash/omit';
@@ -176,12 +178,15 @@ evaluateTemplates(
       .filter(dokiTheme => dokiTheme.definition.dark);
 
     // write things for extension
-    themes.forEach(dokiTheme => {
-      fs.writeFileSync(
-        path.resolve(generatedThemesDirectory, getVSThemeName(dokiTheme)),
-        darkTemplate
-      )
-    });
+    await themes.reduce((accum, dokiTheme) => {
+      return accum.then(async () => {
+        const template = await resolveVisualStudioThemeTemplate(darkTemplate, dokiTheme);
+        fs.writeFileSync(
+          path.resolve(generatedThemesDirectory, getVSThemeName(dokiTheme)),
+          template
+        )
+      })
+    }, Promise.resolve());
 
     const dokiThemeDefinitions = themes
       .map((dokiTheme) => {
@@ -215,3 +220,13 @@ evaluateTemplates(
 function getName(dokiDefinition: MasterDokiThemeDefinition) {
   return dokiDefinition.name.replace(':', '');
 }
+
+async function resolveVisualStudioThemeTemplate(darkTemplate: string, dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { secondary?: { path: string; name: string; } | undefined; defaultSticker: { path: string; name: string; }; }; templateVariables: DokiThemeVisualStudio; theme: {}; appThemeDefinition: BaseAppDokiThemeDefinition; }): Promise<string> {
+  const filledInTemplate = fillInTemplateScript(darkTemplate, dokiTheme.templateVariables);
+  const templateAsXml = await toXml(filledInTemplate)
+  const themeElement = templateAsXml.Themes.Theme[0];
+  themeElement.$.Name = getName(dokiTheme.definition);
+  themeElement.$.GUID = `{${dokiTheme.definition.id}}`
+  return xmlBuilder.buildObject(templateAsXml)
+}
+
