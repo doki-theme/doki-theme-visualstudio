@@ -43,7 +43,8 @@ function buildTemplateVariables(
   const cleanedColors = Object.entries(namedColors)
     .reduce((accum, [colorName, colorValue]) => ({
       ...accum,
-      [colorName]: colorValue,
+      [colorName]: colorValue.startsWith('#') ?
+        colorValue.substr(1) : colorValue,
     }), {});
   return {
     ...cleanedColors,

@@ -46,6 +46,10 @@ namespace doki_theme_visualstudio {
     public string StickerName => _definition.stickers.defaultSticker.name;
   }
 
+  public class ThemeChangedArgs {
+    
+  }
+  public delegate void DokiThemeObserver(ThemeChangedArgs themeChangedArgs);
 
   public class ThemeManager {
     private static ThemeManager? _instance;
@@ -68,6 +72,8 @@ namespace doki_theme_visualstudio {
     public static void Init(AsyncPackage package) {
       _instance ??= new ThemeManager(ReadThemes());
     }
+
+    public event EventHandler<DokiThemeObserver> DokiThemeChanged;
 
     public DokiTheme? ThemeById(string themeId) {
       var dokiThemeDefinition = _themes[themeId];
