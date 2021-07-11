@@ -141,11 +141,14 @@ evaluateTemplates(
 )
   .then(async (dokiThemes) => {
     const specificTheme = process.argv[2];
+    const specifiedThemes = process.argv.slice(2);
     const themes = dokiThemes
       .filter(dokiTheme => dokiTheme.definition.dark)
       .filter(
         dokiTheme => !specificTheme ||
-          specificTheme == dokiTheme.definition.id
+          specifiedThemes.findIndex(
+            themeId => themeId === dokiTheme.definition.id
+          ) > -1
       );
 
     const darkTemplate = fs.readFileSync(
