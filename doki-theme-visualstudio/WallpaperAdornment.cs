@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Channels;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -45,6 +46,10 @@ namespace doki_theme_visualstudio {
           AlignmentY = AlignmentY.Bottom,
           Opacity = 1.0,
           Viewbox = new Rect(new Point(0, 0), new Size(1, 1)),
+        };
+
+        ThemeManager.Instance.DokiThemeChanged += (_, themeChangedArgs) => {
+          DrawWallpaper();
         };
 
         DrawWallpaper();

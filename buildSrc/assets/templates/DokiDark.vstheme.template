@@ -4328,7 +4328,7 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="PanelHyperlinkHover">
-        <Background Type="CT_RAW" Source="FFC5CAE9"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="PanelHyperlinkPressed">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>

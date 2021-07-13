@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using Microsoft.VisualStudio.PlatformUI;
 using Microsoft.VisualStudio.Settings;
@@ -47,9 +48,12 @@ namespace doki_theme_visualstudio {
   }
 
   public class ThemeChangedArgs {
-    
+    public ThemeChangedArgs(DokiTheme? theme) {
+      Theme = theme;
+    }
+
+    public DokiTheme? Theme { get; }
   }
-  public delegate void DokiThemeObserver(ThemeChangedArgs themeChangedArgs);
 
   public class ThemeManager {
     private static ThemeManager? _instance;
@@ -58,11 +62,18 @@ namespace doki_theme_visualstudio {
 
     private ThemeManager(Dictionary<string, DokiThemeDefinition> themes) {
       _themes = themes;
-
+      
+      Dictionary<string, DokiTheme> themesByColours = themes.ToDictionary(pair => {
+        var colors = pair.Value.colors;
+        return $"{colors["accentColor"]}{colors["textEditorBackground"]}";
+      }, pair => new DokiTheme(pair.Value));
       VSColorTheme.ThemeChanged += themeArguments => {
-        var defaultBackground = VSColorTheme.GetThemedColor(EnvironmentColors.ToolWindowBackgroundColorKey);
-        var defaultForeground = VSColorTheme.GetThemedColor(EnvironmentColors.ToolWindowTextColorKey);
-        Console.WriteLine("Finna bust a nut");
+        var accentColor = VSColorTheme.GetThemedColor(EnvironmentColors.PanelHyperlinkColorKey);
+        var textEditorBackground = VSColorTheme.GetThemedColor(EnvironmentColors.ToolWindowBackgroundColorKey);
+        var colorKey = accentColor.ToString().Substring(2) +
+                        textEditorBackground.ToString().Substring(2);
+        var dokiTheme = themesByColours[colorKey];
+        DokiThemeChanged?.Invoke(this, new ThemeChangedArgs(dokiTheme));
       };
     }
 
@@ -73,7 +84,7 @@ namespace doki_theme_visualstudio {
       _instance ??= new ThemeManager(ReadThemes());
     }
 
-    public event EventHandler<DokiThemeObserver> DokiThemeChanged;
+    public event EventHandler<ThemeChangedArgs>? DokiThemeChanged;
 
     public DokiTheme? ThemeById(string themeId) {
       var dokiThemeDefinition = _themes[themeId];
