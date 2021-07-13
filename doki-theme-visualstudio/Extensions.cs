@@ -35,5 +35,12 @@ namespace doki_theme_visualstudio {
       where T : DependencyObject {
       return obj.Descendants().OfType<T>();
     }
+    
+    public static string ToHexString(this  System.Drawing.Color color){
+      return Convert.ToString(color.R, 16) + 
+             Convert.ToString(color.G, 16) + 
+             Convert.ToString(color.B, 16)
+             ;
+    }
   }
 }

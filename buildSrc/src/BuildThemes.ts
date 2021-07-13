@@ -211,7 +211,10 @@ evaluateTemplates(
             "ui",
             "icons",
           ]),
-          colors: dokiTheme.appThemeDefinition.colors,
+          colors: {
+            textEditorBackground: dokiTheme.templateVariables["textEditorBackground"],
+            accentColor: dokiTheme.templateVariables["accentColor"],
+          },
           stickers: dokiTheme.stickers,
         };
       })
