@@ -83,6 +83,7 @@ namespace doki_theme_visualstudio {
       _registeredListeners = false;
     }
 
+    // todo: opacity flasho
     private void CreateNewImage(BitmapSource source) {
       _image = new ImageBrush(source) {
         Stretch = Stretch.UniformToFill,

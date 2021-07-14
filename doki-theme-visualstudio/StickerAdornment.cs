@@ -58,6 +58,7 @@ namespace doki_theme_visualstudio {
         _registeredLayoutListener = true;
       }
     }
+
     private void AttemptToRemoveLayoutListener() {
       if (_registeredLayoutListener) {
         _view.LayoutChanged -= OnSizeChanged;
@@ -73,17 +74,24 @@ namespace doki_theme_visualstudio {
     }
 
     private static void GetImageSource(DokiTheme theme, Action<BitmapSource> bitmapConsumer) {
-      Task.Run(async () => {
-        var imagePath = await AssetManager.ResolveAssetUrlAsync(
-          AssetCategory.Stickers,
-          theme.StickerPath
-        );
-        if (string.IsNullOrEmpty(imagePath)) return;
+      var themeStickerPath = theme.StickerPath;
+      if (AssetManager.CanResolveSync(AssetCategory.Stickers, themeStickerPath)) {
+        var stickerImagePath = AssetManager.ResolveAssetUrl(AssetCategory.Stickers, themeStickerPath);
+        var stickerBitMap = ImageTools.GetBitmapSourceFromImagePath(stickerImagePath);
+        bitmapConsumer(stickerBitMap);
+      } else {
+        Task.Run(async () => {
+          var stickerImagePath = await AssetManager.ResolveAssetUrlAsync(
+            AssetCategory.Stickers,
+            themeStickerPath
+          );
+          if (string.IsNullOrEmpty(stickerImagePath)) return;
 
-        var finalBitmap = ImageTools.GetBitmapSourceFromImagePath(imagePath!);
-        await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
-        bitmapConsumer(finalBitmap);
-      }).FileAndForget("dokiTheme/StickerLoad");
+          var stickerBitMap = ImageTools.GetBitmapSourceFromImagePath(stickerImagePath!);
+          await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+          bitmapConsumer(stickerBitMap);
+        }).FileAndForget("dokiTheme/StickerLoad");
+      }
     }
 
     private void OnSizeChanged(object sender, EventArgs e) {
