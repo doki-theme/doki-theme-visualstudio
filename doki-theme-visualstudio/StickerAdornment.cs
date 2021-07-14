@@ -24,25 +24,40 @@ namespace doki_theme_visualstudio {
       RemoveAdornment();
 
       ThemeManager.Instance.DokiThemeChanged += (_, themeChangedArgs) => {
-        var bustin = SettingsService.Instance.Bustin;
         var newDokiTheme = themeChangedArgs.Theme;
-        if (newDokiTheme != null) {
+        if (newDokiTheme != null && SettingsService.Instance.DrawSticker) {
           GetImageSource(newDokiTheme, newSource => {
             CreateNewImage(newSource);
             DrawImage();
             AttemptToRegisterLayoutListener();
           });
         } else {
-          RemoveAdornment();
-          AttemptToRemoveLayoutListener();
+          RemoveStickerStuff();
         }
       };
 
+      SettingsService.Instance.SettingsChanged += (_, service) => {
+        if (service.DrawSticker) {
+          DrawCurrentSticker();
+        } else {
+          RemoveStickerStuff();
+        }
+      };
 
+      if (!SettingsService.Instance.DrawSticker) return;
+
+      DrawCurrentSticker();
+    }
+
+    private void RemoveStickerStuff() {
+      RemoveAdornment();
+      AttemptToRemoveLayoutListener();
+    }
+
+    private void DrawCurrentSticker() {
       ThemeManager.Instance.GetCurrentTheme(dokiTheme => {
         GetImageSource(dokiTheme, source => {
           CreateNewImage(source);
-
           DrawImage();
           AttemptToRegisterLayoutListener();
         });
@@ -54,17 +69,15 @@ namespace doki_theme_visualstudio {
     }
 
     private void AttemptToRegisterLayoutListener() {
-      if (!_registeredLayoutListener) {
-        _view.LayoutChanged += OnSizeChanged;
-        _registeredLayoutListener = true;
-      }
+      if (_registeredLayoutListener) return;
+      _view.LayoutChanged += OnSizeChanged;
+      _registeredLayoutListener = true;
     }
 
     private void AttemptToRemoveLayoutListener() {
-      if (_registeredLayoutListener) {
-        _view.LayoutChanged -= OnSizeChanged;
-        _registeredLayoutListener = false;
-      }
+      if (!_registeredLayoutListener) return;
+      _view.LayoutChanged -= OnSizeChanged;
+      _registeredLayoutListener = false;
     }
 
     private void CreateNewImage(BitmapSource source) {

@@ -22,11 +22,17 @@ namespace doki_theme_visualstudio {
     private SettingsService(Package package) {
       _package = package;
     }
+    
+    public event EventHandler<SettingsService>? SettingsChanged;
 
-    public bool Bustin {
+    public void ShitChangedYo() {
+      SettingsChanged?.Invoke(this, this);
+    }
+
+    public bool DrawSticker {
       get {
         var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
-        return page.Bustin;
+        return page.DrawSticker;
       }
     }
   }
@@ -40,6 +46,13 @@ namespace doki_theme_visualstudio {
       get { return _bustin; }
       set { _bustin = value; }
     }
+    
+    bool _drawSticker = true;
+    [DescriptionAttribute("Draw the cute sticker in the bottom right hand corner of your editor?")]
+    public bool DrawSticker {
+      get { return _drawSticker; }
+      set { _drawSticker = value; }
+    }
 
     [DescriptionAttribute("Bustin makes me feel good")]
     [EditorAttribute(typeof(BrowseFile), typeof(UITypeEditor))]
@@ -47,7 +60,7 @@ namespace doki_theme_visualstudio {
 
     protected override void OnApply(PageApplyEventArgs e) {
       base.OnApply(e);
-      Bustin.Equals(e);
+      SettingsService.Instance.ShitChangedYo();
     }
   }
 
