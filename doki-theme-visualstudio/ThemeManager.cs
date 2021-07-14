@@ -92,7 +92,9 @@ namespace doki_theme_visualstudio {
       var textEditorBackground = VSColorTheme.GetThemedColor(EnvironmentColors.ToolWindowBackgroundColorKey);
       var colorKey = accentColor.ToHexString() +
                      textEditorBackground.ToHexString();
-      return _themesByColors[colorKey.ToLower()];
+
+      var key = colorKey.ToLower();
+      return _themesByColors.ContainsKey(key) ? _themesByColors[key] : null;
     }
 
     public static ThemeManager Instance =>

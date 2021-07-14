@@ -15,39 +15,54 @@ namespace doki_theme_visualstudio {
 
     private readonly IWpfTextView _view;
 
+    private bool _registeredLayoutListener;
+
     public StickerAdornment(IWpfTextView view) {
       _view = view ?? throw new ArgumentNullException(nameof(view));
 
       _adornmentLayer = view.GetAdornmentLayer("StickerAdorment");
-      _adornmentLayer.RemoveAdornmentsByTag(TagName);
+      RemoveAdornment();
+
+      ThemeManager.Instance.DokiThemeChanged += (_, themeChangedArgs) => {
+        var newDokiTheme = themeChangedArgs.Theme;
+        if (newDokiTheme != null) {
+          GetImageSource(newDokiTheme, newSource => {
+            CreateNewImage(newSource);
+            DrawImage();
+            AttemptToRegisterLayoutListener();
+          });
+        } else {
+          RemoveAdornment();
+          AttemptToRemoveLayoutListener();
+        }
+      };
+
 
       ThemeManager.Instance.GetCurrentTheme(dokiTheme => {
         GetImageSource(dokiTheme, source => {
           CreateNewImage(source);
 
           DrawImage();
-
-          ThemeManager.Instance.DokiThemeChanged += (_, themeChangedArgs) => {
-            var newDokiTheme = themeChangedArgs.Theme;
-            if (newDokiTheme != null) {
-              GetImageSource(newDokiTheme, newSource => {
-                CreateNewImage(newSource);
-                DrawImage();
-              });
-            } else {
-              // todo: remove sticker
-            }
-          };
-          
-          // todo: fancy animation
-          // var fadeInAnimation = new DoubleAnimation(0.0, 1.0, TimeSpan.FromMilliseconds(500));
-          // _image.BeginAnimation(UIElement.OpacityProperty, fadeInAnimation);
-          // fadeInAnimation.Completed += (_, __) => {
-          // _image.Opacity = 1.0;
-          _view.LayoutChanged += OnSizeChanged;
-          // };
+          AttemptToRegisterLayoutListener();
         });
       });
+    }
+
+    private void RemoveAdornment() {
+      _adornmentLayer.RemoveAdornmentsByTag(TagName);
+    }
+
+    private void AttemptToRegisterLayoutListener() {
+      if (!_registeredLayoutListener) {
+        _view.LayoutChanged += OnSizeChanged;
+        _registeredLayoutListener = true;
+      }
+    }
+    private void AttemptToRemoveLayoutListener() {
+      if (_registeredLayoutListener) {
+        _view.LayoutChanged -= OnSizeChanged;
+        _registeredLayoutListener = false;
+      }
     }
 
     private void CreateNewImage(BitmapSource source) {
@@ -78,7 +93,7 @@ namespace doki_theme_visualstudio {
     private void DrawImage() {
       if (_image == null) return;
 
-      _adornmentLayer.RemoveAdornmentsByTag(TagName);
+      RemoveAdornment();
 
       // place in lower right hand corner
       Canvas.SetLeft(_image, _view.ViewportRight - _image.ActualWidth);
