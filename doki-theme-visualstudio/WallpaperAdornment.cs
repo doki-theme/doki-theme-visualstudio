@@ -86,6 +86,7 @@ namespace doki_theme_visualstudio {
     private void RemoveWallpaperStuff() {
       RemoveWallpaper();
       AttemptToRemoveListeners();
+      _image = null;
     }
 
     private void AttemptToRegisterListeners() {

@@ -53,6 +53,7 @@ namespace doki_theme_visualstudio {
     private void RemoveStickerStuff() {
       RemoveAdornment();
       AttemptToRemoveLayoutListener();
+      _image = null;
     }
 
     private void DrawCurrentSticker() {
