@@ -65,13 +65,14 @@ namespace doki_theme_visualstudio {
 
     private ThemeManager(Dictionary<string, DokiThemeDefinition> themes) {
       _themes = themes;
-      
+
       _themesByColors = themes.ToDictionary(pair => {
         var colors = pair.Value.colors;
         return $"{colors["accentColor"].ToLower()}{colors["textEditorBackground"].ToLower()}";
       }, pair => new DokiTheme(pair.Value));
       VSColorTheme.ThemeChanged += themeArguments => {
         var currentDokiTheme = GetCurrentDokiTheme();
+        if (currentDokiTheme == _currentTheme) return;
         _currentTheme = currentDokiTheme;
         DokiThemeChanged?.Invoke(this, new ThemeChangedArgs(currentDokiTheme));
       };

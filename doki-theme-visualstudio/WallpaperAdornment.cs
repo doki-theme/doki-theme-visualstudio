@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Channels;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -38,45 +37,59 @@ namespace doki_theme_visualstudio {
 
       RefreshAdornment();
 
-      GetImageSource(source => {
-        _image = new ImageBrush(source) {
-          Stretch = Stretch.UniformToFill,
-          AlignmentX = AlignmentX.Right,
-          AlignmentY = AlignmentY.Bottom,
-          Opacity = 1.0,
-          Viewbox = new Rect(new Point(0, 0), new Size(1, 1)),
-        };
+      ThemeManager.Instance.GetCurrentTheme(dokiTheme => {
+        GetImageSource(dokiTheme, source => {
+          CreateNewImage(source);
 
-        ThemeManager.Instance.DokiThemeChanged += (_, themeChangedArgs) => { DrawWallpaper(); };
+          ThemeManager.Instance.DokiThemeChanged += (_, themeChangedArgs) => {
+            var newDokiTheme = themeChangedArgs.Theme;
+            if (newDokiTheme != null) {
+              GetImageSource(newDokiTheme, source => {
+                CreateNewImage(source);
+                DrawWallpaper();
+              });
+            } else {
+              // todo: remove wallpaper
+            }
+          };
 
-        DrawWallpaper();
+          DrawWallpaper();
 
-        view.LayoutChanged += OnSizeChanged;
-        view.BackgroundBrushChanged += BackgroundBrushChanged;
+          view.LayoutChanged += OnSizeChanged;
+          view.BackgroundBrushChanged += BackgroundBrushChanged;
+        });
       });
+    }
+
+    private void CreateNewImage(BitmapSource source) {
+      _image = new ImageBrush(source) {
+        Stretch = Stretch.UniformToFill,
+        AlignmentX = AlignmentX.Right,
+        AlignmentY = AlignmentY.Bottom,
+        Opacity = 1.0,
+        Viewbox = new Rect(new Point(0, 0), new Size(1, 1)),
+      };
     }
 
     private void BackgroundBrushChanged(object sender, BackgroundBrushChangedEventArgs e) {
       RefreshAdornment();
     }
 
-    private static void GetImageSource(Action<BitmapSource> bitmapConsumer) {
-      ThemeManager.Instance.GetCurrentTheme(theme => {
-        Task.Run(async () => {
-          var stickerName = theme.StickerName;
-          var wallpaperUrl = await Task.Run(
-            async () => await AssetManager.ResolveAssetUrlAsync(
-              AssetCategory.Backgrounds,
-              $"wallpapers/{stickerName}"
-            )
-          );
-          var wallpaperImagePath = wallpaperUrl ??
-                                   throw new NullReferenceException("I don't have a wallpaper, bro.");
-          var wallpaperBitMap = ImageTools.GetBitmapSourceFromImagePath(wallpaperImagePath);
-          await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
-          bitmapConsumer(wallpaperBitMap);
-        }).FileAndForget("dokiTheme/wallpaperLoad");
-      });
+    private static void GetImageSource(DokiTheme theme, Action<BitmapSource> bitmapConsumer) {
+      Task.Run(async () => {
+        var stickerName = theme.StickerName;
+        var wallpaperUrl = await Task.Run(
+          async () => await AssetManager.ResolveAssetUrlAsync(
+            AssetCategory.Backgrounds,
+            $"wallpapers/{stickerName}"
+          )
+        );
+        var wallpaperImagePath = wallpaperUrl ??
+                                 throw new NullReferenceException("I don't have a wallpaper, bro.");
+        var wallpaperBitMap = ImageTools.GetBitmapSourceFromImagePath(wallpaperImagePath);
+        await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+        bitmapConsumer(wallpaperBitMap);
+      }).FileAndForget("dokiTheme/wallpaperLoad");
     }
 
     private void OnSizeChanged(object sender, EventArgs e) {
@@ -94,19 +107,18 @@ namespace doki_theme_visualstudio {
 
       if (!(possiblyBackground is ImageBrush)) {
         DrawWallpaper();
-      }
-      else {
+      } else {
         var background = (ImageBrush)possiblyBackground;
 
         // This is the stupidest shit, the 
         // background will artifact when the user scrolls.
         // Unless we do this everytime the layout changes,
-        // The background will be big sad.
+        // the background will be big sad.
         ThreadHelper.JoinableTaskFactory.Run(async () => {
           await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
           ToolBox.RunSafely(() => {
             background.Opacity = 1 - 0.01;
-            background.Opacity = 1;
+            background.Opacity = 0.07;
           }, _ => { });
         });
       }
