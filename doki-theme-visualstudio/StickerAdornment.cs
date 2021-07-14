@@ -21,37 +21,54 @@ namespace doki_theme_visualstudio {
       _adornmentLayer = view.GetAdornmentLayer("StickerAdorment");
       _adornmentLayer.RemoveAdornmentsByTag(TagName);
 
-      GetImageSource(source => {
-        _image = new Image {
-          Source = source,
-          Opacity = 1.0
-        };
+      ThemeManager.Instance.GetCurrentTheme(dokiTheme => {
+        GetImageSource(dokiTheme, source => {
+          CreateNewImage(source);
 
-        DrawImage();
-        // todo: fancy animation
-        // var fadeInAnimation = new DoubleAnimation(0.0, 1.0, TimeSpan.FromMilliseconds(500));
-        // _image.BeginAnimation(UIElement.OpacityProperty, fadeInAnimation);
-        // fadeInAnimation.Completed += (_, __) => {
-        // _image.Opacity = 1.0;
-        _view.LayoutChanged += OnSizeChanged;
-        // };
+          DrawImage();
+
+          ThemeManager.Instance.DokiThemeChanged += (_, themeChangedArgs) => {
+            var newDokiTheme = themeChangedArgs.Theme;
+            if (newDokiTheme != null) {
+              GetImageSource(newDokiTheme, newSource => {
+                CreateNewImage(newSource);
+                DrawImage();
+              });
+            } else {
+              // todo: remove sticker
+            }
+          };
+          
+          // todo: fancy animation
+          // var fadeInAnimation = new DoubleAnimation(0.0, 1.0, TimeSpan.FromMilliseconds(500));
+          // _image.BeginAnimation(UIElement.OpacityProperty, fadeInAnimation);
+          // fadeInAnimation.Completed += (_, __) => {
+          // _image.Opacity = 1.0;
+          _view.LayoutChanged += OnSizeChanged;
+          // };
+        });
       });
     }
 
-    private static void GetImageSource(Action<BitmapSource> bitmapConsumer) {
-      ThemeManager.Instance.GetCurrentTheme(theme => {
-        Task.Run(async () => {
-          var imagePath = await AssetManager.ResolveAssetUrlAsync(
-            AssetCategory.Stickers,
-            theme.StickerPath
-          );
-          if (string.IsNullOrEmpty(imagePath)) return;
+    private void CreateNewImage(BitmapSource source) {
+      _image = new Image {
+        Source = source,
+        Opacity = 1.0
+      };
+    }
 
-          var finalBitmap = ImageTools.GetBitmapSourceFromImagePath(imagePath!);
-          await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
-          bitmapConsumer(finalBitmap);
-        }).FileAndForget("dokiTheme/StickerLoad");
-      });
+    private static void GetImageSource(DokiTheme theme, Action<BitmapSource> bitmapConsumer) {
+      Task.Run(async () => {
+        var imagePath = await AssetManager.ResolveAssetUrlAsync(
+          AssetCategory.Stickers,
+          theme.StickerPath
+        );
+        if (string.IsNullOrEmpty(imagePath)) return;
+
+        var finalBitmap = ImageTools.GetBitmapSourceFromImagePath(imagePath!);
+        await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+        bitmapConsumer(finalBitmap);
+      }).FileAndForget("dokiTheme/StickerLoad");
     }
 
     private void OnSizeChanged(object sender, EventArgs e) {

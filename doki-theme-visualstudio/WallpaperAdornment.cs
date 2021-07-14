@@ -44,8 +44,8 @@ namespace doki_theme_visualstudio {
           ThemeManager.Instance.DokiThemeChanged += (_, themeChangedArgs) => {
             var newDokiTheme = themeChangedArgs.Theme;
             if (newDokiTheme != null) {
-              GetImageSource(newDokiTheme, source => {
-                CreateNewImage(source);
+              GetImageSource(newDokiTheme, newSource => {
+                CreateNewImage(newSource);
                 DrawWallpaper();
               });
             } else {
