@@ -32,7 +32,6 @@ namespace doki_theme_visualstudio {
     /// </summary>
     /// <param name="textView">The <see cref="IWpfTextView"/> upon which the adornment should be placed</param>
     public void TextViewCreated(IWpfTextView textView) {
-      // The adorment will get wired to the text view events
       new WallpaperAdornment(textView);
     }
   }

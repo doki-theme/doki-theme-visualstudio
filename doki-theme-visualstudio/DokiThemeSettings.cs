@@ -7,17 +7,48 @@ using System.Windows.Forms;
 using System.Windows.Forms.Design;
 
 namespace doki_theme_visualstudio {
-  class DokiThemeSettings : DialogPage {
-    bool helloWorld = true;
+  public class SettingsService {
+    private static SettingsService? _instance;
 
-    public bool HelloWorld {
-      get { return helloWorld; }
-      set { helloWorld = value; }
+    public static SettingsService Instance =>
+      _instance ?? throw new Exception("Expected settings to be initialized!");
+
+    public static void Init(Package package) {
+      _instance ??= new SettingsService(package);
+    }
+
+    private readonly Package _package;
+
+    private SettingsService(Package package) {
+      _package = package;
+    }
+
+    public bool Bustin {
+      get {
+        var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
+        return page.Bustin;
+      }
+    }
+  }
+
+
+  class DokiThemeSettings : DialogPage {
+    bool _bustin = true;
+
+    [DescriptionAttribute("Bustin makes me feel good")]
+    public bool Bustin {
+      get { return _bustin; }
+      set { _bustin = value; }
     }
 
     [DescriptionAttribute("Bustin makes me feel good")]
     [EditorAttribute(typeof(BrowseFile), typeof(UITypeEditor))]
     public string WallpaperImageAbsolutePath { get; set; }
+
+    protected override void OnApply(PageApplyEventArgs e) {
+      base.OnApply(e);
+      Bustin.Equals(e);
+    }
   }
 
   internal class BrowseFile : UITypeEditor {
@@ -34,8 +65,7 @@ namespace doki_theme_visualstudio {
 
         try {
           open.InitialDirectory = Path.GetDirectoryName((string)value);
-        }
-        catch (Exception) {
+        } catch (Exception) {
         }
 
         if (open.ShowDialog() == DialogResult.OK) {

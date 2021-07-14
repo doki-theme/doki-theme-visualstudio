@@ -24,6 +24,7 @@ namespace doki_theme_visualstudio {
       RemoveAdornment();
 
       ThemeManager.Instance.DokiThemeChanged += (_, themeChangedArgs) => {
+        var bustin = SettingsService.Instance.Bustin;
         var newDokiTheme = themeChangedArgs.Theme;
         if (newDokiTheme != null) {
           GetImageSource(newDokiTheme, newSource => {
