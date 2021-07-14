@@ -35,23 +35,28 @@ namespace doki_theme_visualstudio {
         return page.DrawSticker;
       }
     }
+    public bool DrawWallpaper {
+      get {
+        var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
+        return page.DrawWallpaper;
+      }
+    }
   }
 
 
   class DokiThemeSettings : DialogPage {
-    bool _bustin = true;
-
-    [DescriptionAttribute("Bustin makes me feel good")]
-    public bool Bustin {
-      get { return _bustin; }
-      set { _bustin = value; }
-    }
-    
     bool _drawSticker = true;
     [DescriptionAttribute("Draw the cute sticker in the bottom right hand corner of your editor?")]
     public bool DrawSticker {
       get { return _drawSticker; }
       set { _drawSticker = value; }
+    }
+    
+    bool _drawWallpaper = true;
+    [DescriptionAttribute("Draw the beautiful wallpaper in the background of your editor?")]
+    public bool DrawWallpaper {
+      get { return _drawWallpaper; }
+      set { _drawWallpaper = value; }
     }
 
     [DescriptionAttribute("Bustin makes me feel good")]

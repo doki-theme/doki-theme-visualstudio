@@ -44,29 +44,48 @@ namespace doki_theme_visualstudio {
       RefreshAdornment();
 
       AttemptToRegisterListeners();
+      
+      ThemeManager.Instance.DokiThemeChanged += (_, themeChangedArgs) => {
+        var newDokiTheme = themeChangedArgs.Theme;
+        if (newDokiTheme != null) {
+          GetImageSource(newDokiTheme, newSource => {
+            CreateNewImage(newSource);
+            DrawWallpaper();
+          });
+        } else {
+          RemoveWallpaperStuff();
+        }
+      };
+      
+      SettingsService.Instance.SettingsChanged += (_, service) => {
+        if (service.DrawWallpaper) {
+          if (_image != null) return;
+          DrawCurrentThemeWallpaper();
+        } else {
+          RemoveWallpaperStuff();
+        }
+      };
 
+      if(!SettingsService.Instance.DrawWallpaper) return;
+      
+      DrawCurrentThemeWallpaper();
+    }
+
+    private void DrawCurrentThemeWallpaper() {
       ThemeManager.Instance.GetCurrentTheme(dokiTheme => {
         GetImageSource(dokiTheme, source => {
           CreateNewImage(source);
-
-          ThemeManager.Instance.DokiThemeChanged += (_, themeChangedArgs) => {
-            var newDokiTheme = themeChangedArgs.Theme;
-            if (newDokiTheme != null) {
-              GetImageSource(newDokiTheme, newSource => {
-                CreateNewImage(newSource);
-                DrawWallpaper();
-              });
-            } else {
-              RemoveWallpaper();
-              AttemptToRemoveListeners();
-            }
-          };
 
           DrawWallpaper();
 
           AttemptToRegisterListeners();
         });
       });
+    }
+
+    private void RemoveWallpaperStuff() {
+      RemoveWallpaper();
+      AttemptToRemoveListeners();
     }
 
     private void AttemptToRegisterListeners() {

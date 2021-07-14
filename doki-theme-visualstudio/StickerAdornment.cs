@@ -38,6 +38,7 @@ namespace doki_theme_visualstudio {
 
       SettingsService.Instance.SettingsChanged += (_, service) => {
         if (service.DrawSticker) {
+          if (_image != null) return;
           DrawCurrentSticker();
         } else {
           RemoveStickerStuff();
