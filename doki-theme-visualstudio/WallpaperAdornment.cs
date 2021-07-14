@@ -11,7 +11,6 @@ using Microsoft.VisualStudio.Shell;
 using Task = System.Threading.Tasks.Task;
 
 namespace doki_theme_visualstudio {
-  
   // Wallpaper works by attaching a background image to the 
   // WpfMultiViewHost which is the parent of the text editor view.
   // This is important, because this allows the background image to be anchored
@@ -48,9 +47,7 @@ namespace doki_theme_visualstudio {
           Viewbox = new Rect(new Point(0, 0), new Size(1, 1)),
         };
 
-        ThemeManager.Instance.DokiThemeChanged += (_, themeChangedArgs) => {
-          DrawWallpaper();
-        };
+        ThemeManager.Instance.DokiThemeChanged += (_, themeChangedArgs) => { DrawWallpaper(); };
 
         DrawWallpaper();
 
@@ -64,20 +61,22 @@ namespace doki_theme_visualstudio {
     }
 
     private static void GetImageSource(Action<BitmapSource> bitmapConsumer) {
-      Task.Run(async () => {
-        var stickerName = ThemeManager.Instance.ThemeById("5fb9c0a4-e613-457c-97a5-6204f9076cef")!.StickerName;
-        var wallpaperUrl = await Task.Run(
-          async () => await AssetManager.ResolveAssetUrlAsync(
-            AssetCategory.Backgrounds, 
-            $"wallpapers/{stickerName}"
+      ThemeManager.Instance.GetCurrentTheme(theme => {
+        Task.Run(async () => {
+          var stickerName = theme.StickerName;
+          var wallpaperUrl = await Task.Run(
+            async () => await AssetManager.ResolveAssetUrlAsync(
+              AssetCategory.Backgrounds,
+              $"wallpapers/{stickerName}"
             )
-        );
-        var wallpaperImagePath = wallpaperUrl ??
-                                 throw new NullReferenceException("I don't have a wallpaper, bro.");
-        var wallpaperBitMap = ImageTools.GetBitmapSourceFromImagePath(wallpaperImagePath);
-        await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
-        bitmapConsumer(wallpaperBitMap);
-      }).FileAndForget("dokiTheme/wallpaperLoad");
+          );
+          var wallpaperImagePath = wallpaperUrl ??
+                                   throw new NullReferenceException("I don't have a wallpaper, bro.");
+          var wallpaperBitMap = ImageTools.GetBitmapSourceFromImagePath(wallpaperImagePath);
+          await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+          bitmapConsumer(wallpaperBitMap);
+        }).FileAndForget("dokiTheme/wallpaperLoad");
+      });
     }
 
     private void OnSizeChanged(object sender, EventArgs e) {
@@ -98,7 +97,7 @@ namespace doki_theme_visualstudio {
       }
       else {
         var background = (ImageBrush)possiblyBackground;
-        
+
         // This is the stupidest shit, the 
         // background will artifact when the user scrolls.
         // Unless we do this everytime the layout changes,

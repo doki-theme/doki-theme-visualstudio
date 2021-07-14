@@ -26,30 +26,32 @@ namespace doki_theme_visualstudio {
           Source = source,
           Opacity = 1.0
         };
-        
+
         DrawImage();
         // todo: fancy animation
         // var fadeInAnimation = new DoubleAnimation(0.0, 1.0, TimeSpan.FromMilliseconds(500));
         // _image.BeginAnimation(UIElement.OpacityProperty, fadeInAnimation);
         // fadeInAnimation.Completed += (_, __) => {
-          // _image.Opacity = 1.0;
-          _view.LayoutChanged += OnSizeChanged;
+        // _image.Opacity = 1.0;
+        _view.LayoutChanged += OnSizeChanged;
         // };
       });
     }
 
     private static void GetImageSource(Action<BitmapSource> bitmapConsumer) {
-      Task.Run(async () => {
-        var imagePath = await AssetManager.ResolveAssetUrlAsync(
-          AssetCategory.Stickers,
-          ThemeManager.Instance.ThemeById("5fb9c0a4-e613-457c-97a5-6204f9076cef")!.StickerPath
-        );
-        if (string.IsNullOrEmpty(imagePath)) return;
+      ThemeManager.Instance.GetCurrentTheme(theme => {
+        Task.Run(async () => {
+          var imagePath = await AssetManager.ResolveAssetUrlAsync(
+            AssetCategory.Stickers,
+            theme.StickerPath
+          );
+          if (string.IsNullOrEmpty(imagePath)) return;
 
-        var finalBitmap = ImageTools.GetBitmapSourceFromImagePath(imagePath!);
-        await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
-        bitmapConsumer(finalBitmap);
-      }).FileAndForget("dokiTheme/StickerLoad");
+          var finalBitmap = ImageTools.GetBitmapSourceFromImagePath(imagePath!);
+          await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+          bitmapConsumer(finalBitmap);
+        }).FileAndForget("dokiTheme/StickerLoad");
+      });
     }
 
     private void OnSizeChanged(object sender, EventArgs e) {

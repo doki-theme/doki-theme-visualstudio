@@ -59,22 +59,39 @@ namespace doki_theme_visualstudio {
     private static ThemeManager? _instance;
 
     private Dictionary<string, DokiThemeDefinition> _themes;
+    private Dictionary<string, DokiTheme> _themesByColors;
+
+    private DokiTheme? _currentTheme;
 
     private ThemeManager(Dictionary<string, DokiThemeDefinition> themes) {
       _themes = themes;
       
-      Dictionary<string, DokiTheme> themesByColours = themes.ToDictionary(pair => {
+      _themesByColors = themes.ToDictionary(pair => {
         var colors = pair.Value.colors;
         return $"{colors["accentColor"].ToLower()}{colors["textEditorBackground"].ToLower()}";
       }, pair => new DokiTheme(pair.Value));
       VSColorTheme.ThemeChanged += themeArguments => {
-        var accentColor = VSColorTheme.GetThemedColor(EnvironmentColors.PanelHyperlinkColorKey);
-        var textEditorBackground = VSColorTheme.GetThemedColor(EnvironmentColors.ToolWindowBackgroundColorKey);
-        var colorKey = accentColor.ToHexString() +
-                        textEditorBackground.ToHexString();
-        var dokiTheme = themesByColours[colorKey.ToLower()];
-        DokiThemeChanged?.Invoke(this, new ThemeChangedArgs(dokiTheme));
+        var currentDokiTheme = GetCurrentDokiTheme();
+        _currentTheme = currentDokiTheme;
+        DokiThemeChanged?.Invoke(this, new ThemeChangedArgs(currentDokiTheme));
       };
+
+      _currentTheme = GetCurrentDokiTheme();
+    }
+
+    public void GetCurrentTheme(Action<DokiTheme> themeConsumer) {
+      var currentTheme = _currentTheme;
+      if (currentTheme != null) {
+        themeConsumer(currentTheme);
+      }
+    }
+
+    private DokiTheme? GetCurrentDokiTheme() {
+      var accentColor = VSColorTheme.GetThemedColor(EnvironmentColors.PanelHyperlinkColorKey);
+      var textEditorBackground = VSColorTheme.GetThemedColor(EnvironmentColors.ToolWindowBackgroundColorKey);
+      var colorKey = accentColor.ToHexString() +
+                     textEditorBackground.ToHexString();
+      return _themesByColors[colorKey.ToLower()];
     }
 
     public static ThemeManager Instance =>
