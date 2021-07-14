@@ -2,6 +2,8 @@ using System;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Microsoft.VisualStudio.Shell;
+using Task = System.Threading.Tasks.Task;
 
 namespace doki_theme_visualstudio {
   public enum AssetCategory {
@@ -57,13 +59,18 @@ namespace doki_theme_visualstudio {
       string assetPath,
       string assetSource,
       Func<string, string, Task<string?>> resolveAsset) {
+      var localAssetPath = ConstructLocalAssetPath(assetCategory, assetPath);
+      var remoteAssetPath = ConstructRemoteAssetUrl(assetCategory, assetPath, assetSource);
+      return await resolveAsset(localAssetPath, remoteAssetPath);
+    }
+
+    private static string ConstructLocalAssetPath(AssetCategory assetCategory, string assetPath) {
       var localAssetPath = Path.Combine(
         LocalStorageService.Instance.GetAssetDirectory(),
         AssetCategoryName(assetCategory),
         CleanAssetPath(assetPath)
       );
-      var remoteAssetPath = ConstructRemoteAssetUrl(assetCategory, assetPath, assetSource);
-      return await resolveAsset(localAssetPath, remoteAssetPath);
+      return localAssetPath;
     }
 
     private static string CleanAssetPath(string assetPath) {
@@ -86,6 +93,17 @@ namespace doki_theme_visualstudio {
       return assetCategory == AssetCategory.Stickers
         ? $"{assetSource}/{AssetCategoryName(assetCategory)}/jetbrains/v2{assetPath}"
         : $"{assetSource}/{AssetCategoryName(assetCategory)}/{assetPath}";
+    }
+
+    public static bool CanResolveSync(AssetCategory assetCategory, string assetPath) {
+      return File.Exists(ConstructLocalAssetPath(assetCategory, assetPath));
+    }
+
+    public static string ResolveAssetUrl(AssetCategory category, string assetPath) {
+      VsTaskLibraryHelper.FileAndForget(Task.Run(async () => {
+        await ResolveAssetUrlAsync(category, assetPath); // makes sure asset is upto date
+      }), "dokiTheme/sync/background-update");
+      return ConstructLocalAssetPath(category, assetPath);
     }
   }
 }

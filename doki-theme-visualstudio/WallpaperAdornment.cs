@@ -42,7 +42,7 @@ namespace doki_theme_visualstudio {
       _view = view;
 
       RefreshAdornment();
-      
+
       AttemptToRegisterListeners();
 
       ThemeManager.Instance.GetCurrentTheme(dokiTheme => {
@@ -98,20 +98,27 @@ namespace doki_theme_visualstudio {
     }
 
     private static void GetImageSource(DokiTheme theme, Action<BitmapSource> bitmapConsumer) {
-      Task.Run(async () => {
-        var stickerName = theme.StickerName;
-        var wallpaperUrl = await Task.Run(
-          async () => await AssetManager.ResolveAssetUrlAsync(
-            AssetCategory.Backgrounds,
-            $"wallpapers/{stickerName}"
-          )
-        );
-        var wallpaperImagePath = wallpaperUrl ??
-                                 throw new NullReferenceException("I don't have a wallpaper, bro.");
-        var wallpaperBitMap = ImageTools.GetBitmapSourceFromImagePath(wallpaperImagePath);
-        await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+      var stickerName = theme.StickerName;
+      var assetPath = $"wallpapers/{stickerName}";
+      if (AssetManager.CanResolveSync(AssetCategory.Backgrounds, assetPath)) {
+        var url = AssetManager.ResolveAssetUrl(AssetCategory.Backgrounds, assetPath) ??
+                  throw new NullReferenceException("I don't have a sync wallpaper, bro.");
+        var wallpaperBitMap = ImageTools.GetBitmapSourceFromImagePath(url);
         bitmapConsumer(wallpaperBitMap);
-      }).FileAndForget("dokiTheme/wallpaperLoad");
+      } else {
+        Task.Run(async () => {
+          var wallpaperUrl = await Task.Run(
+            async () => await AssetManager.ResolveAssetUrlAsync(
+              AssetCategory.Backgrounds,
+              assetPath
+            ));
+          var wallpaperImagePath = wallpaperUrl ??
+                                   throw new NullReferenceException("I don't have a async wallpaper, bro.");
+          var wallpaperBitMap = ImageTools.GetBitmapSourceFromImagePath(wallpaperImagePath);
+          await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+          bitmapConsumer(wallpaperBitMap);
+        }).FileAndForget("dokiTheme/wallpaperLoad");
+      }
     }
 
     private void OnSizeChanged(object sender, EventArgs e) {
@@ -195,7 +202,6 @@ namespace doki_theme_visualstudio {
         var editorView = GetEditorView();
         editorView?.SetValue(Panel.BackgroundProperty, null);
       });
- 
     }
 
     private void RefreshAdornment() {
