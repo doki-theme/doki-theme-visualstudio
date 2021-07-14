@@ -31,11 +31,19 @@ namespace doki_theme_visualstudio {
 
     private const string TagName = "DokiWallpaper";
 
+    private bool _registeredListeners;
+
+    private readonly IWpfTextView _view;
+
     public WallpaperAdornment(IWpfTextView view) {
       _adornmentLayer = view.GetAdornmentLayer("WallpaperAdornment");
       _adornmentLayer.RemoveAdornmentsByTag(TagName);
 
+      _view = view;
+
       RefreshAdornment();
+      
+      AttemptToRegisterListeners();
 
       ThemeManager.Instance.GetCurrentTheme(dokiTheme => {
         GetImageSource(dokiTheme, source => {
@@ -49,16 +57,30 @@ namespace doki_theme_visualstudio {
                 DrawWallpaper();
               });
             } else {
-              // todo: remove wallpaper
+              RemoveWallpaper();
+              AttemptToRemoveListeners();
             }
           };
 
           DrawWallpaper();
 
-          view.LayoutChanged += OnSizeChanged;
-          view.BackgroundBrushChanged += BackgroundBrushChanged;
+          AttemptToRegisterListeners();
         });
       });
+    }
+
+    private void AttemptToRegisterListeners() {
+      if (_registeredListeners) return;
+      _view.LayoutChanged += OnSizeChanged;
+      _view.BackgroundBrushChanged += BackgroundBrushChanged;
+      _registeredListeners = true;
+    }
+
+    private void AttemptToRemoveListeners() {
+      if (!_registeredListeners) return;
+      _view.LayoutChanged -= OnSizeChanged;
+      _view.BackgroundBrushChanged -= BackgroundBrushChanged;
+      _registeredListeners = false;
     }
 
     private void CreateNewImage(BitmapSource source) {
@@ -164,6 +186,16 @@ namespace doki_theme_visualstudio {
         var editorView = GetEditorView();
         editorView?.SetValue(Panel.BackgroundProperty, _image);
       });
+    }
+
+    private void RemoveWallpaper() {
+      _image = null;
+      ThreadHelper.JoinableTaskFactory.Run(async () => {
+        await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+        var editorView = GetEditorView();
+        editorView?.SetValue(Panel.BackgroundProperty, null);
+      });
+ 
     }
 
     private void RefreshAdornment() {
