@@ -83,13 +83,12 @@ namespace doki_theme_visualstudio {
       _registeredListeners = false;
     }
 
-    // todo: opacity flasho
     private void CreateNewImage(BitmapSource source) {
       _image = new ImageBrush(source) {
         Stretch = Stretch.UniformToFill,
         AlignmentX = AlignmentX.Right,
         AlignmentY = AlignmentY.Bottom,
-        Opacity = 1.0,
+        Opacity = 0.07,
         Viewbox = new Rect(new Point(0, 0), new Size(1, 1)),
       };
     }
@@ -147,7 +146,7 @@ namespace doki_theme_visualstudio {
         ThreadHelper.JoinableTaskFactory.Run(async () => {
           await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
           ToolBox.RunSafely(() => {
-            background.Opacity = 1 - 0.01;
+            background.Opacity = 0.07 - 0.01;
             background.Opacity = 0.07;
           }, _ => { });
         });

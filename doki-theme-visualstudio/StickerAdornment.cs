@@ -20,7 +20,7 @@ namespace doki_theme_visualstudio {
     public StickerAdornment(IWpfTextView view) {
       _view = view ?? throw new ArgumentNullException(nameof(view));
 
-      _adornmentLayer = view.GetAdornmentLayer("StickerAdorment");
+      _adornmentLayer = view.GetAdornmentLayer("StickerAdornment");
       RemoveAdornment();
 
       ThemeManager.Instance.DokiThemeChanged += (_, themeChangedArgs) => {

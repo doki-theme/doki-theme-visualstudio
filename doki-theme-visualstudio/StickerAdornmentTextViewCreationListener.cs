@@ -22,7 +22,7 @@ namespace doki_theme_visualstudio {
     ///   after the selection layer in the Z-order
     /// </summary>
     [Export(typeof(AdornmentLayerDefinition))]
-    [Name("StickerAdorment")]
+    [Name("StickerAdornment")]
     [Order(After = PredefinedAdornmentLayers.Caret)]
     private AdornmentLayerDefinition editorAdornmentLayer;
 
