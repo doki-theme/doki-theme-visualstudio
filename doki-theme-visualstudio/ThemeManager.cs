@@ -23,6 +23,8 @@ namespace doki_theme_visualstudio {
   public class Sticker {
     public string name { get; set; }
     public string path { get; set; }
+    public string anchoring { get; set; }
+    public double opacity { get; set; }
   }
 
   public class Stickers {
@@ -45,6 +47,8 @@ namespace doki_theme_visualstudio {
 
     public string StickerPath => _definition.stickers.defaultSticker.path;
     public string StickerName => _definition.stickers.defaultSticker.name;
+
+    public double WallpaperOpacity => _definition.stickers.defaultSticker.opacity;
   }
 
   public class ThemeChangedArgs {

@@ -63,7 +63,11 @@ function createDokiTheme(
     return {
       path: masterThemeDefinitionPath,
       definition: masterThemeDefinition,
-      stickers: getStickers(masterThemeDefinition, masterThemeDefinitionPath),
+      stickers: getStickers(
+        masterThemeDefinition, 
+        masterThemeDefinitionPath, 
+        appThemeDefinition
+      ),
       templateVariables: buildTemplateVariables(
         masterThemeDefinition,
         masterTemplateDefinitions,
@@ -91,20 +95,26 @@ function resolveStickerPath(themeDefinitionPath: string, sticker: string) {
 
 const getStickers = (
   dokiDefinition: MasterDokiThemeDefinition,
-  themePath: string
+  themePath: string,
+  dokiTheme: AppDokiThemeDefinition,
 ) => {
   const secondary =
     dokiDefinition.stickers.secondary || dokiDefinition.stickers.normal;
+  const backgrounds = dokiTheme.backgrounds;
   return {
     defaultSticker: {
       path: resolveStickerPath(themePath, dokiDefinition.stickers.default),
       name: dokiDefinition.stickers.default,
+      anchoring: backgrounds?.default?.anchor || "center",
+      opacity: backgrounds?.default?.opacity || (dokiDefinition.dark ? 0.05 : 0.1)
     },
     ...(secondary
       ? {
         secondary: {
           path: resolveStickerPath(themePath, secondary),
           name: secondary,
+          anchoring: backgrounds?.secondary?.anchor || "center",
+          opacity: backgrounds?.secondary?.opacity || (dokiDefinition.dark ? 0.05 : 0.1)
         },
       }
       : {}),
