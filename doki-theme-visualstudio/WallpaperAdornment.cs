@@ -44,7 +44,7 @@ namespace doki_theme_visualstudio {
       RefreshAdornment();
 
       AttemptToRegisterListeners();
-      
+
       ThemeManager.Instance.DokiThemeChanged += (_, themeChangedArgs) => {
         var newDokiTheme = themeChangedArgs.Theme;
         if (newDokiTheme != null) {
@@ -56,18 +56,18 @@ namespace doki_theme_visualstudio {
           RemoveWallpaperStuff();
         }
       };
-      
+
       SettingsService.Instance.SettingsChanged += (_, service) => {
         if (service.DrawWallpaper) {
-          if (_image != null) return;
           DrawCurrentThemeWallpaper();
+          DoStupidShit();
         } else {
           RemoveWallpaperStuff();
         }
       };
 
-      if(!SettingsService.Instance.DrawWallpaper) return;
-      
+      if (!SettingsService.Instance.DrawWallpaper) return;
+
       DrawCurrentThemeWallpaper();
     }
 
@@ -120,11 +120,13 @@ namespace doki_theme_visualstudio {
     private static void GetImageSource(DokiTheme theme, Action<BitmapSource> bitmapConsumer) {
       var stickerName = theme.StickerName;
       var assetPath = $"wallpapers/{stickerName}";
-      if (AssetManager.CanResolveSync(AssetCategory.Backgrounds, assetPath)) {
+      var customWallpaperImageAbsolutePath = SettingsService.Instance.CustomWallpaperImageAbsolutePath;
+      if (!string.IsNullOrEmpty(customWallpaperImageAbsolutePath)) {
+        ConvertToBitmap(bitmapConsumer, customWallpaperImageAbsolutePath);
+      } else if (AssetManager.CanResolveSync(AssetCategory.Backgrounds, assetPath)) {
         var url = AssetManager.ResolveAssetUrl(AssetCategory.Backgrounds, assetPath) ??
                   throw new NullReferenceException("I don't have a sync wallpaper, bro.");
-        var wallpaperBitMap = ImageTools.GetBitmapSourceFromImagePath(url);
-        bitmapConsumer(wallpaperBitMap);
+        ConvertToBitmap(bitmapConsumer, url);
       } else {
         Task.Run(async () => {
           var wallpaperUrl = await Task.Run(
@@ -139,6 +141,11 @@ namespace doki_theme_visualstudio {
           bitmapConsumer(wallpaperBitMap);
         }).FileAndForget("dokiTheme/wallpaperLoad");
       }
+    }
+
+    private static void ConvertToBitmap(Action<BitmapSource> bitmapConsumer, string? url) {
+      var wallpaperBitMap = ImageTools.GetBitmapSourceFromImagePath(url);
+      bitmapConsumer(wallpaperBitMap);
     }
 
     private void OnSizeChanged(object sender, EventArgs e) {

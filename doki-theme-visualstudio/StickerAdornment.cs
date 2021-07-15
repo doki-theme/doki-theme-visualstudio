@@ -57,8 +57,13 @@ namespace doki_theme_visualstudio {
     private void DoStupidShit() {
       var drawnImage = _image;
       if (drawnImage == null) return;
-      drawnImage.Opacity = 0.99;
-      drawnImage.Opacity = 1.0;
+      ThreadHelper.JoinableTaskFactory.Run(async () => {
+        await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+        ToolBox.RunSafely(() => {
+          drawnImage.Opacity = 0.99;
+          drawnImage.Opacity = 1.0;
+        }, _ => { });
+      });
     }
 
     private void RemoveStickerStuff() {

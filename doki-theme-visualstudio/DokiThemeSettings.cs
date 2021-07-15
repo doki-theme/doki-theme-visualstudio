@@ -47,6 +47,12 @@ namespace doki_theme_visualstudio {
         return page.CustomStickerImageAbsolutePath;
       }
     }
+    public string CustomWallpaperImageAbsolutePath {
+      get {
+        var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
+        return page.CustomWallpaperImageAbsolutePath;
+      }
+    }
   }
 
 
