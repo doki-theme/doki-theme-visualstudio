@@ -108,9 +108,15 @@ namespace doki_theme_visualstudio {
         Stretch = Stretch.UniformToFill,
         AlignmentX = AlignmentX.Right,
         AlignmentY = AlignmentY.Bottom,
-        Opacity = 0.07,
+        Opacity = GetOpacity(),
         Viewbox = new Rect(new Point(0, 0), new Size(1, 1)),
       };
+    }
+
+    private static double GetOpacity() {
+      var opacitySettings = SettingsService.Instance.WallpaperOpacity;
+      var opacity = Math.Abs(opacitySettings + 1.0) < 0.001 ? 0.07 : opacitySettings;
+      return opacity;
     }
 
     private void BackgroundBrushChanged(object sender, BackgroundBrushChangedEventArgs e) {
@@ -173,8 +179,9 @@ namespace doki_theme_visualstudio {
         ThreadHelper.JoinableTaskFactory.Run(async () => {
           await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
           ToolBox.RunSafely(() => {
-            background.Opacity = 0.07 - 0.01;
-            background.Opacity = 0.07;
+            var opacity = GetOpacity();
+            background.Opacity = opacity - 0.01;
+            background.Opacity = opacity;
           }, _ => { });
         });
       }

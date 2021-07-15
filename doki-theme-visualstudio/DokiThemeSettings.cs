@@ -53,6 +53,12 @@ namespace doki_theme_visualstudio {
         return page.CustomWallpaperImageAbsolutePath;
       }
     }
+    public double WallpaperOpacity {
+      get {
+        var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
+        return page.WallpaperOpacity;
+      }
+    }
   }
 
 
@@ -71,13 +77,22 @@ namespace doki_theme_visualstudio {
       set { _drawWallpaper = value; }
     }
 
-    [DescriptionAttribute("Bustin makes me feel good")]
+    [DescriptionAttribute("Use custom image for wallpaper, to use default image clear the value from this setting")]
     [EditorAttribute(typeof(BrowseFile), typeof(UITypeEditor))]
     public string CustomWallpaperImageAbsolutePath { get; set; }
     
-    [DescriptionAttribute("Bustin makes me feel good")]
+    [DescriptionAttribute("Use custom image for sticker, to use default image clear the value from this setting")]
     [EditorAttribute(typeof(BrowseFile), typeof(UITypeEditor))]
     public string CustomStickerImageAbsolutePath { get; set; }
+
+
+    private double _wallpaperOpacity = -1.0;
+    [DescriptionAttribute("Customize the wallpaper opacity, set to -1.0 to use default value for theme")]
+    [EditorAttribute(typeof(BrowseFile), typeof(UITypeEditor))]
+    public double WallpaperOpacity {
+      get { return _wallpaperOpacity; }
+      set { _wallpaperOpacity = value; }
+    }
 
     protected override void OnApply(PageApplyEventArgs e) {
       base.OnApply(e);
