@@ -52,13 +52,7 @@
               <CommandFlag>DefaultInvisible</CommandFlag>
               <CommandFlag>DynamicVisibility</CommandFlag>
           If you do not want an image next to your command, remove the Icon node /> -->
-      <Button guid="guiddoki_theme_visualstudioPackageCmdSet" id="Command1Id" priority="0x0100" type="Button">
-        <Parent guid="guiddoki_theme_visualstudioPackageCmdSet" id="MyMenuGroup" />
-        <Icon guid="guidImages" id="bmpPic1" />
-        <Strings>
-          <ButtonText>Toggle Wallpaper</ButtonText>
-        </Strings>
-      </Button>
+      
     </Buttons>
 
     <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
@@ -68,7 +62,7 @@
             bitmap strip containing the bitmaps and then there are the numeric ids of the elements used
             inside a button definition. An important aspect of this declaration is that the element id
             must be the actual index (1-based) of the bitmap inside the bitmap strip. -->
-      <Bitmap guid="guidImages" href="Resources\Command1.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough"/>
+      
     </Bitmaps>
 		<Menus>
 			<Menu guid="guiddoki_theme_visualstudioPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">
@@ -89,7 +83,6 @@
     <GuidSymbol name="guiddoki_theme_visualstudioPackageCmdSet" value="{03618059-b5c4-43ca-98c9-d8c939dcb49f}">
       <IDSymbol name="MyMenuGroup" value="0x1020" />
 			<IDSymbol name="TopLevelMenu" value="0x1021"/>
-			<IDSymbol name="Command1Id" value="0x0100" />
     </GuidSymbol>
 
     <GuidSymbol name="guidImages" value="{3fb264bd-fbe8-4039-9248-4a08b14046be}" >
