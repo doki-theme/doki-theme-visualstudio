@@ -25,7 +25,7 @@ namespace doki_theme_visualstudio {
     private readonly Canvas _editorCanvas = new Canvas { IsHitTestVisible = false };
     private const string EditorViewClassName = "Microsoft.VisualStudio.Editor.Implementation.WpfMultiViewHost";
 
-    private Dictionary<int, DependencyObject> _defaultThemeColor = new Dictionary<int, DependencyObject>();
+    private readonly Dictionary<int, DependencyObject> _defaultThemeColor = new Dictionary<int, DependencyObject>();
 
     private ImageBrush? _image;
 
@@ -49,7 +49,7 @@ namespace doki_theme_visualstudio {
         var newDokiTheme = themeChangedArgs.Theme;
         if (newDokiTheme != null) {
           GetImageSource(newDokiTheme, newSource => {
-            CreateNewImage(newSource);
+            CreateNewImage(newSource, newDokiTheme);
             DrawWallpaper();
           });
         } else {
@@ -74,7 +74,7 @@ namespace doki_theme_visualstudio {
     private void DrawCurrentThemeWallpaper() {
       ThemeManager.Instance.GetCurrentTheme(dokiTheme => {
         GetImageSource(dokiTheme, source => {
-          CreateNewImage(source);
+          CreateNewImage(source, dokiTheme);
 
           DrawWallpaper();
 
@@ -103,19 +103,20 @@ namespace doki_theme_visualstudio {
       _registeredListeners = false;
     }
 
-    private void CreateNewImage(BitmapSource source) {
+    private void CreateNewImage(BitmapSource source, DokiTheme dokiTheme) {
       _image = new ImageBrush(source) {
         Stretch = Stretch.UniformToFill,
         AlignmentX = AlignmentX.Right,
         AlignmentY = AlignmentY.Bottom,
-        Opacity = GetOpacity(),
+        Opacity = GetOpacity(dokiTheme),
         Viewbox = new Rect(new Point(0, 0), new Size(1, 1)),
       };
     }
 
-    private static double GetOpacity() {
-      var opacitySettings = SettingsService.Instance.WallpaperOpacity;
-      var opacity = Math.Abs(opacitySettings + 1.0) < 0.001 ? 0.07 : opacitySettings;
+    private static double GetOpacity(DokiTheme dokiTheme) {
+      var userOpacitySettings = SettingsService.Instance.WallpaperOpacity;
+      var opacity = Math.Abs(userOpacitySettings + 1.0) < 0.001 ? 
+        dokiTheme.WallpaperOpacity : userOpacitySettings;
       return opacity;
     }
 
@@ -149,7 +150,7 @@ namespace doki_theme_visualstudio {
       }
     }
 
-    private static void ConvertToBitmap(Action<BitmapSource> bitmapConsumer, string? url) {
+    private static void ConvertToBitmap(Action<BitmapSource> bitmapConsumer, string url) {
       var wallpaperBitMap = ImageTools.GetBitmapSourceFromImagePath(url);
       bitmapConsumer(wallpaperBitMap);
     }
@@ -165,13 +166,11 @@ namespace doki_theme_visualstudio {
       MakeThingsAboveWallpaperTransparent();
 
       var prop = rootTextView.GetType().GetProperty("Background");
-      var possiblyBackground = prop.GetValue(rootTextView);
+      var possiblyBackground = prop?.GetValue(rootTextView);
 
-      if (!(possiblyBackground is ImageBrush)) {
+      if (!(possiblyBackground is ImageBrush background)) {
         DrawWallpaper();
       } else {
-        var background = (ImageBrush)possiblyBackground;
-
         // This is the stupidest shit, the 
         // background will artifact when the user scrolls.
         // Unless we do this everytime the layout changes,
@@ -179,7 +178,7 @@ namespace doki_theme_visualstudio {
         ThreadHelper.JoinableTaskFactory.Run(async () => {
           await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
           ToolBox.RunSafely(() => {
-            var opacity = GetOpacity();
+            var opacity = background.Opacity;
             background.Opacity = opacity - 0.01;
             background.Opacity = opacity;
           }, _ => { });
