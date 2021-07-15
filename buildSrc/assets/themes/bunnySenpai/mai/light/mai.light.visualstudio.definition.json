@@ -4,5 +4,13 @@
   "laf": {},
   "syntax": {},
   "colors": {},
-  "backgrounds": {}
+  "backgrounds": {
+    "default": {
+      "anchor": "right"
+    },
+    "secondary": {
+      "anchor": "right",
+      "opacity": 13
+    }
+  }
 }

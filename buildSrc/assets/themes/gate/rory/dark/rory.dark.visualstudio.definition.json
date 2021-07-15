@@ -4,5 +4,9 @@
   "laf": {},
   "syntax": {},
   "colors": {},
-  "backgrounds": {}
+  "backgrounds": {
+    "default": {
+      "name": "rory_dark_jetbrains.png"
+    }
+  }
 }

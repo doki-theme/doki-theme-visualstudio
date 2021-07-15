@@ -4,5 +4,9 @@
   "laf": {},
   "syntax": {},
   "colors": {},
-  "backgrounds": {}
+  "backgrounds": {
+    "secondary": {
+      "opacity": 0.07
+    }
+  }
 }
