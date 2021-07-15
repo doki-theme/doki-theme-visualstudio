@@ -49,6 +49,8 @@ namespace doki_theme_visualstudio {
     public string StickerName => _definition.stickers.defaultSticker.name;
 
     public double WallpaperOpacity => _definition.stickers.defaultSticker.opacity;
+    
+    public string BackgroundPosition => _definition.stickers.defaultSticker.anchoring;
   }
 
   public class ThemeChangedArgs {

@@ -106,17 +106,23 @@ namespace doki_theme_visualstudio {
     private void CreateNewImage(BitmapSource source, DokiTheme dokiTheme) {
       _image = new ImageBrush(source) {
         Stretch = Stretch.UniformToFill,
-        AlignmentX = AlignmentX.Right,
+        AlignmentX = GetAlignmentX(dokiTheme),
         AlignmentY = AlignmentY.Bottom,
         Opacity = GetOpacity(dokiTheme),
         Viewbox = new Rect(new Point(0, 0), new Size(1, 1)),
       };
     }
 
+    private static AlignmentX GetAlignmentX(DokiTheme dokiTheme) {
+      return dokiTheme.BackgroundPosition switch {
+        "right" => AlignmentX.Right,
+        _ => AlignmentX.Center
+      };
+    }
+
     private static double GetOpacity(DokiTheme dokiTheme) {
       var userOpacitySettings = SettingsService.Instance.WallpaperOpacity;
-      var opacity = Math.Abs(userOpacitySettings + 1.0) < 0.001 ? 
-        dokiTheme.WallpaperOpacity : userOpacitySettings;
+      var opacity = Math.Abs(userOpacitySettings + 1.0) < 0.001 ? dokiTheme.WallpaperOpacity : userOpacitySettings;
       return opacity;
     }
 

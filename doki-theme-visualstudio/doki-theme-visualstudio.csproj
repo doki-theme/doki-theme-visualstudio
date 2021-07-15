@@ -75,6 +75,9 @@
     <None Include="Themes\DokiDark.vstheme">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Themesgenerated\Tohsaka Rin.vstheme">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Themesgenerated\Chocola.vstheme">
       <SubType>Designer</SubType>
     </None>
