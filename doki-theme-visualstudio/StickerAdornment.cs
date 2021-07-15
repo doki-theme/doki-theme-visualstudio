@@ -38,8 +38,8 @@ namespace doki_theme_visualstudio {
 
       SettingsService.Instance.SettingsChanged += (_, service) => {
         if (service.DrawSticker) {
-          if (_image != null) return;
           DrawCurrentSticker();
+          DoStupidShit();
         } else {
           RemoveStickerStuff();
         }
@@ -48,6 +48,17 @@ namespace doki_theme_visualstudio {
       if (!SettingsService.Instance.DrawSticker) return;
 
       DrawCurrentSticker();
+    }
+
+    // Causes the sticker to re-render
+    // which will make it show up. If
+    // we don't do this the sticker looks like
+    // it disappears :(
+    private void DoStupidShit() {
+      var drawnImage = _image;
+      if (drawnImage == null) return;
+      drawnImage.Opacity = 0.99;
+      drawnImage.Opacity = 1.0;
     }
 
     private void RemoveStickerStuff() {
@@ -91,10 +102,12 @@ namespace doki_theme_visualstudio {
 
     private static void GetImageSource(DokiTheme theme, Action<BitmapSource> bitmapConsumer) {
       var themeStickerPath = theme.StickerPath;
-      if (AssetManager.CanResolveSync(AssetCategory.Stickers, themeStickerPath)) {
+      var customStickerImageAbsolutePath = SettingsService.Instance.CustomStickerImageAbsolutePath;
+      if (!string.IsNullOrEmpty(customStickerImageAbsolutePath)) {
+        ConvertToBitMap(bitmapConsumer, customStickerImageAbsolutePath);
+      } else if (AssetManager.CanResolveSync(AssetCategory.Stickers, themeStickerPath)) {
         var stickerImagePath = AssetManager.ResolveAssetUrl(AssetCategory.Stickers, themeStickerPath);
-        var stickerBitMap = ImageTools.GetBitmapSourceFromImagePath(stickerImagePath);
-        bitmapConsumer(stickerBitMap);
+        ConvertToBitMap(bitmapConsumer, stickerImagePath);
       } else {
         Task.Run(async () => {
           var stickerImagePath = await AssetManager.ResolveAssetUrlAsync(
@@ -108,6 +121,11 @@ namespace doki_theme_visualstudio {
           bitmapConsumer(stickerBitMap);
         }).FileAndForget("dokiTheme/StickerLoad");
       }
+    }
+
+    private static void ConvertToBitMap(Action<BitmapSource> bitmapConsumer, string? stickerImagePath) {
+      var stickerBitMap = ImageTools.GetBitmapSourceFromImagePath(stickerImagePath);
+      bitmapConsumer(stickerBitMap);
     }
 
     private void OnSizeChanged(object sender, EventArgs e) {

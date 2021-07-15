@@ -41,6 +41,12 @@ namespace doki_theme_visualstudio {
         return page.DrawWallpaper;
       }
     }
+    public string CustomStickerImageAbsolutePath {
+      get {
+        var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
+        return page.CustomStickerImageAbsolutePath;
+      }
+    }
   }
 
 
@@ -61,7 +67,11 @@ namespace doki_theme_visualstudio {
 
     [DescriptionAttribute("Bustin makes me feel good")]
     [EditorAttribute(typeof(BrowseFile), typeof(UITypeEditor))]
-    public string WallpaperImageAbsolutePath { get; set; }
+    public string CustomWallpaperImageAbsolutePath { get; set; }
+    
+    [DescriptionAttribute("Bustin makes me feel good")]
+    [EditorAttribute(typeof(BrowseFile), typeof(UITypeEditor))]
+    public string CustomStickerImageAbsolutePath { get; set; }
 
     protected override void OnApply(PageApplyEventArgs e) {
       base.OnApply(e);
