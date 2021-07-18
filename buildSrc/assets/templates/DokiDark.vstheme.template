@@ -1147,7 +1147,7 @@
         <Foreground Type="CT_RAW" Source="FF7CA5A0"/>
       </Color>
       <Color Name="CurrentLineActiveFormat">
-        <Background Type="CT_RAW" Source="FF010A12"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
         <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="deltadiff.remove.line">
