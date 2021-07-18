@@ -1516,7 +1516,7 @@
       </Color>
       <Color Name="type parameter name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFE6EE9C"/>
+        <Foreground Type="CT_RAW" Source="FF{{editorAccentColor}}"/>
       </Color>
       <Color Name="enum name">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1552,7 +1552,7 @@
       </Color>
       <Color Name="xml doc comment - attribute name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFADDB67"/>
+        <Foreground Type="CT_RAW" Source="FF{{editorAccentColor}}"/>
       </Color>
       <Color Name="xml doc comment - attribute quotes">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1956,7 +1956,7 @@
       </Color>
       <Color Name="parameter name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="method name">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7796,11 +7796,11 @@
       </Color>
       <Color Name="XAML Markup Extension Parameter Name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFD7BA7D"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="XAML Markup Extension Parameter Value">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF95BCCE"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="XML Text">
         <Background Type="CT_INVALID" Source="00000000"/>
