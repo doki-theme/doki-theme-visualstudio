@@ -46,9 +46,15 @@ function buildTemplateVariables(
       [colorName]: colorValue.startsWith('#') ?
         colorValue.substr(1) : colorValue,
     }), {});
-  return {
+  const finalColors: StringDictionary<string> = {
     ...cleanedColors,
-    ...colorsOverride,
+    ...colorsOverride
+  };
+  return {
+    ...finalColors,
+    editorAccentColor:
+      dokiThemeDefinition.overrides?.editorScheme?.colors?.accentColor?.substr(1) ||
+      finalColors.accentColor
   };
 }
 
@@ -64,8 +70,8 @@ function createDokiTheme(
       path: masterThemeDefinitionPath,
       definition: masterThemeDefinition,
       stickers: getStickers(
-        masterThemeDefinition, 
-        masterThemeDefinitionPath, 
+        masterThemeDefinition,
+        masterThemeDefinitionPath,
         appThemeDefinition
       ),
       templateVariables: buildTemplateVariables(

@@ -1180,7 +1180,7 @@
       </Color>
       <Color Name="urlformat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF8CD1F5"/>
+        <Foreground Type="CT_RAW" Source="FF{{editorAccentColor}}"/>
       </Color>
       <Color Name="NavigableSymbolFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
