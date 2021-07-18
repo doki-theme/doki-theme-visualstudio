@@ -707,7 +707,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ListItemSecondaryOnHover">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ListItemSecondarySelected">
@@ -1036,7 +1036,7 @@
         <Background Type="CT_RAW" Source="FFCFE5F6"/>
       </Color>
       <Color Name="PopupPinButtonHover">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="PopupPinButtonMouseDown">
@@ -2467,7 +2467,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="InnerTabInactiveHoverBackground">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="InnerTabInactiveHoverBorder">
         <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
@@ -3807,7 +3807,7 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="StartPageButtonPinHover">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="StartPageButtonUnpinned">
         <Background Type="CT_RAW" Source="FFF30506"/>
@@ -4646,7 +4646,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="RaftedWindowButtonHoverInactive">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="RaftedWindowButtonHoverInactiveBorder">
         <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
@@ -4661,7 +4661,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="RaftedWindowButtonHoverActive">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="RaftedWindowButtonHoverActiveBorder">
         <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
@@ -4760,7 +4760,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="FileTabButtonProvisionalHoverSelectedInactive">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="FileTabButtonProvisionalHoverSelectedInactiveBorder">
         <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
@@ -4817,7 +4817,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="FileTabButtonHoverSelectedInactive">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="FileTabButtonHoverSelectedInactiveBorder">
         <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
@@ -5028,7 +5028,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="MainWindowButtonHoverInactive">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="MainWindowButtonHoverInactiveBorder">
         <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
@@ -5043,7 +5043,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="MainWindowButtonHoverActive">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="MainWindowButtonHoverActiveBorder">
         <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
@@ -5125,28 +5125,28 @@
         <Background Type="CT_RAW" Source="66E0F6FF"/>
       </Color>
       <Color Name="MainWindowActiveIconDefault">
-        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="MainWindowActiveIconBuilding">
-        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="MainWindowActiveIconDebugging">
-        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="MainWindowActiveIconNoSolution">
-        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="MainWindowInactiveIconDefault">
-        <Background Type="CT_RAW" Source="66E0F6FF"/>
+        <Background Type="CT_RAW" Source="66{{accentColor}}"/>
       </Color>
       <Color Name="MainWindowInactiveIconBuilding">
-        <Background Type="CT_RAW" Source="66E0F6FF"/>
+        <Background Type="CT_RAW" Source="66{{accentColor}}"/>
       </Color>
       <Color Name="MainWindowInactiveIconDebugging">
-        <Background Type="CT_RAW" Source="66E0F6FF"/>
+        <Background Type="CT_RAW" Source="66{{accentColor}}"/>
       </Color>
       <Color Name="RaftedWindowInactiveIconNoSolution">
-        <Background Type="CT_RAW" Source="66E0F6FF"/>
+        <Background Type="CT_RAW" Source="66{{accentColor}}"/>
       </Color>
       <Color Name="RaftedWindowActiveIconDefault">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -5375,7 +5375,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="CommandBarFrameControlHover">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="MainWindowSolutionNameActiveBackground">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -6931,7 +6931,7 @@
         <Foreground Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="StartPageSupportTextHover">
-        <Foreground Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="StartPageSupportTextPressed">
         <Foreground Type="CT_RAW" Source="FF{{infoForeground}}"/>
@@ -7096,7 +7096,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="StartPageExpanderHover">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="StartPageExpanderPressed">
@@ -7819,7 +7819,7 @@
       </Color>
       <Color Name="XML Attribute">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{editorAccentColor}}"/>
       </Color>
       <Color Name="XML Processing Instruction">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -9249,7 +9249,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TagHover">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TagActive">
