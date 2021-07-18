@@ -1320,7 +1320,7 @@
       </Color>
       <Color Name="CppUDLStringSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFECC48D"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="CppOperatorSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1360,7 +1360,7 @@
       </Color>
       <Color Name="CSS String Value">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFECC48D"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="HTML Attribute">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1412,7 +1412,7 @@
       </Color>
       <Color Name="VBScript String">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFD69D85"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="VBScript Identifier">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1540,7 +1540,7 @@
       </Color>
       <Color Name="string - verbatim">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF81D4FA"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="preprocessor text">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -6163,7 +6163,7 @@
         <Background Type="CT_RAW" Source="FFF6B94D"/>
       </Color>
       <Color Name="PluginFontEditorStringColor">
-        <Foreground Type="CT_RAW" Source="FFC3E88D"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="PluginHighlightBorderColor">
         <Foreground Type="CT_RAW" Source="00000C22"/>
@@ -7684,7 +7684,7 @@
       </Color>
       <Color Name="String">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFECC48D"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="Number">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7740,7 +7740,7 @@
       </Color>
       <Color Name="SQL String">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FF81D4FA"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="SQLCMD Command">
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
