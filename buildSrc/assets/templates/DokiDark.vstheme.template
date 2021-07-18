@@ -95,7 +95,7 @@
         <Background Type="CT_RAW" Source="FFF1CA5D"/>
       </Color>
       <Color Name="AIPurple">
-        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{ansi.blue}}"/>
       </Color>
       <Color Name="LandingPageConstrastBackground">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -125,7 +125,7 @@
     <Category Name="Autos" GUID="{a7ee6bee-d0aa-4b2f-ad9d-748276a725f6}">
       <Color Name="ChangedText">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFF7A1A1"/>
+        <Foreground Type="CT_RAW" Source="FF{{errorColor}}"/>
       </Color>
       <Color Name="Plain Text">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -798,10 +798,10 @@
         <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="SnapshotDiffAddedText">
-        <Foreground Type="CT_RAW" Source="FF75BF5B"/>
+        <Foreground Type="CT_RAW" Source="FF{{diff.inserted}}"/>
       </Color>
       <Color Name="SnapshotDiffModifiedText">
-        <Foreground Type="CT_RAW" Source="FF79D3F0"/>
+        <Foreground Type="CT_RAW" Source="FF{{diff.modified}}"/>
       </Color>
       <Color Name="SnapshotMessagesBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -1151,23 +1151,23 @@
         <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="deltadiff.remove.line">
-        <Background Type="CT_RAW" Source="FF2D0000"/>
+        <Background Type="CT_RAW" Source="FF{{diff.deleted}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="deltadiff.add.line">
-        <Background Type="CT_RAW" Source="FF15352C"/>
+        <Background Type="CT_RAW" Source="FF{{diff.inserted}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="deltadiff.remove.word">
-        <Background Type="CT_RAW" Source="FF3C0000"/>
+        <Background Type="CT_RAW" Source="FF{{diff.deleted}}"/>
         <Foreground Type="CT_RAW" Source="FFFF6666"/>
       </Color>
       <Color Name="deltadiff.add.word">
-        <Background Type="CT_RAW" Source="FF265E4D"/>
+        <Background Type="CT_RAW" Source="FF{{diff.inserted}}"/>
         <Foreground Type="CT_RAW" Source="FF76923C"/>
       </Color>
       <Color Name="deltadiff.overview.color">
-        <Background Type="CT_RAW" Source="FF252925"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
         <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="outlining.collapsehintadornment">
@@ -5939,10 +5939,10 @@
         <Foreground Type="CT_RAW" Source="FF7D99B1"/>
       </Color>
       <Color Name="SnapshotDiffAddedText">
-        <Foreground Type="CT_RAW" Source="FF75BF5B"/>
+        <Foreground Type="CT_RAW" Source="FF{{diff.inserted}}"/>
       </Color>
       <Color Name="SnapshotDiffModifiedText">
-        <Foreground Type="CT_RAW" Source="FF79D3F0"/>
+        <Foreground Type="CT_RAW" Source="FF{{diff.modified}}"/>
       </Color>
       <Color Name="SnapshotMessagesBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -8806,7 +8806,7 @@
     </Category>
     <Category Name="VersionControl" GUID="{6be84f44-74e4-4e5f-aee9-1b930f431375}">
       <Color Name="FolderDiffRed">
-        <Background Type="CT_RAW" Source="FFE51400"/>
+        <Background Type="CT_RAW" Source="FF{{diff.conflict}}"/>
       </Color>
       <Color Name="AnnotateRegion">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
