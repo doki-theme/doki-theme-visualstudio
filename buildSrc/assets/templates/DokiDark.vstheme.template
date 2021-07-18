@@ -446,7 +446,7 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="DialogSearchControlButtonDisabledGlyph">
-        <Background Type="CT_RAW" Source="FFBAD0DD"/>
+        <Background Type="CT_RAW" Source="FF{{disabledColor}}"/>
       </Color>
       <Color Name="DialogSearchControlSearchGlyph">
         <Background Type="CT_RAW" Source="FFb0a17f"/>
@@ -3172,7 +3172,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="AutoHideTabText">
-        <Background Type="CT_RAW" Source="FFBAD0DD"/>
+        <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
       </Color>
       <Color Name="AutoHideTabBackgroundBegin">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -3214,7 +3214,7 @@
         <Background Type="CT_RAW" Source="FF37803A"/>
       </Color>
       <Color Name="ClassDesignerCompartmentSeparator">
-        <Background Type="CT_RAW" Source="FFBAD0DD"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ClassDesignerConnectionRouteBorder">
         <Background Type="CT_RAW" Source="FF5D96AC"/>
@@ -3289,7 +3289,7 @@
         <Background Type="CT_RAW" Source="FFb0a17f"/>
       </Color>
       <Color Name="ClassDesignerShapeShadow">
-        <Background Type="CT_RAW" Source="FFBAD0DD"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="ClassDesignerTempConnection">
         <Background Type="CT_RAW" Source="FF5D96AC"/>
@@ -4478,7 +4478,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="TitleBarInactiveText">
-        <Background Type="CT_RAW" Source="FFBAD0DD"/>
+        <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
       </Color>
       <Color Name="ToolboxBackground">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -5329,7 +5329,7 @@
       </Color>
       <Color Name="PanelDisabledHyperlinkInsideSelectionActive">
         <Background Type="CT_RAW" Source="FF7D99B1"/>
-        <Foreground Type="CT_RAW" Source="FFBAD0DD"/>
+        <Foreground Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="PanelDisabledHyperlinkInsideSelectionInactive">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -9326,7 +9326,7 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="WindowPanelText">
-        <Foreground Type="CT_RAW" Source="FFBAD0DD"/>
+        <Foreground Type="CT_RAW" Source="FF{{baseIconColor}}"/>
       </Color>
       <Color Name="WindowPanelTabDivider">
         <Background Type="CT_RAW" Source="FF{{foldedTextBackground}}"/>
