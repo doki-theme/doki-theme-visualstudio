@@ -50,7 +50,7 @@
         <Background Type="CT_RAW" Source="FF009BD8"/>
       </Color>
       <Color Name="Button">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ButtonHover">
@@ -569,7 +569,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TimelineDurationLiveKeyframe">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="TimelineDurationBarSelector">
         <Background Type="CT_RAW" Source="FF95BCCE"/>
@@ -578,20 +578,20 @@
         <Background Type="CT_RAW" Source="B26495ED"/>
       </Color>
       <Color Name="TimelineDurationBarLiveIterationDivider">
-        <Background Type="CT_RAW" Source="B25F7E97"/>
+        <Background Type="CT_RAW" Source="B2{{lineNumberColor}}"/>
       </Color>
       <Color Name="TimelineDurationBarIteration">
         <Background Type="CT_RAW" Source="4C6495ED"/>
       </Color>
       <Color Name="TimelineDurationBarLiveIteration">
-        <Background Type="CT_RAW" Source="4C5F7E97"/>
+        <Background Type="CT_RAW" Source="4C{{lineNumberColor}}"/>
       </Color>
       <Color Name="TimelineDurationBarIterationLabel">
         <Background Type="CT_RAW" Source="B26495ED"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TimelineDurationBarLiveIterationLabel">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TimelineDurationBarFillMode">
@@ -619,7 +619,7 @@
         <Background Type="CT_RAW" Source="FFFFCF00"/>
       </Color>
       <Color Name="LiveValue">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="UnparsedValue">
         <Background Type="CT_RAW" Source="FFFF0000"/>
@@ -4211,7 +4211,7 @@
         <Background Type="CT_RAW" Source="FFD2DEE7"/>
       </Color>
       <Color Name="FileTabText">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="FormSmartTagActionTagBorder">
         <Background Type="CT_RAW" Source="FF000C22"/>
@@ -4520,10 +4520,10 @@
         <Background Type="CT_RAW" Source="FF3F6382"/>
       </Color>
       <Color Name="ToolWindowButtonHoverActive">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="ToolWindowButtonHoverActiveBorder">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="ToolWindowButtonHoverInactive">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -5349,19 +5349,19 @@
         <Background Type="CT_RAW" Source="FF5D96AC"/>
       </Color>
       <Color Name="PreviewTagBackgroundHover">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="PreviewTagTextHover">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="PreviewTagBackgroundPressed">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="PreviewTagTextPressed">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="PreviewTagBackgroundFocused">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="PreviewTagTextFocused">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -5916,7 +5916,7 @@
         <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="SnapshotButtonActive">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="SnapshotButtonBorder">
@@ -6393,10 +6393,10 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="NotificationBubbleCloseButtonHoverGlyph">
-        <Foreground Type="CT_RAW" Source="FF5F7E97"/>
+        <Foreground Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="NotificationBubbleCloseButtonPressedGlyph">
-        <Foreground Type="CT_RAW" Source="FF5F7E97"/>
+        <Foreground Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="NotificationBubbleWindowButtonHover">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -7575,11 +7575,11 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="CallToActionButtonMouseOver">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="CallToActionButtonMouseOverBorder">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="CallToActionButtonPressed">
         <Background Type="CT_RAW" Source="FF3F6382"/>
@@ -7630,7 +7630,7 @@
         <Background Type="CT_RAW" Source="FFF9C900"/>
       </Color>
       <Color Name="TeamExplorerHomeReportsFamilyIconFill">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="TETileIconBackground">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -7651,7 +7651,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TETileIconBackgroundSelected">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="TETileListBackgroundSelected">
         <Background Type="CT_RAW" Source="FF7D99B1"/>
@@ -8993,13 +8993,13 @@
         <Background Type="CT_RAW" Source="FF7D99B1"/>
       </Color>
       <Color Name="HyperlinkHover">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="HyperlinkDisabled">
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="SelectedItemActive">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="SelectedItemInactive">
@@ -9065,7 +9065,7 @@
         <Background Type="CT_RAW" Source="FF5D96AC"/>
       </Color>
       <Color Name="CardBorderSelected">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="CardBorderDisabled">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -9092,7 +9092,7 @@
         <Background Type="CT_RAW" Source="FFFFB900"/>
       </Color>
       <Color Name="NewItemFileStatusUnchangedFile">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="CardIcon">
         <Background Type="CT_RAW" Source="FF334858"/>
@@ -9266,7 +9266,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TagActiveGlyphHover">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TagActiveGlyphPressed">
@@ -9341,10 +9341,10 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="ListItemBackgroundHover">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="ListItemBorderHover">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="ListItemSupportTextHover">
         <Background Type="CT_RAW" Source="FFEDF6FF"/>
