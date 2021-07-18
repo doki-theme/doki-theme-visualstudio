@@ -3595,7 +3595,7 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="FileTabHotBorder">
-        <Background Type="CT_RAW" Source="FF09416D"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="FileTabHotText">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -3604,13 +3604,13 @@
         <Background Type="CT_RAW" Source="FFBAD0E4"/>
       </Color>
       <Color Name="FileTabInactiveGradientTop">
-        <Background Type="CT_RAW" Source="FF09416D"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="FileTabInactiveGradientBottom">
-        <Background Type="CT_RAW" Source="FF09416D"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="FileTabInactiveDocumentBorderBackground">
-        <Background Type="CT_RAW" Source="FF09416D"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="FileTabInactiveDocumentBorderEdge">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -3637,7 +3637,7 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="FileTabLastActiveText">
-        <Background Type="CT_RAW" Source="FF09416D"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="FileTabLastActiveGlyph">
         <Background Type="CT_RAW" Source="FF3F6382"/>
@@ -4190,7 +4190,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="FileTabBorder">
-        <Background Type="CT_RAW" Source="FF061D30"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="FileTabChannelBackground">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -4568,10 +4568,10 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="FileTabHotGradientTop">
-        <Background Type="CT_RAW" Source="FF09416D"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="FileTabHotGradientBottom">
-        <Background Type="CT_RAW" Source="FF09416D"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="FileTabDocumentBorderShadow">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -4782,10 +4782,10 @@
         <Background Type="CT_RAW" Source="FFBAD0E4"/>
       </Color>
       <Color Name="FileTabButtonHoverInactive">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="FileTabButtonHoverInactiveBorder">
-        <Background Type="CT_RAW" Source="FF5F7E97"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="FileTabButtonHoverInactiveGlyph">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -4800,7 +4800,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="FileTabButtonHoverSelectedActive">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="FileTabButtonHoverSelectedActiveBorder">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -4830,7 +4830,7 @@
         <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="FileTabInactiveBorder">
-        <Background Type="CT_RAW" Source="FF09416D"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="DropDownMouseDownGlyph">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -5305,7 +5305,7 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="FileTabBackground">
-        <Background Type="CT_RAW" Source="FF061D30"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="ToolWindowTabSelectedBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
