@@ -1020,7 +1020,7 @@
         <Background Type="CT_RAW" Source="FF96ABB9"/>
       </Color>
       <Color Name="HeaderText">
-        <Background Type="CT_RAW" Source="FF96ABB9"/>
+        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="TextHover">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -1069,16 +1069,16 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="ChartAxis">
-        <Background Type="CT_RAW" Source="FF96ABB9"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ChartTickMark">
-        <Background Type="CT_RAW" Source="FF96ABB9"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ChartSplitter">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="FileIndicatorPanelBorder">
-        <Background Type="CT_RAW" Source="FF96ABB9"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
     </Category>
     <Category Name="ColorizedSignatureHelp colors" GUID="{75a05685-00a8-4ded-bae5-e7a50bfa929a}">
@@ -4259,7 +4259,7 @@
         <Background Type="CT_RAW" Source="FF000C22"/>
       </Color>
       <Color Name="HelpSearchBorder">
-        <Background Type="CT_RAW" Source="FF96ABB9"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="HelpSearchFilterText">
         <Background Type="CT_RAW" Source="FF000C22"/>
@@ -4268,7 +4268,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="HelpSearchFilterBorder">
-        <Background Type="CT_RAW" Source="FF96ABB9"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="HelpSearchProviderUnselectedBackground">
         <Background Type="CT_RAW" Source="FFDEE1E7"/>
@@ -4304,7 +4304,7 @@
         <Background Type="CT_RAW" Source="FF000C22"/>
       </Color>
       <Color Name="HelpSearchPanelRules">
-        <Background Type="CT_RAW" Source="FF96ABB9"/>
+        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="MdiClientBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -5787,8 +5787,8 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="Button">
-        <Background Type="CT_RAW" Source="FF96ABB9"/>
-        <Foreground Type="CT_RAW" Source="FF000F24"/>
+        <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
       </Color>
       <Color Name="ButtonBorder">
         <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
@@ -5801,7 +5801,7 @@
         <Background Type="CT_RAW" Source="FFC5CAE9"/>
       </Color>
       <Color Name="ButtonDisabledBorder">
-        <Background Type="CT_RAW" Source="FF96ABB9"/>
+        <Background Type="CT_RAW" Source="FF{{disabledColor}}"/>
       </Color>
       <Color Name="ButtonMouseDown">
         <Background Type="CT_RAW" Source="FFC5CAE9"/>
@@ -5815,11 +5815,11 @@
         <Foreground Type="CT_RAW" Source="FF000F24"/>
       </Color>
       <Color Name="ButtonFocusBorder">
-        <Background Type="CT_RAW" Source="FFC5CAE9"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="ButtonDisabled">
-        <Background Type="CT_RAW" Source="FF96ABB9"/>
-        <Foreground Type="CT_RAW" Source="FF96ABB9"/>
+        <Background Type="CT_RAW" Source="FF{{disabledColor}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{disabledColor}}"/>
       </Color>
     </Category>
     <Category Name="InformationBadge" GUID="{63f9718c-889b-4814-a3b4-6e81d14f1156}">
@@ -6617,7 +6617,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="LightboxDialogCloseButtonGlyph">
-        <Foreground Type="CT_RAW" Source="FF96ABB9"/>
+        <Foreground Type="CT_RAW" Source="FF{{baseIconColor}}"/>
       </Color>
       <Color Name="LightboxDialogCloseButtonGlyphHover">
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -6929,13 +6929,13 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="StartPageSupportText">
-        <Foreground Type="CT_RAW" Source="FF96ABB9"/>
+        <Foreground Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="StartPageSupportTextHover">
-        <Foreground Type="CT_RAW" Source="FF96ABB9"/>
+        <Foreground Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="StartPageSupportTextPressed">
-        <Foreground Type="CT_RAW" Source="FF96ABB9"/>
+        <Foreground Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="StartPageListItemGlyphHover">
         <Background Type="CT_RAW" Source="FF3F6382"/>
@@ -8035,11 +8035,11 @@
         <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="Breakpoint (Disabled)">
-        <Background Type="CT_RAW" Source="FF963A46"/>
-        <Foreground Type="CT_RAW" Source="FF95BCCE"/>
+        <Background Type="CT_RAW" Source="FF{{disabledColor}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{disabledColor}}"/>
       </Color>
       <Color Name="Breakpoint (Error)">
-        <Background Type="CT_RAW" Source="FF963A46"/>
+        <Background Type="CT_RAW" Source="FF{{errorColor}}"/>
         <Foreground Type="CT_RAW" Source="FFFFDBA3"/>
       </Color>
       <Color Name="Tracepoint - Advanced (Error)">
@@ -8051,19 +8051,19 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Coverage Touched Area">
-        <Background Type="CT_RAW" Source="FF9CB5CA"/>
+        <Background Type="CT_RAW" Source="FF{{diff.inserted}}"/>
         <Foreground Type="CT_RAW" Source="FF000C22"/>
       </Color>
       <Color Name="Coverage Not Touched Area">
-        <Background Type="CT_RAW" Source="FFEDE0D1"/>
+        <Background Type="CT_RAW" Source="FF{{diff.deleted}}"/>
         <Foreground Type="CT_RAW" Source="FF000C22"/>
       </Color>
       <Color Name="Breakpoint - Selected">
-        <Background Type="CT_RAW" Source="FF963A46"/>
+        <Background Type="CT_RAW" Source="FF{{nonProjectFileScopeColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Coverage Partially Touched Area">
-        <Background Type="CT_RAW" Source="FF96ABB9"/>
+        <Background Type="CT_RAW" Source="FF{{diff.modified}}"/>
         <Foreground Type="CT_RAW" Source="FF000C22"/>
       </Color>
       <Color Name="Breakpoint (Enabled)">
@@ -8715,7 +8715,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="IgnoredSubtitleText">
-        <Background Type="CT_RAW" Source="FF96ABB9"/>
+        <Background Type="CT_RAW" Source="FF{{disabledColor}}"/>
       </Color>
       <Color Name="IgnoredTitleSelectedText">
         <Background Type="CT_RAW" Source="FF000C22"/>
@@ -8727,7 +8727,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="IgnoredSubtitleMouseOverText">
-        <Background Type="CT_RAW" Source="FF96ABB9"/>
+        <Background Type="CT_RAW" Source="FF{{disabledColor}}"/>
       </Color>
       <Color Name="IgnoredHyperlink">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -9035,10 +9035,10 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="HeaderTextSecondary">
-        <Background Type="CT_RAW" Source="FF96ABB9"/>
+        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="WizardFooterText">
-        <Background Type="CT_RAW" Source="FF96ABB9"/>
+        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="CardTitleText">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -9332,7 +9332,7 @@
         <Background Type="CT_RAW" Source="FF{{foldedTextBackground}}"/>
       </Color>
       <Color Name="WindowPanelSupportText">
-        <Background Type="CT_RAW" Source="FF96ABB9"/>
+        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="WindowPanelBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
