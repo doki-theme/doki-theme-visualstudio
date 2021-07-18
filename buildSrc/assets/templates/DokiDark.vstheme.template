@@ -369,7 +369,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ArtboardWindowBorder">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="PropertyValueBorder">
         <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
@@ -428,7 +428,7 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="HueSelectionGlyph">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="IconButtonMouseOver">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -1175,7 +1175,7 @@
         <Foreground Type="CT_RAW" Source="FFD7DDE8"/>
       </Color>
       <Color Name="outlining.square">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="urlformat">
@@ -1463,7 +1463,7 @@
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="OverviewMarginVisible">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
         <Foreground Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="OverviewMarginCaret">
@@ -1759,7 +1759,7 @@
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="mergeEditor.SelectionBoxHC">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Interactive Window Error Output">
@@ -3097,7 +3097,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="Background">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="ButtonFace">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -3220,7 +3220,7 @@
         <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ClassDesignerDefaultConnection">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="ClassDesignerDefaultShapeTitleBackground">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -3232,13 +3232,13 @@
         <Background Type="CT_RAW" Source="FF002C57"/>
       </Color>
       <Color Name="ClassDesignerDefaultShapeSubtitle">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="ClassDesignerDefaultShapeText">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="ClassDesignerDefaultShapeTitle">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="ClassDesignerDelegateCompartment">
         <Background Type="CT_RAW" Source="FFF7F0F0"/>
@@ -3472,7 +3472,7 @@
         <Background Type="CT_RAW" Source="FFF2F4F8"/>
       </Color>
       <Color Name="DiagReportSecondaryPageSubtitle">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="DiagReportSecondaryPageTitle">
         <Background Type="CT_RAW" Source="FF1D6587"/>
@@ -3487,7 +3487,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="DiagReportText">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="DockTargetBackground">
         <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
@@ -4214,13 +4214,13 @@
         <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="FormSmartTagActionTagBorder">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="FormSmartTagActionTagFill">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="FormSmartTagObjectTagBorder">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="FormSmartTagObjectTagFill">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -4232,7 +4232,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="GridLine">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="HelpHowDoIPaneBackground">
         <Background Type="CT_RAW" Source="FFDEE1E7"/>
@@ -4241,7 +4241,7 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="HelpHowDoIPaneText">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="HelpHowDoITaskBackground">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -4250,19 +4250,19 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="HelpHowDoITaskText">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="HelpSearchFrameBackground">
         <Background Type="CT_RAW" Source="FFDEE1E7"/>
       </Color>
       <Color Name="HelpSearchFrameText">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="HelpSearchBorder">
         <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="HelpSearchFilterText">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="HelpSearchFilterBackground">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -4280,10 +4280,10 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="HelpSearchProviderSelectedText">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="HelpSearchProviderIcon">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="HelpSearchResultLinkSelected">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -4295,13 +4295,13 @@
         <Background Type="CT_RAW" Source="FFD9EFFA"/>
       </Color>
       <Color Name="HelpSearchResultSelectedText">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="HelpSearchBackground">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="HelpSearchText">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="HelpSearchPanelRules">
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
@@ -4433,10 +4433,10 @@
         <Background Type="CT_RAW" Source="FFFEFCC8"/>
       </Color>
       <Color Name="SmartTagHoverText">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="SmartTagText">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="Snaplines">
         <Background Type="CT_RAW" Source="FF4169E1"/>
@@ -4454,7 +4454,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TaskListGridLines">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="TitleBarActive">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -4556,7 +4556,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="WizardOrientationPanelText">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="SplashScreenBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -5482,7 +5482,7 @@
         <Foreground Type="CT_RAW" Source="FFD7DDE8"/>
       </Color>
       <Color Name="outlining.square">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Collapsible Text (Collapsed)">
@@ -5581,7 +5581,7 @@
         <Background Type="CT_RAW" Source="F0FFFF70"/>
       </Color>
       <Color Name="ColorInputPortBase">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="ColorInputPortStep">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -5602,7 +5602,7 @@
         <Background Type="CT_RAW" Source="FF003C00"/>
       </Color>
       <Color Name="ColorBlueChannel">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="ColorAlphaChannel">
         <Background Type="CT_RAW" Source="FF3C0F0F"/>
@@ -5623,7 +5623,7 @@
         <Background Type="CT_RAW" Source="FFFF0000"/>
       </Color>
       <Color Name="ColorDesignerTextDropShadow">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="ColorDesignerText">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -5662,7 +5662,7 @@
         <Background Type="CT_RAW" Source="FF19B4FF"/>
       </Color>
       <Color Name="ColorAxisLabelDropShadow">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="ColorGridColor">
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
@@ -5695,7 +5695,7 @@
         <Background Type="CT_RAW" Source="FFFFA700"/>
       </Color>
       <Color Name="ColorSelectedNodeText">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
     </Category>
     <Category Name="Header" GUID="{4997f547-1379-456e-b985-2f413cdfa536}">
@@ -6178,7 +6178,7 @@
         <Foreground Type="CT_RAW" Source="B3F9CE82"/>
       </Color>
       <Color Name="VsDropShadowBackgroundColor">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
     </Category>
     <Category Name="JavaScriptResponsiveness" GUID="{6adcf200-0249-47f3-b14f-ab041a443e9b}">
@@ -6452,15 +6452,15 @@
         <Foreground Type="CT_RAW" Source="FF{{editorAccentColor}}"/>
       </Color>
       <Color Name="OutputHeading">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
         <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="OutputError">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
         <Foreground Type="CT_RAW" Source="FFE51400"/>
       </Color>
       <Color Name="OutputVerbose">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
         <Foreground Type="CT_RAW" Source="FF96ABB9"/>
       </Color>
       <Color Name="Selected Text in High Contrast">
@@ -7119,7 +7119,7 @@
     </Category>
     <Category Name="Task Runner Explorer" GUID="{af57483a-a3e2-4330-a7cd-21f3dc681594}">
       <Color Name="PlainText">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
         <Foreground Type="CT_RAW" Source="FF95BCCE"/>
       </Color>
       <Color Name="SelectedText">
@@ -8478,7 +8478,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="IDCardBackground">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="IDCardBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -8643,7 +8643,7 @@
         <Background Type="CT_RAW" Source="FFFFDF66"/>
       </Color>
       <Color Name="BadgeButtonMouseOverVSUpdateActiveGlyph">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
       </Color>
       <Color Name="BadgeButtonVSUpdateActive">
         <Background Type="CT_RAW" Source="FFFFCC00"/>
@@ -8652,7 +8652,7 @@
         <Background Type="CT_RAW" Source="FFFFCC00"/>
       </Color>
       <Color Name="BadgeButtonVSUpdateActiveGlyph">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
       </Color>
       <Color Name="BadgeButtonMouseOverVSUpdateInactive">
         <Background Type="CT_RAW" Source="FFFFDF66"/>
@@ -8661,7 +8661,7 @@
         <Background Type="CT_RAW" Source="FFFFDF66"/>
       </Color>
       <Color Name="BadgeButtonMouseOverVSUpdateInactiveGlyph">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
       </Color>
       <Color Name="BadgeButtonVSUpdateInactive">
         <Background Type="CT_RAW" Source="FFFFCC00"/>
@@ -8670,7 +8670,7 @@
         <Background Type="CT_RAW" Source="FFFFCC00"/>
       </Color>
       <Color Name="BadgeButtonVSUpdateInactiveGlyph">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
       </Color>
       <Color Name="BadgeButtonMouseDownVSUpdate">
         <Background Type="CT_RAW" Source="FFC59E00"/>
@@ -8679,7 +8679,7 @@
         <Background Type="CT_RAW" Source="FFC59E00"/>
       </Color>
       <Color Name="BadgeButtonMouseDownVSUpdateGlyph">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
       </Color>
       <Color Name="NotificationSelectedBackground">
         <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
@@ -8718,7 +8718,7 @@
         <Background Type="CT_RAW" Source="FF{{disabledColor}}"/>
       </Color>
       <Color Name="IgnoredTitleSelectedText">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
       <Color Name="IgnoredSubtitleSelectedText">
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
@@ -8975,7 +8975,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="WelcomeExperienceForeground">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
       </Color>
     </Category>
     <Category Name="WindowsTemplateStudio" GUID="{9c63f223-700a-4418-8a5a-cd450f05f593}">
