@@ -1088,7 +1088,7 @@
       </Color>
       <Color Name="Markup Attribute Value">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFECC48D"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="Markup Node">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1332,7 +1332,7 @@
       </Color>
       <Color Name="CppNewDeleteSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFC792EA"/>
+        <Foreground Type="CT_RAW" Source="FF{{htmlTagColor}}"/>
       </Color>
       <Color Name="CppSuggestedActionFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1364,11 +1364,11 @@
       </Color>
       <Color Name="HTML Attribute">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFADDB67"/>
+        <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
       </Color>
       <Color Name="HTML Attribute Value">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFECC48D"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="HTML Comment">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1556,11 +1556,11 @@
       </Color>
       <Color Name="xml doc comment - attribute quotes">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFECC48D"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="xml doc comment - attribute value">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFECC48D"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="xml doc comment - cdata section">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1576,7 +1576,7 @@
       </Color>
       <Color Name="xml doc comment - entity reference">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFECC48D"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="xml doc comment - name">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1600,7 +1600,7 @@
       </Color>
       <Color Name="xml literal - attribute value">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFECC48D"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="xml literal - cdata section">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1652,7 +1652,7 @@
       </Color>
       <Color Name="brace matching">
         <Background Type="CT_RAW" Source="FF20476C"/>
-        <Foreground Type="CT_RAW" Source="FFECC48D"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="Stale Code">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -2012,7 +2012,6 @@
       </Color>
       <Color Name="Test Summary - No Source">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="axml - attribute name">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -2020,11 +2019,11 @@
       </Color>
       <Color Name="axml - attribute quotes">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFECC48D"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="axml - attribute value">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFECC48D"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="axml - cdata section">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -2056,7 +2055,7 @@
       </Color>
       <Color Name="axml - resource url">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFECC48D"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="U-SQL - ClassName">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -2583,10 +2582,10 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ListItemBorderSelected">
-        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
       </Color>
       <Color Name="ListItemBackgroundSelected">
-        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
       </Color>
       <Color Name="ListItemTextSelected">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -6457,7 +6456,7 @@
       </Color>
       <Color Name="OutputError">
         <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
-        <Foreground Type="CT_RAW" Source="FFE51400"/>
+        <Foreground Type="CT_RAW" Source="FF{{errorColor}}"/>
       </Color>
       <Color Name="OutputVerbose">
         <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
@@ -7768,7 +7767,7 @@
       </Color>
       <Color Name="XAML Name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFC792EA"/>
+        <Foreground Type="CT_RAW" Source="FF{{htmlTagColor}}"/>
       </Color>
       <Color Name="XAML Attribute">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7784,7 +7783,7 @@
       </Color>
       <Color Name="XAML Attribute Value">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFECC48D"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="XAML Attribute Quotes">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7816,7 +7815,7 @@
       </Color>
       <Color Name="XML Name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFC792EA"/>
+        <Foreground Type="CT_RAW" Source="FF{{htmlTagColor}}"/>
       </Color>
       <Color Name="XML Attribute">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7828,7 +7827,7 @@
       </Color>
       <Color Name="XML Attribute Value">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFECC48D"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="XML Attribute Quotes">
         <Background Type="CT_INVALID" Source="00000000"/>
