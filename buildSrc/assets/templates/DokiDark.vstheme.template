@@ -5752,26 +5752,26 @@
         <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="InfoBarBackground">
-        <Background Type="CT_RAW" Source="FFE0DEB0"/>
-        <Foreground Type="CT_RAW" Source="FF000F24"/>
+        <Background Type="CT_RAW" Source="FF{{nonProjectFileScopeColor}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="CloseButton">
-        <Background Type="CT_RAW" Source="FFE0DEB0"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
       </Color>
       <Color Name="CloseButtonGlyph">
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="CloseButtonBorder">
-        <Background Type="CT_RAW" Source="FFE0DEB0"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
       </Color>
       <Color Name="CloseButtonHover">
-        <Background Type="CT_RAW" Source="FFE0DEB0"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
       </Color>
       <Color Name="CloseButtonHoverGlyph">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="CloseButtonHoverBorder">
-        <Background Type="CT_RAW" Source="FFE0DEB0"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
       </Color>
       <Color Name="CloseButtonDown">
         <Background Type="CT_RAW" Source="FFE0DEB0"/>
