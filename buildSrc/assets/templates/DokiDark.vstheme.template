@@ -5060,17 +5060,17 @@
       </Color>
       <Color Name="StatusBarDefault">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="MainWindowActiveNoSolutionBorder">
         <Background Type="CT_RAW" Source="FF{{diff.deleted}}"/>
       </Color>
       <Color Name="StatusBarBuilding">
-        <Background Type="CT_RAW" Source="FF0E639C"/>
+        <Background Type="CT_RAW" Source="FF{{diff.modified}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="StatusBarDebugging">
-        <Background Type="CT_RAW" Source="FFCA5100"/>
+        <Background Type="CT_RAW" Source="FF{{diff.inserted}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="StatusBarNoSolution">
@@ -5078,10 +5078,10 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="MainWindowActiveBuildingBorder">
-        <Background Type="CT_RAW" Source="FF0E639C"/>
+        <Background Type="CT_RAW" Source="FF{{diff.modified}}"/>
       </Color>
       <Color Name="MainWindowActiveDebuggingBorder">
-        <Background Type="CT_RAW" Source="FFCA5100"/>
+        <Background Type="CT_RAW" Source="FF{{diff.inserted}}"/>
       </Color>
       <Color Name="MainWindowActiveDefaultBorder">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
