@@ -244,7 +244,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ListItemMouseOverBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ListItemSelected">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -372,7 +372,7 @@
         <Background Type="CT_RAW" Source="FF000C22"/>
       </Color>
       <Color Name="PropertyValueBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="StructureViewChildSelected">
         <Background Type="CT_RAW" Source="FF95BCCE"/>
@@ -387,7 +387,7 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="PropertyDotBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="PropertyValueLocal">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -499,7 +499,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ListItemTier1Border">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ListItemTier2">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -688,7 +688,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="DialogBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="CategoryTree">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -779,7 +779,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="SnapshotButtonBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="SnapshotButtonBorderActive">
         <Background Type="CT_RAW" Source="FF7D99B1"/>
@@ -813,7 +813,7 @@
         <Foreground Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="SnapshotTileBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="SnapshotTileErrorText">
         <Foreground Type="CT_RAW" Source="FFFF0000"/>
@@ -835,7 +835,7 @@
     </Category>
     <Category Name="ClientDiagnosticsTimeline" GUID="{694a8994-9208-45d6-bf31-c58f96236fbe}">
       <Color Name="GraphBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="DropDownButtonHover">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -1005,7 +1005,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="SubduedBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="PopupSelected">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -1495,7 +1495,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Block Structure Adornments">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Peek Highlighted Text">
@@ -1832,7 +1832,7 @@
       </Color>
       <Color Name="outlining.verticalrule">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="Selected Text in High Contrast">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -2235,7 +2235,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ButtonBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ButtonDefault">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -2471,7 +2471,7 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="InnerTabInactiveHoverBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="InnerTabInactiveHoverText">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -3043,7 +3043,7 @@
     </Category>
     <Category Name="DiagnosticsHub" GUID="{f8a8b2a5-dd35-43f6-a382-fd6a61325c22}">
       <Color Name="Border">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="GraphLine">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -3064,10 +3064,10 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="SwimlaneBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ToolbarTextDisabled">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{disabledColor}}"/>
       </Color>
     </Category>
     <Category Name="Dialogs and Tool Windows" GUID="{1f987c00-e7c4-4869-8a17-23fd602268b0}">
@@ -3217,7 +3217,7 @@
         <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ClassDesignerConnectionRouteBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ClassDesignerDefaultConnection">
         <Background Type="CT_RAW" Source="FF000C22"/>
@@ -3280,13 +3280,13 @@
         <Background Type="CT_RAW" Source="FFB0764F"/>
       </Color>
       <Color Name="ClassDesignerReferencedAssemblyBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ClassDesignerResizingShapeBorder">
         <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ClassDesignerShapeBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ClassDesignerShapeShadow">
         <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
@@ -4650,7 +4650,7 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="RaftedWindowButtonHoverInactiveBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="RaftedWindowButtonHoverInactiveGlyph">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -4665,7 +4665,7 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="RaftedWindowButtonHoverActiveBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="RaftedWindowButtonHoverActiveGlyph">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -4764,7 +4764,7 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="FileTabButtonProvisionalHoverSelectedInactiveBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="FileTabButtonProvisionalHoverSelectedInactiveGlyph">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -4821,7 +4821,7 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="FileTabButtonHoverSelectedInactiveBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="FileTabButtonHoverSelectedInactiveGlyph">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -5032,7 +5032,7 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="MainWindowButtonHoverInactiveBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="MainWindowButtonHoverInactiveGlyph">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -5047,7 +5047,7 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="MainWindowButtonHoverActiveBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="MainWindowButtonHoverActiveGlyph">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -5791,7 +5791,7 @@
         <Foreground Type="CT_RAW" Source="FF000F24"/>
       </Color>
       <Color Name="ButtonBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ButtonMouseOver">
         <Background Type="CT_RAW" Source="FFC5DBED"/>
@@ -5920,7 +5920,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="SnapshotButtonBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="SnapshotButtonBorderActive">
         <Background Type="CT_RAW" Source="FF7D99B1"/>
@@ -5954,7 +5954,7 @@
         <Foreground Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="SnapshotTileBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="SnapshotTileErrorText">
         <Foreground Type="CT_RAW" Source="FFFF0000"/>
@@ -6183,7 +6183,7 @@
     </Category>
     <Category Name="JavaScriptResponsiveness" GUID="{6adcf200-0249-47f3-b14f-ab041a443e9b}">
       <Color Name="GraphBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="DropDownButtonHover">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -6572,7 +6572,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="LightboxDialogPanelBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="LightboxDialogButton">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -6752,10 +6752,10 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="PopupControlMouseOverBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="PopupControlMouseDownBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="PopupControlMouseOverBackgroundGradientBegin">
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
@@ -7141,7 +7141,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ButtonBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ButtonPressed">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -8703,7 +8703,7 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="IgnoredMouseOverBorder">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="IgnoredSelectedBackground">
         <Background Type="CT_RAW" Source="FFD6E8F4"/>
@@ -9059,10 +9059,10 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="CardBorderDefault">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="CardBorderHover">
-        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="CardBorderSelected">
         <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
@@ -9286,7 +9286,7 @@
         <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="TagButtonBorder">
-        <Foreground Type="CT_RAW" Source="FF{{infoForeground}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
     </Category>
     <Category Name="XAML Designer" GUID="{fa937f7b-c0d2-46b8-9f10-a7a92642b384}">
