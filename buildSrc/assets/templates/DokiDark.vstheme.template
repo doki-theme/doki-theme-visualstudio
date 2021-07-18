@@ -7,19 +7,19 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="H1">
-        <Foreground Type="CT_RAW" Source="FFB9A1CF"/>
+        <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
       </Color>
       <Color Name="Hyperlink">
         <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="HyperlinkHover">
-        <Foreground Type="CT_RAW" Source="FFC5CAE9"/>
+        <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="HyperlinkActive">
         <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="NumberedListItem">
-        <Background Type="CT_RAW" Source="FFB9A1CF"/>
+        <Background Type="CT_RAW" Source="FF{{keyColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="NumberedListItemHover">
@@ -829,8 +829,8 @@
         <Foreground Type="CT_RAW" Source="FF5D96AC"/>
       </Color>
       <Color Name="TabHover">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFC5CAE9"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
     </Category>
     <Category Name="ClientDiagnosticsTimeline" GUID="{694a8994-9208-45d6-bf31-c58f96236fbe}">
