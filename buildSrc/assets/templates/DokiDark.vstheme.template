@@ -1232,7 +1232,7 @@
       </Color>
       <Color Name="CppMacroSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF82AAFF"/>
+        <Foreground Type="CT_RAW" Source="FF{{classNameColor}}"/>
       </Color>
       <Color Name="CppEnumSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1264,11 +1264,11 @@
       </Color>
       <Color Name="CppFunctionSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF82AAFF"/>
+        <Foreground Type="CT_RAW" Source="FF{{classNameColor}}"/>
       </Color>
       <Color Name="CppMemberFunctionSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF82AAFF"/>
+        <Foreground Type="CT_RAW" Source="FF{{classNameColor}}"/>
       </Color>
       <Color Name="CppMemberFieldSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1276,7 +1276,7 @@
       </Color>
       <Color Name="CppStaticMemberFunctionSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF82AAFF"/>
+        <Foreground Type="CT_RAW" Source="FF{{classNameColor}}"/>
       </Color>
       <Color Name="CppStaticMemberFieldSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1300,7 +1300,7 @@
       </Color>
       <Color Name="CppFunctionTemplateSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF82AAFF"/>
+        <Foreground Type="CT_RAW" Source="FF{{classNameColor}}"/>
       </Color>
       <Color Name="CppNamespaceSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1324,7 +1324,7 @@
       </Color>
       <Color Name="CppOperatorSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF82AAFF"/>
+        <Foreground Type="CT_RAW" Source="FF{{classNameColor}}"/>
       </Color>
       <Color Name="CppMemberOperatorSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1860,7 +1860,7 @@
       </Color>
       <Color Name="FSharp.Function">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF82AAFF"/>
+        <Foreground Type="CT_RAW" Source="FF{{classNameColor}}"/>
       </Color>
       <Color Name="FSharp.MutableVar">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1960,11 +1960,11 @@
       </Color>
       <Color Name="method name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF82AAFF"/>
+        <Foreground Type="CT_RAW" Source="FF{{classNameColor}}"/>
       </Color>
       <Color Name="extension method name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF82AAFF"/>
+        <Foreground Type="CT_RAW" Source="FF{{classNameColor}}"/>
       </Color>
       <Color Name="property name">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7847,7 +7847,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Function">
-        <Background Type="CT_RAW" Source="FF82AAFF"/>
+        <Background Type="CT_RAW" Source="FF{{editorAccentColor}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="StreamAnalytics - BuiltInFunction">
