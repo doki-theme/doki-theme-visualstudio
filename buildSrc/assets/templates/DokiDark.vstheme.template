@@ -4698,10 +4698,10 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="FileTabProvisionalSelectedActive">
-        <Background Type="CT_RAW" Source="FFFF8F00"/>
+        <Background Type="CT_RAW" Source="FF{{diff.deleted}}"/>
       </Color>
       <Color Name="FileTabProvisionalSelectedActiveBorder">
-        <Background Type="CT_RAW" Source="FFFF8F00"/>
+        <Background Type="CT_RAW" Source="FF{{diff.deleted}}"/>
       </Color>
       <Color Name="FileTabProvisionalSelectedActiveForeground">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -5063,7 +5063,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="MainWindowActiveNoSolutionBorder">
-        <Background Type="CT_RAW" Source="FFFF8F00"/>
+        <Background Type="CT_RAW" Source="FF{{diff.deleted}}"/>
       </Color>
       <Color Name="StatusBarBuilding">
         <Background Type="CT_RAW" Source="FF0E639C"/>
@@ -5074,7 +5074,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="StatusBarNoSolution">
-        <Background Type="CT_RAW" Source="FFFF8F00"/>
+        <Background Type="CT_RAW" Source="FF{{diff.deleted}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="MainWindowActiveBuildingBorder">
@@ -5111,10 +5111,10 @@
         <Background Type="CT_RAW" Source="FFE1D3E4"/>
       </Color>
       <Color Name="FileTabProvisionalHover">
-        <Background Type="CT_RAW" Source="FFFF8F00"/>
+        <Background Type="CT_RAW" Source="FF{{diff.deleted}}"/>
       </Color>
       <Color Name="FileTabProvisionalHoverBorder">
-        <Background Type="CT_RAW" Source="FFFF8F00"/>
+        <Background Type="CT_RAW" Source="FF{{diff.deleted}}"/>
       </Color>
       <Color Name="FileTabProvisionalHoverForeground">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -7618,7 +7618,7 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="TeamExplorerHomeSCCFamilyIconFill">
-        <Background Type="CT_RAW" Source="FFFF8F00"/>
+        <Background Type="CT_RAW" Source="FF{{diff.deleted}}"/>
       </Color>
       <Color Name="TeamExplorerHomeBuildFamilyIconFill">
         <Background Type="CT_RAW" Source="FF647988"/>
