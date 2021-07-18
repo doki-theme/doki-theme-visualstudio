@@ -1092,7 +1092,7 @@
       </Color>
       <Color Name="Markup Node">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF7FDBCA"/>
+        <Foreground Type="CT_RAW" Source="FF{{htmlTagColor}}"/>
       </Color>
       <Color Name="Type">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1132,7 +1132,7 @@
       </Color>
       <Color Name="Operator">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF7FDBCA"/>
+        <Foreground Type="CT_RAW" Source="FF{{htmlTagColor}}"/>
       </Color>
       <Color Name="Literal">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1328,7 +1328,7 @@
       </Color>
       <Color Name="CppMemberOperatorSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF7FDBCA"/>
+        <Foreground Type="CT_RAW" Source="FF{{htmlTagColor}}"/>
       </Color>
       <Color Name="CppNewDeleteSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1344,7 +1344,7 @@
       </Color>
       <Color Name="CSS Comment">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF637777"/>
+        <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
       </Color>
       <Color Name="CSS Selector">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1372,11 +1372,11 @@
       </Color>
       <Color Name="HTML Comment">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF637777"/>
+        <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
       </Color>
       <Color Name="HTML Element Name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF7FDBCA"/>
+        <Foreground Type="CT_RAW" Source="FF{{htmlTagColor}}"/>
       </Color>
       <Color Name="HTML Entity">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1400,7 +1400,7 @@
       </Color>
       <Color Name="VBScript Comment">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF37803A"/>
+        <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
       </Color>
       <Color Name="VBScript Operator">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1568,11 +1568,11 @@
       </Color>
       <Color Name="xml doc comment - comment">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF637777"/>
+        <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
       </Color>
       <Color Name="xml doc comment - delimiter">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF637777"/>
+        <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
       </Color>
       <Color Name="xml doc comment - entity reference">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1580,15 +1580,15 @@
       </Color>
       <Color Name="xml doc comment - name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF7FDBCA"/>
+        <Foreground Type="CT_RAW" Source="FF{{htmlTagColor}}"/>
       </Color>
       <Color Name="xml doc comment - processing instruction">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF637777"/>
+        <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
       </Color>
       <Color Name="xml doc comment - text">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF637777"/>
+        <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
       </Color>
       <Color Name="xml literal - attribute name">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1608,7 +1608,7 @@
       </Color>
       <Color Name="xml literal - comment">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF637777"/>
+        <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
       </Color>
       <Color Name="xml literal - delimiter">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1848,7 +1848,7 @@
       </Color>
       <Color Name="XML Doc Comment">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF637777"/>
+        <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
       </Color>
       <Color Name="XML Doc Tag">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1892,7 +1892,7 @@
       </Color>
       <Color Name="regex - comment">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF37803A"/>
+        <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
       </Color>
       <Color Name="regex - character class">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -2032,7 +2032,7 @@
       </Color>
       <Color Name="axml - comment">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF637777"/>
+        <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
       </Color>
       <Color Name="axml - delimiter">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -2136,7 +2136,7 @@
       </Color>
       <Color Name="Python documentation">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF637777"/>
+        <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
       </Color>
       <Color Name="Python dot">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -3211,7 +3211,7 @@
         <Background Type="CT_RAW" Source="FFFFFFCC"/>
       </Color>
       <Color Name="ClassDesignerCommentText">
-        <Background Type="CT_RAW" Source="FF37803A"/>
+        <Background Type="CT_RAW" Source="FF{{comments}}"/>
       </Color>
       <Color Name="ClassDesignerCompartmentSeparator">
         <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
@@ -6109,7 +6109,7 @@
         <Foreground Type="CT_RAW" Source="FF963A46"/>
       </Color>
       <Color Name="PluginFontEditorCommentColor">
-        <Foreground Type="CT_RAW" Source="FF006400"/>
+        <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
       </Color>
       <Color Name="PluginFontEditorCssNameColor">
         <Foreground Type="CT_RAW" Source="FFFF0000"/>
@@ -7676,7 +7676,7 @@
       </Color>
       <Color Name="Comment">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF637777"/>
+        <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
       </Color>
       <Color Name="Identifier">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7696,7 +7696,7 @@
       </Color>
       <Color Name="XML Comment">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF37803A"/>
+        <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
       </Color>
       <Color Name="Memory Changed">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7764,7 +7764,7 @@
       </Color>
       <Color Name="XAML Comment">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF37803A"/>
+        <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
       </Color>
       <Color Name="XAML Name">
         <Background Type="CT_INVALID" Source="00000000"/>
