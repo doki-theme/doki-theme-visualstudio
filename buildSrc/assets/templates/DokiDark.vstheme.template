@@ -95,7 +95,7 @@
         <Background Type="CT_RAW" Source="FFF1CA5D"/>
       </Color>
       <Color Name="AIPurple">
-        <Background Type="CT_RAW" Source="FF{{ansi.blue}}"/>
+        <Background Type="CT_RAW" Source="FF{{terminal.ansiBlue}}"/>
       </Color>
       <Color Name="LandingPageConstrastBackground">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -468,10 +468,10 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="BrushGradientStopOuterBorder">
-        <Background Type="CT_RAW" Source="FF000C22"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="BrushGradientStopInnerBorder">
-        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="ToolWindowGroupDisabled">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -8437,7 +8437,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="DragOverItem">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="DragOverItemGlyph">
@@ -8836,7 +8836,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="PivotBar">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="SectionDivider">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -8845,7 +8845,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="SectionHeaderText">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="SupportText">
         <Background Type="CT_RAW" Source="FF95BCCE"/>
@@ -8854,13 +8854,13 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Hyperlink">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{editorAccentColor}}"/>
       </Color>
       <Color Name="HyperlinkHover">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="HyperlinkPressed">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{editorAccentColor}}"/>
       </Color>
     </Category>
     <Category Name="VsGraphics" GUID="{1b5630dd-453f-45e0-94f0-7413c05fff83}">
@@ -8990,7 +8990,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Hyperlink">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{editorAccentColor}}"/>
       </Color>
       <Color Name="HyperlinkHover">
         <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
@@ -9114,7 +9114,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ActiveControlBorder">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="DefaultControl">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
