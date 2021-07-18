@@ -3739,19 +3739,19 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="ScrollBarThumbBackground">
-        <Background Type="CT_RAW" Source="FF{{editorAccentColor}}"/>
+        <Background Type="CT_RAW" Source="88{{accentColor}}"/>
       </Color>
       <Color Name="ScrollBarThumbBorder">
-        <Background Type="CT_RAW" Source="FF{{editorAccentColor}}"/>
+        <Background Type="CT_RAW" Source="88{{accentColor}}"/>
       </Color>
       <Color Name="ScrollBarThumbGlyph">
-        <Background Type="CT_RAW" Source="FF{{editorAccentColor}}"/>
+        <Background Type="CT_RAW" Source="88{{accentColor}}"/>
       </Color>
       <Color Name="ScrollBarThumbMouseOverBackground">
-        <Background Type="CT_RAW" Source="FF{{editorAccentColor}}"/>
+        <Background Type="CT_RAW" Source="88{{accentColor}}"/>
       </Color>
       <Color Name="ScrollBarThumbPressedBackground">
-        <Background Type="CT_RAW" Source="FFEFEBEF"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="SearchBoxBackground">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
