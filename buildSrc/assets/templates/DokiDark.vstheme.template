@@ -1096,7 +1096,7 @@
       </Color>
       <Color Name="Type">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF8CD1F5"/>
+        <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
       </Color>
       <Color Name="C/C++ User Keywords">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1256,11 +1256,11 @@
       </Color>
       <Color Name="CppRefTypeSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF8CD1F5"/>
+        <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
       </Color>
       <Color Name="CppValueTypeSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF8CD1F5"/>
+        <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
       </Color>
       <Color Name="CppFunctionSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1296,7 +1296,7 @@
       </Color>
       <Color Name="CppGenericTypeSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF8CD1F5"/>
+        <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
       </Color>
       <Color Name="CppFunctionTemplateSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1512,7 +1512,7 @@
       </Color>
       <Color Name="interface name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFE6EE9C"/>
+        <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
       </Color>
       <Color Name="type parameter name">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1524,7 +1524,7 @@
       </Color>
       <Color Name="module name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF8CD1F5"/>
+        <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
       </Color>
       <Color Name="class name">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1532,11 +1532,11 @@
       </Color>
       <Color Name="delegate name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF8CD1F5"/>
+        <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
       </Color>
       <Color Name="struct name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF8CD1F5"/>
+        <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
       </Color>
       <Color Name="string - verbatim">
         <Background Type="CT_INVALID" Source="00000000"/>
