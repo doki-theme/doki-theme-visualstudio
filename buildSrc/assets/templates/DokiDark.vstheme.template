@@ -1100,7 +1100,7 @@
       </Color>
       <Color Name="C/C++ User Keywords">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFECC48D"/>
+        <Foreground Type="CT_RAW" Source="FF{{keywordColor}}"/>
       </Color>
       <Color Name="CodeReview.SelectedComment.AnchorPoint">
         <Background Type="CT_RAW" Source="FF0B618C"/>
@@ -1128,7 +1128,7 @@
       </Color>
       <Color Name="Preprocessor Keyword">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFC792EA"/>
+        <Foreground Type="CT_RAW" Source="FF{{keywordColor}}"/>
       </Color>
       <Color Name="Operator">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1340,7 +1340,7 @@
       </Color>
       <Color Name="CSS Keyword">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFFFEB95"/>
+        <Foreground Type="CT_RAW" Source="FF{{keywordColor}}"/>
       </Color>
       <Color Name="CSS Comment">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1396,7 +1396,7 @@
       </Color>
       <Color Name="VBScript Keyword">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{keywordColor}}"/>
       </Color>
       <Color Name="VBScript Comment">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1700,7 +1700,7 @@
       </Color>
       <Color Name="LessCssKeywordFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF4DB6AC"/>
+        <Foreground Type="CT_RAW" Source="FF{{keywordColor}}"/>
       </Color>
       <Color Name="ScssMixinDeclarationFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1720,7 +1720,7 @@
       </Color>
       <Color Name="Line Number">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF4B6479"/>
+        <Foreground Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="mergeEditor.AcceptedLineHC">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1932,7 +1932,7 @@
       </Color>
       <Color Name="keyword - control">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFC792EA"/>
+        <Foreground Type="CT_RAW" Source="FF{{keywordColor}}"/>
       </Color>
       <Color Name="operator - overloaded">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -2172,7 +2172,7 @@
       </Color>
       <Color Name="CppControlKeywordSyntacticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFC792EA"/>
+        <Foreground Type="CT_RAW" Source="FF{{keywordColor}}"/>
       </Color>
       <Color Name="CppStringEscapeCharacterSyntacticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7672,7 +7672,7 @@
     <Category Name="Text Editor Language Service Items" GUID="{e0187991-b458-4f7e-8ca9-42c9a573b56c}">
       <Color Name="Keyword">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFC792EA"/>
+        <Foreground Type="CT_RAW" Source="FF{{keywordColor}}"/>
       </Color>
       <Color Name="Comment">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7688,7 +7688,7 @@
       </Color>
       <Color Name="Number">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFF78C6C"/>
+        <Foreground Type="CT_RAW" Source="FF{{constantColor}}"/>
       </Color>
       <Color Name="XML CData Section">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7756,7 +7756,7 @@
       </Color>
       <Color Name="XAML Keyword">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF81D4FA"/>
+        <Foreground Type="CT_RAW" Source="FF{{keywordColor}}"/>
       </Color>
       <Color Name="XAML Delimiter">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7808,7 +7808,7 @@
       </Color>
       <Color Name="XML Keyword">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFC792EA"/>
+        <Foreground Type="CT_RAW" Source="FF{{keywordColor}}"/>
       </Color>
       <Color Name="XML Delimiter">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7836,7 +7836,7 @@
       </Color>
       <Color Name="XSLT Keyword">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF7D99B1"/>
+        <Foreground Type="CT_RAW" Source="FF{{keywordColor}}"/>
       </Color>
       <Color Name="Memory Data">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
