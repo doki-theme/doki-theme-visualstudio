@@ -3683,15 +3683,15 @@
         <Foreground Type="CT_RAW" Source="FFFFFFFF"/>
       </Color>
       <Color Name="NewProjectItemInactiveBegin">
-        <Background Type="CT_RAW" Source="FF0E293F"/>
+        <Background Type="CT_RAW" Source="FF{{selectionInactive}}"/>
         <Foreground Type="CT_RAW" Source="FFFFFFFF"/>
       </Color>
       <Color Name="NewProjectItemInactiveEnd">
-        <Background Type="CT_RAW" Source="FF0E293F"/>
+        <Background Type="CT_RAW" Source="FF{{selectionInactive}}"/>
         <Foreground Type="CT_RAW" Source="FFFFFFFF"/>
       </Color>
       <Color Name="NewProjectItemInactiveBorder">
-        <Background Type="CT_RAW" Source="FF0E293F"/>
+        <Background Type="CT_RAW" Source="FF{{selectionInactive}}"/>
       </Color>
       <Color Name="PageContentExpanderChevron">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -8259,7 +8259,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="SelectedItemInactive">
-        <Background Type="CT_RAW" Source="FF0E293F"/>
+        <Background Type="CT_RAW" Source="FF{{selectionInactive}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ListItemMouseOver">
@@ -8414,7 +8414,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="SelectedItemInactive">
-        <Background Type="CT_RAW" Source="FF0E293F"/>
+        <Background Type="CT_RAW" Source="FF{{selectionInactive}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="FocusVisualBorder">
@@ -9003,7 +9003,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="SelectedItemInactive">
-        <Background Type="CT_RAW" Source="FF0E293F"/>
+        <Background Type="CT_RAW" Source="FF{{selectionInactive}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ListItemMouseOver">
