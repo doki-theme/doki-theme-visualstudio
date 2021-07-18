@@ -230,7 +230,7 @@
         <Foreground Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="ListItemSelectedBorder">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="ListItem">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -560,7 +560,7 @@
         <Background Type="CT_RAW" Source="FF334858"/>
       </Color>
       <Color Name="TimelineKeyframeSelected">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="TimelineKeyframeSelectedBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -668,7 +668,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="BreadcrumbButtonOnHover">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="BreadcrumbButtonSelected">
@@ -676,8 +676,8 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="BreadcrumbButtonSelectedOnHover">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{selectionForeground}}"/>
       </Color>
       <Color Name="ListHeader">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -782,7 +782,7 @@
         <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="SnapshotButtonBorderActive">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="SnapshotButtonBorderHover">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -791,7 +791,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="SnapshotButtonDisabledText">
-        <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{disabledColor}}"/>
       </Color>
       <Color Name="SnapshotButtonHover">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -820,7 +820,7 @@
       </Color>
       <Color Name="SnapshotTileHeader">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FF7D99B1"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TabHeader">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -894,7 +894,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Progress">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="Splitter">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -995,7 +995,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ItemSelectedText">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="BodyText">
@@ -1060,10 +1060,10 @@
         <Background Type="CT_RAW" Source="FF117AD1"/>
       </Color>
       <Color Name="RankedItemsThird">
-        <Background Type="CT_RAW" Source="FF71B252"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="RankedItemsFourth">
-        <Background Type="CT_RAW" Source="FF79D7F2"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="RankedItemsFifth">
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
@@ -1136,7 +1136,7 @@
       </Color>
       <Color Name="Literal">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF7FDBCA"/>
+        <Foreground Type="CT_RAW" Source="FF{{constantColor}}"/>
       </Color>
       <Color Name="SymbolDefinitionClassificationFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1144,7 +1144,7 @@
       </Color>
       <Color Name="SymbolReferenceClassificationFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF7CA5A0"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="CurrentLineActiveFormat">
         <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
@@ -1164,7 +1164,7 @@
       </Color>
       <Color Name="deltadiff.add.word">
         <Background Type="CT_RAW" Source="FF{{diff.inserted}}"/>
-        <Foreground Type="CT_RAW" Source="FF76923C"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="deltadiff.overview.color">
         <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
@@ -1184,7 +1184,7 @@
       </Color>
       <Color Name="NavigableSymbolFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF7D99B1"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Track reverted changes">
         <Background Type="CT_RAW" Source="FF5F95FA"/>
@@ -1620,11 +1620,11 @@
       </Color>
       <Color Name="xml literal - entity reference">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF7D99B1"/>
+        <Foreground Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="xml literal - name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF7D99B1"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="xml literal - processing instruction">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1676,7 +1676,7 @@
       </Color>
       <Color Name="JSON Property Name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF7FDBCA"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="LessCssVariableDeclarationClassificationFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -2144,7 +2144,7 @@
       </Color>
       <Color Name="Python parameter">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF7FDBCA"/>
+        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
       </Color>
       <Color Name="Python builtin">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -2213,7 +2213,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Selected Text">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Inactive Selected Text">
@@ -2613,13 +2613,13 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="ListItemGlyphHover">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="ListItemGlyphPressed">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ListItemGlyphFocused">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="ListItemGlyphDisabled">
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
@@ -2643,19 +2643,19 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TileViewBorderPressed">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="TileViewBackgroundPressed">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="TileViewTextPressed">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TileViewBorderSelected">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="TileViewBackgroundSelected">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="TileViewTextSelected">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -2712,7 +2712,7 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="InnerTabActiveIndicator">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{foldedTextBackground}}"/>
       </Color>
       <Color Name="InnerTabBackground">
         <Background Type="CT_RAW" Source="00E0F6FF"/>
@@ -2751,7 +2751,7 @@
         <Background Type="CT_RAW" Source="00E0F6FF"/>
       </Color>
       <Color Name="InnerTabSelectedIndicator">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="InnerTabSelectedText">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -3118,7 +3118,7 @@
         <Background Type="CT_RAW" Source="FF{{disabledColor}}"/>
       </Color>
       <Color Name="Highlight">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="HighlightText">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -3439,7 +3439,7 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="CommandBarSelectedBorder">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="CommandBarToolBarBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -3676,10 +3676,10 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="NewProjectItemSelectedBorder">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="NewProjectItemSelected">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
         <Foreground Type="CT_RAW" Source="FFFFFFFF"/>
       </Color>
       <Color Name="NewProjectItemInactiveBegin">
@@ -4076,7 +4076,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="CommandBarHoverOverSelectedIconBorder">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="CommandBarSelected">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -4373,19 +4373,19 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="ProjectDesignerTabSelectedInsideBorder">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="ProjectDesignerTabSelectedBorder">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="ProjectDesignerTabSelectedHighlight1">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="ProjectDesignerTabSelectedHighlight2">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="ProjectDesignerTabSelectedBackground">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="ProjectDesignerTabSepBottomGradientBegin">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -5102,7 +5102,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="VerticalResizeGripMiddle">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="TitleBarDragHandleActive">
         <Background Type="CT_RAW" Source="FF59A8DE"/>
@@ -5187,7 +5187,7 @@
         <Background Type="CT_RAW" Source="FF334858"/>
       </Color>
       <Color Name="ScrollBarArrowGlyphMouseOver">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="ScrollBarBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -5219,7 +5219,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="IconActionFill">
-        <Background Type="CT_RAW" Source="FF7AC1FF"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="IconGeneralFill">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -5317,8 +5317,8 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="PanelHyperlinkInsideSelectionActive">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="PanelHyperlinkInsideSelectionInactive">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -5328,8 +5328,8 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="PanelDisabledHyperlinkInsideSelectionActive">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
-        <Foreground Type="CT_RAW" Source="FF{{highlightColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{disabledColor}}"/>
       </Color>
       <Color Name="PanelDisabledHyperlinkInsideSelectionInactive">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -5466,11 +5466,11 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Selected Text">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Current List Location">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Inactive Selected Text">
@@ -5538,7 +5538,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Selected Text">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Inactive Selected Text">
@@ -5730,7 +5730,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Selected Text">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Inactive Selected Text">
@@ -5923,7 +5923,7 @@
         <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="SnapshotButtonBorderActive">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="SnapshotButtonBorderHover">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -5935,8 +5935,8 @@
         <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="SnapshotButtonHover">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="SnapshotDiffAddedText">
         <Foreground Type="CT_RAW" Source="FF{{diff.inserted}}"/>
@@ -6026,7 +6026,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Progress">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="Splitter">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -6085,7 +6085,7 @@
         <Background Type="CT_RAW" Source="FFD9EFFA"/>
       </Color>
       <Color Name="MonacoGotolineSelectedBackgroundColor">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
       </Color>
       <Color Name="PluginEditorFocusedSelectedTextBackgroundColor">
         <Background Type="CT_RAW" Source="00000C22"/>
@@ -6306,7 +6306,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="WonderbarSelectedBorder">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="TreeArrowChecked">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -6334,7 +6334,7 @@
         <Background Type="CT_RAW" Source="00000C22"/>
       </Color>
       <Color Name="TextBoxSelection">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="TextBoxBackground">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -6359,7 +6359,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="InputFocusBorder">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="TextBoxMouseOverBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -6436,11 +6436,11 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Selected Text">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Current List Location">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Inactive Selected Text">
@@ -6449,7 +6449,7 @@
       </Color>
       <Color Name="urlformat">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FF7D99B1"/>
+        <Foreground Type="CT_RAW" Source="FF{{editorAccentColor}}"/>
       </Color>
       <Color Name="OutputHeading">
         <Background Type="CT_RAW" Source="FF000C22"/>
@@ -6474,7 +6474,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Selected Text">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Inactive Selected Text">
@@ -6582,25 +6582,25 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="LightboxDialogButtonPressed">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="LightboxDialogButtonBorderPressed">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="LightboxDialogButtonHover">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="LightboxDialogButtonBorderHover">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="LightboxDialogButtonFocused">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="LightboxDialogButtonBorderFocused">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="LightboxDialogButtonDisabled">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -6889,7 +6889,7 @@
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Selected Cell">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Inactive Selected Cell">
@@ -6966,7 +6966,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="VideoRSSItemPressed">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="VideoRSSItemTitle">
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -7376,10 +7376,10 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="SecondaryTabHoverGlyphHoverBackground">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
       </Color>
       <Color Name="SecondaryTabHoverGlyphHoverBorder">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="SecondaryTabHoverGlyphPressed">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -7418,10 +7418,10 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="SecondarySelectedTabGlyphHoverBackground">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
       </Color>
       <Color Name="SecondarySelectedTabGlyphHoverBorder">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="SecondarySelectedTabGlyphPressed">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -7448,10 +7448,10 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="SecondaryTabFocusedGlyphHoverBackground">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
       </Color>
       <Color Name="SecondaryTabFocusedGlyphHoverBorder">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="SecondaryTabFocusedGlyphPressed">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -7558,7 +7558,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ButtonPressedBorder">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="CallToActionButton">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -7654,7 +7654,7 @@
         <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
       </Color>
       <Color Name="TETileListBackgroundSelected">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="TETileListForegroundSelected">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -7772,7 +7772,7 @@
       </Color>
       <Color Name="XAML Attribute">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF7D99B1"/>
+        <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
       </Color>
       <Color Name="XAML CData Section">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7820,7 +7820,7 @@
       </Color>
       <Color Name="XML Attribute">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF7D99B1"/>
+        <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
       </Color>
       <Color Name="XML Processing Instruction">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7887,16 +7887,16 @@
         <Foreground Type="CT_RAW" Source="FF000C22"/>
       </Color>
       <Color Name="Bookmark">
-        <Background Type="CT_RAW" Source="FF7E6551"/>
+        <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="compiler error">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FF9CB5CA"/>
+        <Foreground Type="CT_RAW" Source="FF{{errorColor}}"/>
       </Color>
       <Color Name="syntax error">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFFC3E36"/>
+        <Foreground Type="CT_RAW" Source="FF{{errorColor}}"/>
       </Color>
       <Color Name="hinted suggestion">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7904,10 +7904,10 @@
       </Color>
       <Color Name="other error">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCA79EC"/>
+        <Foreground Type="CT_RAW" Source="FF{{errorColor}}"/>
       </Color>
       <Color Name="Current List Location">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="compiler warning">
@@ -8071,7 +8071,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Call Return">
-        <Background Type="CT_RAW" Source="FF7CA5A0"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
         <Foreground Type="CT_RAW" Source="FF000C22"/>
       </Color>
       <Color Name="Call Return (historical mode)">
@@ -9077,19 +9077,19 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="NewItemFileStatusNewFile">
-        <Background Type="CT_RAW" Source="FF00CC6A"/>
+        <Background Type="CT_RAW" Source="FF{{diff.inserted}}"/>
       </Color>
       <Color Name="NewItemFileStatusModifiedFile">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{diff.modified}}"/>
       </Color>
       <Color Name="NewItemFileStatusConflictingFile">
-        <Background Type="CT_RAW" Source="FFE51400"/>
+        <Background Type="CT_RAW" Source="FF{{diff.conflict}}"/>
       </Color>
       <Color Name="NewItemFileStatusConflictingStylesFile">
-        <Background Type="CT_RAW" Source="FFFFB900"/>
+        <Background Type="CT_RAW" Source="FF{{diff.conflict}}"/>
       </Color>
       <Color Name="NewItemFileStatusWarningFile">
-        <Background Type="CT_RAW" Source="FFFFB900"/>
+        <Background Type="CT_RAW" Source="FF{{nonProjectFileScopeColor}}"/>
       </Color>
       <Color Name="NewItemFileStatusUnchangedFile">
         <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
@@ -9110,7 +9110,7 @@
     </Category>
     <Category Name="WorkItemEditor" GUID="{2138d120-456d-425e-80b5-88d2401fca23}">
       <Color Name="ActiveControl">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ActiveControlBorder">
@@ -9202,11 +9202,11 @@
         <Foreground Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="GridActiveRowHeader">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="GridActiveColumnHeader">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="GridCell">
@@ -9214,8 +9214,8 @@
         <Foreground Type="CT_RAW" Source="FFA8BDCB"/>
       </Color>
       <Color Name="GridActiveCell">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{selectionForeground}}"/>
       </Color>
       <Color Name="GridInactiveCell">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -9254,7 +9254,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TagActive">
-        <Background Type="CT_RAW" Source="FF7D99B1"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TagHoverGlyphHover">
