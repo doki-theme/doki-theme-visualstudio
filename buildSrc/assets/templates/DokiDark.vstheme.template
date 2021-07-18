@@ -1252,7 +1252,7 @@
       </Color>
       <Color Name="CppTypeSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFFFCB8B"/>
+        <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
       </Color>
       <Color Name="CppRefTypeSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1292,7 +1292,7 @@
       </Color>
       <Color Name="CppClassTemplateSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFFFCB8B"/>
+        <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
       </Color>
       <Color Name="CppGenericTypeSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1528,7 +1528,7 @@
       </Color>
       <Color Name="class name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFFFCB8B"/>
+        <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
       </Color>
       <Color Name="delegate name">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -2168,7 +2168,7 @@
       </Color>
       <Color Name="Python class">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFFFCB8B"/>
+        <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
       </Color>
       <Color Name="CppControlKeywordSyntacticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
