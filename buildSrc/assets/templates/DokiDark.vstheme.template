@@ -867,7 +867,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="FocusDots">
-        <Foreground Type="CT_RAW" Source="FF3d4754"/>
+        <Foreground Type="CT_RAW" Source="FF{{foldedTextBackground}}"/>
       </Color>
       <Color Name="GridColumnSizer">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -3076,7 +3076,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ToolTipBorder">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{foldedTextBackground}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
     </Category>
@@ -3181,7 +3181,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="AutoHideTabBorder">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{foldedTextBackground}}"/>
       </Color>
       <Color Name="AutoHideTabMouseOverText">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -4160,7 +4160,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="DesignerSelectionDots">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{foldedTextBackground}}"/>
       </Color>
       <Color Name="DesignerTray">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -5999,7 +5999,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="FocusDots">
-        <Foreground Type="CT_RAW" Source="FF3d4754"/>
+        <Foreground Type="CT_RAW" Source="FF{{foldedTextBackground}}"/>
       </Color>
       <Color Name="GridColumnSizer">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
