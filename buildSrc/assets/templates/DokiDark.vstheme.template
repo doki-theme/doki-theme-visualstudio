@@ -163,7 +163,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TabBackground">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="TabBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -193,7 +193,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="TabItemSelected">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="HyperlinkMouseOver">
@@ -338,7 +338,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="ComboBoxButtonMouseOver">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="ComboBoxButtonPressedBorder">
@@ -355,7 +355,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="ComboBoxPopUp">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="ArtboardButton">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -396,7 +396,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="Menu">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="MenuBorder">
@@ -772,7 +772,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="SnapshotButton">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="SnapshotButtonActive">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -807,7 +807,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="SnapshotTile">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="SnapshotTileBaselineText">
         <Foreground Type="CT_RAW" Source="FF5D96AC"/>
@@ -880,7 +880,7 @@
         <Foreground Type="CT_RAW" Source="FF5D96AC"/>
       </Color>
       <Color Name="Menu">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="MenuBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -2291,7 +2291,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="CheckBoxBackgroundHover">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="CheckBoxBackgroundPressed">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -2300,7 +2300,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="CheckBoxBackgroundFocused">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="CheckBoxBorder">
         <Background Type="CT_RAW" Source="FF5D96AC"/>
@@ -2402,7 +2402,7 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="ComboBoxGlyphBackgroundHover">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="ComboBoxBackgroundFocused">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -3139,7 +3139,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="Menu">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="MenuText">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -3352,10 +3352,10 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="ComboBoxPopupBackgroundBegin">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="ComboBoxPopupBackgroundEnd">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="ComboBoxPopupBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -3364,16 +3364,16 @@
         <Background Type="CT_RAW" Source="FF5D96AC"/>
       </Color>
       <Color Name="CommandBarMenuBackgroundGradientBegin">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="CommandBarMenuBackgroundGradientEnd">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="CommandBarMenuBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="CommandBarMenuIconBackground">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="CommandBarMenuMouseOverSubmenuGlyph">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -3397,16 +3397,16 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="CommandBarMouseOverBackgroundBegin">
-        <Background Type="CT_RAW" Source="FF193D70"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
       </Color>
       <Color Name="CommandBarMouseOverBackgroundMiddle1">
-        <Background Type="CT_RAW" Source="FF193D70"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
       </Color>
       <Color Name="CommandBarMouseOverBackgroundMiddle2">
-        <Background Type="CT_RAW" Source="FF193D70"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
       </Color>
       <Color Name="CommandBarMouseOverBackgroundEnd">
-        <Background Type="CT_RAW" Source="FF193D70"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
       </Color>
       <Color Name="CommandBarOptionsBackground">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -3490,7 +3490,7 @@
         <Background Type="CT_RAW" Source="FF000C22"/>
       </Color>
       <Color Name="DockTargetBackground">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="DockTargetBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -3559,10 +3559,10 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="DropDownPopupBackgroundBegin">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="DropDownPopupBackgroundEnd">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="DropDownPopupBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -3781,10 +3781,10 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="StartPageBackgroundGradientBegin">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="StartPageBackgroundGradientEnd">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="StartPageButtonBorder">
         <Background Type="CT_RAW" Source="FF5D96AC"/>
@@ -4770,7 +4770,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="FileTabButtonProvisionalDownSelectedInactive">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="FileTabButtonProvisionalDownSelectedInactiveBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -4827,7 +4827,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="FileTabButtonDownSelectedInactive">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="FileTabInactiveBorder">
         <Background Type="CT_RAW" Source="FF09416D"/>
@@ -4878,7 +4878,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ComboBoxButtonMouseOverBackground">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="ComboBoxButtonMouseOverSeparator">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -5174,8 +5174,8 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="CommandBarMenuItemMouseOver">
-        <Background Type="CT_RAW" Source="FF193D70"/>
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{selectionForeground}}"/>
       </Color>
       <Color Name="ScrollBarArrowGlyphPressed">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -5275,7 +5275,7 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="ComboBoxFocusedButtonBackground">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="ComboBoxFocusedGlyph">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -5557,10 +5557,10 @@
     </Category>
     <Category Name="GraphicsDesigners" GUID="{9cfdb8b3-48aa-4715-ac38-dde2968d204f}">
       <Color Name="ColorBackgroundGradientStart">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="ColorBackgroundGradientEnd">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="ColorLassoRectangle">
         <Background Type="CT_SYSCOLOR" Source="0000000D"/>
@@ -5913,7 +5913,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="SnapshotButton">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="SnapshotButtonActive">
         <Background Type="CT_RAW" Source="FF5F7E97"/>
@@ -5948,7 +5948,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="SnapshotTile">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="SnapshotTileBaselineText">
         <Foreground Type="CT_RAW" Source="FF5D96AC"/>
@@ -6012,7 +6012,7 @@
         <Foreground Type="CT_RAW" Source="FF5D96AC"/>
       </Color>
       <Color Name="Menu">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="MenuBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -6707,13 +6707,13 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="PopupItemsListBackgroundGradientBegin">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="PopupItemsListBackgroundGradientEnd">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="PopupSectionBackgroundGradientEnd">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="PopupSectionHeaderSeparator">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -6722,10 +6722,10 @@
         <Background Type="CT_RAW" Source="FF5D96AC"/>
       </Color>
       <Color Name="PopupSectionHeaderGradientBegin">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="PopupSectionHeaderGradientEnd">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="PopupButtonText">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -6779,7 +6779,7 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="PopupSectionBackgroundGradientBegin">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="PopupButtonMouseDownBackgroundGradientEnd">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -7011,7 +7011,7 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="StartPageCheckBoxMouseOverBackground">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="StartPageCheckBoxPressedBackground">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -7190,7 +7190,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="CheckBoxBackgroundHover">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="CheckBoxBackgroundPressed">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -7199,7 +7199,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="CheckBoxBackgroundFocused">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="CheckBoxBorder">
         <Background Type="CT_RAW" Source="FF5D96AC"/>
@@ -7301,7 +7301,7 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="ComboBoxGlyphBackgroundHover">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="ComboBoxBackgroundFocused">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -8682,7 +8682,7 @@
         <Background Type="CT_RAW" Source="FF000C22"/>
       </Color>
       <Color Name="NotificationSelectedBackground">
-        <Background Type="CT_RAW" Source="FF011325"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
       <Color Name="NotificationSelectedBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
