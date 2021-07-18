@@ -566,7 +566,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="TimelineDurationBarGripper">
-        <Background Type="CT_RAW" Source="FFCCE2EF"/>
+        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TimelineDurationLiveKeyframe">
         <Background Type="CT_RAW" Source="FF5F7E97"/>
@@ -1176,7 +1176,7 @@
       </Color>
       <Color Name="outlining.square">
         <Background Type="CT_RAW" Source="FF000C22"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="urlformat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1240,15 +1240,15 @@
       </Color>
       <Color Name="CppGlobalVariableSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="CppLocalVariableSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="CppParameterSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="CppTypeSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1272,7 +1272,7 @@
       </Color>
       <Color Name="CppMemberFieldSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="CppStaticMemberFunctionSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1280,15 +1280,15 @@
       </Color>
       <Color Name="CppStaticMemberFieldSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="CppPropertySemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="CppEventSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="CppClassTemplateSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1308,7 +1308,7 @@
       </Color>
       <Color Name="CppLabelSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="CppUDLRawSemanticTokenFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1356,7 +1356,7 @@
       </Color>
       <Color Name="CSS Property Value">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="CSS String Value">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1420,7 +1420,7 @@
       </Color>
       <Color Name="VBScript Function Block Start">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="FileLineClassificationFormat">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1455,7 +1455,7 @@
         <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="OverviewMarginCollapsedRegion">
-        <Background Type="CT_RAW" Source="FFCCE2EF"/>
+        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="OverviewMarginBackground">
@@ -1468,7 +1468,7 @@
       </Color>
       <Color Name="OverviewMarginCaret">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="MarkerFormatDefinition/BookmarkInScrollBar">
         <Background Type="CT_RAW" Source="FFC0C4C0"/>
@@ -1508,7 +1508,7 @@
       </Color>
       <Color Name="punctuation">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="interface name">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1592,7 +1592,7 @@
       </Color>
       <Color Name="xml literal - attribute name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="xml literal - attribute quotes">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1632,7 +1632,7 @@
       </Color>
       <Color Name="xml literal - text">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="RenameTrackingTag">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1660,15 +1660,15 @@
       </Color>
       <Color Name="RazorCode">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="RazorTagHelperAttribute">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="RazorTagHelperElement">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="HtmlClientTemplateValueFormatDefinition">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1768,7 +1768,7 @@
       </Color>
       <Color Name="HtmlClientTemplateSeparatorFormatDefinition">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="HtmlClientTemplateTagFormatDefinition">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1776,19 +1776,19 @@
       </Color>
       <Color Name="RoslynConflictTag">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="RoslynPreviewWarningTag">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="RoslynRenameConflictTag">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="RoslynRenameFixupTag">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="RoslynRenameFieldBackgroundAndBorderTag">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1800,23 +1800,23 @@
       </Color>
       <Color Name="data.tools.diff.remove.line">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="data.tools.diff.add.line">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="data.tools.diff.remove.word">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="data.tools.diff.add.word">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TextMate.Classifier">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Peek History Selected">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -1856,7 +1856,7 @@
       </Color>
       <Color Name="MarkerFormatDefinition/VerticalHighlight">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="FSharp.Function">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1872,7 +1872,7 @@
       </Color>
       <Color Name="FSharp.Property">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="FSharp.Disposable">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1936,15 +1936,15 @@
       </Color>
       <Color Name="operator - overloaded">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="field name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="enum member name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="constant name">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1952,11 +1952,11 @@
       </Color>
       <Color Name="local name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="parameter name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="method name">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1968,19 +1968,19 @@
       </Color>
       <Color Name="property name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="event name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="namespace name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="label name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Caret (Primary)">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1992,19 +1992,19 @@
       </Color>
       <Color Name="UnnecessaryCode">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Test Summary - Default">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Test Summary - Header">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Test Summary - Label">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Test Summary - Stack">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -2012,7 +2012,7 @@
       </Color>
       <Color Name="Test Summary - No Source">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="axml - attribute name">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -5222,7 +5222,7 @@
         <Background Type="CT_RAW" Source="FF7AC1FF"/>
       </Color>
       <Color Name="IconGeneralFill">
-        <Background Type="CT_RAW" Source="FFCCE2EF"/>
+        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="IconGeneralStroke">
         <Background Type="CT_RAW" Source="00000C22"/>
@@ -5483,7 +5483,7 @@
       </Color>
       <Color Name="outlining.square">
         <Background Type="CT_RAW" Source="FF000C22"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Collapsible Text (Collapsed)">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -5572,7 +5572,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ColorNodeGradientEnd">
-        <Background Type="CT_RAW" Source="FFCCE2EF"/>
+        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ColorNodeUnselected">
         <Background Type="CT_RAW" Source="F0{{textEditorBackground}}"/>
@@ -7680,7 +7680,7 @@
       </Color>
       <Color Name="Identifier">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="String">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7720,7 +7720,7 @@
       </Color>
       <Color Name="Text">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="SQL Stored Procedure">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7744,7 +7744,7 @@
       </Color>
       <Color Name="SQLCMD Command">
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Error">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7804,7 +7804,7 @@
       </Color>
       <Color Name="XML Text">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="XML Keyword">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7824,7 +7824,7 @@
       </Color>
       <Color Name="XML Processing Instruction">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="XML Attribute Value">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7840,11 +7840,11 @@
       </Color>
       <Color Name="Memory Data">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Register Data">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Function">
         <Background Type="CT_RAW" Source="FF82AAFF"/>
@@ -7858,7 +7858,7 @@
     <Category Name="Text Editor Text Manager Items" GUID="{58e96763-1d3b-4e05-b6ba-ff7115fd0b7b}">
       <Color Name="Plain Text">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Selected Text">
         <Background Type="CT_RAW" Source="FF4f3a4e"/>
@@ -7968,15 +7968,15 @@
       </Color>
       <Color Name="Tracepoint - Mapped (Enabled)">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Tracepoint (Disabled)">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Tracepoint - Mapped (Error)">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Breakpoint - Advanced (Enabled)">
         <Background Type="CT_RAW" Source="FF963A46"/>
@@ -7984,27 +7984,27 @@
       </Color>
       <Color Name="Tracepoint (Error)">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Tracepoint - Mapped (Warning)">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Tracepoint - Advanced (Disabled)">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Tracepoint - Advanced (Warning)">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Tracepoint - Mapped (Disabled)">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Tracepoint (Enabled)">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Breakpoint - Advanced (Warning)">
         <Background Type="CT_RAW" Source="FF963A46"/>
@@ -8028,7 +8028,7 @@
       </Color>
       <Color Name="Executing Thread IP">
         <Background Type="CT_RAW" Source="FFD7BA7C"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Current Statement (new context)">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -8044,7 +8044,7 @@
       </Color>
       <Color Name="Tracepoint - Advanced (Error)">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Breakpoint (Warning)">
         <Background Type="CT_RAW" Source="FF963A46"/>
@@ -8060,7 +8060,7 @@
       </Color>
       <Color Name="Breakpoint - Selected">
         <Background Type="CT_RAW" Source="FF963A46"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Coverage Partially Touched Area">
         <Background Type="CT_RAW" Source="FF96ABB9"/>
@@ -8068,7 +8068,7 @@
       </Color>
       <Color Name="Breakpoint (Enabled)">
         <Background Type="CT_RAW" Source="FF963A46"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Call Return">
         <Background Type="CT_RAW" Source="FF7CA5A0"/>
@@ -8080,7 +8080,7 @@
       </Color>
       <Color Name="Current Statement (historical mode)">
         <Background Type="CT_RAW" Source="FFB5CEA8"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Error Message">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -8088,11 +8088,11 @@
       </Color>
       <Color Name="Tracepoint - Advanced (Enabled)">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Breakpoint - Mapped (Enabled)">
         <Background Type="CT_RAW" Source="FF963A46"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Tracepoint (Warning)">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -8112,7 +8112,7 @@
       </Color>
       <Color Name="Brace Matching (Highlight)">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFCCE2EF"/>
+        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Breakpoint - Advanced (Disabled)">
         <Background Type="CT_RAW" Source="FF963A46"/>
@@ -8827,13 +8827,13 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="Border">
-        <Background Type="CT_RAW" Source="FFCCE2EF"/>
+        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="HeaderTextBrand">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="PivotText">
-        <Background Type="CT_RAW" Source="FFCCE2EF"/>
+        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="PivotBar">
         <Background Type="CT_RAW" Source="FF7D99B1"/>
@@ -8842,7 +8842,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="HeaderText">
-        <Background Type="CT_RAW" Source="FFCCE2EF"/>
+        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="SectionHeaderText">
         <Background Type="CT_RAW" Source="FF7D99B1"/>
@@ -8851,7 +8851,7 @@
         <Background Type="CT_RAW" Source="FF95BCCE"/>
       </Color>
       <Color Name="BodyText">
-        <Background Type="CT_RAW" Source="FFCCE2EF"/>
+        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Hyperlink">
         <Background Type="CT_RAW" Source="FF7D99B1"/>
