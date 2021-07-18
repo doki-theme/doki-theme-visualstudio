@@ -852,7 +852,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="MouseOverBackgroundColor">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="MouseOverText">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -873,7 +873,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="GridHeaderHover">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
         <Foreground Type="CT_RAW" Source="FF5D96AC"/>
       </Color>
       <Color Name="GridHeaderText">
@@ -2565,10 +2565,10 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ListItemBorderHover">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ListItemBackgroundHover">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="ListItemTextHover">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -2592,10 +2592,10 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ListItemBorderFocused">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ListItemBackgroundFocused">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="ListItemTextFocused">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -2634,10 +2634,10 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TileViewBorderHover">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="TileViewBackgroundHover">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="TileViewTextHover">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -2661,10 +2661,10 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="TileViewBorderFocused">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="TileViewBackgroundFocused">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="TileViewTextFocused">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -4052,10 +4052,10 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="CommandBarDragHandle">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{foldedTextBackground}}"/>
       </Color>
       <Color Name="CommandBarDragHandleShadow">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{foldedTextBackground}}"/>
       </Color>
       <Color Name="CommandBarGradientBegin">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -4124,7 +4124,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="DebuggerDataTipActiveBorder">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="DebuggerDataTipActiveHighlight">
         <Background Type="CT_RAW" Source="FF334858"/>
@@ -4613,7 +4613,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="CommandBarToolBarSeparatorHighlight">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{foldedTextBackground}}"/>
       </Color>
       <Color Name="CommandBarOptionsMouseDownGlyph">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -4634,7 +4634,7 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="TitleBarDragHandle">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{foldedTextBackground}}"/>
       </Color>
       <Color Name="ToolWindowFloatingFrameInactive">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -5212,7 +5212,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="ToolTipBorder">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
       </Color>
       <Color Name="ToolTip">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -5984,7 +5984,7 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="MouseOverBackgroundColor">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="MouseOverText">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -6005,7 +6005,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="GridHeaderHover">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
         <Foreground Type="CT_RAW" Source="FF5D96AC"/>
       </Color>
       <Color Name="GridHeaderText">
@@ -6287,7 +6287,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ContentMouseOver">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{foldedTextBackground}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ContentSelected">
@@ -6557,7 +6557,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="MouseOverCategoryTab">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{foldedTextBackground}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
     </Category>
@@ -6950,7 +6950,7 @@
         <Foreground Type="CT_RAW" Source="FF96ABB9"/>
       </Color>
       <Color Name="StartPageListItemHover">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="StartPageListItemGlyph">
@@ -7869,7 +7869,7 @@
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Indicator Margin">
-        <Background Type="CT_RAW" Source="FF2e343e"/>
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
         <Foreground Type="CT_RAW" Source="00000000"/>
       </Color>
       <Color Name="Visible Whitespace">
@@ -8263,7 +8263,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ListItemMouseOver">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ListItemDisabledText">
@@ -9007,7 +9007,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ListItemMouseOver">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="ListItemDisabledText">
@@ -9329,7 +9329,7 @@
         <Foreground Type="CT_RAW" Source="FFBAD0DD"/>
       </Color>
       <Color Name="WindowPanelTabDivider">
-        <Background Type="CT_RAW" Source="FF3d4754"/>
+        <Background Type="CT_RAW" Source="FF{{foldedTextBackground}}"/>
       </Color>
       <Color Name="WindowPanelSupportText">
         <Background Type="CT_RAW" Source="FF96ABB9"/>
