@@ -72,13 +72,7 @@
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Themes\DokiDark.vstheme">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Themesgenerated\Chocola.vstheme">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Themesgenerated\Shima Rin.vstheme">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
@@ -118,5 +112,8 @@
     <VSCTCompile Include="doki_theme_visualstudioPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Themes" />
   </ItemGroup>
 </Project>
