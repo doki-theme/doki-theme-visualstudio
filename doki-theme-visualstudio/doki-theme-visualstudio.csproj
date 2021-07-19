@@ -72,6 +72,9 @@
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Themesgenerated\Hatsune Miku.vstheme">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Themesgenerated\Chocola.vstheme">
       <SubType>Designer</SubType>
     </None>

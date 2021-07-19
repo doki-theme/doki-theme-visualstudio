@@ -3816,7 +3816,7 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="StartPageButtonTextHover">
-        <Background Type="CT_RAW" Source="FFC5CAE9"/>
+        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="StartPageSelectedItemBackground">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -8379,10 +8379,10 @@
         <Background Type="CT_RAW" Source="FFCCCEDB"/>
       </Color>
       <Color Name="StartWindowDescriptionActive">
-        <Foreground Type="CT_RAW" Source="FF4F4F4F"/>
+        <Foreground Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="StartWindowDescriptionHover">
-        <Foreground Type="CT_RAW" Source="FF4F4F4F"/>
+        <Foreground Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="TemplateNewTag">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
