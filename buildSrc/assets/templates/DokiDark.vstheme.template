@@ -1948,7 +1948,7 @@
       </Color>
       <Color Name="constant name">
         <Background Type="CT_INVALID" Source="00000000"/>
-        <Foreground Type="CT_RAW" Source="FFFF2C83"/>
+        <Foreground Type="CT_RAW" Source="FF{{constantColor}}"/>
       </Color>
       <Color Name="local name">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -7860,11 +7860,11 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="Selected Text">
-        <Background Type="CT_RAW" Source="FF4f3a4e"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Inactive Selected Text">
-        <Background Type="CT_RAW" Source="FF4f3a4e"/>
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Indicator Margin">
