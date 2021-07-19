@@ -4207,7 +4207,7 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="FileTabSelectedText">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Background Type="CT_RAW" Source="FFFFFFFF"/>
       </Color>
       <Color Name="FileTabText">
         <Background Type="CT_RAW" Source="FF{{lineNumberColor}}"/>
@@ -4465,7 +4465,7 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="TitleBarActiveText">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Background Type="CT_RAW" Source="FFFFFFFF"/>
       </Color>
       <Color Name="TitleBarInactive">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -4703,7 +4703,7 @@
         <Background Type="CT_RAW" Source="FF{{diff.deleted}}"/>
       </Color>
       <Color Name="FileTabProvisionalSelectedActiveForeground">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Background Type="CT_RAW" Source="FFFFFFFF"/>
       </Color>
       <Color Name="FileTabProvisionalSelectedInactive">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -4718,7 +4718,7 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
       <Color Name="FileTabButtonProvisionalSelectedActiveGlyph">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Background Type="CT_RAW" Source="FFFFFFFF"/>
       </Color>
       <Color Name="FileTabButtonProvisionalSelectedInactiveGlyph">
         <Background Type="CT_RAW" Source="FF396C85"/>
@@ -4748,7 +4748,7 @@
         <Background Type="CT_RAW" Source="FF9B4F96"/>
       </Color>
       <Color Name="FileTabButtonProvisionalHoverSelectedActiveGlyph">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Background Type="CT_RAW" Source="FFFFFFFF"/>
       </Color>
       <Color Name="FileTabButtonProvisionalDownSelectedActive">
         <Background Type="CT_RAW" Source="FF442359"/>
@@ -4775,7 +4775,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="FileTabButtonSelectedActiveGlyph">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Background Type="CT_RAW" Source="FFFFFFFF"/>
       </Color>
       <Color Name="FileTabButtonSelectedInactiveGlyph">
         <Background Type="CT_RAW" Source="FFBAD0E4"/>
@@ -5059,7 +5059,7 @@
       </Color>
       <Color Name="StatusBarDefault">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
-        <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Foreground Type="CT_RAW" Source="FFFFFFFF"/>
       </Color>
       <Color Name="MainWindowActiveNoSolutionBorder">
         <Background Type="CT_RAW" Source="FF{{diff.deleted}}"/>

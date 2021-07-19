@@ -1,0 +1,29 @@
+<Themes>
+  <Theme Name="dark-contrast" GUID="{1ceb5891-48d0-49ac-b3e2-c839b38a1e2f}"
+         BaseGUID="{5cfd0e47-e066-4cae-a4cc-3cc64234d900}">
+    <Category Name="Environment" GUID="{624ed9c3-bdfd-41fa-96c3-7c824ea32e3d}">
+      <Color Name="FileTabSelectedText">
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+      </Color>
+      <Color Name="TitleBarActiveText">
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+      </Color>
+      <Color Name="FileTabProvisionalSelectedActiveForeground">
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+      </Color>
+      <Color Name="FileTabButtonProvisionalSelectedActiveGlyph">
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+      </Color>
+      <Color Name="FileTabButtonProvisionalHoverSelectedActiveGlyph">
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+      </Color>
+      <Color Name="FileTabButtonSelectedActiveGlyph">
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+      </Color>
+      <Color Name="StatusBarDefault">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+      </Color>
+    </Category>
+  </Theme>
+</Themes>
