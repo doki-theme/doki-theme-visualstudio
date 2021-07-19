@@ -7926,7 +7926,7 @@
         <Foreground Type="CT_RAW" Source="FFD7BA7D"/>
       </Color>
       <Color Name="Track Changes before save">
-        <Background Type="CT_RAW" Source="FFEFF284"/>
+        <Background Type="CT_RAW" Source="FF{{diff.modified}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Track Changes after save">
@@ -7934,7 +7934,7 @@
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Brace Matching (Rectangle)">
-        <Background Type="CT_RAW" Source="FF20476C"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Definition Window Background">
