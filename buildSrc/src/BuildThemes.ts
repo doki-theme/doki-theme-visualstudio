@@ -7,6 +7,7 @@ import {
   MasterDokiThemeDefinition,
   resolvePaths,
   resolveTemplate,
+  resolveTemplateWithCombini,
   StringDictionary, walkDir,
 } from "doki-build-source";
 import omit from 'lodash/omit';
@@ -149,6 +150,10 @@ function getVSThemeName(dokiTheme: { path: string; appThemeDefinition: BaseAppDo
   return `${getName(dokiTheme.definition)}.vstheme`;
 }
 
+function getThemeName(themeXML: any) {
+  return themeXML.Themes.Theme[0].$.Name;
+}
+
 function getXMLTemplates() {
   return walkDir(appTemplatesDirectoryPath)
     .then(paths => {
@@ -162,7 +167,7 @@ function getXMLTemplates() {
               {encoding: 'utf-8'}
             )
           );
-          const themeName = themeXML.Themes.Theme[0].$.Name;
+          const themeName = getThemeName(themeXML);
           return {
             ...templates,
             [themeName]: themeXML,
@@ -223,18 +228,10 @@ evaluateTemplates(
     fs.writeFileSync(csProjFilePath, xml, 'utf8');
 
 
-    const darkTemplate = fs.readFileSync(
-      path.resolve(appTemplatesDirectoryPath, 'DokiDark.vstheme.template'),
-      {encoding: 'utf-8'}
-    )
-
     const templates = await getXMLTemplates();
-    
-    console.log(templates);
-
     await themes.reduce((accum, dokiTheme) => {
       return accum.then(async () => {
-        const template = await resolveVisualStudioThemeTemplate(darkTemplate, dokiTheme);
+        const template = await resolveVisualStudioThemeTemplate(templates, dokiTheme);
         fs.writeFileSync(
           path.resolve(generatedThemesDirectory, getVSThemeName(dokiTheme)),
           template
@@ -278,12 +275,39 @@ function getName(dokiDefinition: MasterDokiThemeDefinition) {
   return dokiDefinition.name.replace(':', '');
 }
 
-async function resolveVisualStudioThemeTemplate(darkTemplate: string, dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { secondary?: { path: string; name: string; } | undefined; defaultSticker: { path: string; name: string; }; }; templateVariables: DokiThemeVisualStudio; theme: {}; appThemeDefinition: BaseAppDokiThemeDefinition; }): Promise<string> {
-  const filledInTemplate = fillInTemplateScript(darkTemplate, dokiTheme.templateVariables);
+async function resolveVisualStudioThemeTemplate(xmlTemplates: StringDictionary<any>,
+                                                dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { secondary?: { path: string; name: string; } | undefined; defaultSticker: { path: string; name: string; }; }; templateVariables: DokiThemeVisualStudio; theme: {}; appThemeDefinition: BaseAppDokiThemeDefinition; }): Promise<string> {
+  const evalutedTemplate = evaluateXmlTemplates(xmlTemplates, dokiTheme)
+  const filledInTemplate = fillInTemplateScript(evalutedTemplate, dokiTheme.templateVariables);
   const templateAsXml = await toXml(filledInTemplate)
   const themeElement = templateAsXml.Themes.Theme[0];
   themeElement.$.Name = getName(dokiTheme.definition);
   themeElement.$.GUID = `{${dokiTheme.definition.id}}`
   return xmlBuilder.buildObject(templateAsXml)
+}
+
+// now kith
+function smashXmlTemplatesTogether(parentXml: any, childXml: any): any {
+  const parentXmlStuff = parentXml.Themes.Theme[0];
+  const childXmlStuff = parentXml.Themes.Theme[0];
+
+  return parentXml;
+}
+
+function evaluateXmlTemplates(xmlTemplates: StringDictionary<any>, dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { secondary?: { path: string; name: string; } | undefined; defaultSticker: { path: string; name: string; }; }; templateVariables: DokiThemeVisualStudio; theme: {}; appThemeDefinition: BaseAppDokiThemeDefinition; }): string {
+  const childTemplateName = dokiTheme.appThemeDefinition.laf?.extends || 'dark';
+  const childTemplate = xmlTemplates[childTemplateName];
+  const resolvedXmlObject = resolveTemplateWithCombini(
+    childTemplate,
+    xmlTemplates,
+    template => template,
+    templateXml => {
+      const parentName = templateXml.Themes.Theme[0].$.BaseGUID
+      return parentName.startsWith('{') ? undefined : parentName;
+    },
+    smashXmlTemplatesTogether
+  )
+  console.log(resolvedXmlObject);
+  return xmlBuilder.buildObject(resolvedXmlObject);
 }
 
