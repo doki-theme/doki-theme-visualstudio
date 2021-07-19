@@ -37,9 +37,7 @@ namespace doki_theme_visualstudio {
     }
     
     public static string ToHexString(this  System.Drawing.Color color){
-      return Convert.ToString(color.R, 16) + 
-             Convert.ToString(color.G, 16) + 
-             Convert.ToString(color.B, 16)
+      return color.Name.Substring(2)
              ;
     }
   }

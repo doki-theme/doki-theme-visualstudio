@@ -95,7 +95,7 @@ namespace doki_theme_visualstudio {
 
     private DokiTheme? GetCurrentDokiTheme() {
       var accentColor = VSColorTheme.GetThemedColor(EnvironmentColors.PanelHyperlinkColorKey);
-      var textEditorBackground = VSColorTheme.GetThemedColor(EnvironmentColors.ToolWindowBackgroundColorKey);
+      var textEditorBackground = VSColorTheme.GetThemedColor(EnvironmentColors.SystemAppWorkspaceColorKey);
       var colorKey = accentColor.ToHexString() +
                      textEditorBackground.ToHexString();
 
