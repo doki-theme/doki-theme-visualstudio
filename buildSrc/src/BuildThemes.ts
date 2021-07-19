@@ -7,7 +7,7 @@ import {
   MasterDokiThemeDefinition,
   resolvePaths,
   resolveTemplate,
-  StringDictionary,
+  StringDictionary, walkDir,
 } from "doki-build-source";
 import omit from 'lodash/omit';
 import fs from "fs";
@@ -149,6 +149,28 @@ function getVSThemeName(dokiTheme: { path: string; appThemeDefinition: BaseAppDo
   return `${getName(dokiTheme.definition)}.vstheme`;
 }
 
+function getXMLTemplates() {
+  return walkDir(appTemplatesDirectoryPath)
+    .then(paths => {
+      return paths.filter(pathGuy => pathGuy.endsWith("vstheme.template"))
+    }).then(templatePaths => {
+      return templatePaths.reduce((accum, next) =>
+        accum.then(async (templates) => {
+          const themeXML = await toXml(
+            fs.readFileSync(
+              next,
+              {encoding: 'utf-8'}
+            )
+          );
+          const themeName = themeXML.Themes.Theme[0].$.Name;
+          return {
+            ...templates,
+            [themeName]: themeXML,
+          }
+        }), Promise.resolve({} as StringDictionary<any>));
+    });
+}
+
 evaluateTemplates(
   {
     appName: 'visualstudio',
@@ -167,11 +189,6 @@ evaluateTemplates(
             themeId => themeId === dokiTheme.definition.id
           ) > -1
       );
-
-    const darkTemplate = fs.readFileSync(
-      path.resolve(appTemplatesDirectoryPath, 'DokiDark.vstheme.template'),
-      {encoding: 'utf-8'}
-    )
 
     const csProjFilePath = path.resolve(solutionsDirectory, 'doki-theme-visualstudio.csproj');
     const csProjFile = await toXml(
@@ -205,7 +222,15 @@ evaluateTemplates(
     const xml = xmlBuilder.buildObject(csProjFile);
     fs.writeFileSync(csProjFilePath, xml, 'utf8');
 
-    // write things for extension
+
+    const darkTemplate = fs.readFileSync(
+      path.resolve(appTemplatesDirectoryPath, 'DokiDark.vstheme.template'),
+      {encoding: 'utf-8'}
+    )
+
+    const templates = await getXMLTemplates();
+    
+    console.log(templates);
 
     await themes.reduce((accum, dokiTheme) => {
       return accum.then(async () => {
