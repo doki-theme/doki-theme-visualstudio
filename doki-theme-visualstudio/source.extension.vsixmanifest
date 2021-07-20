@@ -1,11 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="doki_theme_visualstudio.59d36e38-60e0-4571-9901-7971ec61b303" Version="1.0.0" Language="en-US" Publisher="Unthrottled" />
+        <Identity Id="doki_theme_visualstudio.59d36e38-60e0-4571-9901-7971ec61b303" Version="0.1.0" Language="en-US" Publisher="Unthrottled" />
         <DisplayName>The Doki Theme</DisplayName>
         <Description xml:space="preserve">Code with your Waifu!</Description>
+        <MoreInfo>https://github.com/doki-theme/doki-theme-visualstudio#the-doki-theme-visual-studio</MoreInfo>
         <License>LICENSE.txt</License>
         <Icon>doki_logo.png</Icon>
+        <PreviewImage>preview.png</PreviewImage>
+        <Tags>theme</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />

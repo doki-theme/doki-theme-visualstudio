@@ -10,6 +10,8 @@ The Doki Theme: Visual Studio
 
 # [More Screenshots](readmeAssets/albums/screenshot_album.md)
 
+## [Changelog](CHANGELOG.md)
+
 ---
 
 # Documentation
@@ -63,7 +65,7 @@ You can navigate to the settings here
 
 **CustomStickerImageAbsolutePath**:  You've got your own tastes, that's fine I get that, but you're wrong and I hate you.
 That's why I've allowed you to set your own custom sticker to be used for all doki themes. 
-The value provided _must_ be an absolute path to the local file on your machine to be used. Feel free to use the `...` to pick a folder.
+The value provided _must_ be an absolute path to the local file on your machine to be used. Feel free to use the `...` to pick a file.
 
 **Note**: stickers go away if you use a non-Doki Theme.
 
