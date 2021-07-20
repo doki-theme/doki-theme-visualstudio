@@ -1,9 +1,9 @@
-The Doki Theme: <<App>>
+The Doki Theme: Visual Studio
 ---
 
 ## Quick Theme Preview
 
-![Themes](https://raw.githubusercontent.com/doki-theme/doki-theme-jupyter/main/readmeAssets/quick_theme_preview.webp)
+![Themes](readmeAssets/themes.webp)
 
 
 # [More Screenshots](https://github.com/doki-theme/doki-theme-jupyter/blob/main/albums/screenshot_album.md)
