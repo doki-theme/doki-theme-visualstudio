@@ -11,6 +11,7 @@ import {
   StringDictionary, walkDir,
 } from "doki-build-source";
 import omit from 'lodash/omit';
+import deepClone from 'lodash/cloneDeep';
 import fs from "fs";
 import path from "path";
 import xmlParser from "xml2js";
@@ -288,10 +289,33 @@ async function resolveVisualStudioThemeTemplate(xmlTemplates: StringDictionary<a
 
 // now kith
 function smashXmlTemplatesTogether(parentXml: any, childXml: any): any {
-  const parentXmlStuff = parentXml.Themes.Theme[0];
-  const childXmlStuff = parentXml.Themes.Theme[0];
+  const newParentXml = deepClone(parentXml);
+  const newChildXml = deepClone(childXml);
 
-  return parentXml;
+  const parentStuff = newParentXml.Themes.Theme[0]
+  const childStuff = newChildXml.Themes.Theme[0]
+
+  const childCategories = childStuff.Category.reduce((accum: StringDictionary<any>, category: any) => ({
+    ...accum,
+    [category.$.GUID]: category,
+  }), {} as StringDictionary<any>);
+  parentStuff.Category = parentStuff.Category.map((parentCategory: any) => {
+    const childCategory = childCategories[parentCategory.$.GUID];
+    if (childCategory) {
+      const childColors = childCategory.Color.reduce((accum: StringDictionary<any>, color: any) => ({
+        ...accum,
+        [color.$.Name]: color
+      }), {});
+
+      parentCategory.Color = parentCategory.Color.map((parentColor: any) => {
+        const childColor = childColors[parentColor.$.Name];
+        return childColor || parentColor;
+      });
+    }
+    return parentCategory;
+  });
+
+  return newParentXml;
 }
 
 function evaluateXmlTemplates(xmlTemplates: StringDictionary<any>, dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { secondary?: { path: string; name: string; } | undefined; defaultSticker: { path: string; name: string; }; }; templateVariables: DokiThemeVisualStudio; theme: {}; appThemeDefinition: BaseAppDokiThemeDefinition; }): string {
@@ -307,7 +331,6 @@ function evaluateXmlTemplates(xmlTemplates: StringDictionary<any>, dokiTheme: { 
     },
     smashXmlTemplatesTogether
   )
-  console.log(resolvedXmlObject);
   return xmlBuilder.buildObject(resolvedXmlObject);
 }
 
