@@ -6,7 +6,7 @@ The Doki Theme: Visual Studio
 ![Themes](readmeAssets/themes.webp)
 
 
-# [More Screenshots](https://github.com/doki-theme/doki-theme-jupyter/blob/main/albums/screenshot_album.md)
+# [More Screenshots](readmeAssets/albums/screenshot_album.md)
 
 ---
 
