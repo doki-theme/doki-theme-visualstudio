@@ -2,6 +2,8 @@
 using Microsoft.VisualStudio.Utilities;
 using System.ComponentModel.Composition;
 using Microsoft.VisualStudio.Shell;
+using Task = System.Threading.Tasks.Task;
+
 
 namespace doki_theme_visualstudio {
   /// <summary>
@@ -32,7 +34,14 @@ namespace doki_theme_visualstudio {
     /// </summary>
     /// <param name="textView">The <see cref="IWpfTextView"/> upon which the adornment should be placed</param>
     public void TextViewCreated(IWpfTextView textView) {
-      new WallpaperAdornment(textView);
+      if (SettingsService.IsInitialized()) {
+        new WallpaperAdornment(textView);
+      } else {
+        Task.Run(async () => {
+          await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+          new WallpaperAdornment(textView);
+        }).FileAndForget("dokiTheme/wallpaperLoad");
+      }
     }
   }
 }

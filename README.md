@@ -80,7 +80,7 @@ You'll want to either turn off the wallpaper for this plugin or ClaudiaIDE, to a
 
 **CustomWallpaperImageAbsolutePath**:  My taste in wallpapers isn't good enough for you?
 Fine be that way, I've allowed you to set your own custom wallpaper to be used for all Doki themes.
-The value provided _must_ be an absolute path to the local file on your machine to be used. Feel free to use the `...` to pick a folder.
+The value provided _must_ be an absolute path to the local file on your machine to be used. Feel free to use the `...` to pick a file.
 
 **Note**: wallpapers go away if you use a non-Doki Theme.
 

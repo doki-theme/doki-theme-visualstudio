@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
@@ -45,28 +45,28 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''"/>
   <ItemGroup>
-    <Compile Include="AssetManager.cs" />
+    <Compile Include="AssetManager.cs"/>
     <Compile Include="DokiThemeSettings.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Extensions.cs" />
-    <Compile Include="ImageTools.cs" />
-    <Compile Include="LocalAssetService.cs" />
-    <Compile Include="LocalStorageService.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="doki_theme_visualstudioPackage.cs" />
-    <Compile Include="TheDokiTheme.cs" />
-    <Compile Include="ThemeManager.cs" />
-    <Compile Include="ToolBox.cs" />
-    <Compile Include="UITools.cs" />
-    <Compile Include="StickerAdornment.cs" />
-    <Compile Include="StickerAdornmentTextViewCreationListener.cs" />
-    <Compile Include="WallpaperAdornment.cs" />
-    <Compile Include="WallpaperAdornmentTextViewCreationListener.cs" />
+    <Compile Include="Extensions.cs"/>
+    <Compile Include="ImageTools.cs"/>
+    <Compile Include="LocalAssetService.cs"/>
+    <Compile Include="LocalStorageService.cs"/>
+    <Compile Include="Properties\AssemblyInfo.cs"/>
+    <Compile Include="doki_theme_visualstudioPackage.cs"/>
+    <Compile Include="TheDokiTheme.cs"/>
+    <Compile Include="ThemeManager.cs"/>
+    <Compile Include="ToolBox.cs"/>
+    <Compile Include="UITools.cs"/>
+    <Compile Include="StickerAdornment.cs"/>
+    <Compile Include="StickerAdornmentTextViewCreationListener.cs"/>
+    <Compile Include="WallpaperAdornment.cs"/>
+    <Compile Include="WallpaperAdornmentTextViewCreationListener.cs"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="source.extension.vsixmanifest">
@@ -203,26 +203,26 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
-    <Reference Include="System" />
-    <Reference Include="System.ComponentModel.Composition" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Design" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xaml" />
-    <Reference Include="System.Xml" />
-    <Reference Include="WindowsBase" />
+    <Reference Include="Microsoft.CSharp"/>
+    <Reference Include="PresentationCore"/>
+    <Reference Include="PresentationFramework"/>
+    <Reference Include="System"/>
+    <Reference Include="System.ComponentModel.Composition"/>
+    <Reference Include="System.Data"/>
+    <Reference Include="System.Data.DataSetExtensions"/>
+    <Reference Include="System.Design"/>
+    <Reference Include="System.Drawing"/>
+    <Reference Include="System.Windows.Forms"/>
+    <Reference Include="System.Xaml"/>
+    <Reference Include="System.Xml"/>
+    <Reference Include="WindowsBase"/>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="16.0.206" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="16.0.206" ExcludeAssets="runtime"/>
     <PackageReference Include="Microsoft.VisualStudio.VsixColorCompiler">
       <Version>16.0.0</Version>
     </PackageReference>
-    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="16.10.1055" />
+    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="16.10.1055"/>
   </ItemGroup>
   <ItemGroup>
     <Content Include="doki_logo.png">
@@ -237,13 +237,13 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Resources\.gitkeep" />
-    <EmbeddedResource Include="Resources\DokiThemeDefinitions.json" />
+    <Content Include="Resources\.gitkeep"/>
+    <EmbeddedResource Include="Resources\DokiThemeDefinitions.json"/>
     <VSCTCompile Include="doki_theme_visualstudioPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Themes\" />
+    <Folder Include="Themes\"/>
   </ItemGroup>
 </Project>

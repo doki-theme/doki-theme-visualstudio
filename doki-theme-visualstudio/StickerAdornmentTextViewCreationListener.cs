@@ -2,6 +2,8 @@
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Utilities;
+using Task = System.Threading.Tasks.Task;
+
 
 namespace doki_theme_visualstudio {
   /// <summary>
@@ -34,7 +36,14 @@ namespace doki_theme_visualstudio {
     /// <param name="textView">The <see cref="IWpfTextView" /> upon which the adornment should be placed</param>
     public void TextViewCreated(IWpfTextView textView) {
       // The adornment will get wired to the text view events
-      new StickerAdornment(textView);
+      if (SettingsService.IsInitialized()) {
+        new StickerAdornment(textView);
+      } else {
+        Task.Run(async () => {
+          await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+          new StickerAdornment(textView);
+        }).FileAndForget("dokiTheme/stickerLoad");
+      }
     }
   }
 }

@@ -17,12 +17,14 @@ namespace doki_theme_visualstudio {
       _instance ??= new SettingsService(package);
     }
 
+    public static bool IsInitialized() => _instance != null;
+
     private readonly Package _package;
 
     private SettingsService(Package package) {
       _package = package;
     }
-    
+
     public event EventHandler<SettingsService>? SettingsChanged;
 
     public void ShitChangedYo() {
@@ -35,24 +37,28 @@ namespace doki_theme_visualstudio {
         return page.DrawSticker;
       }
     }
+
     public bool DrawWallpaper {
       get {
         var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
         return page.DrawWallpaper;
       }
     }
+
     public string CustomStickerImageAbsolutePath {
       get {
         var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
         return page.CustomStickerImageAbsolutePath;
       }
     }
+
     public string CustomWallpaperImageAbsolutePath {
       get {
         var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
         return page.CustomWallpaperImageAbsolutePath;
       }
     }
+
     public double WallpaperOpacity {
       get {
         var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
@@ -64,13 +70,15 @@ namespace doki_theme_visualstudio {
 
   class DokiThemeSettings : DialogPage {
     bool _drawSticker = true;
+
     [DescriptionAttribute("Draw the cute sticker in the bottom right hand corner of your editor?")]
     public bool DrawSticker {
       get { return _drawSticker; }
       set { _drawSticker = value; }
     }
-    
+
     bool _drawWallpaper = true;
+
     [DescriptionAttribute("Draw the beautiful wallpaper in the background of your editor?")]
     public bool DrawWallpaper {
       get { return _drawWallpaper; }
@@ -80,13 +88,14 @@ namespace doki_theme_visualstudio {
     [DescriptionAttribute("Use custom image for wallpaper, to use default image clear the value from this setting")]
     [EditorAttribute(typeof(BrowseFile), typeof(UITypeEditor))]
     public string CustomWallpaperImageAbsolutePath { get; set; }
-    
+
     [DescriptionAttribute("Use custom image for sticker, to use default image clear the value from this setting")]
     [EditorAttribute(typeof(BrowseFile), typeof(UITypeEditor))]
     public string CustomStickerImageAbsolutePath { get; set; }
 
 
     private double _wallpaperOpacity = -1.0;
+
     [DescriptionAttribute("Customize the wallpaper opacity, set to -1.0 to use default value for theme")]
     [EditorAttribute(typeof(BrowseFile), typeof(UITypeEditor))]
     public double WallpaperOpacity {
