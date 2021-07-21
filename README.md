@@ -30,6 +30,8 @@ The Doki Theme: Visual Studio
 
 # Installation 
 
+You can find the latest release [at the marketplace](https://marketplace.visualstudio.com/items?itemName=unthrottled.dokithemevisualstudio).
+
 # Usage
 
 You've installed the extension in your Visual Studio now, great!
