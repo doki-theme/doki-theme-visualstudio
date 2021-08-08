@@ -1,7 +1,7 @@
 Changelog
 ---
 
-# 18.0.0 [NekoPara OneeSan Vol.]
+# 0.2.0 [NekoPara OneeSan Vol.]
 
 ## 3 New Themes!!
 
