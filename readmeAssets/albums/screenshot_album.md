@@ -19,6 +19,18 @@ NekoPara
 
 ![coconut_dark_code](../screens/themes/coconut_dark_code.png)
 
+### Maple
+
+![maple_dark_code](../screens/themes/maple_dark_code.png)
+
+### Cinnamon
+
+![cinnamon_dark_code](../screens/themes/cinnamon_dark_code.png)
+
+### Azuki
+
+![azuki_dark_code](../screens/themes/azuki_dark_code.png)
+
 YuruCamp
 ---
 
