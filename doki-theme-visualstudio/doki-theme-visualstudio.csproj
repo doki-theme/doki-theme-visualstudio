@@ -159,10 +159,19 @@
     <None Include="Themesgenerated\Miia.vstheme">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Themesgenerated\Azuki.vstheme">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Themesgenerated\Chocola.vstheme">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Themesgenerated\Cinnamon.vstheme">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Themesgenerated\Coconut.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Maple Dark.vstheme">
       <SubType>Designer</SubType>
     </None>
     <None Include="Themesgenerated\Vanilla.vstheme">

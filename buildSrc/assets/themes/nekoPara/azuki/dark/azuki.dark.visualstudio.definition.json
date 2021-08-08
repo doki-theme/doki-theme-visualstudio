@@ -1,5 +1,5 @@
 {
-  "id": "ca45f54a-57cb-4d8c-82a6-d4b31c850bd6",
+  "id": "83e94920-9ae2-4838-9b85-4c3fa22b67b8",
   "overrides": {},
   "laf": {
     "extends": "dark-contrast"
@@ -9,7 +9,7 @@
   "backgrounds": {
     "default": {
       "anchor": "right",
-      "opacity": 0.09
+      "opacity": 0.07
     }
   }
 }
