@@ -1,13 +1,12 @@
 {
-  "id": "13407818-da66-432b-94e3-fd2192e98118",
+  "id": "67278007-b7f8-46d4-88b7-e40cac3576a7",
   "overrides": {},
   "laf": {},
   "syntax": {},
   "colors": {},
   "backgrounds": {
     "default": {
-      "anchor": "right",
-      "opacity": 0.05
+      "position": "right"
     }
   }
 }
