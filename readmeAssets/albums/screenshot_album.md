@@ -57,6 +57,14 @@ Quintessential Quintuplets
 ![nakano_miku_dark_code](../screens/themes/nakano_miku_dark_code.png)
 ![nakano_nino_dark_code](../screens/themes/nakano_nino_dark_code.png)
 
+OreImo (My little sister cannot be this cute)
+---
+![kirino_dark_code](../screens/themes/kirino_dark_code.png)
+
+EroManga Sensei
+---
+![sagiri_dark_code](../screens/themes/sagiri_dark_code.png)
+
 TypeMoon
 ---
 ## Fate
@@ -204,6 +212,10 @@ KillLaKill
 ### Matoi Ryuko
 
 ![ryuko_code](../screens/themes/ryuko_code.png)
+
+### Kiryuin Satsuki
+
+![satsuki_dark_code](../screens/themes/satsuki_dark_code.png)
 
 Love Live
 ---

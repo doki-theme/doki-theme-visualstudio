@@ -87,6 +87,9 @@
     <None Include="Themesgenerated\Kanna.vstheme">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Themesgenerated\Sagiri.vstheme">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Themesgenerated\Katsuragi Misato.vstheme">
       <SubType>Designer</SubType>
     </None>
@@ -120,7 +123,10 @@
     <None Include="Themesgenerated\Jabami Yumeko.vstheme">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Themesgenerated\Ryuko.vstheme">
+    <None Include="Themesgenerated\Ryuko Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Satsuki Dark.vstheme">
       <SubType>Designer</SubType>
     </None>
     <None Include="Themesgenerated\Aqua.vstheme">
@@ -178,6 +184,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Themesgenerated\Yukinoshita Yukino.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themesgenerated\Kirino.vstheme">
       <SubType>Designer</SubType>
     </None>
     <None Include="Themesgenerated\Nakano Miku.vstheme">
