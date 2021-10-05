@@ -91,6 +91,14 @@ Sword Art Online
 
 ![asuna_dark_code](../screens/themes/asuna_dark_code.png)
 
+Don't Toy With Me Miss Nagatoro
+---
+
+### Hayase Nagatoro
+
+![nagatoro_dark_code](../screens/themes/nagatoro_dark_code.png)
+
+
 Re:Zero
 ---
 
