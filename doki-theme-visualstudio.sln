@@ -7,8 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "doki-theme-visualstudio", "
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "doki-theme-visualstudio-shared", "doki-theme-visualstudio-shared\doki-theme-visualstudio-shared.shproj", "{CC5A8870-10D3-44C2-B0E8-5040FF58FBD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "doki-theme-visualstudio-2022", "doki-theme-visualstudio-2022\doki-theme-visualstudio-2022.csproj", "{008FEE2F-3A7E-40E9-BF32-5099EA9BB424}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		doki-theme-visualstudio-shared\doki-theme-visualstudio-shared.projitems*{008fee2f-3a7e-40e9-bf32-5099ea9bb424}*SharedItemsImports = 4
 		doki-theme-visualstudio-shared\doki-theme-visualstudio-shared.projitems*{cc5a8870-10d3-44c2-b0e8-5040ff58fbd0}*SharedItemsImports = 13
 		doki-theme-visualstudio-shared\doki-theme-visualstudio-shared.projitems*{e2c185c3-9ba1-4e59-8c52-c9a0b0b4cb14}*SharedItemsImports = 4
 	EndGlobalSection
@@ -21,6 +24,10 @@ Global
 		{E2C185C3-9BA1-4E59-8C52-C9A0B0B4CB14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2C185C3-9BA1-4E59-8C52-C9A0B0B4CB14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2C185C3-9BA1-4E59-8C52-C9A0B0B4CB14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{008FEE2F-3A7E-40E9-BF32-5099EA9BB424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{008FEE2F-3A7E-40E9-BF32-5099EA9BB424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{008FEE2F-3A7E-40E9-BF32-5099EA9BB424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{008FEE2F-3A7E-40E9-BF32-5099EA9BB424}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

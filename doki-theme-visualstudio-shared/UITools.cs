@@ -20,31 +20,5 @@ namespace doki_theme_visualstudio {
       }
     }
 
-    public static void TraverseParentTree(
-      DependencyObject childDependencyObject,
-      Action<DependencyObject> predicate
-    ) {
-      FindParent(childDependencyObject, o => {
-        predicate(o);
-        return false;
-      });
-    }
-
-    public static DependencyObject? FindChild(DependencyObject applicationWindow, Func<DependencyObject, bool> func) {
-      foreach (var child in applicationWindow.Descendants()) {
-        if (child == null) continue;
-
-        if (func(child)) {
-          return child;
-        }
-
-        var grandChild = FindChild(child, func);
-        if (grandChild != null) {
-          return grandChild;
-        }
-      }
-
-      return null;
-    }
   }
 }
