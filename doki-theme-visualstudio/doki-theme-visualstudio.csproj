@@ -82,16 +82,19 @@
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="16.10.1055" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="doki_logo.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="..\sharedAssets\doki_logo.png">
+      <Link>doki_logo.png</Link>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="LICENSE.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <VSCTCompile Include="..\sharedAssets\doki_theme_visualstudioPackage.vsct">
+      <Link>doki_theme_visualstudioPackage.vsct</Link>
+    </VSCTCompile>
+    <Content Include="..\sharedAssets\LICENSE.txt">
+      <Link>LICENSE.txt</Link>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="preview.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="..\sharedAssets\preview.png">
+      <Link>preview.png</Link>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="Resources\.gitkeep" />

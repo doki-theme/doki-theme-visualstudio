@@ -27,7 +27,4 @@
     <Compile Include="$(MSBuildThisFileDirectory)WallpaperAdornment.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WallpaperAdornmentTextViewCreationListener.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)doki_theme_visualstudioPackage.vsct" />
-  </ItemGroup>
 </Project>
