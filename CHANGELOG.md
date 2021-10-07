@@ -1,5 +1,10 @@
 Changelog
 ---
+
+# 0.4.0 [2022.1 Build Support]
+
+- Extension is now only supported on 2022.1 builds.
+
 # 0.3.0 [KillLaKill Alt. Themes & Only for Onii-Chan]
 
 ## KillLaKill Alt. Themes
