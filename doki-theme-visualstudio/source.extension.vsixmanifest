@@ -1,26 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-    <Metadata>
-        <Identity Id="doki_theme_visualstudio.59d36e38-60e0-4571-9901-7971ec61b303" Version="0.3.0" Language="en-US" Publisher="Unthrottled" />
-        <DisplayName>The Doki Theme</DisplayName>
-        <Description xml:space="preserve">Code with your Waifu!</Description>
-        <MoreInfo>https://github.com/doki-theme/doki-theme-visualstudio#the-doki-theme-visual-studio</MoreInfo>
-        <License>LICENSE.txt</License>
-        <Icon>doki_logo.png</Icon>
-        <PreviewImage>preview.png</PreviewImage>
-        <Tags>theme</Tags>
-    </Metadata>
-    <Installation>
-        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
-    </Installation>
-    <Dependencies>
-        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
-    </Dependencies>
-    <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
-    </Prerequisites>
-    <Assets>
-        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
-        <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
-    </Assets>
+	<Metadata>
+		<Identity Id="doki_theme_visualstudio.59d36e38-60e0-4571-9901-7971ec61b303" Version="0.4.0" Language="en-US" Publisher="Unthrottled" />
+		<DisplayName>The Doki Theme</DisplayName>
+		<Description xml:space="preserve">Code with your Waifu!</Description>
+		<MoreInfo>https://github.com/doki-theme/doki-theme-visualstudio#the-doki-theme-visual-studio</MoreInfo>
+		<License>LICENSE.txt</License>
+		<Icon>doki_logo.png</Icon>
+		<PreviewImage>preview.png</PreviewImage>
+		<Tags>theme</Tags>
+	</Metadata>
+	<Installation>
+		<InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,18.0)">
+			<ProductArchitecture>amd64</ProductArchitecture>
+		</InstallationTarget>
+	</Installation>
+	<Dependencies>
+		<Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+	</Dependencies>
+	<Prerequisites>
+		<Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,18.0)" DisplayName="Visual Studio core editor" />
+	</Prerequisites>
+	<Assets>
+		<Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+		<Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+	</Assets>
 </PackageManifest>
