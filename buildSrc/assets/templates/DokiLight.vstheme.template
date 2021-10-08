@@ -3272,7 +3272,7 @@
                 <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
             </Color>
             <Color Name="Indicator Margin">
-                <Background Type="CT_RAW" Source="00000000"/>
+                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
             </Color>
         </Category>
         <Category Name="WebClient Diagnostic Tools" GUID="{2aa714ae-53be-4393-84e0-dc95b57a1891}">
