@@ -219,7 +219,7 @@
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="ListItemMouseOver">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="ArtboardDistance">
@@ -310,10 +310,10 @@
                 <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
             </Color>
             <Color Name="ListItemMouseOverBorder">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="ListItemSecondaryOnHover">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
                 <Foreground Type="CT_RAW" Source="FF{{selectionForeground}}"/>
             </Color>
             <Color Name="ArtboardBackgroundAlternate">
@@ -603,16 +603,16 @@
                 <Background Type="CT_RAW" Source="aa{{selectionBackground}}"/>
             </Color>
             <Color Name="ComboBoxListItemBackgroundHover">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="ComboBoxListItemBorderHover">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="InnerTabInactiveHoverBackground">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="InnerTabInactiveHoverBorder">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="ComboBoxListItemTextHover">
                 <Background Type="CT_RAW" Source="FF{{selectionForeground}}"/>
@@ -897,19 +897,19 @@
                 <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
             </Color>
             <Color Name="ListItemBackgroundFocused">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="ListItemBackgroundHover">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="ListItemBorderHover">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="TileViewBackgroundFocused">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="TileViewBackgroundHover">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="GridHeadingBackground">
                 <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -946,7 +946,7 @@
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="AdvancedListItemHover">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="AdvancedListItem">
@@ -1074,10 +1074,10 @@
                 <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="ControlLinkTextHover">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
             </Color>
             <Color Name="ControlLinkTextPressed">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
             </Color>
             <Color Name="DiagReportLinkText">
                 <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -1088,6 +1088,30 @@
             <Color Name="MainWindowActiveCaption">
                 <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+            </Color>
+            <Color Name="MainWindowActiveIconDefault">
+                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+            </Color>
+            <Color Name="MainWindowActiveIconBuilding">
+                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+            </Color>
+            <Color Name="MainWindowActiveIconDebugging">
+                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+            </Color>
+            <Color Name="MainWindowActiveIconNoSolution">
+                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+            </Color>
+            <Color Name="MainWindowInactiveIconDefault">
+                <Background Type="CT_RAW" Source="66{{accentColor}}"/>
+            </Color>
+            <Color Name="MainWindowInactiveIconBuilding">
+                <Background Type="CT_RAW" Source="66{{accentColor}}"/>
+            </Color>
+            <Color Name="MainWindowInactiveIconDebugging">
+                <Background Type="CT_RAW" Source="66{{accentColor}}"/>
+            </Color>
+            <Color Name="RaftedWindowInactiveIconNoSolution">
+                <Background Type="CT_RAW" Source="66{{accentColor}}"/>
             </Color>
             <Color Name="PanelTitleBarText">
                 <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -1806,6 +1830,33 @@
             <Color Name="CommandBarGradientMiddle">
                 <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
             </Color>
+            <Color Name="CommandBarMenuGroupHeaderLinkText">
+                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+            </Color>
+            <Color Name="CommandBarMenuGroupHeaderLinkTextHover">
+                <Background Type="CT_RAW" Source="FFC5CAE9"/>
+            </Color>
+            <Color Name="CommandBarMenuWatermarkLinkTextHover">
+                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+            </Color>
+            <Color Name="CommandBarMenuLinkText">
+                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+            </Color>
+            <Color Name="CommandBarMenuLinkTextHover">
+                <Background Type="CT_RAW" Source="FFC5CAE9"/>
+            </Color>
+            <Color Name="CommandBarMenuWatermarkText">
+                <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+            </Color>
+            <Color Name="CommandBarMenuWatermarkLinkText">
+                <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+            </Color>
+            <Color Name="CommandBarMenuWatermarkTextHover">
+                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+            </Color>
+            <Color Name="CommandBarMenuMouseOverSeparator">
+                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+            </Color>
             <Color Name="CommandBarMouseOverUnfocused">
                 <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
             </Color>
@@ -2039,7 +2090,7 @@
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="ContentMouseOver">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="Details">
@@ -2061,7 +2112,7 @@
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="WonderbarMouseOver">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="ContentInactiveSelected">
@@ -2145,7 +2196,7 @@
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="MouseOverCategoryTab">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="CheckBox">
@@ -2176,7 +2227,7 @@
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="MouseOverCategoryTab">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="SelectedCategoryTab">
@@ -2224,7 +2275,7 @@
                 <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="ListItemMouseOver">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="StartWindowDescriptionHover">
@@ -2363,16 +2414,16 @@
                 <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="NotificationMouseOverBackground">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="NotificationMouseOverBorder">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="NotificationSelectedBackground">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="NotificationSelectedBorder">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="NotificationGlyph">
                 <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -2522,7 +2573,7 @@
         </Category>
         <Category Name="StartPage" GUID="{65d78f35-869e-4bf3-8e52-991fee554a16}">
             <Color Name="StartPageListItemHover">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="ItemHeadingText">
@@ -2645,10 +2696,10 @@
             </Color>
             <Color Name="NumberedListItemActive">
                 <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FFFBC78C"/>
+                <Foreground Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="NumberedListItemHover">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="ContentSectionHeaderBorder">
                 <Foreground Type="CT_RAW" Source="FF{{borderColor}}"/>
@@ -2701,6 +2752,9 @@
             </Color>
             <Color Name="ActionLinkItem">
                 <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+            </Color>
+            <Color Name="ActionLinkItemHover">
+                <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>
             </Color>
             <Color Name="PopupHover">
                 <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -2888,19 +2942,19 @@
                 <Background Type="CT_RAW" Source="aa{{selectionBackground}}"/>
             </Color>
             <Color Name="PopupControlMouseOverBackgroundGradientBegin">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="PopupControlMouseOverBackgroundGradientEnd">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="PopupControlMouseOverBackgroundGradientMiddle1">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="PopupControlMouseOverBackgroundGradientMiddle2">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="PopupControlMouseOverBorder">
-                <Background Type="CT_RAW" Source="FFFBC78C"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="FocusedBorder">
                 <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
