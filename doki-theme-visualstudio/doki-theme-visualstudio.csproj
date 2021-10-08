@@ -72,7 +72,7 @@
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Themesgenerated\Maple Light.vstheme">
+    <None Include="Themesgenerated\Shigure.vstheme">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
