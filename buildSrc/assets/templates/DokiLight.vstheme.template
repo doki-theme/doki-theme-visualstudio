@@ -37,7 +37,7 @@
                 <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
             </Color>
             <Color Name="Selected Text">
-                <Background Type="CT_RAW" Source="FFCF5348"/>
+                <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
             </Color>
             <Color Name="OverviewMarginCaret">
                 <Foreground Type="CT_RAW" Source="FF{{selectionBackground}}"/>
@@ -3266,7 +3266,7 @@
                 <Foreground Type="CT_RAW" Source="FF4D4D4A"/>
             </Color>
             <Color Name="Selected Text">
-                <Background Type="CT_RAW" Source="FFCF5348"/>
+                <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
             </Color>
             <Color Name="Visible Whitespace">
                 <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
