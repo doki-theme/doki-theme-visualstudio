@@ -51,11 +51,12 @@
             <Color Name="brace matching">
                 <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>
             </Color>
-            <Color Name="CurrentLineActiveFormat">
-                <Background Type="CT_RAW" Source="FFFFB792"/>
-                <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="MarkerFormatDefinition/HighlightedDefinition">
+          <Color Name="CurrentLineActiveFormat">
+            <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
+            <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+          </Color>
+
+          <Color Name="MarkerFormatDefinition/HighlightedDefinition">
                 <Background Type="CT_RAW" Source="FFFABF89"/>
             </Color>
             <Color Name="MarkerFormatDefinition/HighlightedWrittenReference">
