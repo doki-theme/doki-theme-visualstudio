@@ -7,4 +7,7 @@
 @REM azuki
 @REM yarn buildThemes 83e94920-9ae2-4838-9b85-4c3fa22b67b8
 
-yarn buildThemes
+@REM Maple Light
+yarn buildThemes ea7a8b00-2d86-4e06-81a2-5c14a46264d5
+
+@REM yarn buildThemes
