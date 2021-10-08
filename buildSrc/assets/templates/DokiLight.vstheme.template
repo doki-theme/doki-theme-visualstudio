@@ -1420,13 +1420,13 @@
                 <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
             </Color>
             <Color Name="FileTabInactiveDocumentBorderBackground">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="FileTabInactiveGradientBottom">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="FileTabInactiveGradientTop">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="FileTabProvisionalInactive">
                 <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -1711,8 +1711,14 @@
                 <Background Type="CT_RAW" Source="FF{{buttonFont}}"/>
             </Color>
             <Color Name="FileTabButtonHoverInactiveGlyph">
-                <Background Type="CT_RAW" Source="FF{{buttonFont}}"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
+          <Color Name="FileTabButtonHoverInactiveBorder">
+            <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+          </Color>
+          <Color Name="FileTabButtonHoverSelectedActive">
+            <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+          </Color>
             <Color Name="FileTabButtonHoverSelectedActiveGlyph">
                 <Background Type="CT_RAW" Source="FF{{buttonFont}}"/>
             </Color>
@@ -2075,6 +2081,10 @@
 
           <Color Name="FileTabLastActiveDocumentBorderEdge">
             <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+          </Color>
+
+          <Color Name="FileTabLastActiveText">
+            <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
           </Color>
 
           <Color Name="SearchBoxPressedBorder">
@@ -3443,7 +3453,8 @@
         </Category>
         <Category Name="ClientDiagnosticsMemory" GUID="{4ec0c2e0-c165-47be-9f29-2d2b73ad3e93}">
             <Color Name="TabHover">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+              <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="DropDownButton">
                 <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
