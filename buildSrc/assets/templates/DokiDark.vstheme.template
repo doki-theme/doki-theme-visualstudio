@@ -3582,10 +3582,10 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="ExtensionManagerStarHighlight1">
-        <Background Type="CT_RAW" Source="FFFF8C00"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="ExtensionManagerStarHighlight2">
-        <Background Type="CT_RAW" Source="FFFF8C00"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="ExtensionManagerStarInactive1">
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
