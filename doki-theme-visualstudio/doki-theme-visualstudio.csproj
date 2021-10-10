@@ -1317,6 +1317,15 @@
     <None Include="Themes\generated\Shima Rin.vstheme">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Themes\generated\Tohru.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Tohru.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Tohru.vstheme">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp"/>
