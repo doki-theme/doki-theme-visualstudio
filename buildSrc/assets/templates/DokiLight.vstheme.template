@@ -57,13 +57,13 @@
           </Color>
 
           <Color Name="MarkerFormatDefinition/HighlightedDefinition">
-                <Background Type="CT_RAW" Source="FFFABF89"/>
+                <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
             </Color>
             <Color Name="MarkerFormatDefinition/HighlightedWrittenReference">
-                <Background Type="CT_RAW" Source="FFFABF89"/>
+                <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
             </Color>
             <Color Name="MarkerFormatDefinition/HighlightedReference">
-                <Background Type="CT_RAW" Source="FFFABF89"/>
+                <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
             </Color>
         </Category>
         <Category Name="Text Editor Text Marker Items" GUID="{ff349800-ea43-46c1-8c98-878e78f46501}">
@@ -102,22 +102,22 @@
                 <Foreground Type="CT_RAW" Source="FF{{classNameColor}}"/>
             </Color>
             <Color Name="property name">
-                <Foreground Type="CT_RAW" Source="FF007972"/>
+                <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
             </Color>
             <Color Name="namespace name">
-                <Foreground Type="CT_RAW" Source="FF007972"/>
+                <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
             </Color>
             <Color Name="delegate name">
-                <Foreground Type="CT_RAW" Source="FF007972"/>
+                <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
             </Color>
             <Color Name="enum name">
                 <Foreground Type="CT_RAW" Source="FF{{constantColor}}"/>
             </Color>
             <Color Name="interface name">
-                <Foreground Type="CT_RAW" Source="FF007972"/>
+                <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
             </Color>
             <Color Name="struct name">
-                <Foreground Type="CT_RAW" Source="FF007972"/>
+                <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
             </Color>
             <Color Name="type parameter name">
                 <Foreground Type="CT_RAW" Source="FF{{constantColor}}"/>
@@ -132,7 +132,7 @@
                 <Foreground Type="CT_RAW" Source="FF{{comments}}"/>
             </Color>
             <Color Name="enum member name">
-                <Foreground Type="CT_RAW" Source="FF007972"/>
+                <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
             </Color>
             <Color Name="punctuation">
                 <Foreground Type="CT_RAW" Source="FF4D4D4A"/>

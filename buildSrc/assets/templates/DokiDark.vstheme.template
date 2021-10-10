@@ -1111,8 +1111,7 @@
         <Foreground Type="CT_RAW" Source="FF66C3E6"/>
       </Color>
       <Color Name="MarkerFormatDefinition/HighlightedReference">
-        <Background Type="CT_RAW" Source="FF20476C"/>
-        <Foreground Type="CT_RAW" Source="FFADC0D3"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="MarkerFormatDefinition/FindHighlight">
         <Background Type="CT_RAW" Source="FF073E5C"/>
@@ -1499,8 +1498,7 @@
         <Foreground Type="CT_INVALID" Source="00000000"/>
       </Color>
       <Color Name="Peek Highlighted Text">
-        <Background Type="CT_RAW" Source="FF20476C"/>
-        <Foreground Type="CT_INVALID" Source="00000000"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="Peek Highlighted Text Unfocused">
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
@@ -1547,8 +1545,7 @@
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="MarkerFormatDefinition/HighlightedDefinition">
-        <Background Type="CT_RAW" Source="FF20476C"/>
-        <Foreground Type="CT_RAW" Source="FFC0D3AD"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="xml doc comment - attribute name">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -1647,12 +1644,11 @@
         <Foreground Type="CT_RAW" Source="FF000C22"/>
       </Color>
       <Color Name="MarkerFormatDefinition/HighlightedWrittenReference">
-        <Background Type="CT_RAW" Source="FF20476C"/>
-        <Foreground Type="CT_RAW" Source="FFADC0D3"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="brace matching">
-        <Background Type="CT_RAW" Source="FF20476C"/>
-        <Foreground Type="CT_RAW" Source="FF{{stringColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="Stale Code">
         <Background Type="CT_INVALID" Source="00000000"/>
@@ -9276,7 +9272,7 @@
         <Foreground Type="CT_RAW" Source="FF52B0EF"/>
       </Color>
       <Color Name="TagActiveGlyphPressedBorder">
-        <Foreground Type="CT_RAW" Source="FF20476C"/>
+        <Foreground Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="TagHoverGlyphHoverBorder">
         <Foreground Type="CT_RAW" Source="FF000F24"/>
