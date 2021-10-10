@@ -212,7 +212,7 @@ evaluateTemplates(
                 (none: any) => !none.$.Include.startsWith('Themes\generated'),
               ),
               ...themes.map(dokiTheme => ({
-                '$': { Include: `Themes\generated\\${getVSThemeName(dokiTheme)}` },
+                '$': { Include: `Themes\\generated\\${getVSThemeName(dokiTheme)}` },
                 SubType: ['Designer']
               }))
             ]

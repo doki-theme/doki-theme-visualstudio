@@ -453,19 +453,19 @@
                 <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
             </Color>
             <Color Name="ToggleBorder">
-                <Background Type="CT_RAW" Source="FF5d3855"/>
+                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
             </Color>
             <Color Name="ToggleDisabledBorder">
-                <Background Type="CT_RAW" Source="FF5d3855"/>
+                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
             </Color>
             <Color Name="ToggleMouseOverBorder">
-                <Background Type="CT_RAW" Source="FF5d3855"/>
+                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
             </Color>
             <Color Name="ToggleOuterBorder">
-                <Background Type="CT_RAW" Source="FF5d3855"/>
+                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
             </Color>
             <Color Name="ToggleSelectedBorder">
-                <Background Type="CT_RAW" Source="FF5d3855"/>
+                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
             </Color>
             <Color Name="ToggleDisabled">
                 <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -706,19 +706,19 @@
                 <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
             </Color>
             <Color Name="CheckBoxBorder">
-                <Background Type="CT_RAW" Source="FF5d3855"/>
+                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
             </Color>
             <Color Name="CheckBoxBorderDisabled">
-                <Background Type="CT_RAW" Source="FF5d3855"/>
+                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
             </Color>
             <Color Name="CheckBoxBorderFocused">
-                <Background Type="CT_RAW" Source="FF5d3855"/>
+                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
             </Color>
             <Color Name="CheckBoxBorderHover">
-                <Background Type="CT_RAW" Source="FF5d3855"/>
+                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
             </Color>
             <Color Name="CheckBoxBorderPressed">
-                <Background Type="CT_RAW" Source="FF5d3855"/>
+                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
             </Color>
             <Color Name="CheckBoxGlyph">
                 <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
