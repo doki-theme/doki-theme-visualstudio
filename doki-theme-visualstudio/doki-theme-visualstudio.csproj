@@ -1326,6 +1326,411 @@
     <None Include="Themes\generated\Tohru.vstheme">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Themes\generated\Maika.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Mai Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Mai Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Mioda Ibuki Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Mioda Ibuki Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Hayase Nagatoro.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Kanna.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Tohru.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Sagiri.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Katsuragi Misato.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Rei.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Astolfo.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Ishtar Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Ishtar Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Tohsaka Rin.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Zero Two Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Zero Two Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Gasai Yuno.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Rory Mercury.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Rias Crimson.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Rias Onyx.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Jabami Yumeko.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Ryuko Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Ryuko Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Satsuki Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Satsuki Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Aqua.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Darkness Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Darkness Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Megumin.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Monika Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Monika Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Natsuki Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Natsuki Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Sayori Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Sayori Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Yuri Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Yuri Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Sonoda Umi.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Konata.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Hatsune Miku.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Hanekawa Tsubasa.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Miia.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Azuki.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Chocola.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Cinnamon.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Coconut.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Maple Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Maple Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Shigure.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Vanilla.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Yukinoshita Yukino.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Kirino.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Nakano Miku.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Nakano Nino.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Beatrice.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Echidna.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Emilia Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Emilia Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Ram.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Rem.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Makise Kurisu.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Asuna Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Asuna Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Gray.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Shima Rin.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Tohru.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Tohru.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Tohru.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Maika.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Mai Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Mai Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Mioda Ibuki Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Mioda Ibuki Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Hayase Nagatoro.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Kanna.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Tohru.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Sagiri.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Katsuragi Misato.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Rei.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Astolfo.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Ishtar Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Ishtar Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Tohsaka Rin.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Zero Two Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Zero Two Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Gasai Yuno.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Rory Mercury.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Rias Crimson.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Rias Onyx.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Jabami Yumeko.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Ryuko Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Ryuko Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Satsuki Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Satsuki Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Aqua.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Darkness Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Darkness Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Megumin.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Monika Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Monika Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Natsuki Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Natsuki Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Sayori Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Sayori Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Yuri Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Yuri Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Sonoda Umi.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Konata.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Hatsune Miku.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Hanekawa Tsubasa.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Miia.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Azuki.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Chocola.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Cinnamon.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Coconut.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Maple Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Maple Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Shigure.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Vanilla.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Yukinoshita Yukino.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Kirino.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Nakano Miku.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Nakano Nino.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Beatrice.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Echidna.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Emilia Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Emilia Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Ram.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Rem.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Makise Kurisu.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Asuna Dark.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Asuna Light.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Gray.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Shima Rin.vstheme">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp"/>
