@@ -5374,7 +5374,7 @@
         <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="MainWindowSolutionNameActiveBackground">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
       <Color Name="MainWindowSolutionNameInactiveBackground">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
