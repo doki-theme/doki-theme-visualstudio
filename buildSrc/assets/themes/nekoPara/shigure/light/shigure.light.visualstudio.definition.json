@@ -6,7 +6,8 @@
   "colors": {},
   "backgrounds": {
     "default": {
-      "position": "right"
+      "position": "right",
+      "opacity": 0.17
     }
   }
 }

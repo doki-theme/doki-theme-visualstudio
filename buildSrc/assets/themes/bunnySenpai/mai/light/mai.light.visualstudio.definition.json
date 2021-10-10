@@ -10,7 +10,7 @@
     },
     "secondary": {
       "anchor": "right",
-      "opacity": 13
+      "opacity": 0.13
     }
   }
 }
