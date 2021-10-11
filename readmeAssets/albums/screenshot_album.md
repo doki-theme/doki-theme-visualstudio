@@ -4,6 +4,7 @@ Darling in the Franxx
 ### Zero Two 
 
 ![zero_two_dark_code](../screens/themes/zero_two_dark_code.png)
+![zero_two_light_code](../screens/themes/zero_two_light_code.png)
 
 NekoPara
 ---
@@ -22,6 +23,7 @@ NekoPara
 ### Maple
 
 ![maple_dark_code](../screens/themes/maple_dark_code.png)
+![maple_light_code](../screens/themes/maple_light_code.png)
 
 ### Cinnamon
 
@@ -30,6 +32,10 @@ NekoPara
 ### Azuki
 
 ![azuki_dark_code](../screens/themes/azuki_dark_code.png)
+
+### Shigure
+
+![shigure_light_code](../screens/themes/shigure_light_code.png)
 
 YuruCamp
 ---
@@ -48,29 +54,52 @@ Monogatari
 KonoSuba
 ---
 
+### Aqua
+
 ![aqua_dark_code](../screens/themes/aqua_dark_code.png)
+
+### Darkness
+
 ![darkness_dark_code](../screens/themes/darkness_dark_code.png)
+![darkness_light_code](../screens/themes/darkness_light_code.png)
+
+### Megumin
+
 ![megumin_code](../screens/themes/megumin_code.png)
 
 Quintessential Quintuplets
 ---
-![nakano_miku_dark_code](../screens/themes/nakano_miku_dark_code.png)
+
+### Nakano Nino
+
 ![nakano_nino_dark_code](../screens/themes/nakano_nino_dark_code.png)
+
+### Nakano Miku
+
+![nakano_miku_dark_code](../screens/themes/nakano_miku_dark_code.png)
 
 OreImo (My little sister cannot be this cute)
 ---
+
+### Kosaka Kirino
+
 ![kirino_dark_code](../screens/themes/kirino_dark_code.png)
 
 EroManga Sensei
 ---
+
+### Izumi Sagiri
+
 ![sagiri_dark_code](../screens/themes/sagiri_dark_code.png)
 
 TypeMoon
 ---
+
 ## Fate
 
 ### Ishtar
 ![ishtar_dark_code](../screens/themes/ishtar_dark_code.png)
+![ishtar_light_code](../screens/themes/ishtar_light_code.png)
 
 ### Tohsaka Rin
 ![rin_dark_code](../screens/themes/rin_dark_code.png)
@@ -90,6 +119,7 @@ Sword Art Online
 ### Yuuki Asuna
 
 ![asuna_dark_code](../screens/themes/asuna_dark_code.png)
+![asuna_light_code](../screens/themes/asuna_light_code.png)
 
 Don't Toy With Me Miss Nagatoro
 ---
@@ -107,12 +137,17 @@ Re:Zero
 
 ### Emilia
 ![emilia_dark_code](../screens/themes/emilia_dark_code.png)
+![emilia_light_code](../screens/themes/emilia_light_code.png)
 
 ### Ram
 ![ram_dark_code](../screens/themes/ram_dark_code.png)
 
 ### Rem
 ![rem_dark_code](../screens/themes/rem_dark_code.png)
+
+### Beatrice
+
+![beatrice_code](../screens/themes/beatrice_code.png)
 
 
 DanganRonpa
@@ -121,13 +156,19 @@ DanganRonpa
 ### Mioda Ibuki
 
 ![ibuki_dark_code](../screens/themes/ibuki_dark_code.png)
+![ibuki_light_code](../screens/themes/ibuki_light_code.png)
 
 
 Miss Kobayashi's Dragon Mad
 ---
 
 ### Kanna
+
 ![kanna_dark_code](../screens/themes/kanna_dark_code.png)
+
+### Tohru
+
+![tohru_light_code](../screens/themes/tohru_light_code.png)
 
 
 Lucky Star
@@ -150,11 +191,13 @@ Rascal Dreams of Bunny Girl Senpai
 ### Sakurajima Mai
 
 ![mai_dark_code](../screens/themes/mai_dark_code.png)
+![mai_light_code](../screens/themes/mai_light_code.png)
 
 Blend S
 ---
 
 ### Sakuranomiya Maika
+
 ![maika_dark_code](../screens/themes/maika_dark_code.png)
 
 
@@ -172,7 +215,7 @@ Vocaloid
 ![miku_code](../screens/themes/miku_code.png)
 
 
-Neon Jellyfish Evangelion
+Neon Jellyfish Evan Gel Lion
 ---
 
 ### Katsuragi Misato
@@ -187,15 +230,19 @@ Doki-Doki Literature Club
 
 ### Just Monika
 ![monika_dark_code](../screens/themes/monika_dark_code.png)
+![monika_light_code](../screens/themes/monika_light_code.png)
 
 ### Natsuki
 ![natsuki_dark_code](../screens/themes/natsuki_dark_code.png)
+![natsuki_light_code](../screens/themes/natsuki_light_code.png)
 
 ### Sayori
 ![sayori_dark_code](../screens/themes/sayori_dark_code.png)
+![sayori_light_code](../screens/themes/sayori_light_code.png)
 
 ### Yuri
 ![yuri_dark_code](../screens/themes/yuri_dark_code.png)
+![yuri_light_code](../screens/themes/yuri_light_code.png)
 
 
 Highschool DxD
@@ -220,9 +267,11 @@ KillLaKill
 ### Matoi Ryuko
 
 ![ryuko_code](../screens/themes/ryuko_code.png)
+![ryuko_light_code](../screens/themes/ryuko_light_code.png)
 
 ### Kiryuin Satsuki
 
+![satsuki_light_code](../screens/themes/satsuki_light_code.png)
 ![satsuki_dark_code](../screens/themes/satsuki_dark_code.png)
 
 Love Live
