@@ -1,6 +1,31 @@
 Changelog
 ---
 
+# 1.0.0 [Added Light Themes]
+
+- Ported over all 17 Light Themes to this extension!
+  - Themes Included:
+    - Zero Two
+    - Matoi Ryuko
+    - Kuryuin Satsuki
+    - Minaduki Shigure
+    - Maple
+    - Tohru
+    - Yuuki Asuna
+    - Beatrice
+    - Emilia
+    - Darkness
+    - Ishtar
+    - Sakurajima Mai
+    - Mioda Ibuki
+    - _Just Monika_
+    - Sayori
+    - Natsuki
+    - Yuri
+
+
+![Light Theme Release](https://doki.assets.unthrottled.io/misc/visual_studio_light_release.png)
+
 # 0.4.0 [2022.1 Build Support]
 
 - Extension is now only supported on 2022.1 builds.

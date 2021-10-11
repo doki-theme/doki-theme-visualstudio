@@ -140,7 +140,7 @@ const solutionsDirectory = path.resolve(repoDirectory, "doki-theme-visualstudio"
 const generatedThemesDirectory = path.resolve(solutionsDirectory, 'Themes', 'generated')
 
 if (!fs.existsSync(generatedThemesDirectory)) {
-  fs.mkdirSync(generatedThemesDirectory, {recursive: true})
+  fs.mkdirSync(generatedThemesDirectory, { recursive: true })
 } else {
   fs.readdirSync(generatedThemesDirectory).forEach(
     generatedThemePath => fs.rmSync(path.resolve(generatedThemesDirectory, generatedThemePath))
@@ -165,7 +165,7 @@ function getXMLTemplates() {
           const themeXML = await toXml(
             fs.readFileSync(
               next,
-              {encoding: 'utf-8'}
+              { encoding: 'utf-8' }
             )
           );
           const themeName = getThemeName(themeXML);
@@ -188,7 +188,6 @@ evaluateTemplates(
     const specificTheme = process.argv[2];
     const specifiedThemes = process.argv.slice(2);
     const themes = dokiThemes
-      .filter(dokiTheme => dokiTheme.definition.dark)
       .filter(
         dokiTheme => !specificTheme ||
           specifiedThemes.findIndex(
@@ -200,7 +199,7 @@ evaluateTemplates(
     const csProjFile = await toXml(
       fs.readFileSync(
         csProjFilePath,
-        {encoding: 'utf-8'}
+        { encoding: 'utf-8' }
       )
     )
 
@@ -210,10 +209,10 @@ evaluateTemplates(
           return {
             None: [
               ...itemGroup.None.filter(
-                (none: any) => !none.$.Include.startsWith('Themes\generated'),
+                (none: any) => !none.$.Include.startsWith('Themes\\generated'),
               ),
               ...themes.map(dokiTheme => ({
-                '$': {Include: `Themes\generated\\${getVSThemeName(dokiTheme)}`},
+                '$': { Include: `Themes\\generated\\${getVSThemeName(dokiTheme)}` },
                 SubType: ['Designer']
               }))
             ]
@@ -277,7 +276,7 @@ function getName(dokiDefinition: MasterDokiThemeDefinition) {
 }
 
 async function resolveVisualStudioThemeTemplate(xmlTemplates: StringDictionary<any>,
-                                                dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { secondary?: { path: string; name: string; } | undefined; defaultSticker: { path: string; name: string; }; }; templateVariables: DokiThemeVisualStudio; theme: {}; appThemeDefinition: BaseAppDokiThemeDefinition; }): Promise<string> {
+  dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { secondary?: { path: string; name: string; } | undefined; defaultSticker: { path: string; name: string; }; }; templateVariables: DokiThemeVisualStudio; theme: {}; appThemeDefinition: BaseAppDokiThemeDefinition; }): Promise<string> {
   const evalutedTemplate = evaluateXmlTemplates(xmlTemplates, dokiTheme)
   const filledInTemplate = fillInTemplateScript(evalutedTemplate, dokiTheme.templateVariables);
   const templateAsXml = await toXml(filledInTemplate)
@@ -319,14 +318,17 @@ function smashXmlTemplatesTogether(parentXml: any, childXml: any): any {
 }
 
 function evaluateXmlTemplates(xmlTemplates: StringDictionary<any>, dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { secondary?: { path: string; name: string; } | undefined; defaultSticker: { path: string; name: string; }; }; templateVariables: DokiThemeVisualStudio; theme: {}; appThemeDefinition: BaseAppDokiThemeDefinition; }): string {
-  const childTemplateName = dokiTheme.appThemeDefinition.laf?.extends || 'dark';
+  const childTemplateName = dokiTheme.appThemeDefinition.laf?.extends ||
+    (dokiTheme.definition.dark ? 'dark' : 'light');
   const childTemplate = xmlTemplates[childTemplateName];
   const resolvedXmlObject = resolveTemplateWithCombini(
     childTemplate,
     xmlTemplates,
     template => template,
     templateXml => {
-      const parentName = templateXml.Themes.Theme[0].$.BaseGUID
+      const baseNodeAttributes = templateXml.Themes.Theme[0].$;
+      const parentName = baseNodeAttributes.BaseGUID ||
+        baseNodeAttributes.FallbackId;
       return parentName.startsWith('{') ? undefined : parentName;
     },
     smashXmlTemplatesTogether
