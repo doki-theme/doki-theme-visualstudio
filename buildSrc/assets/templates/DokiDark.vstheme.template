@@ -4693,10 +4693,10 @@
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
       <Color Name="FileTabProvisionalSelectedActive">
-        <Background Type="CT_RAW" Source="FF{{diff.deleted}}"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="FileTabProvisionalSelectedActiveBorder">
-        <Background Type="CT_RAW" Source="FF{{diff.deleted}}"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="FileTabProvisionalSelectedActiveForeground">
         <Background Type="CT_RAW" Source="FFFFFFFF"/>

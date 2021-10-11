@@ -319,7 +319,7 @@ function smashXmlTemplatesTogether(parentXml: any, childXml: any): any {
 
 function evaluateXmlTemplates(xmlTemplates: StringDictionary<any>, dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { secondary?: { path: string; name: string; } | undefined; defaultSticker: { path: string; name: string; }; }; templateVariables: DokiThemeVisualStudio; theme: {}; appThemeDefinition: BaseAppDokiThemeDefinition; }): string {
   const childTemplateName = dokiTheme.appThemeDefinition.laf?.extends ||
-    dokiTheme.definition.dark ? 'dark' : 'light';
+    (dokiTheme.definition.dark ? 'dark' : 'light');
   const childTemplate = xmlTemplates[childTemplateName];
   const resolvedXmlObject = resolveTemplateWithCombini(
     childTemplate,

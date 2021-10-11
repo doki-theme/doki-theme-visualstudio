@@ -12,6 +12,8 @@
 
 @REM Shigure
 @REM yarn buildThemes 67278007-b7f8-46d4-88b7-e40cac3576a7
-yarn buildThemes 2d049451-6e89-4325-af38-6ce889991e5b
+
+@REM Cinnamon
+yarn buildThemes 84dc0d3c-1c83-4dde-87b9-e1ea27cd34b0
 
 @REM yarn buildThemes
