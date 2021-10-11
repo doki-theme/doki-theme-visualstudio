@@ -209,7 +209,7 @@ evaluateTemplates(
           return {
             None: [
               ...itemGroup.None.filter(
-                (none: any) => !none.$.Include.startsWith('Themes\generated'),
+                (none: any) => !none.$.Include.startsWith('Themes\\generated'),
               ),
               ...themes.map(dokiTheme => ({
                 '$': { Include: `Themes\\generated\\${getVSThemeName(dokiTheme)}` },
