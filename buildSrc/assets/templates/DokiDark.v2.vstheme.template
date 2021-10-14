@@ -2214,19 +2214,19 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="FileTabSelectedBackground">
-        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="FileTabSelectedGradientBottom">
-        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="FileTabSelectedGradientMiddle1">
-        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="FileTabSelectedGradientMiddle2">
-        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="FileTabSelectedGradientTop">
-        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="ToolWindowTabGradientBegin">
         <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
@@ -3277,8 +3277,11 @@
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
 
-      <Color Name="FileTabSelectedBackground">
-        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      <Color Name="FileTabSelectedText">
+        <Background Type="CT_RAW" Source="FFFFFFFF"/>
+      </Color>
+      <Color Name="FileTabButtonSelectedActiveGlyph">
+        <Background Type="CT_RAW" Source="FFFFFFFF"/>
       </Color>
 
       <Color Name="FileTabSelectedBorder">
