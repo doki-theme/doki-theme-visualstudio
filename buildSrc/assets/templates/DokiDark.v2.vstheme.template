@@ -2005,6 +2005,12 @@
       <Color Name="FileTabHotGradientTop">
         <Background Type="CT_RAW" Source="AA{{highlightColor}}"/>
       </Color>
+      <Color Name="FileTabHotBorder">
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+      </Color>
+      <Color Name="FileTabHotText">
+        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+      </Color>
       <Color Name="ComboBoxItemMouseOverBackground">
         <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
       </Color>
@@ -2313,6 +2319,27 @@
       </Color>
       <Color Name="EnvironmentBackgroundTexture2">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+      </Color>
+      <Color Name="ExtensionManagerStarHighlight1">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+      <Color Name="ExtensionManagerStarHighlight2">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+      <Color Name="ExtensionManagerStarInactive1">
+        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+      </Color>
+      <Color Name="ExtensionManagerStarInactive2">
+        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+      </Color>
+      <Color Name="FileTabHotBorder">
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+      </Color>
+      <Color Name="FileTabHotText">
+        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+      </Color>
+      <Color Name="FileTabHotGlyph">
+        <Background Type="CT_RAW" Source="FFBAD0E4"/>
       </Color>
       <Color Name="ToolWindowTabBorder">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
