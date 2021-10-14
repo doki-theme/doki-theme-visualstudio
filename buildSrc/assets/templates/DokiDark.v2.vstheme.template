@@ -2842,6 +2842,367 @@
       <Color Name="VerticalResizeGripMiddle">
         <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
       </Color>
+      <Color Name="AutoHideTabMouseOverText">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="AutoHideTabMouseOverBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="ComboBoxMouseDownBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="ComboBoxMouseOverBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="ComboBoxMouseOverGlyph">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarCheckBox">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarMenuMouseOverSubmenuGlyph">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarMouseDownBackgroundBegin">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarMouseDownBackgroundMiddle">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarMouseDownBackgroundEnd">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarMouseDownBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarOptionsMouseDownBackgroundBegin">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarOptionsMouseDownBackgroundMiddle">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarOptionsMouseDownBackgroundEnd">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarOptionsMouseOverGlyph">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="DockTargetGlyphBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="DropDownMouseOverGlyph">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="FileTabLastActiveDocumentBorderBackground">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="FileTabLastActiveDocumentBorderEdge">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="SearchBoxPressedBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="StartPageButtonBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="StartPageButtonText">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="StartPageSelectedItemBackground">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="StartPageTextControlLinkSelected">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="TitleBarActiveGradientMiddle1">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="TitleBarActiveGradientMiddle2">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarHoverOverSelectedIconBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="ControlLinkTextHover">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="ControlLinkTextPressed">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="DebuggerDataTipActiveBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="EditorExpansionLink">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="FileTabSelectedBackground">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="FileTabSelectedBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="HelpHowDoIPaneLink">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="HelpHowDoITaskLink">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="HelpSearchResultLinkSelected">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="HelpSearchResultLinkUnselected">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="PanelHyperlink">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="PanelHyperlinkHover">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="PanelHyperlinkPressed">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="TitleBarActiveGradientBegin">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="TitleBarActiveGradientEnd">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="ToolWindowTabSelectedText">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="FileTabSelectedGradientTop">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="FileTabSelectedGradientBottom">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="FileTabDocumentBorderShadow">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="FileTabDocumentBorderBackground">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="FileTabDocumentBorderHighlight">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="TitleBarActiveBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="RaftedWindowButtonDown">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="RaftedWindowButtonDownBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="DropDownButtonMouseOverSeparator">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="DropDownButtonMouseDownBackground">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="ComboBoxButtonMouseDownSeparator">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="ComboBoxButtonMouseOverSeparator">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="ComboBoxButtonMouseDownBackground">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="ComboBoxSelection">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="ToolWindowTabSelectedActiveText">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarSelectedIconBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="QuickCustomizeButtonBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="QuickCustomizeButtonGlyphHover">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarMenuGroupHeaderLinkText">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarMenuWatermarkLinkTextHover">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarMenuLinkText">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarMenuWatermarkTextHover">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="DiagReportLinkText">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="DocWellOverflowButtonMouseOverGlyph">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="DocWellOverflowButtonMouseDownBackground">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="DocWellOverflowButtonMouseDownBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="MainWindowButtonDown">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="MainWindowButtonDownBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="StatusBarDefault">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+        <Foreground Type="CT_RAW" Source="FFFFFFFF"/>
+      </Color>
+
+      <Color Name="MainWindowActiveDefaultBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="MainWindowActiveIconDefault">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="MainWindowActiveIconBuilding">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="MainWindowActiveIconDebugging">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="MainWindowActiveIconNoSolution">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="MainWindowInactiveIconDefault">
+        <Background Type="CT_RAW" Source="66{{accentColor}}"/>
+      </Color>
+
+      <Color Name="MainWindowInactiveIconBuilding">
+        <Background Type="CT_RAW" Source="66{{accentColor}}"/>
+      </Color>
+
+      <Color Name="MainWindowInactiveIconDebugging">
+        <Background Type="CT_RAW" Source="66{{accentColor}}"/>
+      </Color>
+
+      <Color Name="RaftedWindowInactiveIconNoSolution">
+        <Background Type="CT_RAW" Source="66{{accentColor}}"/>
+      </Color>
+
+      <Color Name="ScrollBarArrowGlyphPressed">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="IconActionFill">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarSplitButtonMouseOverGlyph">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="CommandBarMenuMouseOverGlyph">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="ComboBoxFocusedButtonSeparator">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="ComboBoxFocusedGlyph">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="ComboBoxFocusedBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="PanelHyperlinkInsideSelectionInactive">
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+
+      <Color Name="FileTabIndicatorTextSelectedActive">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
     </Category>
     <Category Name="Header" GUID="{4997f547-1379-456e-b985-2f413cdfa536}">
       <Color Name="Default">
