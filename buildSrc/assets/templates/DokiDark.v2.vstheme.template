@@ -1001,6 +1001,9 @@
         <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
+      <Color Name="InfoText">
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+      </Color>
       <Color Name="Menu">
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
@@ -2372,6 +2375,12 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="ComboBoxButtonMouseOverBackground">
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+      </Color>
+      <Color Name="MainWindowSolutionNameActiveBackground">
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+      </Color>
+      <Color Name="MainWindowSolutionNameInactiveBackground">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="ComboBoxFocusBox">
