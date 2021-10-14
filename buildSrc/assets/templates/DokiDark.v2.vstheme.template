@@ -2047,6 +2047,9 @@
       <Color Name="FileTabProvisionalSelectedActive">
         <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
+      <Color Name="FileTabProvisionalSelectedActiveBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
       <Color Name="FileTabSelectedBackground">
         <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
       </Color>
