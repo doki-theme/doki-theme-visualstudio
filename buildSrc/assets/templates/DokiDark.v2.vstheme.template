@@ -3504,6 +3504,9 @@
       <Color Name="StartWindowDescriptionHover">
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
+      <Color Name="FocusVisualBorder">
+        <Background Type="CT_RAW" Source="FF{{selectionForeground}}"/>
+      </Color>
       <Color Name="SelectedItemInactive">
         <Background Type="CT_RAW" Source="FF{{selectionInactive}}"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
