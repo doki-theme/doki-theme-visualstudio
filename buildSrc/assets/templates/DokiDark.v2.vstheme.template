@@ -2002,6 +2002,9 @@
       <Color Name="FileTabProvisionalHover">
         <Background Type="CT_RAW" Source="AA{{highlightColor}}"/>
       </Color>
+      <Color Name="FileTabProvisionalHoverForeground">
+        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+      </Color>
       <Color Name="FileTabProvisionalHoverBorder">
         <Background Type="CT_RAW" Source="AA{{highlightColor}}"/>
       </Color>
@@ -2042,7 +2045,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="FileTabProvisionalSelectedActive">
-        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="FileTabSelectedBackground">
         <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
@@ -4660,7 +4663,7 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="GridActiveRowHeader">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="GridColumnHeaderHover">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -4684,10 +4687,10 @@
         <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="TagHover">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="TagHoverGlyphHover">
-        <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
       </Color>
       <Color Name="TagHoverGlyphPressed">
         <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
