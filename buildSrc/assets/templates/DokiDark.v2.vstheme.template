@@ -1841,6 +1841,12 @@
       <Color Name="StartPageTextDate">
         <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
       </Color>
+      <Color Name="Menu">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="MenuText">
+        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+      </Color>
       <Color Name="ToolboxContent">
         <Background Type="CT_RAW" Source="FF323742"/>
         <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -2623,6 +2629,100 @@
       <Color Name="ScrollBarArrowGlyphMouseOver">
         <Background Type="CT_RAW" Source="FF{{buttonFont}}"/>
       </Color>
+      <Color Name="CommandBarMenuItemMouseOverBorder">
+        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+      </Color>
+      <Color Name="CommandBarMenuItemMouseOver">
+        <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
+        <Foreground Type="CT_RAW" Source="FF{{selectionForeground}}"/>
+      </Color>
+      <Color Name="CommandBarCheckBox">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+      <Color Name="CommandBarMenuBackgroundGradientBegin">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandBarMenuBackgroundGradientEnd">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandBarMenuBorder">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandBarMenuIconBackground">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandBarMenuMouseOverSubmenuGlyph">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+      <Color Name="CommandBarMenuSeparator">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandBarMenuSubmenuGlyph">
+        <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
+      </Color>
+      <Color Name="CommandBarMouseDownBackgroundBegin">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+      <Color Name="CommandBarMouseDownBackgroundMiddle">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+      <Color Name="CommandBarMouseDownBackgroundEnd">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+      <Color Name="CommandBarMouseDownBorder">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+      <Color Name="CommandBarMouseOverBackgroundBegin">
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+      </Color>
+      <Color Name="CommandBarMouseOverBackgroundMiddle1">
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+      </Color>
+      <Color Name="CommandBarMouseOverBackgroundMiddle2">
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+      </Color>
+      <Color Name="CommandBarMouseOverBackgroundEnd">
+        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+      </Color>
+      <Color Name="CommandBarOptionsBackground">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandBarOptionsGlyph">
+        <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
+      </Color>
+      <Color Name="CommandBarOptionsMouseDownBackgroundBegin">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+      <Color Name="CommandBarOptionsMouseDownBackgroundMiddle">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+      <Color Name="CommandBarOptionsMouseDownBackgroundEnd">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+      <Color Name="CommandBarOptionsMouseOverBackgroundBegin">
+        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+      </Color>
+      <Color Name="CommandBarOptionsMouseOverBackgroundMiddle1">
+        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+      </Color>
+      <Color Name="CommandBarOptionsMouseOverBackgroundMiddle2">
+        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+      </Color>
+      <Color Name="CommandBarOptionsMouseOverBackgroundEnd">
+        <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
+      </Color>
+      <Color Name="CommandBarOptionsMouseOverGlyph">
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+      </Color>
+      <Color Name="CommandBarSelectedBorder">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandBarToolBarBorder">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandBarToolBarSeparator">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color> 
       <Color Name="ScrollBarArrowGlyphPressed">
         <Background Type="CT_RAW" Source="FF{{buttonFont}}"/>
       </Color>
