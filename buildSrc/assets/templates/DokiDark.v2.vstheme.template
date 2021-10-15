@@ -4741,97 +4741,222 @@
         <Background Source="FF{{errorColor}}" Type="CT_RAW"/>
       </Color>
     </Category>
-    <Category Name="UserNotifications" GUID="{5d42b198-efca-431c-92aa-8b595d0d39c2}">
-      <Color Name="Content">
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="TitleMouseOverText">
-        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="TitleSelectedText">
-        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="TitleText">
-        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="ToastGlyphButton">
-        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="ToastMessageText">
-        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="ToastTitleText">
-        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="NotificationMouseOverBackground">
-        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-      </Color>
-      <Color Name="NotificationMouseOverBorder">
-        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-      </Color>
-      <Color Name="NotificationSelectedBackground">
-        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-      </Color>
-      <Color Name="NotificationSelectedBorder">
-        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-      </Color>
-      <Color Name="NotificationGlyph">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-      </Color>
-      <Color Name="NotificationGlyphMouseDown">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-      </Color>
-      <Color Name="NotificationGlyphMouseDownBorder">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-      </Color>
-      <Color Name="NotificationGlyphMouseOver">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-      </Color>
-      <Color Name="NotificationGlyphMouseOverBorder">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-      </Color>
-      <Color Name="IgnoredHyperlink">
-        <Background Type="CT_RAW" Source="AA{{accentColor}}"/>
-      </Color>
-      <Color Name="ToastPanelBorder">
-        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
-      </Color>
+    <Category GUID="{5d42b198-efca-431c-92aa-8b595d0d39c2}" Name="UserNotifications">
       <Color Name="BadgeButtonCountActive">
-        <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-        <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
+        <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
       </Color>
       <Color Name="BadgeButtonCountInactive">
-        <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-        <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
+        <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
       </Color>
       <Color Name="BadgeButtonCountMouseDown">
-        <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-        <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
-      </Color>
-      <Color Name="ToastActionButton">
-        <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
+        <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
       </Color>
       <Color Name="BadgeButtonCountMouseOverActive">
-        <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
+        <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
       </Color>
       <Color Name="BadgeButtonCountMouseOverInactive">
-        <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
+        <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="BadgeButtonCriticalActive">
+        <Background Source="FF{{diff.conflict}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="BadgeButtonCriticalActiveBorder">
+        <Background Source="FF{{diff.conflict}}" Type="CT_RAW"/>
       </Color>
       <Color Name="BadgeButtonCriticalActiveGlyph">
-        <Background Type="CT_RAW" Source="FF{{buttonFont}}"/>
+        <Background Source="FF{{buttonFont}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="BadgeButtonCriticalInactive">
+        <Background Source="FF{{diff.conflict}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="BadgeButtonCriticalInactiveBorder">
+        <Background Source="FF{{diff.conflict}}" Type="CT_RAW"/>
       </Color>
       <Color Name="BadgeButtonCriticalInactiveGlyph">
-        <Background Type="CT_RAW" Source="FF{{buttonFont}}"/>
+        <Background Source="FF{{buttonFont}}" Type="CT_RAW"/>
       </Color>
-      <Color Name="ToastActionButtonTextHover">
-        <Background Type="CT_RAW" Source="FF{{buttonFont}}"/>
+      <Color Name="Content">
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
-      <Color Name="ToastActionButtonTextPressed">
-        <Background Type="CT_RAW" Source="FF{{buttonFont}}"/>
+      <Color Name="IgnoredBackground">
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="IgnoredBorder">
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="IgnoredHyperlink">
+        <Background Source="AA{{accentColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="IgnoredMouseOverBackground">
+        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="IgnoredMouseOverBorder">
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="IgnoredMouseOverHyperlink">
+        <Background Source="FF88CCFE" Type="CT_RAW"/>
+      </Color>
+      <Color Name="IgnoredSelectedBackground">
+        <Background Source="FFD6E8F4" Type="CT_RAW"/>
+      </Color>
+      <Color Name="IgnoredSelectedBorder">
+        <Background Source="FFD6E8F4" Type="CT_RAW"/>
+      </Color>
+      <Color Name="IgnoredSelectedHyperlink">
+        <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="IgnoredSubtitleMouseOverText">
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="IgnoredSubtitleSelectedText">
+        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="IgnoredSubtitleText">
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="IgnoredTitleMouseOverText">
+        <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="IgnoredTitleSelectedText">
+        <Background Source="FF{{codeBlock}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="IgnoredTitleText">
+        <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="IndicatorBubble">
+        <Background Source="FFE41400" Type="CT_RAW"/>
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="IndicatorBubbleDebugging">
+        <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        <Foreground Source="FF000C22" Type="CT_RAW"/>
+      </Color>
+      <Color Name="NotificationBackground">
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="NotificationBorder">
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="NotificationGlyph">
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="NotificationGlyphMouseDown">
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="NotificationGlyphMouseDownBorder">
+        <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="NotificationGlyphMouseOver">
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="NotificationGlyphMouseOverBorder">
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="NotificationMouseOverBackground">
+        <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="NotificationMouseOverBorder">
+        <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="NotificationSelectedBackground">
+        <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="NotificationSelectedBorder">
+        <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="SeverityCritical">
+        <Background Source="FF{{diff.conflict}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="SeverityImportant">
+        <Background Source="FF{{nonProjectFileScopeColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="SeverityInformative">
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="SeverityVSUpdate">
+        <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="SubtitleMouseOverText">
+        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="SubtitleSelectedText">
+        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="SubtitleText">
+        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="TitleMouseOverText">
+        <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="TitleSelectedText">
+        <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="TitleText">
+        <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastActionButton">
+        <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastActionButtonBorder">
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastActionButtonBorderDisabled">
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastActionButtonBorderHover">
+        <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastActionButtonBorderPressed">
+        <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ToastActionButtonDisabled">
-        <Background Type="CT_RAW" Source="CC{{buttonColor}}"/>
-        <Foreground Type="CT_RAW" Source="BB{{buttonFont}}"/>
+        <Background Source="CC{{buttonColor}}" Type="CT_RAW"/>
+        <Foreground Source="BB{{buttonFont}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastActionButtonHover">
+        <Background Source="FF{{selectionBackground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastActionButtonPressed">
+        <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastActionButtonText">
+        <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastActionButtonTextDisabled">
+        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastActionButtonTextHover">
+        <Background Source="FF{{selectionForeground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastActionButtonTextPressed">
+        <Background Source="FF{{buttonFont}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastGlyphButton">
+        <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastGlyphButtonHover">
+        <Background Source="FF{{selectionBackground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastGlyphButtonPressed">
+        <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastMessageText">
+        <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastPanelBackground">
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastPanelBorder">
+        <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="ToastTitleText">
+        <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
     </Category>
     <Category Name="VisualStudioInstaller" GUID="{53212856-7528-403d-84e6-76820f4cef73}">
