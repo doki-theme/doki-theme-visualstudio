@@ -2036,7 +2036,7 @@
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="AutoHideTabBorder">
-        <Background Source="FF{{foldedTextBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="AutoHideTabMouseOverBackgroundBegin">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -2060,7 +2060,7 @@
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="BrandedUIBorder">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="BrandedUIFill">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -2201,7 +2201,7 @@
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ComboBoxBorder">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ComboBoxButtonMouseDownBackground">
         <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
@@ -2219,7 +2219,7 @@
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ComboBoxDisabledBorder">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ComboBoxDisabledGlyph">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -2255,7 +2255,7 @@
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ComboBoxItemMouseOverBorder">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ComboBoxItemMouseOverText">
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
@@ -2517,7 +2517,7 @@
         <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="CommandBarSplitButtonSeparator">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="CommandBarTextActive">
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
@@ -2586,7 +2586,7 @@
         <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ControlOutline">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="Dark">
         <Background Source="00{{textEditorBackground}}" Type="CT_RAW"/>
@@ -2728,13 +2728,13 @@
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DropDownBorder">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DropDownButtonMouseDownBackground">
         <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DropDownButtonMouseDownSeparator">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DropDownButtonMouseOverBackground">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -2746,7 +2746,7 @@
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DropDownDisabledBorder">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DropDownDisabledGlyph">
         <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
@@ -2761,7 +2761,7 @@
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DropDownMouseDownBorder">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DropDownMouseDownGlyph">
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
@@ -2797,7 +2797,7 @@
         <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DropDownPopupBorder">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DropDownText">
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
@@ -3034,7 +3034,7 @@
         <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="FileTabInactiveDocumentBorderEdge">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="FileTabInactiveGlyph">
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
@@ -3187,7 +3187,7 @@
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="GridLine">
-        <Background Source="FF{{codeBlock}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="Halo">
         <Background Source="FFF6F6F6" Type="CT_RAW"/>
@@ -3500,7 +3500,7 @@
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="PanelBorder">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="PanelDisabledHyperlinkInsideSelectionActive">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -3801,7 +3801,7 @@
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="SearchBoxBorder">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="SearchBoxMouseOverBackgroundBegin">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -3816,7 +3816,7 @@
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="SearchBoxMouseOverBorder">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="SearchBoxPressedBackground">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -3870,7 +3870,7 @@
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="SplashScreenBorder">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="StartPageBackgroundGradientBegin">
         <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
@@ -4025,7 +4025,7 @@
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="TitleBarActiveBorder">
-        <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="TitleBarActiveGradientBegin">
         <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
@@ -4080,7 +4080,7 @@
         <Foreground Source="FF{{infoForeground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ToolboxDivider">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ToolboxGradientDark">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -4129,7 +4129,7 @@
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ToolWindowBorder">
-        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ToolWindowButtonActiveGlyph">
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
