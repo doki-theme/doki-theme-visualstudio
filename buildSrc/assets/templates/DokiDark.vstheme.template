@@ -8507,7 +8507,6 @@
         <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
       </Color>
     </Category>
-<!--     todo: these-->
     <Category Name="UserNotifications" GUID="{5d42b198-efca-431c-92aa-8b595d0d39c2}">
       <Color Name="SeverityCritical">
         <Background Type="CT_RAW" Source="FFE51400"/>
