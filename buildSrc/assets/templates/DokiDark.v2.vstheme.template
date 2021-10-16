@@ -1109,7 +1109,7 @@
       </Color>
       <Color Name="CommandDisabled">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
-        <Foreground Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="CommandDisabledBorder">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -1256,7 +1256,7 @@
       </Color>
       <Color Name="ListItemDisabled">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
-        <Foreground Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ListItemDisabledBorder">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -1390,7 +1390,7 @@
       </Color>
       <Color Name="TabItemDisabled">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
-        <Foreground Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="TabItemDisabledBorder">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -1469,7 +1469,7 @@
       </Color>
       <Color Name="ToggleDisabled">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
-        <Foreground Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ToggleDisabledBorder">
         <Background Source="FF{{baseIconColor}}" Type="CT_RAW"/>
@@ -1817,7 +1817,7 @@
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="TextBoxTextDisabled">
-        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="TextBoxTextFocused">
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
@@ -2067,7 +2067,7 @@
       </Color>
       <Color Name="AccessKeyToolTipDisabled">
         <Background Source="FF5b606f" Type="CT_RAW"/>
-        <Foreground Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="AccessKeyToolTipDisabledBorder">
         <Background Source="FF5b606f" Type="CT_RAW"/>
@@ -2283,7 +2283,7 @@
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ComboBoxDisabledText">
-        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ComboBoxFocusBox">
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
@@ -2322,7 +2322,7 @@
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ComboBoxItemTextInactive">
-        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ComboBoxMouseDownBackground">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -2379,7 +2379,7 @@
         <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="CommandBarCheckBoxDisabled">
-        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="CommandBarCheckBoxMouseOver">
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
@@ -2587,7 +2587,7 @@
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="CommandBarTextInactive">
-        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="CommandBarTextMouseDown">
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
@@ -2677,13 +2677,13 @@
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DebuggerDataTipInactiveHighlightText">
-        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DebuggerDataTipInactiveSeparator">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DebuggerDataTipInactiveText">
-        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DesignerBackground">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -2810,7 +2810,7 @@
         <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DropDownDisabledText">
-        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DropDownGlyph">
         <Background Source="FF{{baseIconColor}}" Type="CT_RAW"/>
@@ -2906,10 +2906,10 @@
         <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ExtensionManagerStarInactive1">
-        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ExtensionManagerStarInactive2">
-        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="FileTabActiveGroupBackground">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -3035,7 +3035,7 @@
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="FileTabButtonProvisionalInactiveGlyph">
-        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="FileTabButtonProvisionalSelectedActiveGlyph">
         <Background Source="FFFFFFFF" Type="CT_RAW"/>
@@ -3347,7 +3347,7 @@
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="InactiveCaptionText">
-        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="InfoBackground">
         <Background Source="FFFEFCC8" Type="CT_RAW"/>
@@ -3566,7 +3566,7 @@
       </Color>
       <Color Name="PanelDisabledHyperlinkInsideSelectionInactive">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
-        <Foreground Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="PanelGradientDark">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -3584,7 +3584,7 @@
         <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="PanelHyperlinkDisabled">
-        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="PanelHyperlinkHover">
         <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
@@ -3640,7 +3640,7 @@
         <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="PreviewTagTextDisabled">
-        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="PreviewTagTextFocused">
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
@@ -4131,11 +4131,11 @@
       </Color>
       <Color Name="ToolboxDisabledContent">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
-        <Foreground Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ToolboxDisabledContentMouseOver">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
-        <Foreground Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ToolboxDivider">
         <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
@@ -5004,7 +5004,7 @@
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ToastActionButtonTextDisabled">
-        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ToastActionButtonTextHover">
         <Background Source="FF{{selectionForeground}}" Type="CT_RAW"/>
@@ -5136,7 +5136,7 @@
         <Foreground Source="FF{{accentColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DisabledProjectCommand">
-        <Foreground Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DiscoverTitleText">
         <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
@@ -5503,7 +5503,7 @@
     </Category>
     <Category GUID="{f1095fad-881f-45f1-8580-589e10325eb8}" Name="SearchControl">
       <Color Name="ActionButtonDisabledGlyph">
-        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="ActionButtonMouseDown">
         <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
@@ -5528,13 +5528,13 @@
       </Color>
       <Color Name="Disabled">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
-        <Foreground Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DisabledBorder">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DisabledDownButtonGlyph">
-        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DropDownSeparator">
         <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
