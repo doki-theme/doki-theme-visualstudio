@@ -5122,107 +5122,165 @@
         <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
     </Category>
-    <Category Name="StartPage" GUID="{65d78f35-869e-4bf3-8e52-991fee554a16}">
-      <Color Name="StartPageListItemHover">
-        <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="ItemHeadingText">
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="StartPageCheckBoxCheckMark">
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="StartPageCheckBoxMouseOverCheckMark">
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="StartPageCheckBoxMouseOverText">
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="StartPageCheckBoxPressedCheckMark">
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="StartPageCheckBoxPressedText">
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="StartPageCheckBoxText">
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="StartPageListItem">
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="StartPageListItemGlyph">
-        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="StartPageNewText">
-        <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="StartPageSupportText">
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="StartPageSupportTextHover">
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="VideoRSSItemDuration">
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="VideoRSSItemDurationMouseOver">
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="VideoRSSItemDurationPressed">
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-      </Color>
-      <Color Name="VideoRSSItemTitle">
-        <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+    <Category GUID="{65d78f35-869e-4bf3-8e52-991fee554a16}" Name="StartPage">
+      <Color Name="AzureInvitationBannerTitle">
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DefaultBannerLink">
-        <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Foreground Source="AA{{accentColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="DefaultBannerLinkHover">
+        <Foreground Source="FF{{accentColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DefaultBannerLinkPressed">
-        <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Foreground Source="FF{{accentColor}}" Type="CT_RAW"/>
       </Color>
-      <Color Name="StartPageExpander">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+      <Color Name="DisabledProjectCommand">
+        <Foreground Source="FF{{infoForeground}}" Type="CT_RAW"/>
       </Color>
-      <Color Name="StartPageExpanderPressed">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+      <Color Name="DiscoverTitleText">
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
-      <Color Name="StartPageListItemPressed">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+      <Color Name="ItemHeadingText">
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
-      <Color Name="StartPageNotificationDotBorder">
-        <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+      <Color Name="MRUSecondaryForeground">
+        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
       </Color>
-      <Color Name="VideoRSSItemTitleMouseOver">
-        <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+      <Color Name="StartPageBackgroundGradientBegin">
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
-      <Color Name="StartPagePartitionLine">
-        <Background Type="CT_RAW" Source="5A{{accentColor}}"/>
-      </Color>
-      <Color Name="VideoRSSItem">
-        <Background Type="CT_RAW" Source="5A{{accentColor}}"/>
+      <Color Name="StartPageBackgroundGradientEnd">
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="StartPageButton">
-        <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-        <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
+        <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageButtonBorder">
+        <Foreground Source="FF{{accentColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="StartPageButtonMouseDown">
-        <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
+        <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageButtonMouseDownBorder">
+        <Foreground Source="FF{{accentColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="StartPageButtonMouseOver">
-        <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
+        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageButtonMouseOverBorder">
+        <Foreground Source="FF{{accentColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageCheckBoxBackground">
+        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageCheckBoxCheckMark">
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageCheckBoxMouseOverBackground">
+        <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageCheckBoxMouseOverBorder">
+        <Foreground Source="FF{{accentColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageCheckBoxMouseOverCheckMark">
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageCheckBoxMouseOverText">
+        <Foreground Source="FF{{accentColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageCheckBoxPressedBackground">
+        <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageCheckBoxPressedBorder">
+        <Foreground Source="FF{{accentColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageCheckBoxPressedCheckMark">
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageCheckBoxPressedText">
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageCheckBoxText">
+        <Foreground Source="FF{{infoForeground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="StartPageCloseButtonDownGlyph">
-        <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
+        <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
       </Color>
       <Color Name="StartPageCloseButtonGlyph">
-        <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
+        <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
       </Color>
       <Color Name="StartPageCloseButtonHoverGlyph">
-        <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
+        <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageExpander">
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageExpander">
+        <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageExpanderHover">
+        <Background Source="FF{{identifierHighlight}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageExpanderPressed">
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageListItem">
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageListItemGlyph">
+        <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageListItemHover">
+        <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageListItemPressed">
+        <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="StartPageNewsBackground">
-        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+        <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageNewText">
+        <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageNotificationDotBorder">
+        <Foreground Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPagePartitionLine">
+        <Background Source="5A{{accentColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageSupportText">
+        <Foreground Source="FF{{infoForeground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="StartPageSupportTextHover">
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="VideoRSSItem">
+        <Background Source="5A{{accentColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="VideoRSSItemDuration">
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="VideoRSSItemDurationMouseOver">
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="VideoRSSItemDurationPressed">
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="VideoRSSItemTitle">
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="VideoRSSItemTitleMouseOver">
+        <Foreground Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+      </Color>
+      <Color Name="VisualStudioLogoText">
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
     </Category>
     <Category Name="ThemedUtilityDialog" GUID="{e2961a72-48a5-4da7-8168-1fee490f78a7}">
