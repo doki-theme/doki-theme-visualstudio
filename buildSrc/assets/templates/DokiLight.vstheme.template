@@ -1272,6 +1272,7 @@
             </Color>
             <Color Name="TabItemDisabled">
                 <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+                <Foreground Type="CT_RAW" Source="FF{{disabledColor}}"/>
             </Color>
             <Color Name="ComboBoxButton">
                 <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
@@ -1299,7 +1300,7 @@
                 <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
             </Color>
             <Color Name="ToggleDisabled">
-                <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>
+                <Foreground Type="CT_RAW" Source="FF{{disabledColor}}"/>
             </Color>
             <Color Name="Hyperlink">
                 <Background Type="CT_RAW" Source="AA{{accentColor}}"/>
@@ -1318,7 +1319,7 @@
             </Color>
             <Color Name="CommandDisabled">
                 <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
+                <Foreground Type="CT_RAW" Source="FF{{disabledColor}}"/>
             </Color>
             <Color Name="IconButton">
                 <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
@@ -2128,6 +2129,7 @@
         </Color>
         <Color Name="ComboBoxDisabledText">
           <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="ComboBoxFocusBox">
           <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -2746,7 +2748,7 @@
           <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="DropDownDisabledText">
-          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+          <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="DropDownGlyph">
           <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
@@ -2845,10 +2847,10 @@
           <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="ExtensionManagerStarInactive1">
-          <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+          <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="ExtensionManagerStarInactive2">
-          <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+          <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="FileTabActiveGroupBackground">
           <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -4402,7 +4404,7 @@
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="ListItemDisabledText">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+                <Background Type="CT_RAW" Source="FF{{disabledColor}}"/>
             </Color>
             <Color Name="SelectedItemActive">
                 <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
