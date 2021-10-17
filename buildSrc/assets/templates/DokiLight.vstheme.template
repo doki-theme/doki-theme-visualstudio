@@ -5216,117 +5216,239 @@
                 <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
         </Category>
-        <Category Name="SearchControl" GUID="{f1095fad-881f-45f1-8580-589e10325eb8}">
-            <Color Name="ActionButtonMouseDown">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="ActionButtonMouseOver">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="FocusedBackground">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="FocusedDropDownButton">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="MouseDownDropDownButton">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="MouseOverBackground">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="MouseOverDropDownButton">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="PopupButtonMouseDownBackgroundGradientBegin">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="PopupButtonMouseDownBackgroundGradientEnd">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="PopupButtonMouseDownBackgroundGradientMiddle1">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="PopupButtonMouseDownBackgroundGradientMiddle2">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="SearchActiveBackground">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="Unfocused">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="UnfocusedDropDownButton">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="Selection">
-                <Background Type="CT_RAW" Source="aa{{selectionBackground}}"/>
-            </Color>
-            <Color Name="PopupControlMouseOverBackgroundGradientBegin">
-                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-            </Color>
-            <Color Name="PopupControlMouseOverBackgroundGradientEnd">
-                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-            </Color>
-            <Color Name="PopupControlMouseOverBackgroundGradientMiddle1">
-                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-            </Color>
-            <Color Name="PopupControlMouseOverBackgroundGradientMiddle2">
-                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-            </Color>
-            <Color Name="PopupControlMouseOverBorder">
-                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-            </Color>
-            <Color Name="FocusedBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="FocusedDropDownButtonBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="FocusedDropDownSeparator">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="MouseDownDropDownButtonBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="MouseOverBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="MouseOverDropDownButtonBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="MouseOverDropDownSeparator">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="PopupControlMouseDownBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ActionButtonMouseDownBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ActionButtonMouseOverBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="DropDownSeparator">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="PopupButtonMouseDownBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="UnfocusedBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="UnfocusedDropDownButtonBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="PopupItemsListBackgroundGradientBegin">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="PopupItemsListBackgroundGradientEnd">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-        </Category>
-        <Category Name="TeamExplorer" GUID="{4aff231b-f28a-44f0-a66b-1beeb17cb920}">
+      <Category GUID="{f1095fad-881f-45f1-8580-589e10325eb8}" Name="SearchControl">
+        <Color Name="ActionButtonDisabledGlyph">
+          <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ActionButtonMouseDown">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ActionButtonMouseDownBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ActionButtonMouseDownGlyph">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ActionButtonMouseOver">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ActionButtonMouseOverBorder">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ActionButtonMouseOverGlyph">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ClearGlyph">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="Disabled">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="DisabledBorder">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="DisabledDownButtonGlyph">
+          <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="DropDownSeparator">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="FocusedBackground">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="FocusedBorder">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="FocusedClearGlyph">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="FocusedDropDownButton">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="FocusedDropDownButtonBorder">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="FocusedDropDownButtonGlyph">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="FocusedDropDownSeparator">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="FocusedSearchGlyph">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="MouseDownDropDownButton">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="MouseDownDropDownButtonBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="MouseDownDropDownButtonGlyph">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="MouseOverBackground">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="MouseOverBorder">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="MouseOverClearGlyph">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="MouseOverDropDownButton">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="MouseOverDropDownButtonBorder">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="MouseOverDropDownButtonGlyph">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="MouseOverDropDownSeparator">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="MouseOverSearchGlyph">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="MouseOverStopGlyph">
+          <Background Source="FFE51400" Type="CT_RAW"/>
+        </Color>
+        <Color Name="MouseOverWatermarkText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupBorder">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupButtonMouseDownBackgroundGradientBegin">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupButtonMouseDownBackgroundGradientEnd">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupButtonMouseDownBackgroundGradientMiddle1">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupButtonMouseDownBackgroundGradientMiddle2">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupButtonMouseDownBorder">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupButtonMouseDownText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupButtonMouseOverText">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupButtonText">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupCheckboxCheckmark">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupCheckboxMouseDownText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupCheckboxMouseOverText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupCheckboxText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupControlMouseDownBackgroundGradientBegin">
+          <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupControlMouseDownBackgroundGradientEnd">
+          <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupControlMouseDownBackgroundGradientMiddle1">
+          <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupControlMouseDownBackgroundGradientMiddle2">
+          <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupControlMouseDownBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupControlMouseOverBackgroundGradientBegin">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupControlMouseOverBackgroundGradientEnd">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupControlMouseOverBackgroundGradientMiddle1">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupControlMouseOverBackgroundGradientMiddle2">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupControlMouseOverBorder">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupItemsListBackgroundGradientBegin">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupItemsListBackgroundGradientEnd">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupItemText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupMouseOverItemText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupSectionBackgroundGradientBegin">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupSectionBackgroundGradientEnd">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupSectionHeaderGradientBegin">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupSectionHeaderGradientEnd">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupSectionHeaderSeparator">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PopupSectionHeaderText">
+          <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="SearchActiveBackground">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="SearchGlyph">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="Selection">
+          <Background Source="FF{{selectionBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{selectionForeground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="Unfocused">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="UnfocusedBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="UnfocusedDropDownButton">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="UnfocusedDropDownButtonBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="UnfocusedDropDownButtonGlyph">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="UnfocusedWatermarkText">
+          <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        </Color>
+      </Category>
+      <Category Name="TeamExplorer" GUID="{4aff231b-f28a-44f0-a66b-1beeb17cb920}">
             <Color Name="TextBox">
                 <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
             </Color>
