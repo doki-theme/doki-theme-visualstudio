@@ -116,7 +116,7 @@ Be sure to ⭐ and share it with other weebs!
 
 ## Contributions?
 
-I think your voice needs to be heard! You probably have good ideas, so feel free to submit your feedback as [an issue](https://github.com/doki-theme/doki-theme-jupyter/issues/new).
+I think your voice needs to be heard! You probably have good ideas, so feel free to submit your feedback as [an issue](https://github.com/doki-theme/doki-theme-visualstudio/issues/new).
 
 Help make this plugin better!
 
