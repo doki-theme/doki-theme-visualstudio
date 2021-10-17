@@ -4396,46 +4396,63 @@
                 <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
             </Color>
         </Category>
-        <Category Name="TreeView" GUID="{92ecf08e-8b13-4cf4-99e9-ae2692382185}">
-            <Color Name="DragOverItem">
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="Glyph">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="FocusVisualBorder">
-                <Background Type="CT_RAW" Source="FF{{selectionForeground}}"/>
-            </Color>
-            <Color Name="SelectedItemInactive">
-                <Background Type="CT_RAW" Source="FF{{selectionInactive}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="SelectedItemInactiveGlyph">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="SelectedItemInactiveGlyphMouseOver">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="Background">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="HighlightedSpan">
-                <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{selectionForeground}}"/>
-            </Color>
-            <Color Name="SelectedItemActive">
-                <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{selectionForeground}}"/>
-            </Color>
-            <Color Name="SelectedItemActiveGlyph">
-                <Background Type="CT_RAW" Source="FF{{selectionForeground}}"/>
-            </Color>
-            <Color Name="SelectedItemActiveGlyphMouseOver">
-                <Background Type="CT_RAW" Source="FF{{selectionForeground}}"/>
-            </Color>
-        </Category>
-        <Category Name="UserNotifications" GUID="{5d42b198-efca-431c-92aa-8b595d0d39c2}">
+      <?xml version="1.0"?>
+      <Category GUID="{92ecf08e-8b13-4cf4-99e9-ae2692382185}" Name="TreeView">
+        <Color Name="Background">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="DragDropInsertionArrowBorder">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="DragOverItem">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="DragOverItemGlyph">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="DragOverItemGlyphMouseOver">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="FocusVisualBorder">
+          <Background Source="FF{{selectionBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="Glyph">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="GlyphMouseOver">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="HighlightedSpan">
+          <Background Source="FF{{selectionBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{selectionForeground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="SelectedItemActive">
+          <Background Source="FF{{selectionBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{selectionForeground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="SelectedItemActiveGlyph">
+          <Background Source="FF{{selectionForeground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="SelectedItemActiveGlyphMouseOver">
+          <Background Source="FF{{selectionForeground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="SelectedItemInactive">
+          <Background Source="FF{{selectionInactive}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="SelectedItemInactiveGlyph">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="SelectedItemInactiveGlyphMouseOver">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ValidationSquiggles">
+          <Background Source="FF{{errorColor}}" Type="CT_RAW"/>
+        </Color>
+      </Category>
+      <Category Name="UserNotifications" GUID="{5d42b198-efca-431c-92aa-8b595d0d39c2}">
             <Color Name="Content">
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
