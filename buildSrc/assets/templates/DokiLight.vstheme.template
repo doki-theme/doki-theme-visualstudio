@@ -2824,7 +2824,7 @@
         </Color>
         <Color Name="FileTabButtonHoverInactive">
           <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
-        </Color
+        </Color>
         <Color Name="FileTabButtonHoverInactiveBorder">
           <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
         </Color>
@@ -3205,7 +3205,7 @@
           <Background Source="FF{{diff.deleted}}" Type="CT_RAW"/>
         </Color>
         <Color Name="MainWindowButtonActiveBorder">
-          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="MainWindowButtonActiveGlyph">
           <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
