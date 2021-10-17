@@ -963,7 +963,7 @@
                 <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
             </Color>
             <Color Name="punctuation">
-                <Foreground Type="CT_RAW" Source="FF4D4D4A"/>
+                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="brace matching">
                 <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -1119,7 +1119,7 @@
             </Color>
             <Color Name="ArtboardBackground">
                 <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF4D4D4A"/>
+                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="Input">
                 <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
@@ -1376,239 +1376,297 @@
                 <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
             </Color>
         </Category>
-        <Category Name="CommonControls" GUID="{c01072a1-a915-4abf-89b7-e2f9e8ec4c7f}">
-            <Color Name="FocusVisual">
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="InnerTabActiveText">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="InnerTabInactiveHoverText">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="InnerTabInactiveText">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ComboBoxGlyph">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ComboBoxGlyphDisabled">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ComboBoxGlyphFocused">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ComboBoxGlyphHover">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ComboBoxGlyphPressed">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ComboBoxListItemText">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ComboBoxText">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ComboBoxTextDisabled">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ComboBoxTextFocused">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ComboBoxTextHover">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ComboBoxTextPressed">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="TextBoxBackground">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="TextBoxBackgroundDisabled">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="TextBoxBackgroundFocused">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="ComboBoxTextInputSelection">
-                <Background Type="CT_RAW" Source="aa{{selectionBackground}}"/>
-            </Color>
-            <Color Name="ComboBoxListItemBackgroundHover">
-                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-            </Color>
-            <Color Name="ComboBoxListItemBorderHover">
-                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-            </Color>
-            <Color Name="InnerTabInactiveHoverBackground">
-                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-            </Color>
-            <Color Name="InnerTabInactiveHoverBorder">
-                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-            </Color>
-            <Color Name="ComboBoxListItemTextHover">
-                <Background Type="CT_RAW" Source="FF{{selectionForeground}}"/>
-            </Color>
-            <Color Name="ComboBoxBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ComboBoxBorderDisabled">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ComboBoxBorderFocused">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ComboBoxBorderHover">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ComboBoxBorderPressed">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ComboBoxGlyphBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ComboBoxGlyphBorderDisabled">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ComboBoxGlyphBorderFocused">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ComboBoxGlyphBorderPressed">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ComboBoxListBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ComboBoxSeparator">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ComboBoxSeparatorDisabled">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ComboBoxSeparatorFocused">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ComboBoxSeparatorHover">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ComboBoxSeparatorPressed">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="TextBoxBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="TextBoxBorderFocused">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ComboBoxBackground">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ComboBoxBackgroundDisabled">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ComboBoxBackgroundFocused">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ComboBoxBackgroundHover">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ComboBoxBackgroundPressed">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ComboBoxGlyphBackground">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ComboBoxGlyphBackgroundDisabled">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ComboBoxGlyphBackgroundFocused">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ComboBoxGlyphBackgroundHover">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ComboBoxGlyphBackgroundPressed">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ComboBoxListBackground">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ComboBoxSelection">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="CheckBoxBorder">
-                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
-            </Color>
-            <Color Name="CheckBoxBorderDisabled">
-                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
-            </Color>
-            <Color Name="CheckBoxBorderFocused">
-                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
-            </Color>
-            <Color Name="CheckBoxBorderHover">
-                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
-            </Color>
-            <Color Name="CheckBoxBorderPressed">
-                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
-            </Color>
-            <Color Name="CheckBoxGlyph">
-                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
-            </Color>
-            <Color Name="CheckBoxGlyphDisabled">
-                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
-            </Color>
-            <Color Name="CheckBoxGlyphFocused">
-                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
-            </Color>
-            <Color Name="CheckBoxGlyphHover">
-                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
-            </Color>
-            <Color Name="CheckBoxGlyphPressed">
-                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
-            </Color>
-            <Color Name="CheckBoxText">
-                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
-            </Color>
-            <Color Name="CheckBoxTextDisabled">
-                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
-            </Color>
-            <Color Name="CheckBoxTextFocused">
-                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
-            </Color>
-            <Color Name="CheckBoxTextHover">
-                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
-            </Color>
-            <Color Name="CheckBoxTextPressed">
-                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
-            </Color>
-            <Color Name="Button">
-                <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
-            </Color>
-            <Color Name="ButtonDefault">
-                <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
-            </Color>
-            <Color Name="ButtonFocused">
-                <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
-            </Color>
-            <Color Name="ButtonPressed">
-                <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
-            </Color>
-            <Color Name="ButtonHover">
-                <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
-            </Color>
-            <Color Name="ButtonDisabled">
-                <Background Type="CT_RAW" Source="CC{{buttonColor}}"/>
-                <Foreground Type="CT_RAW" Source="BB{{buttonFont}}"/>
-            </Color>
-            <Color Name="ComboBoxListBackgroundShadow">
-                <Background Type="CT_RAW" Source="5a111111"/>
-            </Color>
-        </Category>
-        <Category Name="CommonDocument" GUID="{72eb4027-f4ae-4b6c-9cc2-dfd5b49d9415}">
+      <Category GUID="{c01072a1-a915-4abf-89b7-e2f9e8ec4c7f}" Name="CommonControls">
+        <Color Name="Button">
+          <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ButtonBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ButtonBorderDefault">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ButtonBorderDisabled">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ButtonBorderFocused">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ButtonBorderHover">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ButtonBorderPressed">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ButtonDefault">
+          <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ButtonDisabled">
+          <Background Source="CC{{buttonColor}}" Type="CT_RAW"/>
+          <Foreground Source="BB{{buttonFont}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ButtonFocused">
+          <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ButtonHover">
+          <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ButtonPressed">
+          <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxBackground">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxBackgroundDisabled">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxBackgroundFocused">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxBackgroundHover">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxBackgroundPressed">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxBorder">
+          <Background Source="FF{{baseIconColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxBorderDisabled">
+          <Background Source="FF{{baseIconColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxBorderFocused">
+          <Background Source="FF{{baseIconColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxBorderHover">
+          <Background Source="FF{{baseIconColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxBorderPressed">
+          <Background Source="FF{{baseIconColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxGlyph">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxGlyphDisabled">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxGlyphFocused">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxGlyphHover">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxGlyphPressed">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxText">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxTextDisabled">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxTextFocused">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxTextHover">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CheckBoxTextPressed">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxBackground">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxBackgroundDisabled">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxBackgroundFocused">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxBackgroundHover">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxBackgroundPressed">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxBorderDisabled">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxBorderFocused">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxBorderHover">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxBorderPressed">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxGlyph">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxGlyphBackground">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxGlyphBackgroundDisabled">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxGlyphBackgroundFocused">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxGlyphBackgroundHover">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxGlyphBackgroundPressed">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxGlyphBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxGlyphBorderDisabled">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxGlyphBorderFocused">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxGlyphBorderPressed">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxGlyphDisabled">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxGlyphFocused">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxGlyphHover">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxGlyphPressed">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxListBackground">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxListBackgroundShadow">
+          <Background Source="5a111111" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxListBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxListItemBackgroundHover">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxListItemBorderHover">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxListItemText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxListItemTextHover">
+          <Background Source="FF{{selectionForeground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxSelection">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxSeparator">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxSeparatorDisabled">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxSeparatorFocused">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxSeparatorHover">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxSeparatorPressed">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxTextDisabled">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxTextFocused">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxTextHover">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxTextInputSelection">
+          <Background Source="aa{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxTextPressed">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="FocusVisual">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InnerTabActiveBackground">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InnerTabActiveBorder">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InnerTabActiveText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InnerTabInactiveBackground">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InnerTabInactiveBorder">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InnerTabInactiveHoverBackground">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InnerTabInactiveHoverBorder">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InnerTabInactiveHoverText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InnerTabInactiveText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TextBoxBackground">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TextBoxBackgroundDisabled">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TextBoxBackgroundFocused">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TextBoxBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TextBoxBorderDisabled">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TextBoxBorderFocused">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TextBoxText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TextBoxTextDisabled">
+          <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TextBoxTextFocused">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+      </Category>
+      <Category Name="CommonDocument" GUID="{72eb4027-f4ae-4b6c-9cc2-dfd5b49d9415}">
             <Color Name="Caption">
                 <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
@@ -4231,39 +4289,56 @@
                 <Background Type="CT_RAW" Source="80{{headerColor}}"/>
             </Color>
         </Category>
-        <Category Name="PackageManifestEditor" GUID="{3f27d653-86e6-4a04-adb6-a35efa6c8f05}">
-            <Color Name="CategoryTab">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="MouseOverCategoryTab">
-                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="CheckBox">
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="CheckBoxMouseOver">
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="TextBoxDisabled">
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="TextBoxSelection">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="EditorContent">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF4D4D4A"/>
-            </Color>
-            <Color Name="TextBoxBackground">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="TextBoxBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-        </Category>
-        <Category Name="ProjectDesigner" GUID="{ef1a2d2c-5d16-4ddb-8d04-79d0f6c1c56e}">
+      <Category Name="PackageManifestEditor" GUID="{3f27d653-86e6-4a04-adb6-a35efa6c8f05}">
+        <Color Name="CategoryTab">
+          <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        </Color>
+        <Color Name="MouseOverCategoryTab">
+          <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        </Color>
+        <Color Name="CheckBox">
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        </Color>
+        <Color Name="CheckBoxMouseOver">
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        </Color>
+        <Color Name="TextBoxDisabled">
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        </Color>
+        <Color Name="TextBoxSelection">
+          <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{selectionForeground}}"/>
+        </Color>
+        <Color Name="SelectedCategoryTab">
+          <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{selectionForeground}}"/>
+        </Color>
+        <Color Name="EditorContent">
+          <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        </Color>
+        <Color Name="TextBoxBackground">
+          <Background Type="CT_RAW" Source="FF{{secondaryBackground}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        </Color>
+        <Color Name="TextBoxForeground">
+          <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        </Color>
+        <Color Name="TextBoxMouseOverBorder">
+          <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>
+        </Color>
+        <Color Name="TextBoxBorder">
+          <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
+        </Color>
+        <Color Name="InputFocusBorder">
+          <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
+        </Color>
+      </Category>
+      <Category Name="ProjectDesigner" GUID="{ef1a2d2c-5d16-4ddb-8d04-79d0f6c1c56e}">
             <Color Name="CategoryTab">
                 <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
@@ -4745,10 +4820,11 @@
                 <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
                 <Foreground Type="CT_RAW" Source="FF4D4D4A"/>
             </Color>
-            <Color Name="Selected Text">
-                <Background Type="CT_RAW" Source="aa{{selectionBackground}}"/>
-            </Color>
-            <Color Name="Selected Text in High Contrast">
+          <Color Name="Selected Text">
+            <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
+            <Foreground Type="CT_RAW" Source="FF{{selectionForeground}}"/>
+          </Color>
+          <Color Name="Selected Text in High Contrast">
                 <Background Type="CT_RAW" Source="aa{{selectionBackground}}"/>
             </Color>
             <Color Name="OutputError">
@@ -5063,11 +5139,11 @@
             </Color>
         </Category>
         <Category Name="Text Editor Text Manager Items" GUID="{58e96763-1d3b-4e05-b6ba-ff7115fd0b7b}">
-            <Color Name="Plain Text">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF4D4D4A"/>
-            </Color>
-            <Color Name="Selected Text">
+          <Color Name="Plain Text">
+            <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+            <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          </Color>
+          <Color Name="Selected Text">
                 <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
             </Color>
             <Color Name="Visible Whitespace">
@@ -5079,7 +5155,7 @@
         </Category>
         <Category Name="WebClient Diagnostic Tools" GUID="{2aa714ae-53be-4393-84e0-dc95b57a1891}">
             <Color Name="Plain Text">
-                <Background Type="CT_RAW" Source="FF4D4D4A"/>
+                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
         </Category>
         <Category Name="SearchControl" GUID="{f1095fad-881f-45f1-8580-589e10325eb8}">
