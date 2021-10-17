@@ -5100,10 +5100,11 @@
             </Color>
         </Category>
         <Category Name="Command Window" GUID="{ee1be240-4e81-4beb-8eea-54322b6b1bf5}">
-            <Color Name="Inactive Selected Text">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="Plain Text">
+          <Color Name="Inactive Selected Text">
+            <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+            <Foreground Type="CT_INVALID" Source="00000000"/>
+          </Color>
+          <Color Name="Plain Text">
                 <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="Selected Text in High Contrast">
@@ -5198,22 +5199,26 @@
                 <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
             </Color>
         </Category>
-        <Category Name="Text Editor Text Manager Items" GUID="{58e96763-1d3b-4e05-b6ba-ff7115fd0b7b}">
-          <Color Name="Plain Text">
-            <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-          </Color>
-          <Color Name="Selected Text">
-                <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
-            </Color>
-            <Color Name="Visible Whitespace">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="Indicator Margin">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-        </Category>
-        <Category Name="WebClient Diagnostic Tools" GUID="{2aa714ae-53be-4393-84e0-dc95b57a1891}">
+      <Category GUID="{58e96763-1d3b-4e05-b6ba-ff7115fd0b7b}" Name="Text Editor Text Manager Items">
+        <Color Name="Inactive Selected Text">
+          <Background Source="AA{{selectionBackground}}" Type="CT_RAW"/>
+          <Foreground Source="00000000" Type="CT_INVALID"/>
+        </Color>
+        <Color Name="Indicator Margin">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="Plain Text">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="Selected Text">
+          <Background Source="FF{{selectionBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="Visible Whitespace">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+      </Category>
+      <Category Name="WebClient Diagnostic Tools" GUID="{2aa714ae-53be-4393-84e0-dc95b57a1891}">
             <Color Name="Plain Text">
                 <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
