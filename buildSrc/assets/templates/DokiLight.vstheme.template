@@ -5470,17 +5470,32 @@
                 <Background Type="CT_RAW" Source="FF{{buttonFont}}"/>
             </Color>
         </Category>
-        <Category Name="InformationBadge" GUID="{63f9718c-889b-4814-a3b4-6e81d14f1156}">
-            <Color Name="Background">
-                <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-            </Color>
-            <Color Name="Text">
-                <Background Type="CT_RAW" Source="FF{{buttonFont}}"/>
-            </Color>
-            <Color Name="TextHover">
-                <Background Type="CT_RAW" Source="FF{{buttonFont}}"/>
-            </Color>
-        </Category>
+      <Category Name="InformationBadge" GUID="{63f9718c-889b-4814-a3b4-6e81d14f1156}">
+        <Color Name="Background">
+          <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
+        </Color>
+        <Color Name="Text">
+          <Background Type="CT_RAW" Source="FF{{buttonFont}}"/>
+        </Color>
+        <Color Name="BackgroundHover">
+          <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
+        </Color>
+        <Color Name="TextHover">
+          <Background Type="CT_RAW" Source="FF{{selectionForeground}}"/>
+        </Color>
+        <Color Name="BackgroundPressed">
+          <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
+        </Color>
+        <Color Name="TextPressed">
+          <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        </Color>
+        <Color Name="BackgroundFocused">
+          <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
+        </Color>
+        <Color Name="TextFocused">
+          <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+        </Color>
+      </Category>
         <Category Name="Promotion" GUID="{8fafb063-4106-4756-81dc-d7769f24d056}">
             <Color Name="LightboxDialogButton">
                 <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
