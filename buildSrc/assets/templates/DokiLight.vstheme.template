@@ -2068,6 +2068,12 @@
             <Color Name="FileTabSelectedGradientTop">
                 <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
             </Color>
+          <Color Name="FileTabSelectedText">
+            <Background Type="CT_RAW" Source="FFFFFFFF"/>
+          </Color>
+          <Color Name="FileTabButtonSelectedActiveGlyph">
+            <Background Type="CT_RAW" Source="FFFFFFFF"/>
+          </Color>
             <Color Name="ToolWindowTabGradientBegin">
                 <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
             </Color>

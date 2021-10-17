@@ -1,6 +1,6 @@
 @REM Zero Two
 @REM Dark
-yarn buildThemes 8c99ec4b-fda0-4ab7-95ad-a6bf80c3924b
+@REM yarn buildThemes 8c99ec4b-fda0-4ab7-95ad-a6bf80c3924b
 @REM Light
 @REM yarn buildThemes 4fd5cb34-d36e-4a3c-8639-052b19b26ba1
 
@@ -11,7 +11,7 @@ yarn buildThemes 8c99ec4b-fda0-4ab7-95ad-a6bf80c3924b
 @REM yarn buildThemes 83e94920-9ae2-4838-9b85-4c3fa22b67b8
 
 @REM Maple Light
-@REM yarn buildThemes ea7a8b00-2d86-4e06-81a2-5c14a46264d5
+yarn buildThemes ea7a8b00-2d86-4e06-81a2-5c14a46264d5
 
 @REM Shigure
 @REM yarn buildThemes 67278007-b7f8-46d4-88b7-e40cac3576a7
