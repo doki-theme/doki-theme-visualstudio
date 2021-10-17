@@ -306,10 +306,11 @@ function smashXmlTemplatesTogether(parentXml: any, childXml: any): any {
         [color.$.Name]: color
       }), {});
 
-      parentCategory.Color = parentCategory.Color.map((parentColor: any) => {
+      // exclude matching child template colors & add child colors in preference
+      parentCategory.Color = parentCategory.Color.filter((parentColor: any) => {
         const childColor = childColors[parentColor.$.Name];
-        return childColor || parentColor;
-      });
+        return !childColor;
+      }).concat(childCategory.Color);
     }
     return parentCategory;
   });

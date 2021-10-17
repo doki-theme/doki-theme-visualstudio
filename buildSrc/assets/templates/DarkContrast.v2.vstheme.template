@@ -1,5 +1,5 @@
 <Themes>
-  <Theme Name="dark-contrast.legacy" GUID="{aca48cd2-0f7a-4485-b1fb-5e5d729fd2f9}"
+  <Theme Name="dark-contrast" GUID="{aca48cd2-0f7a-4485-b1fb-5e5d729fd2f9}"
          BaseGUID="dark">
     <Category Name="Environment" GUID="{624ed9c3-bdfd-41fa-96c3-7c824ea32e3d}">
       <Color Name="FileTabSelectedText">
