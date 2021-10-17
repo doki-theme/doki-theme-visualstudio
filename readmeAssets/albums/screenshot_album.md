@@ -47,7 +47,7 @@ YuruCamp
 Monogatari
 ---
 
-### Tsubasa Hanekawa
+###  Hanekawa Tsubasa
 
 ![hanekawa_dark_code](../screens/themes/hanekawa_dark_code.png)
 

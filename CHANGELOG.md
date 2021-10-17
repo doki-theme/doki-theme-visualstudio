@@ -1,6 +1,12 @@
 Changelog
 ---
 
+# 1.1.0 [Light & Dark Theme Enhancements]
+
+- Used the [theme converter for visual studio](https://github.com/microsoft/theme-converter-for-vs) project to establish a baseline for dark themes.
+  - Fixes various usability & consistency issues.
+- Addressed some [annoying issues](https://github.com/doki-theme/doki-theme-visualstudio/issues/12).
+
 # 1.0.0 [Added Light Themes]
 
 - Ported over all 17 Light Themes to this extension!
