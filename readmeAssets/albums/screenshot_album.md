@@ -121,6 +121,13 @@ Sword Art Online
 ![asuna_dark_code](../screens/themes/asuna_dark_code.png)
 ![asuna_light_code](../screens/themes/asuna_light_code.png)
 
+Jahy-sama Will Not Be Discouraged!
+---
+
+### Jahy
+
+![jahy_dark_smol_code](../screens/themes/jahy_dark_smol_code.png)
+
 Don't Toy With Me Miss Nagatoro
 ---
 
