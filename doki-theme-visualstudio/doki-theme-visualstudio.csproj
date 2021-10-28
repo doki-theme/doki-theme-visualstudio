@@ -135,6 +135,9 @@
     <None Include="Themes\generated\Rias Onyx.vstheme">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Themes\generated\Jahy.vstheme">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Themes\generated\Jabami Yumeko.vstheme">
       <SubType>Designer</SubType>
     </None>

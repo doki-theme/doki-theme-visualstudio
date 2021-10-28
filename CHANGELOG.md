@@ -1,6 +1,14 @@
 Changelog
 ---
 
+# 2.0.0 [Jahy-sama will not be discouraged!]
+
+**1 New Theme!**
+
+Featuring the Dark World's Second in Command: Jahy!
+
+![v21 Girl](https://doki.assets.unthrottled.io/misc/v21_girl.png)
+
 # 1.1.0 [Light & Dark Theme Enhancements]
 
 - Used the [theme converter for visual studio](https://github.com/microsoft/theme-converter-for-vs) project to establish a baseline for dark themes.
