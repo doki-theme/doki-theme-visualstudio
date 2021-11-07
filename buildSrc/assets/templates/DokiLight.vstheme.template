@@ -1080,6 +1080,7 @@
           <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
         </Color>
         <Color Name="ComboBoxButtonMouseOver">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
           <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
         </Color>
         <Color Name="ComboBoxButtonMouseOverBorder">
@@ -1133,6 +1134,7 @@
           <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="CommandMouseOver">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
           <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="CommandMouseOverBorder">
@@ -1159,6 +1161,7 @@
         </Color>
         <Color Name="Dialog">
           <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="DialogExpanderGlyph">
           <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
@@ -1217,6 +1220,7 @@
         </Color>
         <Color Name="InputDisabled">
           <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="InputDisabledBorder">
           <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
@@ -1257,13 +1261,14 @@
         </Color>
         <Color Name="ListItem">
           <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="ListItemBorder">
           <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
         </Color>
         <Color Name="ListItemDisabled">
           <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
-          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="ListItemDisabledBorder">
           <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -1341,13 +1346,14 @@
           <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
         </Color>
         <Color Name="Menu">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
           <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="MenuBorder">
-          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="MenuSeparator">
-          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="MenuText">
           <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
@@ -5603,6 +5609,7 @@
         </Color>
         <Color Name="Unfocused">
           <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+          <Foreground Source="AA{{foregroundColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="UnfocusedBorder">
           <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
