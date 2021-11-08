@@ -1,6 +1,10 @@
 Changelog
 ---
 
+# 2.1.0 [Design Window Support]
+
+- All themes support the visual WPF design editor now [#19](https://github.com/doki-theme/doki-theme-visualstudio/issues/19) 
+
 # 2.0.0 [Jahy-sama will not be discouraged!]
 
 **1 New Theme!**

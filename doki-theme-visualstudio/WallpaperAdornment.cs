@@ -25,8 +25,6 @@ namespace doki_theme_visualstudio {
     private readonly Canvas _editorCanvas = new Canvas { IsHitTestVisible = false };
     private const string EditorViewClassName = "Microsoft.VisualStudio.Editor.Implementation.WpfMultiViewHost";
 
-    private readonly Dictionary<int, DependencyObject> _defaultThemeColor = new Dictionary<int, DependencyObject>();
-
     private ImageBrush? _image;
 
     private const string TagName = "DokiWallpaper";
@@ -205,15 +203,11 @@ namespace doki_theme_visualstudio {
 
     private void SetBackgroundToTransparent(DependencyObject dependencyObject) {
       var property = dependencyObject.GetType().GetProperty("Background");
-      if (!(property?.GetValue(dependencyObject) is Brush current)) return;
+      if (!(property?.GetValue(dependencyObject) is Brush)) return;
 
       ThreadHelper.JoinableTaskFactory.Run(async () => {
         await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
         ToolBox.RunSafely(() => {
-          if (_defaultThemeColor.All(x => x.Key != dependencyObject.GetHashCode())) {
-            _defaultThemeColor[dependencyObject.GetHashCode()] = current;
-          }
-
           property.SetValue(dependencyObject, Brushes.Transparent);
         }, _ => { });
       });
