@@ -969,414 +969,586 @@
                 <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>
             </Color>
         </Category>
-        <Category Name="Cider" GUID="{92d153ee-57d7-431f-a739-0931ca3f7f70}">
-            <Color Name="AnimationRecordingOff">
-                <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="AnimationRecordingOn">
-                <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="BreadcrumbButtonInactive">
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="BreadcrumbButtonInactiveBorder">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="Command">
-                <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="CommandMouseOver">
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="DialogExpanderGlyph">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="DialogExpanderSelectedItemActiveGlyph">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="HueSelectionGlyph">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="InputMouseOver">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="InfoText">
-                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-            </Color>
-            <Color Name="Menu">
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="PropertyValueLocal">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="TimelineXamlForeground">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="Toggle">
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ToggleMouseOver">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ToggleSelected">
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ToolWindow">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ToolWindowGroup">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ToolWindowGroupSecondary">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ComboBoxMouseOver">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ComboBox">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ComboBoxDisabled">
-                <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ListItemMouseOver">
-                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ArtboardDistance">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ArtboardDistanceSelected">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ArtboardElement">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ArtboardWindow">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="CommandPressed">
-                <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="DimmedText">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ListHeader">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ListItem">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ListItemDisabled">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ListItemSearchResult">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ListItemSecondary">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ListItemTier1">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ListItemTier2">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ListItemTier3">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ToolbarWatermark">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ToolWindowGroupDisabled">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="ArtboardBackground">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
-            </Color>
-            <Color Name="Input">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="InputDisabledBorder">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="InputMouseOverBorder">
-                <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
-            </Color>
-            <Color Name="ListItemSecondarySelected">
-                <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{selectionForeground}}"/>
-            </Color>
-            <Color Name="ListItemSelected">
-                <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{selectionForeground}}"/>
-            </Color>
-            <Color Name="ListItemSelectedBorder">
-                <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
-            </Color>
-            <Color Name="ListItemMouseOverBorder">
-                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-            </Color>
-            <Color Name="ListItemSecondaryOnHover">
-                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{selectionForeground}}"/>
-            </Color>
-            <Color Name="ArtboardBackgroundAlternate">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ArtboardBackgroundDefault">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ArtboardSecondaryBackground">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ArtboardSecondaryBackgroundAlternate">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ArtboardSecondaryBackgroundDefault">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ComboBoxDisabledBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ComboBoxPopUpBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ArtboardTick">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ComboBoxBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="InputBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ListBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ArtboardWindowBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="ToolWindowGroupBottomBorder">
-                <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
-            </Color>
-            <Color Name="AnimationRecordingIndication">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ComboBoxMouseOverBorder">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="DialogExpanderGlyphMouseOver">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="InteractiveIconMouseOver">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ListItemBorder">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ListItemDisabledBorder">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ListItemSearchResultDisabled">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ListItemSearchResultBorder">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ListItemTier1Border">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="LivePropertyExplorerResourceReference">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="StructureViewChildSelected">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="StructureViewDropTargetSplit">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="StructureViewInsertionContainer">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="TimelineDurationBarIterationDivider">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="TimelineDurationBarKeyframeGripper">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="TimelineDurationBarLiveIteration">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="TimelineDurationBarLiveIterationDivider">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="TimelineDurationBarLiveIterationLabel">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="TimelineDurationLiveKeyframe">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="TimelineElementXamlBackground">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="TimelineKeyframeSelected">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ToolbarAsset">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="BreadcrumbBar">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="CategoryTree">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ListItemTier2Border">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ListItemTier3Border">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="TabItem">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="TabItemDisabled">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{disabledColor}}"/>
-            </Color>
-            <Color Name="ComboBoxButton">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ComboBoxButtonPressed">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
-            </Color>
-            <Color Name="ListBackground">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-            </Color>
-            <Color Name="ToggleBorder">
-                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
-            </Color>
-            <Color Name="ToggleDisabledBorder">
-                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
-            </Color>
-            <Color Name="ToggleMouseOverBorder">
-                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
-            </Color>
-            <Color Name="ToggleOuterBorder">
-                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
-            </Color>
-            <Color Name="ToggleSelectedBorder">
-                <Background Type="CT_RAW" Source="FF{{baseIconColor}}"/>
-            </Color>
-            <Color Name="ToggleDisabled">
-                <Foreground Type="CT_RAW" Source="FF{{disabledColor}}"/>
-            </Color>
-            <Color Name="Hyperlink">
-                <Background Type="CT_RAW" Source="AA{{accentColor}}"/>
-            </Color>
-            <Color Name="HyperlinkDisabled">
-                <Background Type="CT_RAW" Source="AA{{accentColor}}"/>
-            </Color>
-            <Color Name="HyperlinkMouseOver">
-                <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
-            </Color>
-            <Color Name="ArtboardButton">
-                <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-            </Color>
-            <Color Name="BreadcrumbButton">
-                <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-            </Color>
-            <Color Name="CommandDisabled">
-                <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{disabledColor}}"/>
-            </Color>
-            <Color Name="IconButton">
-                <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-            </Color>
-            <Color Name="IconButtonPressed">
-                <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-            </Color>
-            <Color Name="InteractiveIcon">
-                <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-            </Color>
-            <Color Name="SplitBarTab">
-                <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-                <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
-            </Color>
-            <Color Name="TabBackground">
-                <Background Type="CT_RAW" Source="FF{{buttonColor}}"/>
-            </Color>
-            <Color Name="IconButtonMouseOver">
-                <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
-            </Color>
-            <Color Name="SplitBarTabSelected">
-                <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
-            </Color>
-            <Color Name="BreadcrumbButtonOnHover">
-                <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
-            </Color>
-            <Color Name="BreadcrumbButtonSelected">
-                <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
-            </Color>
-            <Color Name="BreadcrumbButtonSelectedOnHover">
-                <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
-            </Color>
-            <Color Name="ComboBoxButtonMouseOver">
-                <Foreground Type="CT_RAW" Source="FF{{buttonFont}}"/>
-            </Color>
-            <Color Name="Dialog">
-                <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
-            </Color>
-            <Color Name="GridSplitter">
-                <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
-            </Color>
-            <Color Name="InputDisabled">
-                <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
-            </Color>
-            <Color Name="SplitBar">
-                <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
-            </Color>
-            <Color Name="TimelinePropertyXamlBackground">
-                <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
-            </Color>
-            <Color Name="Toolbar">
-                <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
-            </Color>
-            <Color Name="ToolWindowShelf">
-                <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
-            </Color>
-        </Category>
+      <Category GUID="{92d153ee-57d7-431f-a739-0931ca3f7f70}" Name="Cider">
+        <Color Name="AnimationRecordingIndication">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="AnimationRecordingOff">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="AnimationRecordingOffText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="AnimationRecordingOn">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="AnimationRecordingOnText">
+          <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ArtboardBackground">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ArtboardBackgroundAlternate">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ArtboardBackgroundDefault">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ArtboardButton">
+          <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ArtboardDistance">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ArtboardDistanceSelected">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ArtboardElement">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ArtboardSecondaryBackground">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ArtboardSecondaryBackgroundAlternate">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ArtboardSecondaryBackgroundDefault">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ArtboardTick">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ArtboardWindow">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ArtboardWindowBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ArtboardWindowText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="BreadcrumbBar">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="BreadcrumbButton">
+          <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="BreadcrumbButtonInactive">
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="BreadcrumbButtonInactiveBorder">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="BreadcrumbButtonOnHover">
+          <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="BreadcrumbButtonSelected">
+          <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="BreadcrumbButtonSelectedOnHover">
+          <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="BrushGradientStopInnerBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="BrushGradientStopOuterBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CategoryTree">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBox">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxButton">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxButtonBorder">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxButtonMouseOver">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxButtonMouseOverBorder">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxButtonPressed">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxButtonPressedBorder">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxDisabled">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxDisabledBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxDisabledText">
+          <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxMouseOver">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxMouseOverBorder">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxMouseOverText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxPopUp">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxPopUpBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ComboBoxText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="Command">
+          <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CommandBorder">
+          <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CommandDisabled">
+          <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CommandMouseOver">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CommandMouseOverBorder">
+          <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CommandMouseOverText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CommandPressed">
+          <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CommandPressedBorder">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CommandPressedText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="CommandText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ControlBorder">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="Dialog">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="DialogExpanderGlyph">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="DialogExpanderGlyph">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="DialogExpanderGlyphMouseOver">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="DialogExpanderSelectedItemActiveGlyph">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="DimmedText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="GridSplitter">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="Glyph">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="GlyphMouseOver">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="HueSelectionGlyph">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="Hyperlink">
+          <Background Source="AA{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="HyperlinkDisabled">
+          <Background Source="AA{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="HyperlinkMouseOver">
+          <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="IconButton">
+          <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="IconButtonMouseOver">
+          <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="IconButtonPressed">
+          <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InfoText">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="Input">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+          <Foreground Source="AA{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InputBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InputDisabled">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InputDisabledBorder">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InputDisabledText">
+          <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InputMouseOver">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InputMouseOverBorder">
+          <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InputText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InteractiveIcon">
+          <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InteractiveIconMouseOver">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InteractiveIconMouseOverText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="InteractiveIconText">
+          <Background Source="FF{{baseIconColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListBackground">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListHeader">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItem">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemBorder">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemDisabled">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemDisabledBorder">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemDisabledText">
+          <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemMouseOver">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemMouseOverBorder">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemMouseOverText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemSearchResult">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemSearchResultBorder">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemSearchResultDisabled">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemSecondary">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemSecondaryOnHover">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{selectionForeground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemSecondarySelected">
+          <Background Source="FF{{selectionBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{selectionForeground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemSelected">
+          <Background Source="FF{{selectionBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{selectionForeground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemSelectedBorder">
+          <Background Source="FF{{selectionBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemSelectedText">
+          <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemTier1">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemTier1Border">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemTier2">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemTier2Border">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemTier3">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ListItemTier3Border">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="LivePropertyExplorerResourceReference">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="Menu">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="MenuBorder">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="MenuSeparator">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="MenuText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PropertyDotBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PropertyValueBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="PropertyValueLocal">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="SplitBar">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="SplitBarTab">
+          <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="SplitBarTabSelected">
+          <Foreground Source="FF{{buttonFont}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="StructureViewActiveContainer">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="StructureViewChildSelected">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="StructureViewChildSelected">
+          <Background Source="FF{{caretRow}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="StructureViewDropTargetSplit">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="StructureViewInsertionContainer">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TabBackground">
+          <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TabBorder">
+          <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TabItem">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TabItemBorder">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TabItemDisabled">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TabItemDisabledText">
+          <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TabItemMouseOver">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TabItemMouseOverBorder">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TabItemMouseOverText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TabItemSelected">
+          <Foreground Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TabItemSelectedBorder">
+          <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TabItemSelectedText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TabItemText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TimelineDurationBarIterationDivider">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TimelineDurationBarKeyframeGripper">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TimelineDurationBarLiveIteration">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TimelineDurationBarLiveIterationDivider">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TimelineDurationBarLiveIterationLabel">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TimelineDurationLiveKeyframe">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TimelineElementXamlBackground">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TimelineKeyframeSelected">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TimelinePropertyXamlBackground">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="TimelineXamlForeground">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="Toggle">
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="Toggle">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToggleBorder">
+          <Background Source="FF{{baseIconColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToggleDisabled">
+          <Foreground Source="FF{{disabledColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToggleDisabledBorder">
+          <Background Source="FF{{baseIconColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToggleMouseOver">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToggleMouseOverBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToggleMouseOverText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToggleOuterBorder">
+          <Background Source="FF{{baseIconColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToggleSelected">
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToggleSelectedBorder">
+          <Background Source="FF{{baseIconColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToggleSelectedText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToggleText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="Toolbar">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToolbarAsset">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToolbarWatermark">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToolWindow">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToolWindowGroup">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToolWindowGroupBottomBorder">
+          <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToolWindowGroupDisabled">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToolWindowGroupDisabledText">
+          <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToolWindowGroupSecondary">
+          <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToolWindowGroupSecondaryText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToolWindowGroupText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToolWindowShelf">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        </Color>
+        <Color Name="ToolWindowText">
+          <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
+      </Category>
       <Category GUID="{c01072a1-a915-4abf-89b7-e2f9e8ec4c7f}" Name="CommonControls">
         <Color Name="Button">
           <Background Source="FF{{buttonColor}}" Type="CT_RAW"/>
@@ -1886,7 +2058,6 @@
                 <Background Type="CT_RAW" Source="CC{{buttonColor}}"/>
             </Color>
         </Category>
-      <?xml version="1.0"?>
       <Category GUID="{624ed9c3-bdfd-41fa-96c3-7c824ea32e3d}" Name="Environment">
         <Color Name="AccentBorder">
           <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -5438,6 +5609,7 @@
         </Color>
         <Color Name="Unfocused">
           <Background Source="AA{{secondaryBackground}}" Type="CT_RAW"/>
+          <Foreground Source="AA{{foregroundColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="UnfocusedBorder">
           <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
