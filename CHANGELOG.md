@@ -1,9 +1,10 @@
 Changelog
 ---
 
-# 2.1.1 [Git Text Input Usability]
+# 2.1.1 [Git Text Input Usability & Professional Support]
 
 - Updated the "Git Commit" text input foreground to be usable. [#23](https://github.com/doki-theme/doki-theme-visualstudio/issues/23)
+- Extension targets Visual Studio Professional now.
 
 # 2.1.0 [Design Window Support]
 
