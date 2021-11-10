@@ -14,10 +14,10 @@
 @REM yarn buildThemes ea7a8b00-2d86-4e06-81a2-5c14a46264d5
 
 @REM Jahy
-@REM yarn buildThemes 91d0931d-3e1d-4101-b923-278ce264f0f5
+yarn buildThemes 91d0931d-3e1d-4101-b923-278ce264f0f5
 
 @REM Shigure
-yarn buildThemes 67278007-b7f8-46d4-88b7-e40cac3576a7
+@REM yarn buildThemes 67278007-b7f8-46d4-88b7-e40cac3576a7
 
 @REM Cinnamon
 @REM yarn buildThemes 84dc0d3c-1c83-4dde-87b9-e1ea27cd34b0

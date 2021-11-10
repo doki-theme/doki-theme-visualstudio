@@ -1832,6 +1832,9 @@
         <Color Name="TextBoxText">
           <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
         </Color>
+        <Color Name="TextBox">
+          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        </Color>
         <Color Name="TextBoxTextDisabled">
           <Background Source="FF{{disabledColor}}" Type="CT_RAW"/>
         </Color>
@@ -4396,6 +4399,7 @@
             </Color>
             <Color Name="TextBoxFocused">
                 <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
+                <Foreground Type="CT_RAW" Source="AA{{foregroundColor}}"/>
             </Color>
             <Color Name="ContentSelected">
                 <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
@@ -5630,6 +5634,7 @@
       <Category Name="TeamExplorer" GUID="{4aff231b-f28a-44f0-a66b-1beeb17cb920}">
             <Color Name="TextBox">
                 <Background Type="CT_RAW" Source="AA{{secondaryBackground}}"/>
+              <Foreground Type="CT_RAW" Source="AA{{foregroundColor}}"/>
             </Color>
             <Color Name="TextBoxBorder">
                 <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
