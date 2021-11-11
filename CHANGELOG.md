@@ -1,6 +1,10 @@
 Changelog
 ---
 
+# 2.1.1 [Git Text Input Usability]
+
+- Updated the "Git Commit" text input foreground to be usable. [#23](https://github.com/doki-theme/doki-theme-visualstudio/issues/23)
+
 # 2.1.0 [Design Window Support]
 
 - All themes support the visual WPF design editor now [#19](https://github.com/doki-theme/doki-theme-visualstudio/issues/19) 
