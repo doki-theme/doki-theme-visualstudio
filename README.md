@@ -20,6 +20,7 @@ The Doki Theme: Visual Studio
 - [Usage](#usage)
   - [Setting Theme](#setting-theme)
   - [Content Settings](#content-settings)
+    - [Offline Mode](#offline-mode)
     - [Stickers](#stickers)
     - [Wallpaper](#wallpapers)
 - [Miscellaneous](#miscellaneous)
@@ -58,6 +59,11 @@ You can navigate to the settings here
 <kbd>Tools</kbd> > <kbd>Options</kbd> > <kbd>Doki Theme Settings</kbd> > <kbd>General</kbd>
 
 ![Setting Theme](readmeAssets/screens/doki_settings.png)
+
+### Offline Mode
+
+**Important**: Assets are _not_ bundled with the extension. When a theme is applied, assets are downloaded from a CDN.
+You only need an internet connection the first time setting a theme. After that, the asset will be available offline.
 
 ### Stickers
 
