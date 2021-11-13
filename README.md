@@ -33,6 +33,8 @@ The Doki Theme: Visual Studio
 
 You can find the latest release [at the marketplace](https://marketplace.visualstudio.com/items?itemName=unthrottled.dokithemevisualstudio).
 
+**Visual Studio 2019**: The last supported version for the Visual Studio 2019 platform is [v0.3.0](https://github.com/doki-theme/doki-theme-visualstudio/releases/tag/v0.3.0). You can manually install the vsix file found on the release. For the best experince, please consider upgrading to Visual Studio 2022 and using the [latest version.](https://github.com/doki-theme/doki-theme-visualstudio/releases/latest)
+
 # Usage
 
 You've installed the extension in your Visual Studio now, great!
@@ -62,8 +64,7 @@ You can navigate to the settings here
 
 ### Offline Mode
 
-**Important**: Assets are _not_ bundled with the extension. When a theme is applied, assets are downloaded from a CDN.
-You only need an internet connection the first time setting a theme. After that, the asset will be available offline.
+**Important**: An internet connection is required for assets to appear when setting a theme. Assets (sticker & wallpaper) are _not_ bundled with the extension. When a theme is applied, assets are downloaded from a CDN. You only need an internet connection the first time setting a theme. After that, the asset will be available offline.  However, custom assets can be installed without an internet connection.
 
 ### Stickers
 
