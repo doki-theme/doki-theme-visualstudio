@@ -1,6 +1,10 @@
 Changelog
 ---
 
+# 2.1.2 [Inline Rename Field Background Color]
+
+- Themed the `Inline Rename Field Background` to actualy be usable.[#12](https://github.com/doki-theme/doki-theme-visualstudio/issues/12)
+
 # 2.1.1 [Git Text Input Usability & Professional Support]
 
 - Updated the "Git Commit" text input foreground to be usable. [#23](https://github.com/doki-theme/doki-theme-visualstudio/issues/23)

@@ -597,8 +597,8 @@
           <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
         </Color>
         <Color Name="Inline Rename Field Text">
-          <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+          <Background Type="CT_RAW" Source="FF{{selectionBackground}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{selectionForeground}}"/>
         </Color>
         <Color Name="data.tools.diff.remove.line">
           <Background Type="CT_INVALID" Source="00000000"/>
