@@ -4026,12 +4026,12 @@
           <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
         </Color>
         <Color Name="StatusBarBuilding">
-          <Background Source="FF{{diff.modified}}" Type="CT_RAW"/>
-          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+          <Background Source="FF{{selectionBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{selectionForeground}}" Type="CT_RAW"/>
         </Color>
         <Color Name="StatusBarDebugging">
-          <Background Source="FF{{diff.inserted}}" Type="CT_RAW"/>
-          <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+          <Background Source="FF{{searchBackground}}" Type="CT_RAW"/>
+          <Foreground Source="FF{{searchForeground}}" Type="CT_RAW"/>
         </Color>
         <Color Name="StatusBarDefault">
           <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
