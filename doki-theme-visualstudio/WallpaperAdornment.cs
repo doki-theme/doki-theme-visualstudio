@@ -103,7 +103,7 @@ namespace doki_theme_visualstudio {
 
     private void CreateNewImage(BitmapSource source, DokiTheme dokiTheme) {
       _image = new ImageBrush(source) {
-        Stretch = Stretch.UniformToFill,
+        Stretch = SettingsService.Instance.WallpaperFill,
         AlignmentX = GetAlignmentX(dokiTheme),
         AlignmentY = AlignmentY.Bottom,
         Opacity = GetOpacity(dokiTheme),

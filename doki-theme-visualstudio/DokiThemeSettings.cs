@@ -3,8 +3,10 @@ using System;
 using System.ComponentModel;
 using System.Drawing.Design;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
+using System.Windows.Media;
 
 namespace doki_theme_visualstudio {
   public class SettingsService {
@@ -65,8 +67,33 @@ namespace doki_theme_visualstudio {
         return page.WallpaperOpacity;
       }
     }
+
+    public Stretch WallpaperFill {
+      get {
+        var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
+        return BackgroundSizeConverter.ConvertTo(page.WallpaperFill);
+      }
+    }
   }
 
+  [ComVisible(true)]
+  [Guid("C89AFB79-39AF-4716-BB91-6977323DD89B")]
+  public enum BackgroundSize {
+    Filled = 1,
+    Scaled = 2
+  }
+
+  public static class BackgroundSizeConverter{
+    public static Stretch ConvertTo(this BackgroundSize backgroundSize) {
+      switch (backgroundSize) {
+        case BackgroundSize.Filled:
+          return Stretch.UniformToFill;
+        case BackgroundSize.Scaled:
+          return Stretch.Uniform;
+      }
+      return Stretch.Uniform;
+    }
+  }
 
   class DokiThemeSettings : DialogPage {
     bool _drawSticker = true;
@@ -101,6 +128,14 @@ namespace doki_theme_visualstudio {
     public double WallpaperOpacity {
       get { return _wallpaperOpacity; }
       set { _wallpaperOpacity = value; }
+    }
+
+    private BackgroundSize _wallpaperFill = BackgroundSize.Filled;
+
+    [DescriptionAttribute("Choose how the background wallpaper gets painted in the background")]
+    public BackgroundSize WallpaperFill{
+      get { return _wallpaperFill; }
+      set { _wallpaperFill = value; }
     }
 
     protected override void OnApply(PageApplyEventArgs e) {
