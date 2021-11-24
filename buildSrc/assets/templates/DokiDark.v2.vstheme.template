@@ -2663,7 +2663,8 @@
         <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="Dark">
-        <Background Source="00{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DebuggerDataTipActiveBackground">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
@@ -2744,8 +2745,8 @@
         <Background Source="FF{{codeBlock}}" Type="CT_RAW"/>
       </Color>
       <Color Name="Dialog">
-        <Background Source="FFD9EFFA" Type="CT_RAW"/>
-        <Foreground Source="FF000C22" Type="CT_RAW"/>
+        <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="DockTargetBackground">
         <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
@@ -3372,7 +3373,8 @@
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="Light">
-        <Background Source="00{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="LightCaption">
         <Background Source="00E0F6FF" Type="CT_RAW"/>
@@ -3493,7 +3495,8 @@
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="Medium">
-        <Background Source="00{{textEditorBackground}}" Type="CT_RAW"/>
+        <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="Menu">
         <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
@@ -4055,12 +4058,12 @@
         <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="StatusBarBuilding">
-        <Background Source="FF{{diff.modified}}" Type="CT_RAW"/>
-        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        <Background Source="FF{{selectionBackground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{selectionForeground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="StatusBarDebugging">
-        <Background Source="FF{{diff.inserted}}" Type="CT_RAW"/>
-        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        <Background Source="FF{{searchBackground}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{searchForeground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="StatusBarDefault">
         <Background Source="FF{{accentColor}}" Type="CT_RAW"/>
@@ -4587,7 +4590,8 @@
         <Background Type="CT_RAW" Source="FF{{buttonFont}}"/>
       </Color>
       <Color Name="NotificationBubbleWindowPanel">
-        <Background Type="CT_RAW" Source="80{{headerColor}}"/>
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
     </Category>
     <Category Name="PackageManifestEditor" GUID="{3f27d653-86e6-4a04-adb6-a35efa6c8f05}">
@@ -4920,12 +4924,12 @@
         <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="IndicatorBubble">
-        <Background Source="FFE41400" Type="CT_RAW"/>
+        <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
         <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="IndicatorBubbleDebugging">
-        <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
-        <Foreground Source="FF000C22" Type="CT_RAW"/>
+        <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        <Foreground Source="FF{{foregroundColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="NotificationBackground">
         <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>

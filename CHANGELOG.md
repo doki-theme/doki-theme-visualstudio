@@ -1,6 +1,11 @@
 Changelog
 ---
 
+# 2.1.3 [Usability Fixes]
+
+- Updated the notification bubble to be more readable for all themes. [#29](https://github.com/doki-theme/doki-theme-visualstudio/issues/29)
+- Updated the building & debugging status bar colors for all themes.
+
 # 2.1.2 [Inline Rename Field Background Color]
 
 - Themed the `Inline Rename Field Background` to actualy be usable.[#12](https://github.com/doki-theme/doki-theme-visualstudio/issues/12)
