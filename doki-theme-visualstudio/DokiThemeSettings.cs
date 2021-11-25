@@ -89,6 +89,14 @@ namespace doki_theme_visualstudio {
         return BackgroundSizeConverter.ConvertTo(page.WallpaperFill);
       }
     }
+
+
+    public BackgroundAnchor WallpaperAnchor {
+      get {
+        var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
+        return page.WallpaperAnchor;
+      }
+    }
   }
 
   [ComVisible(true)]
@@ -96,6 +104,15 @@ namespace doki_theme_visualstudio {
   public enum BackgroundSize {
     Filled = 1,
     Scaled = 2
+  }
+
+  [ComVisible(true)]
+  [Guid("C69AFB79-39AF-4716-BB91-6977323DD89B")]
+  public enum BackgroundAnchor {
+    Default = 1,
+    Left = 2,
+    Center = 3,
+    Right = 4
   }
 
   public static class BackgroundSizeConverter{
@@ -152,11 +169,21 @@ namespace doki_theme_visualstudio {
 
     private BackgroundSize _wallpaperFill = BackgroundSize.Filled;
 
-    [DescriptionAttribute("Choose how the background wallpaper gets painted in the background")]
+    [DescriptionAttribute("Choose how the wallpaper gets painted in the background")]
     public BackgroundSize WallpaperFill{
       get { return _wallpaperFill; }
       set { _wallpaperFill = value; }
     }
+
+    private BackgroundAnchor _wallpaperAnchor = BackgroundAnchor.Default;
+
+    [DescriptionAttribute("Choose how the wallpaper gets anchored in the background")]
+    public BackgroundAnchor WallpaperAnchor
+    {
+      get { return _wallpaperAnchor; }
+      set { _wallpaperAnchor = value; }
+    }
+
 
     protected override void OnApply(PageApplyEventArgs e) {
       base.OnApply(e);

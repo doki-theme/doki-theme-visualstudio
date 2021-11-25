@@ -115,10 +115,20 @@ namespace doki_theme_visualstudio {
     }
 
     private static AlignmentX GetAlignmentX(DokiTheme dokiTheme) {
-      return dokiTheme.BackgroundPosition switch {
-        "right" => AlignmentX.Right,
-        _ => AlignmentX.Center
-      };
+      BackgroundAnchor wallpaperAnchor = SettingsService.Instance.WallpaperAnchor;
+      if (wallpaperAnchor == BackgroundAnchor.Default) {
+        return dokiTheme.BackgroundPosition switch {
+          "right" => AlignmentX.Right,
+          _ => AlignmentX.Center
+        };
+      }
+
+      switch (wallpaperAnchor) {
+        case BackgroundAnchor.Left: return AlignmentX.Left;
+        case BackgroundAnchor.Center: return AlignmentX.Center;
+        case BackgroundAnchor.Right: return AlignmentX.Right;
+        default: return AlignmentX.Center;
+      }
     }
 
     private static double GetOpacity(DokiTheme dokiTheme) {
