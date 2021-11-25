@@ -107,7 +107,10 @@ namespace doki_theme_visualstudio {
         AlignmentX = GetAlignmentX(dokiTheme),
         AlignmentY = AlignmentY.Bottom,
         Opacity = GetOpacity(dokiTheme),
-        Viewbox = new Rect(new Point(0, 0), new Size(1, 1)),
+        Viewbox = new Rect(new Point(
+          SettingsService.Instance.WallpaperOffsetX, 
+          SettingsService.Instance.WallpaperOffsetY
+          ), new Size(1, 1)),
       };
     }
 
