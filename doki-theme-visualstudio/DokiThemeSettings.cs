@@ -3,8 +3,10 @@ using System;
 using System.ComponentModel;
 using System.Drawing.Design;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
+using System.Windows.Media;
 
 namespace doki_theme_visualstudio {
   public class SettingsService {
@@ -65,8 +67,65 @@ namespace doki_theme_visualstudio {
         return page.WallpaperOpacity;
       }
     }
+
+    public double WallpaperOffsetX {
+      get {
+        var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
+        return page.WallpaperOffsetX;
+      }
+    }
+
+
+    public double WallpaperOffsetY {
+      get {
+        var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
+        return page.WallpaperOffsetY;
+      }
+    }
+
+    public Stretch WallpaperFill {
+      get {
+        var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
+        return BackgroundSizeConverter.ConvertTo(page.WallpaperFill);
+      }
+    }
+
+
+    public BackgroundAnchor WallpaperAnchor {
+      get {
+        var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
+        return page.WallpaperAnchor;
+      }
+    }
   }
 
+  [ComVisible(true)]
+  [Guid("C89AFB79-39AF-4716-BB91-6977323DD89B")]
+  public enum BackgroundSize {
+    Filled = 1,
+    Scaled = 2
+  }
+
+  [ComVisible(true)]
+  [Guid("C69AFB79-39AF-4716-BB91-6977323DD89B")]
+  public enum BackgroundAnchor {
+    Default = 1,
+    Left = 2,
+    Center = 3,
+    Right = 4
+  }
+
+  public static class BackgroundSizeConverter{
+    public static Stretch ConvertTo(this BackgroundSize backgroundSize) {
+      switch (backgroundSize) {
+        case BackgroundSize.Filled:
+          return Stretch.UniformToFill;
+        case BackgroundSize.Scaled:
+          return Stretch.Uniform;
+      }
+      return Stretch.Uniform;
+    }
+  }
 
   class DokiThemeSettings : DialogPage {
     bool _drawSticker = true;
@@ -93,6 +152,11 @@ namespace doki_theme_visualstudio {
     [EditorAttribute(typeof(BrowseFile), typeof(UITypeEditor))]
     public string CustomStickerImageAbsolutePath { get; set; }
 
+    [DescriptionAttribute("Double value in the range of [-1.0,1] that skews the wallpaper right (eg: -0.25) or left (0.25)")]
+    public double WallpaperOffsetX { get; set; }
+
+    [DescriptionAttribute("Double value in the range of [-1.0,1] that skews the wallpaper down (eg: -0.25) or up (eg: 0.25)")]
+    public double WallpaperOffsetY { get; set; }
 
     private double _wallpaperOpacity = -1.0;
 
@@ -102,6 +166,24 @@ namespace doki_theme_visualstudio {
       get { return _wallpaperOpacity; }
       set { _wallpaperOpacity = value; }
     }
+
+    private BackgroundSize _wallpaperFill = BackgroundSize.Filled;
+
+    [DescriptionAttribute("Choose how the wallpaper gets painted in the background")]
+    public BackgroundSize WallpaperFill{
+      get { return _wallpaperFill; }
+      set { _wallpaperFill = value; }
+    }
+
+    private BackgroundAnchor _wallpaperAnchor = BackgroundAnchor.Default;
+
+    [DescriptionAttribute("Choose how the wallpaper gets anchored in the background")]
+    public BackgroundAnchor WallpaperAnchor
+    {
+      get { return _wallpaperAnchor; }
+      set { _wallpaperAnchor = value; }
+    }
+
 
     protected override void OnApply(PageApplyEventArgs e) {
       base.OnApply(e);
