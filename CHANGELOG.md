@@ -1,6 +1,14 @@
 Changelog
 ---
 
+# 2.2.0 [Wallpaper Positioning]
+
+- Added several wallpaper related settings, [#]() for more details.
+  - WallpaperAnchor
+  - WallpaperFill
+  - WallpaperOffsetX
+  - WallpaperOffsetY
+
 # 2.1.3 [Usability Fixes]
 
 - Updated the notification bubble to be more readable for all themes. [#29](https://github.com/doki-theme/doki-theme-visualstudio/issues/29)

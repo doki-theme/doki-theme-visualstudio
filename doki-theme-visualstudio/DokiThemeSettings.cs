@@ -152,10 +152,10 @@ namespace doki_theme_visualstudio {
     [EditorAttribute(typeof(BrowseFile), typeof(UITypeEditor))]
     public string CustomStickerImageAbsolutePath { get; set; }
 
-    [DescriptionAttribute("Double value with a range of [-1.0,1] that skews the wallpaper right (eg: -0.25) or left (0.25)")]
+    [DescriptionAttribute("Double value in the range of [-1.0,1] that skews the wallpaper right (eg: -0.25) or left (0.25)")]
     public double WallpaperOffsetX { get; set; }
 
-    [DescriptionAttribute("Double value with a range of [-1.0,1] that skews the wallpaper down (eg: -0.25) or up (eg: 0.25)")]
+    [DescriptionAttribute("Double value in the range of [-1.0,1] that skews the wallpaper down (eg: -0.25) or up (eg: 0.25)")]
     public double WallpaperOffsetY { get; set; }
 
     private double _wallpaperOpacity = -1.0;
