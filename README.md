@@ -102,9 +102,13 @@ _Filled_ will maintain the size height of the wallpaper, which tends to cuts the
 
 _Scaled_ will scale the wallpaper to the viewport, so the entire image is visible. Will make the image small!
 
+https://user-images.githubusercontent.com/15972415/143469376-a87ce7ec-452c-4859-9e47-b3ef9f24b7f2.mp4
+
 **WallpaperOffsetX** allows you to move the wallpaper to the left or right in the viewport. Supply a double value in the range of [-1.0,1] to move the wallpaper right (eg: -0.25) or left (0.25)
 
 **WallpaperOffsetY** allows you to move the wallpaper up or down in the viewport. Supply a double value in the range of [-1.0,1] to skew the wallpaper down (eg: -0.25) or up (eg: 0.25).
+
+https://user-images.githubusercontent.com/15972415/143469290-31047487-c788-4d2e-9293-698ffd6850fc.mp4
 
 **WallpaperOpacity** Value Range: `[-1.0, 1]` (eg: 0.5 for half opacity) It looks good on my machine! 
 I've carefully picked the various opacity levels for the default wallpapers to look good on my monitors.
