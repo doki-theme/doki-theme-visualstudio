@@ -34,13 +34,15 @@ namespace doki_theme_visualstudio {
     /// </summary>
     /// <param name="textView">The <see cref="IWpfTextView"/> upon which the adornment should be placed</param>
     public void TextViewCreated(IWpfTextView textView) {
-      if (SettingsService.IsInitialized()) {
+      if (TheDokiTheme.IsInitialized()) {
         new WallpaperAdornment(textView);
       } else {
-        Task.Run(async () => {
-          await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
-          new WallpaperAdornment(textView);
-        }).FileAndForget("dokiTheme/wallpaperLoad");
+        TheDokiTheme.PluginInitialized += (_, __) =>  {
+          Task.Run(async () =>{
+            await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+            new WallpaperAdornment(textView);
+          }).FileAndForget("dokiTheme/wallpaperLoad");
+        };
       }
     }
   }
