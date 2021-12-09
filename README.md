@@ -23,6 +23,7 @@ The Doki Theme: Visual Studio
     - [Offline Mode](#offline-mode)
     - [Stickers](#stickers)
     - [Wallpaper](#wallpapers)
+  - [Weird Bugs](#weird-bugs)
 - [Miscellaneous](#miscellaneous)
     - [Contributing](#contributing) 
     - [Theme Requests](#theme-requests)
@@ -120,6 +121,14 @@ You can always set it back to `-1` and you'll get the default opacity that I pic
 | **WallpaperOpacity**: `-1` | **WallpaperOpacity**: `0.25` |
 | --- | --- |
 | ![default opacity](readmeAssets/screens/opacity_def.png) |  ![default opacity](readmeAssets/screens/opacity_quarter.png) |
+
+## Weird Bugs
+
+The assets will only show up after the package initializes. This takes a bit longer if a solution is opened instead of the regular launch screen (the one where you you can open a project from). The plugin loads quicker on the launch screen. 
+
+I couldn't figure out how to re-render the window, so the sticker/wallpaper will only show up after scrolling/typing/switching tabs. So just keep coding and your stuff will eventually show up.
+
+https://user-images.githubusercontent.com/15972415/145320920-9492b4d1-ae46-43f2-b65f-1ee7d02c5a19.mp4
 
 # Miscellaneous
 

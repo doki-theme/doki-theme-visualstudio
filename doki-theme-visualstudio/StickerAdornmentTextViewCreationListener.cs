@@ -36,13 +36,15 @@ namespace doki_theme_visualstudio {
     /// <param name="textView">The <see cref="IWpfTextView" /> upon which the adornment should be placed</param>
     public void TextViewCreated(IWpfTextView textView) {
       // The adornment will get wired to the text view events
-      if (SettingsService.IsInitialized()) {
+      if (TheDokiTheme.IsInitialized()) {
         new StickerAdornment(textView);
       } else {
-        Task.Run(async () => {
-          await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
-          new StickerAdornment(textView);
-        }).FileAndForget("dokiTheme/stickerLoad");
+        TheDokiTheme.PluginInitialized += (_, __) => {
+          Task.Run(async () =>{
+            await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+            new StickerAdornment(textView);
+          }).FileAndForget("dokiTheme/stickerLoad");
+        };
       }
     }
   }

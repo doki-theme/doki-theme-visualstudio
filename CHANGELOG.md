@@ -1,6 +1,10 @@
 Changelog
 ---
 
+# 2.2.1 [Asset Render After Load]
+
+- Stickers & Wallpapers will now render after the IDE finishes loading all of the background tasks. See [#33](https://github.com/doki-theme/doki-theme-visualstudio/pull/33) for more details.
+
 # 2.2.0 [Wallpaper Positioning]
 
 - Added several wallpaper related settings, see [#30](https://github.com/doki-theme/doki-theme-visualstudio/pull/30) for more details.
