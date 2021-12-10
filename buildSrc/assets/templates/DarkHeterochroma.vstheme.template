@@ -1,0 +1,58 @@
+<Themes>
+  <Theme Name="dark-heterochroma" GUID="{c80a3650-811b-47f2-8bbe-7e2b475ebac2}"
+         BaseGUID="dark">
+    <Category Name="Environment" GUID="{624ed9c3-bdfd-41fa-96c3-7c824ea32e3d}">
+      <Color Name="MainWindowActiveCaption">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="MainWindowInactiveCaption">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandShelfBackgroundGradientBegin">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandShelfBackgroundGradientEnd">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandShelfBackgroundGradientMiddle">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandShelfHighlightGradientBegin">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandShelfHighlightGradientEnd">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandShelfHighlightGradientMiddle">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandBarGradientBegin">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandBarGradientEnd">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandBarGradientMiddle">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="CommandBarToolBarBorder">
+        <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+      </Color>
+      <Color Name="EnvironmentBackground">
+        <Background Type="CT_RAW" Source="FF{{baseBackground}}"/>
+      </Color>
+      <Color Name="EnvironmentBackgroundGradientBegin">
+        <Background Type="CT_RAW" Source="FF{{baseBackground}}"/>
+      </Color>
+      <Color Name="EnvironmentBackgroundGradientEnd">
+        <Background Type="CT_RAW" Source="FF{{baseBackground}}"/>
+      </Color>
+      <Color Name="EnvironmentBackgroundGradientMiddle1">
+        <Background Type="CT_RAW" Source="FF{{baseBackground}}"/>
+      </Color>
+      <Color Name="EnvironmentBackgroundGradientMiddle2">
+        <Background Type="CT_RAW" Source="FF{{baseBackground}}"/>
+      </Color>
+    </Category>
+  </Theme>
+</Themes>
