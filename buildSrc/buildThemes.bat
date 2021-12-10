@@ -13,8 +13,14 @@
 @REM Maple Light
 @REM yarn buildThemes ea7a8b00-2d86-4e06-81a2-5c14a46264d5
 
+@REM Yotsuba
+@REM yarn buildThemes 3b11c8f4-d030-4a7e-a46f-b22d3e430a1d
+
+@REM Essex
+yarn buildThemes e55e70ea-454b-47ef-9270-d46390dd2769
+
 @REM chocola xmas
-yarn buildThemes 6428e1ff-202c-4a43-afb3-9999ebe3b2ca
+@REM yarn buildThemes 6428e1ff-202c-4a43-afb3-9999ebe3b2ca
 
 @REM Jahy
 @REM yarn buildThemes 91d0931d-3e1d-4101-b923-278ce264f0f5

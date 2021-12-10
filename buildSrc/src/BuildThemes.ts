@@ -1,13 +1,12 @@
 import {
   BaseAppDokiThemeDefinition,
+  composeTemplateWithCombini,
   constructNamedColorTemplate,
   DokiThemeDefinitions,
   evaluateTemplates,
   fillInTemplateScript,
   MasterDokiThemeDefinition,
   resolvePaths,
-  resolveTemplate,
-  resolveTemplateWithCombini,
   StringDictionary, walkDir,
 } from "doki-build-source";
 import omit from 'lodash/omit';
@@ -288,6 +287,10 @@ async function resolveVisualStudioThemeTemplate(xmlTemplates: StringDictionary<a
 
 // now kith
 function smashXmlTemplatesTogether(parentXml: any, childXml: any): any {
+   if (childXml.composeHax) {
+    return parentXml;
+  }
+  
   const newParentXml = deepClone(parentXml);
   const newChildXml = deepClone(childXml);
 
@@ -321,19 +324,35 @@ function smashXmlTemplatesTogether(parentXml: any, childXml: any): any {
 function evaluateXmlTemplates(xmlTemplates: StringDictionary<any>, dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { secondary?: { path: string; name: string; } | undefined; defaultSticker: { path: string; name: string; }; }; templateVariables: DokiThemeVisualStudio; theme: {}; appThemeDefinition: BaseAppDokiThemeDefinition; }): string {
   const childTemplateName = dokiTheme.appThemeDefinition.laf?.extends ||
     (dokiTheme.definition.dark ? 'dark' : 'light');
-  const childTemplate = xmlTemplates[childTemplateName];
-  const resolvedXmlObject = resolveTemplateWithCombini(
+
+  // hax to get around the initial child composing
+  // many parent themes.
+  const childTemplate = {
+    composeHax: true,
+    Themes: {
+      Theme: [
+        {
+          $: {
+            BaseGUID: childTemplateName
+          }
+        }
+      ]
+    }
+  };
+  const resolvedXmlObject = composeTemplateWithCombini(
     childTemplate,
     xmlTemplates,
     template => template,
     templateXml => {
       const baseNodeAttributes = templateXml.Themes.Theme[0].$;
-      const parentName = baseNodeAttributes.BaseGUID ||
+      const parentName: string = baseNodeAttributes.BaseGUID ||
         baseNodeAttributes.FallbackId;
-      return parentName.startsWith('{') ? undefined : parentName;
+      return parentName.startsWith('{') ? undefined :
+        parentName.split(',')
+          .map(parent => parent.trim() as string)
+          .filter(Boolean);
     },
     smashXmlTemplatesTogether
   )
   return xmlBuilder.buildObject(resolvedXmlObject);
 }
-
