@@ -72,6 +72,9 @@
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Themes\generated\Essex.vstheme">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Themes\generated\Maika.vstheme">
       <SubType>Designer</SubType>
     </None>
@@ -210,6 +213,9 @@
     <None Include="Themes\generated\Chocola.vstheme">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Themes\generated\Christmas Chocola.vstheme">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Themes\generated\Cinnamon.vstheme">
       <SubType>Designer</SubType>
     </None>
@@ -238,6 +244,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Themes\generated\Nakano Nino.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Nakano Yotsuba.vstheme">
       <SubType>Designer</SubType>
     </None>
     <None Include="Themes\generated\Beatrice.vstheme">

@@ -6,11 +6,17 @@ Darling in the Franxx
 ![zero_two_dark_code](../screens/themes/zero_two_dark_code.png)
 ![zero_two_light_code](../screens/themes/zero_two_light_code.png)
 
+
+AzurLane
+---
+![essex_dark_code](../screens/themes/essex_dark_code.png)
+
 NekoPara
 ---
 
 ### Chocola
 ![chocola_dark_code](../screens/themes/chocola_dark_code.png)
+![xmas_chocola_code](../screens/themes/xmas_chocola_code.png)
 
 ### Vanilla
 
@@ -77,6 +83,11 @@ Quintessential Quintuplets
 ### Nakano Miku
 
 ![nakano_miku_dark_code](../screens/themes/nakano_miku_dark_code.png)
+
+### Nakano Yotsuba
+
+![nakano_yotsuba_dark_code](../screens/themes/nakano_yotsuba_dark_code.png)
+
 
 OreImo (My little sister cannot be this cute)
 ---
