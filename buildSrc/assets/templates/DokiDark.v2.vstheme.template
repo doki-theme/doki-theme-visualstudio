@@ -1978,10 +1978,10 @@
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
       </Color>
       <Color Name="InnerTabActiveIndicator">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="InnerTabSelectedIndicator">
-        <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+        <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
       </Color>
       <Color Name="TitleText">
         <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
