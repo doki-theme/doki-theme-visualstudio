@@ -4970,7 +4970,7 @@
                 <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="ListItemBackgroundHover">
-                <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
+                <Background Type="CT_RAW" Source="FF{{highlightColor}}"/>
             </Color>
             <Color Name="WindowPanel">
                 <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
