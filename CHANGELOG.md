@@ -1,6 +1,10 @@
 Changelog
 ---
 
+# 3.0.1 [Bug Fixes]
+
+- Fixed issues with: NuGet Package Manager UI, Package Manager Console, & Search List item hover.
+
 # 3.0.0 [Holiday Assets]
 
 **3 New Dark Themes!**
