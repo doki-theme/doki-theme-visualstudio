@@ -5319,7 +5319,8 @@
         </Category>
         <Category Name="Package Manager Console" GUID="{f9d6bce6-c669-41db-8ee7-dd953828685b}">
             <Color Name="Plain Text">
-                <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+                <Background Type="CT_RAW" Source="FF{{headerColor}}"/>
+                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
             </Color>
             <Color Name="Selected Text in High Contrast">
                 <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
