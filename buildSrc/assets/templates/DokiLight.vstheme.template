@@ -123,7 +123,7 @@
         </Color>
         <Color Name="SymbolReferenceClassificationFormat">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="CurrentLineActiveFormat">
           <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
@@ -143,7 +143,7 @@
         </Color>
         <Color Name="deltadiff.add.word">
           <Background Type="CT_RAW" Source="FF{{diff.inserted}}"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="deltadiff.overview.color">
           <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
@@ -155,7 +155,7 @@
         </Color>
         <Color Name="outlining.square">
           <Background Type="CT_RAW" Source="FF{{codeBlock}}"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="urlformat">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -163,7 +163,7 @@
         </Color>
         <Color Name="NavigableSymbolFormat">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="CppMacroSemanticTokenFormat">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -175,15 +175,15 @@
         </Color>
         <Color Name="CppGlobalVariableSemanticTokenFormat">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="CppLocalVariableSemanticTokenFormat">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="CppParameterSemanticTokenFormat">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="CppTypeSemanticTokenFormat">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -207,7 +207,7 @@
         </Color>
         <Color Name="CppMemberFieldSemanticTokenFormat">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="CppStaticMemberFunctionSemanticTokenFormat">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -215,15 +215,15 @@
         </Color>
         <Color Name="CppStaticMemberFieldSemanticTokenFormat">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="CppPropertySemanticTokenFormat">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="CppEventSemanticTokenFormat">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="CppClassTemplateSemanticTokenFormat">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -239,7 +239,7 @@
         </Color>
         <Color Name="CppLabelSemanticTokenFormat">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="CppUDLStringSemanticTokenFormat">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -267,7 +267,7 @@
         </Color>
         <Color Name="CSS Property Value">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="CSS String Value">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -294,7 +294,7 @@
         </Color>
         <Color Name="HTML Tag Delimiter">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="VBScript Keyword">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -314,11 +314,11 @@
         </Color>
         <Color Name="VBScript Identifier">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="VBScript Function Block Start">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="InstructionLineClassificationFormat">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -326,14 +326,14 @@
         </Color>
         <Color Name="SourceLineClassificationFormat">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="CodeAnalysisLineTraceSelection">
           <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
           <Foreground Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
         </Color>
         <Color Name="OverviewMarginCollapsedRegion">
-          <Background Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Background Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
           <Foreground Type="CT_INVALID" Source="00000000"/>
         </Color>
         <Color Name="OverviewMarginBackground">
@@ -346,7 +346,7 @@
         </Color>
         <Color Name="OverviewMarginCaret">
           <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="Peek Focused Border">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -358,7 +358,7 @@
         </Color>
         <Color Name="Peek Label Text">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="Block Structure Adornments">
           <Background Type="CT_RAW" Source="FF{{borderColor}}"/>
@@ -373,7 +373,7 @@
         </Color>
         <Color Name="punctuation">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="interface name">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -409,7 +409,7 @@
         </Color>
         <Color Name="preprocessor text">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="MarkerFormatDefinition/HighlightedDefinition">
           <Background Type="CT_RAW" Source="FF{{identifierHighlight}}"/>
@@ -452,7 +452,7 @@
         </Color>
         <Color Name="xml literal - attribute name">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="xml literal - attribute value">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -480,11 +480,11 @@
         </Color>
         <Color Name="xml literal - text">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="RenameTrackingTag">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="RoslynActiveStatementTag">
           <Background Type="CT_RAW" Source="FF{{infoForeground}}"/>
@@ -502,15 +502,15 @@
         </Color>
         <Color Name="RazorCode">
           <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="RazorTagHelperAttribute">
           <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="RazorTagHelperElement">
           <Background Type="CT_RAW" Source="FF{{textEditorBackground}}"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="JSON Property Name">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -570,7 +570,7 @@
         </Color>
         <Color Name="HtmlClientTemplateSeparatorFormatDefinition">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="HtmlClientTemplateTagFormatDefinition">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -578,19 +578,19 @@
         </Color>
         <Color Name="RoslynConflictTag">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="RoslynPreviewWarningTag">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="RoslynRenameConflictTag">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="RoslynRenameFixupTag">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="RoslynRenameFieldBackgroundAndBorderTag">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -602,23 +602,23 @@
         </Color>
         <Color Name="data.tools.diff.remove.line">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="data.tools.diff.add.line">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="data.tools.diff.remove.word">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="data.tools.diff.add.word">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="TextMate.Classifier">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="Peek History Selected">
           <Background Type="CT_RAW" Source="FF{{accentColor}}"/>
@@ -634,7 +634,7 @@
         </Color>
         <Color Name="Selected Text in High Contrast">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="PeekFormatDefinition/EOIMark">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -650,7 +650,7 @@
         </Color>
         <Color Name="MarkerFormatDefinition/VerticalHighlight">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="FSharp.Function">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -666,7 +666,7 @@
         </Color>
         <Color Name="FSharp.Property">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="FSharp.Disposable">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -702,11 +702,11 @@
         </Color>
         <Color Name="operator - overloaded">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="field name">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="enum member name">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -718,7 +718,7 @@
         </Color>
         <Color Name="local name">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="parameter name">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -734,19 +734,19 @@
         </Color>
         <Color Name="property name">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="event name">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="namespace name">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="label name">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="Caret (Primary)">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -758,19 +758,19 @@
         </Color>
         <Color Name="UnnecessaryCode">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="Test Summary - Default">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="Test Summary - Header">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="Test Summary - Label">
           <Background Type="CT_INVALID" Source="00000000"/>
-          <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+          <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
         </Color>
         <Color Name="Test Summary - Stack">
           <Background Type="CT_INVALID" Source="00000000"/>
@@ -963,7 +963,7 @@
                 <Foreground Type="CT_RAW" Source="FF{{keyColor}}"/>
             </Color>
             <Color Name="punctuation">
-                <Foreground Type="CT_RAW" Source="FF{{foregroundColor}}"/>
+                <Foreground Type="CT_RAW" Source="FF{{foregroundColorEditor}}"/>
             </Color>
             <Color Name="brace matching">
                 <Foreground Type="CT_RAW" Source="FF{{accentColor}}"/>

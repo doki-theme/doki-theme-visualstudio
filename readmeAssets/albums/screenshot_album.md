@@ -6,6 +6,12 @@ Darling in the Franxx
 ![zero_two_dark_code](../screens/themes/zero_two_dark_code.png)
 ![zero_two_light_code](../screens/themes/zero_two_light_code.png)
 
+Chuunibyou Love and Other Delusions
+---
+
+### Takanashi Rikka
+
+![rikka_dark code](../screens/themes/rikka_dark_code.png)
 
 AzurLane
 ---
@@ -46,9 +52,29 @@ NekoPara
 YuruCamp
 ---
 
+### Nadeshiko
+
+![nadeshiko_dark code](../screens/themes/nadeshiko_dark_code.png)
+
+
 ### Shima Rin
 
 ![shima_rin_dark_code](../screens/themes/shima_rin_dark_code.png)
+
+Rising of the Shield Hero
+---
+
+### Raphtalia
+
+![raphtalia_dark code](../screens/themes/raphtalia_dark_code.png)
+
+
+A Certain Scientific RailGun
+---
+
+### Misaka Mikoto
+
+![mikoto_dark code](../screens/themes/mikoto_dark_code.png)
 
 Monogatari
 ---
@@ -158,10 +184,10 @@ Re:Zero
 ![emilia_light_code](../screens/themes/emilia_light_code.png)
 
 ### Ram
-![ram_dark_code](../screens/themes/ram_dark_code.png)
+![ram_code](../screens/themes/ram_code.png)
 
 ### Rem
-![rem_dark_code](../screens/themes/rem_dark_code.png)
+![rem_code](../screens/themes/rem_code.png)
 
 ### Beatrice
 
