@@ -184,10 +184,10 @@ Re:Zero
 ![emilia_light_code](../screens/themes/emilia_light_code.png)
 
 ### Ram
-![ram_dark_code](../screens/themes/ram_dark_code.png)
+![ram_code](../screens/themes/ram_code.png)
 
 ### Rem
-![rem_dark_code](../screens/themes/rem_dark_code.png)
+![rem_code](../screens/themes/rem_code.png)
 
 ### Beatrice
 
