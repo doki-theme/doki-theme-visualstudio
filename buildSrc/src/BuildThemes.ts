@@ -54,6 +54,7 @@ function buildTemplateVariables(
   };
   return {
     ...finalColors,
+    ...dokiThemeAppDefinition.colors,
     editorAccentColor:
       dokiThemeDefinition.overrides?.editorScheme?.colors?.accentColor?.substr(1) ||
       finalColors.accentColor
