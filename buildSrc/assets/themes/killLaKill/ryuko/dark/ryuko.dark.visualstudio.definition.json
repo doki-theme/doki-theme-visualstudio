@@ -4,9 +4,5 @@
   "laf": {},
   "syntax": {},
   "colors": {},
-  "backgrounds": {
-    "default": {
-      "position": "right"
-    }
-  }
+  "backgrounds": {}
 }
