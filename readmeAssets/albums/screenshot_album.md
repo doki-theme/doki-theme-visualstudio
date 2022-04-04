@@ -68,6 +68,13 @@ Rising of the Shield Hero
 
 ![raphtalia_dark code](../screens/themes/raphtalia_dark_code.png)
 
+That Time I Got Reincarnated As A Slime
+---
+
+### Rimiru Tempest
+
+![rimiru_dark code](../screens/themes/rimiru_dark_code.png)
+
 
 A Certain Scientific RailGun
 ---
@@ -164,6 +171,28 @@ Jahy-sama Will Not Be Discouraged!
 ### Jahy
 
 ![jahy_dark_smol_code](../screens/themes/jahy_dark_smol_code.png)
+
+One Punch Man
+---
+
+### Genos
+
+![genos_dark code](../screens/themes/genos_dark_code.png)
+
+Haikyu
+---
+
+### Hinata Shoyo
+
+![shoyo_dark code](../screens/themes/shoyo_dark_code.png)
+
+Shokugeki no Soma
+---
+
+### Yukihira Soma
+
+![soma_dark code](../screens/themes/soma_dark_code.png)
+
 
 Don't Toy With Me Miss Nagatoro
 ---
