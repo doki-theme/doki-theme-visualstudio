@@ -6,14 +6,5 @@
   },
   "syntax": {},
   "colors": {},
-  "backgrounds": {
-    "default": {
-      "anchor": "right",
-      "opacity": 0.08
-    },
-    "secondary": {
-      "anchor": "right",
-      "opacity": 0.1
-    }
-  }
+  "backgrounds": {}
 }

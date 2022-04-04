@@ -6,10 +6,5 @@
   },
   "syntax": {},
   "colors": {},
-  "backgrounds": {
-    "default": {
-      "position": "right",
-      "opacity": 0.11
-    }
-  }
+  "backgrounds": {}
 }

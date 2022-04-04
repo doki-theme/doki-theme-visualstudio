@@ -6,9 +6,5 @@
   },
   "syntax": {},
   "colors": {},
-  "backgrounds": {
-    "default": {
-      "anchor": "right"
-    }
-  }
+  "backgrounds": {}
 }

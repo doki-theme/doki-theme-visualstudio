@@ -1,12 +1,8 @@
 {
   "id": "5412c41d-f76b-4488-85a7-1ae1a63bbfcc",
   "overrides": {},
+  "laf": {},
   "syntax": {},
   "colors": {},
-  "backgrounds": {
-    "default": {
-      "position": "center",
-      "opacity": 0.12
-    }
-  }
+  "backgrounds": {}
 }

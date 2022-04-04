@@ -1,0 +1,9 @@
+<Themes>
+  <Theme Name="dark-vivid" GUID="{dcdd021e-acd7-40f0-a18a-6c807f7ddd3e}" BaseGUID="dark">
+    <Category GUID="{58e96763-1d3b-4e05-b6ba-ff7115fd0b7b}" Name="Text Editor Text Manager Items">
+      <Color Name="Selected Text">
+        <Background Source="FF{{vividSelectionBackground}}" Type="CT_RAW" />
+      </Color>
+    </Category>
+  </Theme>
+</Themes>

@@ -7,6 +7,7 @@ import {
   fillInTemplateScript,
   MasterDokiThemeDefinition,
   resolvePaths,
+  Sticker,
   StringDictionary, walkDir,
 } from "doki-build-source";
 import omit from 'lodash/omit';
@@ -53,6 +54,7 @@ function buildTemplateVariables(
   };
   return {
     ...finalColors,
+    ...dokiThemeAppDefinition.colors,
     editorAccentColor:
       dokiThemeDefinition.overrides?.editorScheme?.colors?.accentColor?.substr(1) ||
       finalColors.accentColor
@@ -73,7 +75,6 @@ function createDokiTheme(
       stickers: getStickers(
         masterThemeDefinition,
         masterThemeDefinitionPath,
-        appThemeDefinition
       ),
       templateVariables: buildTemplateVariables(
         masterThemeDefinition,
@@ -103,25 +104,23 @@ function resolveStickerPath(themeDefinitionPath: string, sticker: string) {
 const getStickers = (
   dokiDefinition: MasterDokiThemeDefinition,
   themePath: string,
-  dokiTheme: AppDokiThemeDefinition,
 ) => {
   const secondary =
     dokiDefinition.stickers.secondary || dokiDefinition.stickers.normal;
-  const backgrounds = dokiTheme.backgrounds;
   return {
     defaultSticker: {
-      path: resolveStickerPath(themePath, dokiDefinition.stickers.default),
-      name: dokiDefinition.stickers.default,
-      anchoring: backgrounds?.default?.anchor || "center",
-      opacity: backgrounds?.default?.opacity || (dokiDefinition.dark ? 0.05 : 0.1)
+      path: resolveStickerPath(themePath, dokiDefinition.stickers.default.name),
+      name: dokiDefinition.stickers.default.name,
+      anchoring: dokiDefinition.stickers.default.anchor || "center",
+      opacity: (dokiDefinition.stickers.default.opacity / 100) || (dokiDefinition.dark ? 0.05 : 0.1)
     },
     ...(secondary
       ? {
         secondary: {
-          path: resolveStickerPath(themePath, secondary),
-          name: secondary,
-          anchoring: backgrounds?.secondary?.anchor || "center",
-          opacity: backgrounds?.secondary?.opacity || (dokiDefinition.dark ? 0.05 : 0.1)
+          path: resolveStickerPath(themePath, dokiDefinition.stickers.secondary!!.name),
+          name: dokiDefinition.stickers?.secondary?.name || 'ayyLmao',
+          anchoring: dokiDefinition.stickers?.secondary?.anchor || "center",
+          opacity: (dokiDefinition.stickers.secondary?.opacity || (dokiDefinition.dark ? 5 : 10)) / 100
         },
       }
       : {}),
@@ -146,8 +145,8 @@ if (!fs.existsSync(generatedThemesDirectory)) {
   )
 }
 
-function getVSThemeName(dokiTheme: { path: string; appThemeDefinition: BaseAppDokiThemeDefinition; definition: MasterDokiThemeDefinition; stickers: { defaultSticker: { path: string; name: string } }; theme: {}; templateVariables: DokiThemeVisualStudio }) {
-  return `${getName(dokiTheme.definition)}.vstheme`;
+function getVSThemeName(dokiTheme: MasterDokiThemeDefinition) {
+  return `${getName(dokiTheme)}.vstheme`;
 }
 
 function getThemeName(themeXML: any) {
@@ -211,7 +210,7 @@ evaluateTemplates(
                 (none: any) => !none.$.Include.startsWith('Themes\\generated'),
               ),
               ...themes.map(dokiTheme => ({
-                '$': { Include: `Themes\\generated\\${getVSThemeName(dokiTheme)}` },
+                '$': { Include: `Themes\\generated\\${getVSThemeName(dokiTheme.definition)}` },
                 SubType: ['Designer']
               }))
             ]
@@ -232,7 +231,7 @@ evaluateTemplates(
       return accum.then(async () => {
         const template = await resolveVisualStudioThemeTemplate(templates, dokiTheme);
         fs.writeFileSync(
-          path.resolve(generatedThemesDirectory, getVSThemeName(dokiTheme)),
+          path.resolve(generatedThemesDirectory, getVSThemeName(dokiTheme.definition)),
           template
         )
       })
@@ -275,7 +274,7 @@ function getName(dokiDefinition: MasterDokiThemeDefinition) {
 }
 
 async function resolveVisualStudioThemeTemplate(xmlTemplates: StringDictionary<any>,
-  dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { secondary?: { path: string; name: string; } | undefined; defaultSticker: { path: string; name: string; }; }; templateVariables: DokiThemeVisualStudio; theme: {}; appThemeDefinition: BaseAppDokiThemeDefinition; }): Promise<string> {
+  dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { secondary?: { path: string; name: string; opacity: number } | undefined; defaultSticker: { path: string; name: string; opacity: number}; }; templateVariables: DokiThemeVisualStudio; theme: {}; appThemeDefinition: BaseAppDokiThemeDefinition; }): Promise<string> {
   const evalutedTemplate = evaluateXmlTemplates(xmlTemplates, dokiTheme)
   const filledInTemplate = fillInTemplateScript(evalutedTemplate, dokiTheme.templateVariables);
   const templateAsXml = await toXml(filledInTemplate)

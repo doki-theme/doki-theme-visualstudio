@@ -4,10 +4,5 @@
   "laf": {},
   "syntax": {},
   "colors": {},
-  "backgrounds": {
-    "default": {
-      "anchor": "right",
-      "opacity": 0.13
-    }
-  }
+  "backgrounds": {}
 }

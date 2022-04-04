@@ -135,6 +135,9 @@
     <None Include="Themes\generated\Rory Mercury.vstheme">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Themes\generated\Hinata Shoyo.vstheme">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Themes\generated\Rias Crimson.vstheme">
       <SubType>Designer</SubType>
     </None>
@@ -237,6 +240,9 @@
     <None Include="Themes\generated\Vanilla.vstheme">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Themes\generated\Genos.vstheme">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Themes\generated\Yukinoshita Yukino.vstheme">
       <SubType>Designer</SubType>
     </None>
@@ -274,6 +280,12 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Themes\generated\Raphtalia.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Yukihira Soma.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Rimiru Tempest.vstheme">
       <SubType>Designer</SubType>
     </None>
     <None Include="Themes\generated\Makise Kurisu.vstheme">
