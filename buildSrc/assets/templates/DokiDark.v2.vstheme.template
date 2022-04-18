@@ -3157,7 +3157,7 @@
         <Background Source="FF{{highlightColor}}" Type="CT_RAW"/>
       </Color>
       <Color Name="FileTabParentText">
-        <Background Source="FF{{foregroundColor}}" Type="CT_RAW"/>
+        <Background Source="FF{{infoForeground}}" Type="CT_RAW"/>
       </Color>
       <Color Name="FileTabProvisionalHover">
         <Background Source="FF{{diff.deleted}}" Type="CT_RAW"/>
