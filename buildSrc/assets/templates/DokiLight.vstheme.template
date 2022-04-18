@@ -3032,6 +3032,12 @@
         </Color>
         <Color Name="FileTabBackground">
           <Background Source="FF{{textEditorBackground}}" Type="CT_RAW"/>
+        </Color>        
+        <Color Name="FileTabActiveGroupTitleBackground">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
+        </Color>        
+        <Color Name="FileTabPrimarySeparator">
+          <Background Source="FF{{headerColor}}" Type="CT_RAW"/>
         </Color>
         <Color Name="FileTabBorder">
           <Background Source="FF{{borderColor}}" Type="CT_RAW"/>
