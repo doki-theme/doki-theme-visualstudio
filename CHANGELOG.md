@@ -1,6 +1,10 @@
 Changelog
 ---
 
+# 78.0-1.0.1 [Themed Tab Layout]
+
+- Themed the tab layout title to match the rest of the IDE.
+
 # 78.0-1.0.0 [The Boys]
 
 I'm trying to bring in a bit of inclusion.
