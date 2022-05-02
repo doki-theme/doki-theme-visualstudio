@@ -1,6 +1,10 @@
 Changelog
 ---
 
+# 78.0-1.0.2 [Themed XAML Views]
+
+- Restored the original intended background color of the `XAML` view. ([#22](https://github.com/doki-theme/doki-theme-visualstudio/issues/21))
+
 # 78.0-1.0.1 [Themed Tab Layout]
 
 - Themed the tab layout title to match the rest of the IDE.

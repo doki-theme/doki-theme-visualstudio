@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using Microsoft.VisualStudio.Shell;
 using Task = System.Threading.Tasks.Task;
+using Microsoft.VisualStudio.PlatformUI;
 
 namespace doki_theme_visualstudio {
   // Wallpaper works by attaching a background image to the 
@@ -202,7 +203,6 @@ namespace doki_theme_visualstudio {
         });
       }
     }
-
     private void MakeThingsAboveWallpaperTransparent() {
       UITools.FindParent(_editorCanvas, parent => {
         if (parent.GetType().FullName
@@ -228,16 +228,31 @@ namespace doki_theme_visualstudio {
 
     private DependencyObject? GetEditorView() {
       return UITools.FindParent(_editorCanvas,
-        o => o.GetType().FullName.Equals(EditorViewClassName,
-          StringComparison.OrdinalIgnoreCase));
+        o => o.GetType().FullName.Equals(EditorViewClassName));
     }
 
+    // Wallpapers work by setting all of the children (children are higher z-index than parents)
+    // above the parent editor window to transparent. Then set the background color
+    // of the parent editor window to the text editor color. After that, find the first child
+    // whose background can be an image, then draw the Image on that.
+    // Fixes: https://github.com/doki-theme/doki-theme-visualstudio/issues/21
     private void DrawWallpaper() {
       if (_image == null) return;
       ThreadHelper.JoinableTaskFactory.Run(async () => {
         await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
         var editorView = GetEditorView();
-        editorView?.SetValue(Panel.BackgroundProperty, _image);
+        if (editorView != null) {
+          var textEditorBackground = VSColorTheme.GetThemedColor(EnvironmentColors.SystemWindowColorKey);
+          editorView.SetValue(Panel.BackgroundProperty, new SolidColorBrush(Color.FromRgb(
+            textEditorBackground.R,
+            textEditorBackground.G,
+            textEditorBackground.B)));
+          var brushedChild = UITools.FindChild(editorView, childGuy => {
+            var property = childGuy.GetType().GetProperty("Background");
+            return property?.GetValue(childGuy) is Brush && !childGuy.GetType().FullName.Contains("SplitterGrip");
+          });
+          brushedChild?.SetValue(Panel.BackgroundProperty, _image);
+        }
       });
     }
 
