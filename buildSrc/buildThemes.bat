@@ -11,11 +11,13 @@
 @REM yarn buildThemes 83e94920-9ae2-4838-9b85-4c3fa22b67b8
 
 @REM Maple Light
-yarn buildThemes ea7a8b00-2d86-4e06-81a2-5c14a46264d5
+@REM yarn buildThemes ea7a8b00-2d86-4e06-81a2-5c14a46264d5
 
 @REM Soma Dark
 @REM yarn buildThemes fb25d871-4a7c-49f5-9426-1f7eb00c2699
 
+@REM Senko Light
+yarn buildThemes 7bafa167-148d-472a-8a9b-6f4129ef2e1f
 
 @REM Yotsuba
 @REM yarn buildThemes 3b11c8f4-d030-4a7e-a46f-b22d3e430a1d

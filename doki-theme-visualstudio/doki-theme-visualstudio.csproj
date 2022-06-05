@@ -84,7 +84,13 @@
     <None Include="Themes\generated\Mai Light.vstheme">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Themes\generated\Tomori Nao.vstheme">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Themes\generated\Takanashi Rikka.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\C.C..vstheme">
       <SubType>Designer</SubType>
     </None>
     <None Include="Themes\generated\Mioda Ibuki Dark.vstheme">
@@ -133,6 +139,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Themes\generated\Rory Mercury.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Yuzuriha Inori.vstheme">
       <SubType>Designer</SubType>
     </None>
     <None Include="Themes\generated\Hinata Shoyo.vstheme">
@@ -249,6 +258,12 @@
     <None Include="Themes\generated\Kirino.vstheme">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Themes\generated\Nakano Ichika.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Nakano Itsuki.vstheme">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Themes\generated\Nakano Miku.vstheme">
       <SubType>Designer</SubType>
     </None>
@@ -277,6 +292,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Themes\generated\Rem.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Senko.vstheme">
       <SubType>Designer</SubType>
     </None>
     <None Include="Themes\generated\Raphtalia.vstheme">
