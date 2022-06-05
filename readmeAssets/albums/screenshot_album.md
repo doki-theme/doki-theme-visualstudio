@@ -109,6 +109,11 @@ KonoSuba
 Quintessential Quintuplets
 ---
 
+### Nakano Ichika
+
+![ichika_light_code](../screens/themes/ichika_light_code.png)
+
+
 ### Nakano Nino
 
 ![nakano_nino_dark_code](../screens/themes/nakano_nino_dark_code.png)
@@ -120,6 +125,10 @@ Quintessential Quintuplets
 ### Nakano Yotsuba
 
 ![nakano_yotsuba_dark_code](../screens/themes/nakano_yotsuba_dark_code.png)
+
+### Nakano Itsuki
+
+![itsuki_light_code](../screens/themes/itsuki_light_code.png)
 
 
 OreImo (My little sister cannot be this cute)
@@ -192,6 +201,34 @@ Shokugeki no Soma
 ### Yukihira Soma
 
 ![soma_dark code](../screens/themes/soma_dark_code.png)
+
+Sewayaki Kitsune no Senko-san
+---
+
+### Senko
+
+![senko_light code](../screens/themes/senko_light_code.png)
+
+Charlotte
+---
+
+### Tomori Nao
+
+![nao_light code](../screens/themes/nao_light_code.png)
+
+Code Geass
+---
+
+### C.C.
+
+![cc_light code](../screens/themes/cc_light_code.png)
+
+Guilty Crown
+---
+
+### Yuzuriha Inori
+
+![inori_light code](../screens/themes/inori_light_code.png)
 
 
 Don't Toy With Me Miss Nagatoro
