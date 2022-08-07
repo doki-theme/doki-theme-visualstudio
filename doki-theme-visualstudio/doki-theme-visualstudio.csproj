@@ -129,10 +129,22 @@
     <None Include="Themes\generated\Tohsaka Rin.vstheme">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Themes\generated\Zero Two Dark.vstheme">
+    <None Include="Themes\generated\Hiro.vstheme">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Themes\generated\Zero Two Light.vstheme">
+    <None Include="Themes\generated\Hiro x Zero Two.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Zero Two Light Lily.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Zero Two Dark Obsidian.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Zero Two Dark Rose.vstheme">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Themes\generated\Zero Two Light Sakura.vstheme">
       <SubType>Designer</SubType>
     </None>
     <None Include="Themes\generated\Gasai Yuno.vstheme">
@@ -303,7 +315,7 @@
     <None Include="Themes\generated\Yukihira Soma.vstheme">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Themes\generated\Rimiru Tempest.vstheme">
+    <None Include="Themes\generated\Rimuru Tempest.vstheme">
       <SubType>Designer</SubType>
     </None>
     <None Include="Themes\generated\Makise Kurisu.vstheme">

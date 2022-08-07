@@ -19,6 +19,9 @@
 @REM Senko Light
 yarn buildThemes 7bafa167-148d-472a-8a9b-6f4129ef2e1f
 
+@REM Zero Two Obsidian
+@REM yarn buildThemes 13adffd9-acbe-47af-8101-fa71269a4c5c
+
 @REM Yotsuba
 @REM yarn buildThemes 3b11c8f4-d030-4a7e-a46f-b22d3e430a1d
 
