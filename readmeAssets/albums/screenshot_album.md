@@ -3,8 +3,28 @@ Darling in the Franxx
 
 ### Zero Two 
 
+**Obsidian**
+![zero_two_dark_code](../screens/themes/zero_two_dark_obsidian_code.png)
+
+**Rose**
 ![zero_two_dark_code](../screens/themes/zero_two_dark_code.png)
+
+**Lily**
 ![zero_two_light_code](../screens/themes/zero_two_light_code.png)
+
+**Sakura**
+![zero_two_light_code](../screens/themes/zero_two_light_sakura_code.png)
+
+
+### Hiro x Zero Two
+
+![hiro_x_zero_two](../screens/themes/hiro_x_zero_two_dark_code.png)
+
+
+### Hiro
+
+![hiro](../screens/themes/hiro_dark_code.png)
+
 
 Chuunibyou Love and Other Delusions
 ---
@@ -71,9 +91,9 @@ Rising of the Shield Hero
 That Time I Got Reincarnated As A Slime
 ---
 
-### Rimiru Tempest
+### Rimuru Tempest
 
-![rimiru_dark code](../screens/themes/rimiru_dark_code.png)
+![rimuru_dark code](../screens/themes/rimuru_dark_code.png)
 
 
 A Certain Scientific RailGun
