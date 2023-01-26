@@ -1,6 +1,11 @@
 Changelog
 ---
 
+# 88.3-1.0.3 [Zoom Scroll Fix]
+
+- Added ==StickerRelativeSize== options to the content settings. Which fixes the sticker's size in place while you zoom scroll. See documentation for more details.
+
+
 # 88.1-1.0.2 [Darling]
 
 Best Girl just got _better_. ❤️

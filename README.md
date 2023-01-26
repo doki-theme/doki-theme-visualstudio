@@ -77,6 +77,8 @@ You can navigate to the settings here
 That's why I've allowed you to set your own custom sticker to be used for all doki themes. 
 The value provided _must_ be an absolute path to the local file on your machine to be used. Feel free to use the `...` to pick a file.
 
+**StickerRelativeSize** because I do not know the Visual Studio SDK very well, this is my solution to fixing issues with zoom scrolling. When the viewport size changes, the sticker would either grow or shrink relative to the viewport. This is the relative size the sticker should be relative to the current view port. 1 being the same size as the viewport and 0.01 being 1 percent the size of the current viewport. 
+
 **Note**: stickers go away if you use a non-Doki Theme.
 
 ### Wallpapers
