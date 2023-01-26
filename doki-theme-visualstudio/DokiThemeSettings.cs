@@ -68,6 +68,13 @@ namespace doki_theme_visualstudio {
       }
     }
 
+    public double StickerRelativeSize {
+      get {
+        var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
+        return page.StickerRelativeSize;
+      }
+    }
+
     public double WallpaperOffsetX {
       get {
         var page = (DokiThemeSettings)_package.GetDialogPage(typeof(DokiThemeSettings));
@@ -164,7 +171,20 @@ namespace doki_theme_visualstudio {
     [EditorAttribute(typeof(BrowseFile), typeof(UITypeEditor))]
     public double WallpaperOpacity {
       get { return _wallpaperOpacity; }
-      set { _wallpaperOpacity = value; }
+      set {
+        var usableOpacity = value < 0 ? -1 : Math.Min(value, 1);
+        _wallpaperOpacity = usableOpacity; 
+      }
+    }
+
+    private double _StickerRelativeSize = 0.2;
+
+    [DescriptionAttribute("How big should the sticker be relative to your current viewport?")]
+    [EditorAttribute(typeof(BrowseFile), typeof(UITypeEditor))]
+    public double StickerRelativeSize
+    {
+      get { return _StickerRelativeSize; }
+      set { _StickerRelativeSize = value; }
     }
 
     private BackgroundSize _wallpaperFill = BackgroundSize.Filled;
