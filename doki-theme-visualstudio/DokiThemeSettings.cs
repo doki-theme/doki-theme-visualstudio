@@ -171,7 +171,10 @@ namespace doki_theme_visualstudio {
     [EditorAttribute(typeof(BrowseFile), typeof(UITypeEditor))]
     public double WallpaperOpacity {
       get { return _wallpaperOpacity; }
-      set { _wallpaperOpacity = value; }
+      set {
+        var usableOpacity = value < 0 ? -1 : Math.Min(value, 1);
+        _wallpaperOpacity = usableOpacity; 
+      }
     }
 
     private double _StickerRelativeSize = 0.2;
