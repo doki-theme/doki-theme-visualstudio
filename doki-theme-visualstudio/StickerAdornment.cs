@@ -17,7 +17,7 @@ namespace doki_theme_visualstudio {
 
     private bool _registeredLayoutListener;
 
-    private double _stickerSize = 0.2;
+    private double _stickerSize;
 
     public StickerAdornment(IWpfTextView view) {
       _view = view ?? throw new ArgumentNullException(nameof(view));
@@ -45,6 +45,7 @@ namespace doki_theme_visualstudio {
         } else {
           RemoveStickerStuff();
         }
+
         _stickerSize = service.StickerRelativeSize;
       };
 
@@ -147,12 +148,13 @@ namespace doki_theme_visualstudio {
 
       RemoveAdornment();
 
-
-      var aspectRatio = _image.Width / _image.Height;
-      var usableWidth = _view.ViewportWidth * _stickerSize;
-      var usableHeight = usableWidth * aspectRatio;
-      _image.Width = usableWidth;
-      _image.Height = usableHeight;
+      if (_stickerSize >= 0) {
+        var aspectRatio = _image.Width / _image.Height;
+        var usableWidth = _view.ViewportWidth * _stickerSize;
+        var usableHeight = usableWidth * aspectRatio;
+        _image.Width = usableWidth;
+        _image.Height = usableHeight;
+      }
 
       // place in lower right hand corner
       Canvas.SetLeft(_image, _view.ViewportRight - _image.ActualWidth);
