@@ -10,17 +10,17 @@ namespace doki_theme_visualstudio {
       _instance ?? throw new Exception("Expected local storage to be initialized!");
 
     public static void Init(Package package) {
-      _instance ??= new LocalStorageService(package);
+      _instance ??= new LocalStorageService(package.UserLocalDataPath);
       var assetsDirectory = _instance.GetAssetDirectory();
       if (!Directory.Exists(assetsDirectory)) {
         Directory.CreateDirectory(assetsDirectory);
       }
     }
 
-    private readonly Package _package;
+    private readonly string _userLocalDataPath;
 
-    private LocalStorageService(Package package) {
-      _package = package;
+    private LocalStorageService(string userLocalDataPath) {
+      _userLocalDataPath = userLocalDataPath;
     }
 
     public static void CreateDirectories(string fullAssetPath) {
@@ -31,11 +31,10 @@ namespace doki_theme_visualstudio {
     }
 
     public string GetAssetDirectory() {
-      var userLocalDataPath = _package.UserLocalDataPath;
       var assetsDirectory =
-        Path.Combine(userLocalDataPath.Substring(
+        Path.Combine(_userLocalDataPath.Substring(
           0,
-          userLocalDataPath.LastIndexOf(Path.DirectorySeparatorChar)
+          _userLocalDataPath.LastIndexOf(Path.DirectorySeparatorChar)
         ), "dokiThemeAssets");
       return assetsDirectory;
     }

@@ -16,12 +16,15 @@ namespace doki_theme_visualstudio {
       
       SettingsService.Init(package);
       ThemeManager.Init(package);
-      LocalStorageService.Init(package);
       
       // depends on local storage service
-      LocalAssetService.Init(package);
+      LocalAssetService.Init();
       _isInitialized = true;
       PluginInitialized?.Invoke(null, "Dun!");
+    }    
+    
+    public static async Task InitializePlugin(AsyncPackage package, CancellationToken cancellationToken) {
+      LocalStorageService.Init(package);
     }
   }
 }

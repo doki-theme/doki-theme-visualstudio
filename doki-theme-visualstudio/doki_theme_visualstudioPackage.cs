@@ -31,8 +31,8 @@ namespace doki_theme_visualstudio {
   [ProvideAutoLoad(UIContextGuids.NoSolution, PackageAutoLoadFlags.BackgroundLoad)]
   [ProvideAutoLoad(UIContextGuids.SolutionExists, PackageAutoLoadFlags.BackgroundLoad)]
   [Guid(PackageGuidString)]
-  [ProvideOptionPage(typeof(DokiThemeSettings), "Doki Theme Settings", 
-    "General",  1000, 1001, false)]
+  [ProvideOptionPage(typeof(DokiThemeSettings), "Doki Theme Settings",
+    "General", 1000, 1001, false)]
   [ProvideMenuResource("Menus.ctmenu", 1)]
   public sealed class doki_theme_visualstudioPackage : AsyncPackage {
     /// <summary>
@@ -49,17 +49,21 @@ namespace doki_theme_visualstudio {
     /// <param name="cancellationToken">A cancellation token to monitor for initialization cancellation, which can occur when VS is shutting down.</param>
     /// <param name="progress">A provider for progress updates.</param>
     /// <returns>A task representing the async work of package initialization, or an already completed task if there is none. Do not return null from this method.</returns>
-    protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
-    {
-        await base.InitializeAsync(cancellationToken, progress);
-       // in background thread, can do things
+    protected override async Task InitializeAsync(CancellationToken cancellationToken,
+      IProgress<ServiceProgressData> progress) {
+      await base.InitializeAsync(cancellationToken, progress);
+      // When initialized asynchronously, the current thread may be a background thread at this point.
+      
+      // Do any initialization that requires the UI thread after switching to the UI thread.
+      await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
 
-       await TheDokiTheme.InitializePluginAsync(this, cancellationToken);
+      await TheDokiTheme.InitializePlugin(this, cancellationToken);
 
-   
-        // When initialized asynchronously, the current thread may be a background thread at this point.
-        // Do any initialization that requires the UI thread after switching to the UI thread.
-        await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
+      await TaskScheduler.Default;
+
+      // background thread again
+
+      await TheDokiTheme.InitializePluginAsync(this, cancellationToken);
     }
 
     #endregion

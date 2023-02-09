@@ -172,19 +172,23 @@ namespace doki_theme_visualstudio {
     public double WallpaperOpacity {
       get { return _wallpaperOpacity; }
       set {
-        var usableOpacity = value < 0 ? -1 : Math.Min(value, 1);
-        _wallpaperOpacity = usableOpacity; 
+        var usableOpacity = UsableValue(value);
+        _wallpaperOpacity = usableOpacity;
       }
+    }
+
+    private static double UsableValue(double value) {
+      return value < 0 ? -1 : Math.Min(value, 1);
     }
 
     private double _StickerRelativeSize = 0.2;
 
-    [DescriptionAttribute("How big should the sticker be relative to your current viewport?")]
+    [DescriptionAttribute("How big should the sticker be relative to your current viewport?  Set to -1.0 to follow scale of viewport")]
     [EditorAttribute(typeof(BrowseFile), typeof(UITypeEditor))]
     public double StickerRelativeSize
     {
       get { return _StickerRelativeSize; }
-      set { _StickerRelativeSize = value; }
+      set { _StickerRelativeSize = UsableValue(value); }
     }
 
     private BackgroundSize _wallpaperFill = BackgroundSize.Filled;

@@ -28,7 +28,7 @@ namespace doki_theme_visualstudio {
       _instance ?? throw new Exception("Expected local storage to be initialized!");
 
 
-    public static void Init(Package package) {
+    public static void Init() {
       _instance ??= new LocalAssetService(ReadAssetChecks());
     }
 
