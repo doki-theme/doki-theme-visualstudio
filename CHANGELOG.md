@@ -1,6 +1,11 @@
 Changelog
 ---
 
+# 88.3-1.0.4 [Perfomance Issue Fix]
+
+- Fixed an issue that causes the extension to make VS very slow/unresponsive.
+- Allowed sticker **StickerRelativeSize** to be set to `-1` which disables the autoscaling and removes blurryness of the sticker (if present)
+
 # 88.3-1.0.3 [Zoom Scroll Fix]
 
 - Added **StickerRelativeSize** options to the content settings. Which fixes the sticker's size in place while you zoom scroll. See documentation for more details.
