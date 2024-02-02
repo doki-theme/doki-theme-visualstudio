@@ -13,7 +13,7 @@ namespace doki_theme_visualstudio {
 
     private const string TagName = "DokiSticker";
 
-    private readonly IWpfTextView _view;
+    private IWpfTextView _view;
 
     private bool _registeredLayoutListener;
 
@@ -25,7 +25,7 @@ namespace doki_theme_visualstudio {
       _adornmentLayer = view.GetAdornmentLayer("StickerAdornment");
       RemoveAdornment();
 
-      ThemeManager.Instance.DokiThemeChanged += (_, themeChangedArgs) => {
+      EventHandler<ThemeChangedArgs> themeChangedCallback = (_, themeChangedArgs) => {
         var newDokiTheme = themeChangedArgs.Theme;
         if (newDokiTheme != null && SettingsService.Instance.DrawSticker) {
           GetImageSource(newDokiTheme, newSource => {
@@ -38,7 +38,9 @@ namespace doki_theme_visualstudio {
         }
       };
 
-      SettingsService.Instance.SettingsChanged += (_, service) => {
+      ThemeManager.Instance.DokiThemeChanged += themeChangedCallback;
+
+      EventHandler<SettingsService> settingsChangedCallback = (_, service) => {
         if (service.DrawSticker) {
           DrawCurrentSticker();
           DoStupidShit();
@@ -48,6 +50,20 @@ namespace doki_theme_visualstudio {
 
         _stickerSize = service.StickerRelativeSize;
       };
+
+      SettingsService.Instance.SettingsChanged += settingsChangedCallback;
+
+      EventHandler textviewClosed = null;
+      textviewClosed = (_, args) => {
+          // Clean up all our references as the textview has closed
+          ThemeManager.Instance.DokiThemeChanged -= themeChangedCallback;
+          SettingsService.Instance.SettingsChanged -= settingsChangedCallback;
+
+          _view.Closed -= textviewClosed;
+          _view = null;
+      };
+
+      _view.Closed += textviewClosed;
 
       _stickerSize = SettingsService.Instance.StickerRelativeSize;
 
